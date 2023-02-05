@@ -5,7 +5,7 @@
 This is my slowly developing website, writings, images, codes, videos, etc. will appear gradually.
 
 ## Who i am ?
-I am an graduate physics student specialising in CHEAP, i mean Cmputaional High Energy Astro-Physics.
+I am an graduate physics student specialising in CHEAP, i mean Computaional High Energy Astro-Physics.
 
 ## Places to find me online
 [Twitter](https://twitter.com/PiyushM41282215)
