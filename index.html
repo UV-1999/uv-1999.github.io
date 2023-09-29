@@ -254,13 +254,13 @@
         </p>
     </div>
     
-    <script>
-        function toggleDarkMode() {
-            const body = document.body;
-            body.classList.toggle("dark-mode");
-            const container = document.container;
-            container.classList.toggle("dark-mode");
-        }
-    </script>
+   <script>
+    function toggleDarkMode() {
+        const body = document.body;
+        body.classList.toggle("dark-mode");
+        const container = document.querySelector('.container'); // Corrected selection
+        container.classList.toggle("dark-mode");
+    }
+</script>
 </body>
 </html>
