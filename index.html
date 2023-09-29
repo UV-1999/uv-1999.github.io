@@ -13,6 +13,11 @@
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        body.dark-mode {
+            background-color: #222;
+            color: #fff;
         }
         header {
             background-color: #333;
@@ -36,11 +41,22 @@
             padding: 20px;
             background-color: #fff;
         }
+        .dark-mode-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Piyush Marmat</h1>
+        <button class="dark-mode-button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
     </header>
     <div class="container">
         <h2></h2>
@@ -61,5 +77,11 @@
             <a href="https://ui.adsabs.harvard.edu/search/q=author\%3A\%22Marmat\%2C\%20Piyush\%22%26sort=date\%20desc\%2C\%20bibcode\%20desc%26p_=0">NASA-ADS</a>.
         </p>
     </div>
+    <script>
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle("dark-mode");
+        }
+    </script>
 </body>
 </html>
