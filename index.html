@@ -35,13 +35,13 @@
             font-size: 18px;
             margin: 20px 0;
         }
-        .container {
+        container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
             background-color: #fff;
             transition: background-color 0.3s, color 0.3s;
-        .container.dark-mode{
+        container.dark-mode{
             background-color: #222;
             color: #fff;
         }
@@ -226,7 +226,7 @@
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle("dark-mode");
-        const container = document.querySelector('.container'); // Corrected selection
+        const container = document.querySelector('container'); // Corrected selection
         container.classList.toggle("dark-mode");
     }
 </script>
