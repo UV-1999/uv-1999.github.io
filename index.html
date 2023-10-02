@@ -288,16 +288,8 @@
     
    <script>
     function toggleDarkMode() {
-        var element = document.body;
-        element.classList.toggle("dark-mode");
-
-        var head = document.header;
-        head.classList.toggle("dark-mode");
-
-        var icons = document.getElementsByTagName(".icon-link");
-        icons.forEach(function(icon) {
-            icon.classList.toggle("dark-mode");
-        });
+        const element = document.querySelector('body');
+        element.classList.add('dark-mode');
     }
 </script>
 </body>
