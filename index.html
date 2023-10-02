@@ -31,7 +31,6 @@
             left: 0;
             right: 0;
         }
-
         header.dark-mode{
             background-color: #5A5A5A;
             color: #fff8e7;
@@ -292,10 +291,10 @@
         var element = document.body;
         element.classList.toggle("dark-mode");
 
-        var element = document.header;
-        element.classList.toggle("dark-mode");
+        var head = document.header;
+        head.classList.toggle("dark-mode");
 
-        var icons = document.querySelectorAll(".icon-link");
+        var icons = document.getElementsByTagName(".icon-link");
         icons.forEach(function(icon) {
             icon.classList.toggle("dark-mode");
         });
