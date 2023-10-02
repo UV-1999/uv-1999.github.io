@@ -305,14 +305,18 @@
     function toggleDarkMode() {
         const element = document.querySelectorAll('body');
         element.classList.toggle('dark-mode');
+        
         const head = document.querySelectorAll('header');
         head.classList.toggle('dark-mode');
-        const h = document.querySelectorAll('hr');
-        h.forEach((h) => {h.classList.toggle('dark-mode');});
+
         const ae = document.querySelectorAll('a');
-        ae.forEach((ae) => {ae.classList.toggle('dark-mode');});
-        const icon = document.querySelectorAll('.icon-link');
-        icon.forEach((icon) => {icon.classList.toggle('dark-mode');});        
+        ae.classList.toggle('dark-mode');
+
+        const he = document.querySelectorAll('hr');
+        he.classList.toggle('dark-mode');
+
+        const icon = document.querySelectorAll('icon-link');
+        icon.classList.toggle('dark-mode');
     }
 </script>
 </body>
