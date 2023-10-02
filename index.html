@@ -314,9 +314,10 @@
         anchor.classList.toggle('dark-mode');
         });
 
-
-        const he = document.querySelector('hr');
-        he.classList.toggle('dark-mode');
+        const he = document.querySelectorAll('hr');
+        he.forEach(hline => {
+        hline.classList.toggle('dark-mode');
+        });
 
         const icon = document.querySelector('icon-link');
         icon.classList.toggle('dark-mode');
