@@ -26,7 +26,7 @@
             background-color: #fff8e7;
             color: #800020;
             text-align: center;
-            height: 100%;
+            padding: 100%;
             top: 0;
             left: 0;
             right: 0;
@@ -303,17 +303,19 @@
     
    <script>
     function toggleDarkMode() {
-        const element = document.querySelector('body');
+        const element = document.querySelectorAll('body');
         element.classList.toggle('dark-mode');
-        const head = document.querySelector('header');
+        const head = document.querySelectorAll('header');
         head.classList.toggle('dark-mode');
-        const h = document.querySelector('hr');
-        h.classList.toggle('dark-mode');
-        const ae = document.querySelector('a');
-        ae.classList.toggle('dark-mode');
-        const icon = document.querySelector('.icon-link');
-        icon.classList.toggle('dark-mode');
-        
+        const h = document.querySelectorAll('hr');
+        anchorElements.forEach((h) => {
+        h.classList.toggle('dark-mode');});
+        const ae = document.querySelectorAll('a');
+        anchorElements.forEach((ae) => {
+        ae.classList.toggle('dark-mode');});
+        const icon = document.querySelectorAll('.icon-link');
+        anchorElements.forEach((icon) => {
+        icon.classList.toggle('dark-mode');});        
     }
 </script>
 </body>
