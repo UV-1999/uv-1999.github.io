@@ -37,6 +37,10 @@
         }
         a { text-decoration: none; }
 
+        hr.dark-mode {
+            color: #fff8e7;
+        }
+        
         h1 {
             font-size: 36px;
         }
@@ -295,6 +299,8 @@
         const head = document.querySelector('header');
         head.classList.toggle('dark-mode');
         const icon = document.querySelector('.icon-link');
+        icon.classList.toggle('dark-mode');
+        const h = document.querySelector('hr');
         icon.classList.toggle('dark-mode');
     }
 </script>
