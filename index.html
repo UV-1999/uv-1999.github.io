@@ -324,13 +324,10 @@
 
         const icon = document.querySelector('icon-link');
         icon.classList.toggle('dark-mode');
-
-        const body = document.body;
-        body.classList.toggle("dark-mode");
         
         const button = document.getElementById("darkmodebutton");
         
-        if (body.classList.contains("dark-mode")) {
+        if (button.innerText == "☀️") {
             button.innerText = "🌙";
       } else {
             button.innerText = "☀️";
