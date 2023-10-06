@@ -103,7 +103,7 @@
     <header>
         <h1 style="font-family:'computer modern';">Piyush Marmat</h1>
         <p style="font-family:'computer modern';">Student of Physics, who sometimes philosophizes.<p>
-        <button class="dark-mode-button" onclick="toggleDarkMode()"></button>
+        <button class="dark-mode-button" onclick="toggleDarkMode()">☀️</button>
     </header>
 
     <h2>Email and other places on the internet to find me</h2>
@@ -328,7 +328,11 @@
         const body = document.body;
         const button = document.querySelector(".dark-mode-button");
         body.classList.toggle("dark-mode");
-        button.textContent = body.classList.contains("dark-mode") ? "🌙" : "☀️";
+        if (body.classList.contains("dark-mode")) {
+            button.textContent = "🌙"; // Set moon emoji in dark mode
+      } else {
+            button.textContent = "☀️"; // Set sun emoji in light mode
+      }
     }
 </script>
 </body>
