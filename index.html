@@ -326,15 +326,14 @@
         const icon = document.querySelector('icon-link');
         icon.classList.toggle('dark-mode');
     }
+       
        const button = document.getElementById("darkmodebutton");
 
-button.addEventListener("click", function () {
-  if (button.textContent == "☀️") {
-      {button.textContent = "🌙";
-    }
-  } else {
-      {
-      button.textContent = "☀️";
+         button.addEventListener("click", function () {
+          if (button.textContent == "☀️") {
+            button.textContent = "🌙";
+        } else {
+            button.textContent = "☀️";
     }
 });
 </script>
