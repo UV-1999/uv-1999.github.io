@@ -328,11 +328,17 @@
     }
        const button = document.getElementById("darkmodebutton");
 
-        button.addEventListener("click", function () {
-          if (button.textContent == "☀️") {
-            button.textContent = "🌙";
-        } else {
-            button.textContent = "☀️";
+button.addEventListener("click", function () {
+  if (button.textContent == "☀️") {
+    // Change to moon emoji after a 1-second delay
+    setTimeout(function () {
+      button.textContent = "🌙";
+    }, 10); // 1000 milliseconds = 1 second
+  } else {
+    // Change to sun emoji after a 1-second delay
+    setTimeout(function () {
+      button.textContent = "☀️";
+    }, 10); // 1000 milliseconds = 1 second
   }
 });
 </script>
