@@ -325,11 +325,14 @@
         const icon = document.querySelector('icon-link');
         icon.classList.toggle('dark-mode');
 
+        const body = document.body;
+        body.classList.toggle("dark-mode");
+        
         // Get the button element
         const button = document.querySelector(".dark-mode-button");
 
         // Check if dark mode is active
-        if (element.classList.contains("dark-mode")) {
+        if (body.classList.contains("dark-mode")) {
         // Set the button text to the moon emoji
             button.textContent = "🌙";}
         else {
