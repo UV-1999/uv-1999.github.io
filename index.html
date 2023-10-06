@@ -103,7 +103,7 @@
     <header>
         <h1 style="font-family:'computer modern';">Piyush Marmat</h1>
         <p style="font-family:'computer modern';">Student of Physics, who sometimes philosophizes.<p>
-        <button class="dark-mode-button" onclick="toggleDarkMode()">☀️/🌙</button>
+        <button class="dark-mode-button" onclick="toggleDarkMode()">☀️</button>
     </header>
 
     <div>
@@ -324,6 +324,17 @@
 
         const icon = document.querySelector('icon-link');
         icon.classList.toggle('dark-mode');
+
+        // Get the button element
+        const button = document.querySelector(".dark-mode-button");
+
+        // Check if dark mode is active
+        if (element.classList.contains("dark-mode")) {
+        // Set the button text to the moon emoji
+            button.textContent = "🌙";}
+        else {
+    // Set the button text to the sun emoji
+            button.textContent = "☀️";}
     }
 </script>
 </body>
