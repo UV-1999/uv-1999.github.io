@@ -326,12 +326,14 @@
         icon.classList.toggle('dark-mode');
 
         const body = document.body;
-        const button = document.getElementById("darkmodebutton");
         body.classList.toggle("dark-mode");
+        
+        const button = document.getElementById("darkmodebutton");
+        
         if (body.classList.contains("dark-mode")) {
-            button.value = "🌙"; // Set moon emoji in dark mode
+            button.textContent = "🌙";
       } else {
-            button.value = "☀️"; // Set sun emoji in light mode
+            button.textContent = "☀️";
       }
     }
 </script>
