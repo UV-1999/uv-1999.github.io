@@ -159,7 +159,16 @@
         } else {
             button.textContent = "☀️";
     }
-});
+})
+         // Store the user's preference in local storage
+  const isDarkMode = body.classList.contains("dark-mode");
+  localStorage.setItem("dark-mode-preference", isDarkMode);
+}
+
+// Check for dark mode preference in local storage and apply it on page load
+const storedPreference = localStorage.getItem("dark-mode-preference");
+if (storedPreference === "true") {
+  document.body.classList.add("dark-mode");    ;
 </script>
 </body>
 </html>
