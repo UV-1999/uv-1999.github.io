@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="H2amq0i6-PVpe2Z3l3iAmv1DRXhBwhsocjpHOfYXEU8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+  name="description"
+  content="I am a student of physics and an aspiring astrophysicist.">
+    <title>Piyush Marmat</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
+    <link href='https://fonts.googleapis.com/css?family=Karma' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Karma';
+            background-color: #fff8e7;
+            margin: 0 ;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        body.dark-mode {
+            background-color: #5A5A5A;
+            color: #fff;
+        }
+        header {
+            background-color: #fff8e7;
+            color: #800020;
+            background-size: cover;
+            background-position: center;
+            height: auto; /* Make it full screen */
+            width: auto; /* Make it full screen */
+            padding:20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: bottom;
+            align-items: left;
+            text-align: left;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        header.dark-mode {
+            background-color: #5A5A5A;
+            color: #fff8e7;
+        }
+        a { 
+            text-decoration: none; 
+            color: #800020;
+            transition: background-color 0.3s, color 0.3s;
+          }
+
+        a.dark-mode {
+            color: #3ded97;
+        }
+        
+        hr {
+             border: 1px solid #800020;
+        }
+        hr.dark-mode {
+            border: 1px solid green;
+        }
+        
+        h1 {
+            font-size: 36px;
+        }
+        h2 {
+            font-size: 24px;
+        }
+        p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        .container {
+            max-width: 800px;
+            background-color: transparent;
+            margin: 0 auto;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .container.dark-mode {
+            background-color: black;
+            color: #fff8e7;
+        }
+        .dark-mode-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+            background-color: transparent;
+            color: #fff8e7;
+            border: none;
+            padding: 0px 0px;
+            cursor: pointer;
+        }
+        .icon-link {
+            color: #800020; /* Color for icon buttons */
+            font-size: 30px;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+
+        .icon-link.dark-mode {
+            color: #fff8e7;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul style="list-style: none;padding: 0;margin: 0;">
+                <strong>
+                <li style="font-size: 36px; display: inline; margin-right: 20px;"><a href="/">Piyush Marmat</a></li>
+                <li style="font-size: 20px; display: inline; margin-right: 20px;"><a href="/cv.html">CV</a></li>
+                <li style="font-size: 20px; display: inline; margin-right: 20px;"><a href="/research.html">Research</a></li>
+                <li style="font-size: 20px; display: inline; margin-right: 20px;"><a href="/extra.html">Extra</a></li>
+                </strong>
+            </ul>
+        </nav>
+
+        <button class="dark-mode-button" onclick="toggleDarkMode()" id="darkmodebutton">☀️</button>
+      
+    </header>
+
+   <div class = "container">
+      <h2>A Natural Extension of the Second Derivative Test</h2>
+
+    <p>Consider a real surface \( z = f(x, y) \), where \( x \) and \( y \) are independent variables, and \( z \) is the dependent variable. We can visualize it as a geographical field where there are hills and craters. In this analogy, \( f(x, y) = 0 \) represents a continuous level road in the field, similar to a contour line on a geographical map.</p>
+
+    <p>Stationary points in this context can be understood as locations on the field without any slope or gradient. They are analogous to the discontinuous points in roadways where the road levels out. These points represent potential peaks, valleys, or crossroads in the terrain.</p>
+
+    <p>Mathematically, stationary points correspond to locations where the gradient of the surface is zero. In other words, the first partial derivatives \( \frac{\partial f}{\partial x} \) and \( \frac{\partial f}{\partial y} \) are both zero at these points. This condition can be expressed as:</p>
+
+    <p>\[ \frac{\partial f}{\partial x} = 0 \quad \text{and} \quad \frac{\partial f}{\partial y} = 0 \]</p>
+
+    <p>Isolated points in our geographical analogy can be thought of as the tops of hills or the deepest points of craters. These points are surrounded by a higher or lower terrain, making them distinct and isolated in the landscape.</p>
+
+    <p>Nodes, on the other hand, are like crossroads surrounded by hills or craters. They represent points on the field where different paths intersect, and the terrain is relatively flat in the vicinity of these points.</p>
+
+    <p>Cusps are analogous to sharp blind turns in our road analogy. At these points, the terrain abruptly changes, creating a sudden and sharp transition.</p>
+
+    <p>Now, let's move back to the surface and discuss how we can use Taylor's approximation to approximate the function in the second order. Taylor's approximation allows us to represent \( f(x, y) \) in the vicinity of a point \( (x_0, y_0) \) as a polynomial expansion:</p>
+
+    <p>\[ f(x, y) \approx f(x_0, y_0) + \frac{\partial f}{\partial x}(x_0, y_0)(x - x_0) + \frac{\partial f}{\partial y}(x_0, y_0)(y - y_0) + \frac{1}{2} \left(\frac{\partial^2 f}{\partial x^2}(x_0, y_0)(x - x_0)^2 + \frac{\partial^2 f}{\partial y^2}(x_0, y_0)(y - y_0)^2\right) + \frac{\partial^2 f}{\partial x \partial y}(x_0, y_0)(x - x_0)(y - y_0) \]</p>
+
+    <p>At stationary points, both partial derivatives \( \frac{\partial f}{\partial x} \) and \( \frac{\partial f}{\partial y} \) are zero. This means that the first-order terms in the Taylor approximation vanish, and the function can be locally approximated as:</p>
+
+    <p>\[ f(x, y) \approx f(x_0, y_0) + \frac{1}{2} \left(\frac{\partial^2 f}{\partial x^2}(x_0, y_0)(x - x_0)^2 + \frac{\partial^2 f}{\partial y^2}(x_0, y_0)(y - y_0)^2\right) + \frac{\partial^2 f}{\partial x \partial y}(x_0, y_0)(x - x_0)(y - y_0) \]</p>
+
+    <p>Now, let's describe how the second derivative test works using the second partial derivatives:</p>
+
+    <p>At a stationary point \( (x_0, y_0) \), the nature of the point can be determined using the second partial derivatives. The second derivative test involves analyzing the signs of these second partial derivatives:</p>
+
+    <ul>
+        <li>If \( \frac{\partial^2 f}{\partial x^2}(x_0, y_0) \cdot \frac{\partial^2 f}{\partial y^2}(x_0, y_0) - \left(\frac{\partial^2 f}{\partial x \partial y}(x_0, y_0)\right)^2 &gt 0 \), then the point is an isolated point (hilltop or deepest point of the crater. In this case, there are two possibilities, either \(\frac{\partial^2 f}{\partial x^2}(x_0, y_0)\) or \(\frac{\partial^2 f}{\partial y^2}(x_0, y_0)\) is positive (surface is curving upward in both the \(x\) and \(y\) directions, resembling a valley.) or negative (surface is curving downward in both \(x\) and \(y\), resembling a peak or hilltop.)</li>
+      
+      <li>If \( \frac{\partial^2 f}{\partial x^2}(x_0, y_0) \cdot \frac{\partial^2 f}{\partial y^2}(x_0, y_0) - \left(\frac{\partial^2 f}{\partial x \partial y}(x_0, y_0)\right)^2 &lt 0 \), then the point is a saddle point. In this case, the surface is curving upward in one direction and downward in the other, resembling a pass or a saddle in the terrain.</li>
+      
+        <li>If \( \frac{\partial^2 f}{\partial x^2}(x_0, y_0) \cdot \frac{\partial^2 f}{\partial y^2}(x_0, y_0) - \left(\frac{\partial^2 f}{\partial x \partial y}(x_0, y_0)\right)^2 = 0 \), then the test fails to determine anything? No! There are still three ways this case can come up, First, all the second partial derivatives are zero (this is the true inclusive case). Second, either \( \frac{\partial^2 f}{\partial x^2}(x_0, y_0) \) or \(\frac{\partial^2 f}{\partial y^2}(x_0, y_0)\) is zero as well as \(\left(\frac{\partial^2 f}{\partial x \partial y}(x_0, y_0)\right)^2 = 0 \). In this second sub-case we see the sign of the non-zero double partial derivative, if negative, it is a maxima (represents a long hill), if positive, it is a minima (repesents a long valley). Finally third sub-case, where all these derivatives are non-zero, here we just see the sign of any of the double partial derivative and in the same way can know if there is a minima or maxima</li>
+      
+      
+    </ul>
+
+    <p>The second derivative test provides critical information about the nature of stationary points and helps us understand whether they correspond to local maxima, minima, or saddle points on the surface \( f(x, y) \).</p>
+
+    <p>Feel free to add your own extension to this article or further details as needed.</p>
+   </div>
+
+    
+    <hr>
+    <footer class="container">
+   
+    <p>&copy; 2023 Piyush Marmat. All rights reserved. <a style="text-align: right;" href="#">Back to top</a></p>
+   <p style="justify-content: center;
+        align-items: center;
+        text-align: left;">
+    <a href="mailto:pmarmat@ph.iitr.ac.in" class="icon-link" target="_blank"><i class="far fa-envelope"></i></a>
+    <a href="https://twitter.com/PiyushM41282215" class="icon-link" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://scholar.google.com/citations?user=yhwBklQAAAAJ&hl=en&oi=ao" class="icon-link" target="_blank"><i class="fab fa-google"></i></a>
+    <a href="https://www.linkedin.com/in/piyush-marmat-0ba913240/" class="icon-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.researchgate.net/profile/Piyush_Marmat" class="icon-link" target="_blank"><i class="fab fa-researchgate"></i></a>
+    <a href="https://github.com/UV-1999" class="icon-link" target="_blank"><i class="fab fa-github"></i></a>
+</p>
+</footer>
+  
+    
+   <script>
+  function toggleDarkMode() {
+        const element = document.querySelector('body');
+        element.classList.toggle('dark-mode');
+        
+        const head = document.querySelector('header');
+        head.classList.toggle('dark-mode');
+
+        const ae = document.querySelectorAll('a');
+        ae.forEach(anchor => {
+        anchor.classList.toggle('dark-mode');
+        });
+
+        const he = document.querySelectorAll('hr');
+        he.forEach(hline => {
+        hline.classList.toggle('dark-mode');
+        });
+
+        const icon = document.querySelector('icon-link');
+        icon.classList.toggle('dark-mode');
+    }
+       
+       const button = document.getElementById("darkmodebutton");
+
+         button.addEventListener("click", function () {
+          if (button.textContent == "☀️") {
+            button.textContent = "🌙";
+        } else {
+            button.textContent = "☀️";
+    }
+});
+
+// Check user's system preference for dark mode
+const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+// Apply dark mode based on system preference
+toggleDarkMode(prefersDarkMode);
+
+
+</script>
+</body>
+</html>
