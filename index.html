@@ -157,12 +157,14 @@ function toggleDarkMode(enable) {
     const icon = document.querySelector('icon-link');
 
     if (enable) {
+        button.textContent = "🌙";
         element.classList.add('dark-mode');
         head.classList.add('dark-mode');
         ae.forEach(anchor => anchor.classList.add('dark-mode'));
         he.forEach(hline => hline.classList.add('dark-mode'));
         icon.classList.add('dark-mode');
     } else {
+        button.textContent = "☀️";
         element.classList.remove('dark-mode');
         head.classList.remove('dark-mode');
         ae.forEach(anchor => anchor.classList.remove('dark-mode'));
@@ -182,12 +184,10 @@ const button = document.getElementById("darkmodebutton");
 button.addEventListener("click", function () {
     if (button.textContent == "☀️") {
         button.textContent = "🌙";
-    } else {
+    }
+    if (button.textContent == "🌙") {
         button.textContent = "☀️";
     }
-
-    // Toggle dark mode and update system preference when the button is clicked
-    toggleDarkMode(button.textContent === "🌙");
 });
 
 </script>
