@@ -148,14 +148,13 @@
 
        
    <script>
-       const button = document.getElementById("darkmodebutton");
+const button = document.getElementById("darkmodebutton");
 function toggleDarkMode(enable) {
     const element = document.querySelector('body');
     const head = document.querySelector('header');
     const ae = document.querySelectorAll('a');
     const he = document.querySelectorAll('hr');
     const icon = document.querySelector('icon-link');
-    
     
     if (enable) {
         button.textContent = "🌙";
@@ -173,25 +172,26 @@ function toggleDarkMode(enable) {
         icon.classList.remove('dark-mode');
     }
 }
+       
+// Check user's system preference for dark mode
+const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+// Apply dark mode based on system preference
+toggleDarkMode(prefersDarkMode);
 
 button.addEventListener("click", function () {
     if (button.textContent == "☀️") {
         button.textContent = "🌙";
+        toggleDarkMode(enable);
     }
     else {
         button.textContent = "☀️";
+        toggleDarkMode();
     }
 
-    toggleDarkMode(button.textContent === "🌙");
+    
     
     }) 
        
-// Check user's system preference for dark mode
-const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-// Apply dark mode based on system preference
-toggleDarkMode(prefersDarkMode);
-
 ;
 
 </script>
