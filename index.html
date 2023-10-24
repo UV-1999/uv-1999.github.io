@@ -158,17 +158,7 @@ function toggleDarkMode(enable) {
 
     const button = document.getElementById("darkmodebutton");
 
-    button.addEventListener("click", function () {
-    if (button.textContent == "☀️") {
-        button.textContent = "🌙";
-    }
-    else {
-        button.textContent = "☀️";
-    }
-
-    toggleDarkMode(button.textContent === "🌙");
     
-    })
     
     if (enable) {
         button.textContent = "🌙";
@@ -193,6 +183,17 @@ const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matche
 // Apply dark mode based on system preference
 toggleDarkMode(prefersDarkMode);
 
+button.addEventListener("click", function () {
+    if (button.textContent == "☀️") {
+        button.textContent = "🌙";
+    }
+    else {
+        button.textContent = "☀️";
+    }
+
+    toggleDarkMode(button.textContent === "🌙");
+    
+    }) 
 ;
 
 </script>
