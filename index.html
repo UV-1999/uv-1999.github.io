@@ -186,8 +186,10 @@ toggleDarkMode(prefersDarkMode);
 
 button.addEventListener("click", function () {
     if (button.textContent === "☀️") {
+        button.textContent = "🌙"
         toggleDarkMode(true); // Enable dark mode
-    } else {
+    } if (button.textContent === "🌙"){
+        button.textContent = "☀️"
         toggleDarkMode(false); // Disable dark mode
     }
 });
