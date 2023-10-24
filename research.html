@@ -101,12 +101,28 @@
         .icon-link.dark-mode {
             color: #fff8e7;
         }
-    
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            display: inline; /* Display list items horizontally */
+            margin-right: 20px; /* Add space between list items */
+        }
     </style>
 </head>
 <body>
     <header>
-        <a href = "/"> <h1  style="position: absolute; left: 20px;">Piyush Marmat</h1></a>
+        <nav>
+            <ul>
+                <li style="font-size: 36px;"><a href="/">Piyush Marmat</a></li>
+                <li style="font-size: 20px;"><a href="/cv.html">CV</a></li>
+                <li style="font-size: 20px;"><a href="#">Research</a></li>
+                <li style="font-size: 20px;"><a href="/extra.html">Extra</a></li>
+            </ul>
+        </nav>
 
         <button class="dark-mode-button" onclick="toggleDarkMode()" id="darkmodebutton">☀️</button>
       
