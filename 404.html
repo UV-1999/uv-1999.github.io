@@ -118,8 +118,7 @@
 
     
    <script>
-       
-    function toggleDarkMode() {
+         function toggleDarkMode() {
         const element = document.querySelector('body');
         element.classList.toggle('dark-mode');
         
@@ -149,6 +148,14 @@
             button.textContent = "☀️";
     }
 });
+
+// Check user's system preference for dark mode
+const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+// Apply dark mode based on system preference
+toggleDarkMode(prefersDarkMode);
+
+
 </script>
 </body>
 </html>
