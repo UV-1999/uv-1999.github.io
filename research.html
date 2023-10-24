@@ -29,8 +29,8 @@
             color: #800020;
             background-size: cover;
             background-position: center;
-            height: 10vh; /* Make it full screen */
-            width: 100vw; /* Make it full screen */
+            height: auto; /* Make it full screen */
+            width: auto; /* Make it full screen */
             display: flex;
             flex-direction: column;
             justify-content: bottom;
@@ -101,26 +101,17 @@
         .icon-link.dark-mode {
             color: #fff8e7;
         }
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        li {
-            display: inline; /* Display list items horizontally */
-            margin-right: 20px; /* Add space between list items */
-        }
+        
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li style="font-size: 36px;"><a href="/">Piyush Marmat</a></li>
-                <li style="font-size: 20px;"><a href="/cv.html">CV</a></li>
-                <li style="font-size: 20px;"><a href="#">Research</a></li>
-                <li style="font-size: 20px;"><a href="/extra.html">Extra</a></li>
+            <ul style="list-style: none;padding: 0;margin: 0;">
+                <li style="font-size: 36px; display: inline; margin-right: 20px;"><a href="/">Piyush Marmat</a></li>
+                <li style="font-size: 20px; display: inline; margin-right: 20px;"><a href="/cv.html">CV</a></li>
+                <li style="font-size: 20px; display: inline; margin-right: 20px;"><a href="/research.html">Research</a></li>
+                <li style="font-size: 20px; display: inline; margin-right: 20px;"><a href="/extra.html">Extra</a></li>
             </ul>
         </nav>
 
