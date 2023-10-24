@@ -149,50 +149,49 @@
        
    <script>
 const button = document.getElementById("darkmodebutton");
+
 function toggleDarkMode(enable) {
     const element = document.querySelector('body');
     const head = document.querySelector('header');
     const ae = document.querySelectorAll('a');
     const he = document.querySelectorAll('hr');
-    const icon = document.querySelector('icon-link');
-    
+    const icon = document.querySelector('.icon-link'); // Fixed selector to use a class
+
     if (enable) {
         button.textContent = "🌙";
         element.classList.add('dark-mode');
         head.classList.add('dark-mode');
         ae.forEach(anchor => anchor.classList.add('dark-mode'));
         he.forEach(hline => hline.classList.add('dark-mode'));
-        icon.classList.add('dark-mode');
+        if (icon) {
+            icon.classList.add('dark-mode'); // Check if icon exists before adding the class
+        }
     } else {
         button.textContent = "☀️";
         element.classList.remove('dark-mode');
         head.classList.remove('dark-mode');
         ae.forEach(anchor => anchor.classList.remove('dark-mode'));
         he.forEach(hline => hline.classList.remove('dark-mode'));
-        icon.classList.remove('dark-mode');
+        if (icon) {
+            icon.classList.remove('dark-mode'); // Check if icon exists before removing the class
+        }
     }
 }
-       
+
 // Check user's system preference for dark mode
 const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
 // Apply dark mode based on system preference
 toggleDarkMode(prefersDarkMode);
 
 button.addEventListener("click", function () {
-    if (button.textContent == "☀️") {
-        button.textContent = "🌙";
-        toggleDarkMode(enable);
+    if (button.textContent === "☀️") {
+        toggleDarkMode(true); // Enable dark mode
+    } else {
+        toggleDarkMode(false); // Disable dark mode
     }
-    else {
-        button.textContent = "☀️";
-        toggleDarkMode();
-    }
+});
 
-    
-    
-    }) 
-       
-;
 
 </script>
 </body>
