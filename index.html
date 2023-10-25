@@ -168,12 +168,23 @@
     button.addEventListener("click", function () {
         if (button.textContent == "☀️") {
             button.textContent = "🌙";
+            localStorage.setItem('preferred-theme', 'dark');
             
             
         } else if  (button.textContent == "🌙") {
             button.textContent = "☀️";
+            localStorage.setItem('preferred-theme', 'light');
             
         }    });
+    const userPreference = localStorage.getItem('preferred-theme')
+    if (userPreference === 'dark' || (!userPreference && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        toggleDarkMode(true);
+        button.textContent = "🌙"; // Enable dark mode
+        
+      } else {
+        toggleDarkMode(false); // Enable light mode
+        button.textContent = "☀️";
+    }
 </script>
 </body>
 </html>
