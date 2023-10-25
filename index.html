@@ -199,7 +199,7 @@
         toggleDarkMode();
         button.textContent = "🌙"; // Enable dark mode
         
-      } else {
+      } else if (userPreference === 'light'){
         toggleLightMode(); // Enable light mode
         button.textContent = "☀️";
     }
