@@ -147,12 +147,32 @@
   
 <script>
     const button = document.getElementById("darkmodebutton");
-
+    
+    function toggleDarkMode() {
+        const element = document.querySelector('body');
+        element.classList.toggle('dark-mode');
+        const head = document.querySelector('header');
+        head.classList.toggle('dark-mode');
+        const ae = document.querySelectorAll('a');
+        ae.forEach(anchor => {
+        anchor.classList.toggle('dark-mode');
+        });
+        const he = document.querySelectorAll('hr');
+        he.forEach(hline => {
+        hline.classList.toggle('dark-mode');
+        });
+        const icon = document.querySelector('icon-link');
+        icon.classList.toggle('dark-mode');
+    }
+    
     button.addEventListener("click", function () {
         if (button.textContent == "☀️") {
             button.textContent = "🌙";
+            toggleDarkMode(true);
+            
         } else {
             button.textContent = "☀️";
+            toggleDarkMode(false);
         }    });
 </script>
 </body>
