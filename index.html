@@ -177,7 +177,7 @@
             
         }    });
     const userPreference = localStorage.getItem('preferred-theme')
-    if (userPreference === 'dark' || (!userPreference && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    if (userPreference === 'dark') {
         toggleDarkMode(true);
         button.textContent = "🌙"; // Enable dark mode
         
