@@ -178,11 +178,11 @@
         }    });
     const userPreference = localStorage.getItem('preferred-theme')
     if (userPreference === 'dark') {
-        toggleDarkMode(true);
+        toggleDarkMode();
         button.textContent = "🌙"; // Enable dark mode
         
       } else {
-        toggleDarkMode(false); // Enable light mode
+         // Enable light mode
         button.textContent = "☀️";
     }
 </script>
