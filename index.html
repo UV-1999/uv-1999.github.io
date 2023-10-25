@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+l<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -198,10 +198,12 @@
     if (userPreference === 'dark') {
         
         button.textContent = "🌙"; // Enable dark mode
-        
+        toggleDarkMode();
       } else if (userPreference === 'light'){
         
         button.textContent = "☀️";
+
+        toggleLightMode();
     }
 </script>
 </body>
