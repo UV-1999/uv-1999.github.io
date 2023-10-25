@@ -145,63 +145,8 @@
    </p>
 </footer>
   
-
-       
-   <script>function toggleDarkMode() {
-    const body = document.body;
-    const header = document.querySelector('header');
-    const anchors = document.querySelectorAll('a');
-    const hrLines = document.querySelectorAll('hr');
-    const iconLink = document.querySelector('.icon-link'); // You should use the correct selector
-
-    body.classList.toggle('dark-mode');
-    header.classList.toggle('dark-mode');
-
-    anchors.forEach(anchor => {
-        anchor.classList.toggle('dark-mode');
-    });
-
-    hrLines.forEach(hrLine => {
-        hrLine.classList.toggle('dark-mode');
-    });
-
-    iconLink.classList.toggle('dark-mode');
-}
-
-const button = document.getElementById("darkmodebutton");
-
-button.addEventListener("click", function () {
-    toggleDarkMode(); // Toggle the dark mode
-
-    if (button.textContent === "🌙") {
-        button.textContent = "☀️";
-        localStorage.setItem('preferred-theme', 'light');
-    } else {
-        button.textContent = "🌙";
-        localStorage.setItem('preferred-theme', 'dark');
-    }
-});
-
-// Function to set the theme based on user preference
-function setThemeFromStorage() {
-    const userPreference = localStorage.getItem('preferred-theme');
-    if (userPreference === 'dark') {
-        toggleDarkMode(); // Set the dark mode
-    }
-}
-
-// Check user's system preference for dark mode
-const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-// Apply dark mode based on system preference
-if (prefersDarkMode) {
-    toggleDarkMode();
-}
-
-// Set the theme based on user preference from local storage
-setThemeFromStorage();
-
-   
+<script>
+    
 </script>
 </body>
 </html>
