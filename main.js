@@ -15,6 +15,11 @@
         });
         const icon = document.querySelector('icon-link');
         icon.classList.add('dark-mode');
+        fetch('footer.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('footer-placeholder').innerHTML = html;
+        });
     }
 
     function toggleLightMode() {
@@ -32,6 +37,11 @@
         });
         const icon = document.querySelector('icon-link');
         icon.classList.remove('dark-mode');
+        fetch('footer.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('footer-placeholder').innerHTML = html;
+        });
     }
     
     button.addEventListener("click", function () {
