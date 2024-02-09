@@ -15,6 +15,9 @@
         });
         const icon = document.querySelector('icon-link');
         icon.classList.add('dark-mode');
+        (async () => {
+            document.getElementById('footer-placeholder').innerHTML = await (await fetch('dark-footer.html')).text();
+        })();
     }
 
     function toggleLightMode() {
@@ -32,6 +35,9 @@
         });
         const icon = document.querySelector('icon-link');
         icon.classList.remove('dark-mode');
+        (async () => {
+            document.getElementById('footer-placeholder').innerHTML = await (await fetch('footer.html')).text();
+        })();
     }
     
     button.addEventListener("click", function () {
