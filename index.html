@@ -59,11 +59,12 @@
         });
 
     function applyTheme() {
-        const mode = localStorage.getItem('mode');
+        const mode = localStorage.getItem('preferred-theme');
         const footer = document.getElementById('footer-container');
         if (mode === 'dark') {
             footer.classList.add('dark-mode'); // Add dark mode class
-        } else {
+        } 
+        if (mode === 'light') {
             footer.classList.remove('dark-mode'); // Remove dark mode class
         }
     }
