@@ -1,15 +1,15 @@
-   body {
+body {
             font-family: 'Karma';
             background-color: #fff8e7;
             margin: 0 ;
             padding: 0;
             transition: background-color 0.3s, color 0.3s;
         }
-        body.dark-mode {
+body.dark-mode {
             background-color: #000000;
             color: #fff;
         }
-        header {
+header {
             background-color: #fff8e7;
             color: #800020;
             background-size: cover;
@@ -24,49 +24,49 @@
             text-align: left;
             transition: background-color 0.3s, color 0.3s;
         }
-        header.dark-mode {
+header.dark-mode {
             background-color: #000000;
             color: #fff8e7;
         }
-        a { 
+a { 
             text-decoration: none; 
             color: #800020;
             transition: background-color 0.3s, color 0.3s;
           }
 
-        a.dark-mode {
+a.dark-mode {
             color: #3ded97;
         }
         
-        hr {
+hr {
              border: 1px solid #800020;
         }
-        hr.dark-mode {
+hr.dark-mode {
             border: 1px solid green;
         }
         
-        h1 {
+h1 {
             font-size: 36px;
         }
-        h2 {
+h2 {
             font-size: 24px;
         }
-        p {
+p {
             font-size: 18px;
             margin: 20px 0;
         }
-        .container {
+.container {
             max-width: 800px;
             background-color: transparent;
             margin: 0 auto;
             padding: 20px;
             transition: background-color 0.3s, color 0.3s;
         }
-        .container.dark-mode {
+.container.dark-mode {
             background-color: black;
             color: #fff8e7;
         }
-        .dark-mode-button {
+.dark-mode-button {
             position: fixed;
             top: 20px;
             right: 20px;
@@ -77,13 +77,13 @@
             padding: 0px 0px;
             cursor: pointer;
         }
-        .icon-link {
+.icon-link {
             color: #800020; /* Color for icon buttons */
             font-size: 30px;
             margin-right: 10px;
             text-decoration: none;
         }
 
-        .icon-link.dark-mode {
+.icon-link.dark-mode {
             color: #fff8e7;
         }
