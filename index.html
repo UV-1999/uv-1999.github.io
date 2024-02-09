@@ -49,7 +49,9 @@
    
 <div id="footer-placeholder"></div>
     <script>
-       document.getElementById('footer-placeholder').innerHTML = "footer.html";
+       (async () => {
+            document.getElementById('footer-placeholder').innerHTML = await (await fetch('footer.html')).text();
+        })();
     </script>
     <script type="text/javascript" src="main.js"></script>
 </body>
