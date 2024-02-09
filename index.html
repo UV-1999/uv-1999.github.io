@@ -47,18 +47,28 @@
     
        <hr>
 
-    <footer class="container">
+   
 <div id="footer-placeholder"></div>
-    </footer>
-    <script>
-        // Fetch and include footer HTML
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('footer-placeholder').innerHTML = html;
-            });
-    </script>
-    <script type="text/javascript" src="main.js"></script>
+<script>
+    // Fetch and include footer HTML
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('footer-placeholder').innerHTML = html;
+            applyTheme(); // Apply theme after footer is loaded
+        });
+
+    function applyTheme() {
+        const mode = localStorage.getItem('mode');
+        const footer = document.getElementById('footer-container');
+        if (mode === 'dark') {
+            footer.classList.add('dark-mode'); // Add dark mode class
+        } else {
+            footer.classList.remove('dark-mode'); // Remove dark mode class
+        }
+    }
+</script>
+<script type="text/javascript" src="main.js"></script>
       
 </body>
 </html>
