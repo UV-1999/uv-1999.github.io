@@ -31,7 +31,7 @@
             background-size: cover;
             background-position: center;
             height: auto; /* Make it full screen */
-            max-width: 800px;
+            width: auto;
             display: flex;
             flex-direction: column;
             justify-content: bottom;
@@ -85,6 +85,18 @@
             background-color: black;
             color: #fff8e7;
         }
+        
+        .contain-header {
+            max-width: 800px;
+            background-color: transparent;
+            margin: 0 auto;
+            padding: 20px;
+            transition: background-color 0s, color 0s;
+        }
+        .contain-header.dark-mode {
+            background-color: black;
+            color: #fff8e7;
+        
         .dark-mode-button {
             font-family: 'Karma';
             position: fixed;
@@ -119,6 +131,7 @@
   </head>
 <body>
     <header>
+            <div class = "contain-header">
             <strong>
                 <ul style="list-style: none;padding: 0;margin: 0;">
                     <li style="font-size: 36px; display: inline; margin-right: 20px;"><a href="/">Piyush Marmat</a>
@@ -128,6 +141,7 @@
                     </li>
                 </ul>
             </strong>
+            </div>
         <button class="dark-mode-button" id="darkmodebutton">☀️</button>
     </header>
 
