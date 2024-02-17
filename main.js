@@ -16,6 +16,9 @@
         });
         const icon = document.querySelector('icon-link');
         icon.classList.add('dark-mode');
+
+        const footer = document.querySelector('#footer-placeholder');
+        footer.classList.add('dark-mode');
         
     }
 
@@ -34,6 +37,9 @@
         });
         const icon = document.querySelector('icon-link');
         icon.classList.remove('dark-mode');
+
+        const footer = document.querySelector('#footer-placeholder');
+        footer.classList.remove('dark-mode');
         
     }
     
