@@ -12,15 +12,12 @@ body.dark-mode {
 header {
             background-color: #fff8e7;
             color: #800020;
-            background-size: cover;
-            background-position: center;
-            height: auto; /* Make it full screen */
-            width: auto; /* Make it full screen */
+            height: 600px; /* Make it full screen */
             max-width: 800px;
             padding:20px 20px 0px 20px;
             display: flex;
             flex-direction: column;
-            justify-content: bottom;
+            justify-content: flex-end;
             align-items: center;
             text-align: left;
             transition: background-color 0.3s, color 0.3s;
