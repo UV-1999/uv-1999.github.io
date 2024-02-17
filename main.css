@@ -10,7 +10,7 @@ body.dark-mode {
             color: #fff;
         }
 header {
-            background-color: #ff0000;
+            background-color: #fff8e7;
             color: #800020;
             background-size: cover;
             background-position: center;
@@ -20,7 +20,7 @@ header {
             display: flex;
             flex-direction: column;
             justify-content: bottom;
-            align-items: left;
+            align-items: center;
             text-align: left;
             transition: background-color 0.3s, color 0.3s;
         }
