@@ -12,7 +12,7 @@ body.dark-mode {
 header {
             background-color: #fff8e7;
             color: #800020;
-            height: 200px; /* Make it full screen */
+            height: 50px; /* Make it full screen */
             max-width: 800px;
             padding:20px 20px 0px 20px;
             display: flex;
