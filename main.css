@@ -16,7 +16,7 @@ header {
             background-position: center;
             height: auto; /* Make it full screen */
             width: auto; /* Make it full screen */
-            padding:20px, 20px, 0px, 20px;
+            padding:20px 20px 0px 20px;
             display: flex;
             flex-direction: column;
             justify-content: bottom;
@@ -33,6 +33,10 @@ a {
             color: #800020;
             transition: background-color 0.3s, color 0.3s;
           }
+
+a:hover {
+             text-decoration: underline;
+        }
 
 a.dark-mode {
             color: #3ded97;
