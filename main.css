@@ -3,6 +3,7 @@ body {
             background-color: #fff8e7;
             margin: 0 ;
             padding: 0;
+            overflow: hidden; /* Hide scrollbars */
             transition: background-color 0.3s, color 0.3s;
         }
 body.dark-mode {
