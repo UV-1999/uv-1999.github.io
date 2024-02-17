@@ -53,7 +53,7 @@
         fetch('footer.html')
         .then(response => response.text())
         .then(html => {
-            document.getElementById('footer-placeholder').innerHTML = html;
+            document.getElementById('footer-placeholder').outerHTML = html;
         });
     </script>
 <script type="text/javascript" src="main.js"></script>
