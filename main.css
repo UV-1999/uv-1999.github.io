@@ -11,8 +11,6 @@ body.dark-mode {
             color: #fff;
         }
 header {
-            display: flex;
-            justify-content: space-between;
             background-color: #fff8e7;
             color: #800020;
             height: auto;
