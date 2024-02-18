@@ -16,6 +16,7 @@ header {
             height: auto;
             max-width: 800px;
             margin: auto;
+            padding:20px 20px 0px 20px;
             transition: background-color 0.3s, color 0.3s;
         }
 
