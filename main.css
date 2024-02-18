@@ -6,33 +6,19 @@ body {
             transition: background-color 0.3s, color 0.3s;
         }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-body::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-
 body.dark-mode {
             background-color: #000000;
             color: #fff;
         }
 header {
-            background-color: #fff8e7;
+            background-color: #ff7000;
             color: #800020;
-            height: 50px; /* Make it full screen */
+            height: auto;
             max-width: 800px;
-            margin: 0 auto;
+            margin: auto;
             padding:20px 20px 0px 20px;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
-            align-items: left;
-            text-align: left;
             transition: background-color 0.3s, color 0.3s;
         }
 header.dark-mode {
