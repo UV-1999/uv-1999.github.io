@@ -98,3 +98,19 @@ p {
 .icon-link.dark-mode {
             color: #fff8e7;
         }
+
+.circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; /* This creates the circular shape */
+            overflow: hidden; /* This ensures the image stays within the circle */
+            float: left; /* This maintains the float behavior */
+            margin-right: 10px; /* Add margin for spacing */
+            margin-bottom: 10px; /* Add margin for spacing */
+        }
+
+.circle img {
+            width: 100%; /* Ensures the image fills the circle */
+            height: 100%; /* Ensures the image fills the circle */
+            object-fit: cover; /* This maintains aspect ratio and covers the entire circle */
+        }
