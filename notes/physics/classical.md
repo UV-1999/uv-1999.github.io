@@ -41,9 +41,9 @@ $$\mathbf{a} = (\ddot{r} - r \dot{\theta}^2) \hat{\mathbf{r}} + (r \ddot{\theta}
 
 Substituting $\mathbf{F} = f(r) \hat{\mathbf{r}}$ and $\mathbf{a}$ into Newton's second law, we get two separate equations:
 
-$$ m (\ddot{r} - r \dot{\theta}^2) = f(r), \label{radial_eq}$$
+$$ m (\ddot{r} - r \dot{\theta}^2) = f(r), $$
 
-$$m (r \ddot{\theta} + 2 \dot{r} \dot{\theta}) = 0. \label{transverse_eq}$$
+$$m (r \ddot{\theta} + 2 \dot{r} \dot{\theta}) = 0. $$
 
 Above equation  can be simplified using the conservation of angular momentum. The angular momentum $L$ is:
 
@@ -55,7 +55,7 @@ $$r^2 \dot{\theta} = \text{constant} = h,$$
 
 $$\dot{\theta} = \frac{h}{r^2}.$$
 
-Substituting into the radial equation \eqref{radial_eq}, we get:
+Substituting into the radial equation, we get:
 
 $$ m \left( \ddot{r} - \frac{h^2}{r^3} \right) = f(r).$$
 
