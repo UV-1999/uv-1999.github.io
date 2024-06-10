@@ -54,6 +54,7 @@ $$ H = \frac{\partial \mathcal{L}}{\partial \dot{q}} {\dot{q}} - \mathcal{L} $$
 
 This is the definition of Hamiltonian and we can get the following relations:
 
+| Column 1                                                              | Column 2                                                                  |
 |-----------------------------------------------------------------------|---------------------------------------------------------------------------|
 |   \( \frac{\partial \mathcal{L}}{\partial {x}} = \frac{d}{dt} p \)    |  \( \frac{\partial \mathcal{L}}{\partial {p}} =  \frac{d}{dt} x \)        |
 |   \( \frac{\partial \mathcal{L}}{\partial {t}} = - \frac{d}{dt} H \)  |  \( \frac{\partial \mathcal{L}}{\partial {\theta}} =  \frac{d}{dt} L \)   |
