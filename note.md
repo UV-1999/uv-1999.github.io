@@ -19,8 +19,7 @@ Information is the pattern or the lack of randomness in data.
 One can say that the extent to which data is informative to someone depends on the extent to which it is unexpected by that person.
 More unexpected, more information in data. The amount of information contained in a data stream can be characterized by its Shannon entropy.
 
-### What is Data?
-Thoughts obtained/recorded through experience/experiments are data.
+**What is Data?** Thoughts obtained/recorded through experience/experiments are data.
 
 Truths are propositions that are true. [What is true?]
 
