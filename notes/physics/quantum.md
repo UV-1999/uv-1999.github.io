@@ -52,13 +52,26 @@ $$ \frac{\partial \mathcal{L}}{\partial {t}} = - \frac{d}{dt} H $$
 
 $$ H = \frac{\partial \mathcal{L}}{\partial \dot{q}} {\dot{q}} - \mathcal{L} $$
 
-This is the definition of Hamiltonian.
+This is the definition of Hamiltonian and we can get the following relations:
+
+|   $$ \frac{\partial \mathcal{L}}{\partial {x}} = \frac{d}{dt} p $$    |  $$ \frac{\partial \mathcal{L}}{\partial {p}} =  \frac{d}{dt} x $$   |
+|   $$ \frac{\partial \mathcal{L}}{\partial {t}} = - \frac{d}{dt} H $$  |  $$ \frac{\partial \mathcal{L}}{\partial {\theta}} =  \frac{d}{dt} L $$   |
+
+This hints that the changes in momentum of the system corresponds to how the Lagrangian depends on the coordianate.
+Also that the changes in coordinate of the system corresponds to how the Lagrangian depends on the momentum.
+The most important is how the changes in energy correponds to how the lagrangian depends on the time.
+
+The Lagrangian of a system can be intuitively understood as the totatlity of physical laws that the system follows.
+
+If the laws don't depend on time then we get conservation of energy.
+If the laws don't depend on a particular coordiante (often called the symmetric or cyclic coordinate) then we get conservation of momentum corresponding to that coordinate.
+If the laws don't depend on a momentum then we get uniform motion along the corresponding coordinate.
 
 ***
 
 In Quantum physics, quantities are not always be single-valued but evolve discreetly in a probabilistic nature. How to model these quantum properties?
 
-
+From the above review of classical mechanics, we see that having a mathematical object that encompasses all physical properties and laws of the system is quite convenient and how the time evolution of such mathematical object can be obtained through some known functionals hints us to generalise this for quantum physics.
 
 We need a mathematical object that can take the values of the quantity, and since each value has a probability, the mathematical object must tell us the probability of each of those values.
 
