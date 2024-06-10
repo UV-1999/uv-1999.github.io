@@ -1,7 +1,7 @@
 # Philosophy
 My unwarranted notes on whatever I write here.
 
-> “Tiger got to hunt, bird got to fly; Man got to sit and wonder 'why, why, why?'
+> “Tiger got to hunt, bird got to fly; Man got to sit and wonder 'why, why, why?' <br>
 > Tiger got to sleep, bird got to land; Man got to tell himself he understand.”
 
 Philosophy is the pursuit of **wisdom**. Wisdom is **knowledge** applied to make **good** judgements.
