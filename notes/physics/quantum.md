@@ -137,5 +137,5 @@ Thus:
 
 $$ |\lambda|^2 = 1 \Rightarrow |\lambda| = 1 $$
 
-Since the probability of the state vector $\langle psi \rangle$ to collapse in the eigenstate say $\langle phi \rangle$ is {|$\langle phi | psi \rangle|}^2$.
+Since the probability of the state vector $\langle \psi \rangle$ to collapse in the eigenstate say $\langle \phi \rangle$ is ${|\langle \phi | \psi \rangle|}^2$.
 Therefore the application of an unitary operator on these states will conserve probability since it conserves the innner product.
