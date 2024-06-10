@@ -116,29 +116,22 @@ $$ \langle \lambda | U |\lambda\rangle = \langle \lambda | \lambda |\lambda\rang
 
 $$ \langle \lambda | U^\dagger U |\lambda\rangle = \langle \lambda | I |\lambda\rangle$$
 
-Since \( \langle \lambda | I |\lambda\rangle = \langle \lambda | \lambda \rangle = 1 \), we have:
-\[
-\langle \lambda | U^\dagger U |\lambda\rangle = 1
-\]
+Since $ \langle \lambda | I |\lambda\rangle = \langle \lambda | \lambda \rangle = 1 $, we have:
 
-But \( U |\lambda\rangle = \lambda |\lambda\rangle \), so:
-\[
-\langle \lambda | U^\dagger (\lambda |\lambda\rangle) = \lambda \langle \lambda | U^\dagger |\lambda\rangle
-\]
+$$ \langle \lambda | U^\dagger U |\lambda\rangle = 1 $$
 
-Since \( U^\dagger |\lambda\rangle = \overline{\lambda} U^\dagger |\lambda\rangle \), where \( \overline{\lambda} \) is the complex conjugate of \( \lambda \):
-\[
-\lambda \langle \lambda | U^\dagger |\lambda\rangle = \lambda \overline{\lambda} \langle \lambda | \lambda \rangle
-\]
+But $U |\lambda\rangle = \lambda |\lambda\rangle$, so:
 
-Since \( \langle \lambda | \lambda \rangle = 1 \):
-\[
-\lambda \overline{\lambda} = 1
-\]
+$$ \langle \lambda | U^\dagger (\lambda |\lambda\rangle) = \lambda \langle \lambda | U^\dagger |\lambda\rangle $$
+
+Since $U^\dagger |\lambda\rangle = \overline{\lambda} U^\dagger |\lambda\rangle$, where $\overline{\lambda}$ is the complex conjugate of $\lambda$:
+
+$$ \lambda \langle \lambda | U^\dagger |\lambda\rangle = \lambda \overline{\lambda} \langle \lambda | \lambda \rangle$$
+
+Since $\langle \lambda | \lambda \rangle = 1$:
+
+$$\lambda \overline{\lambda} = 1$$
 
 Thus:
-\[
-|\lambda|^2 = 1 \Rightarrow |\lambda| = 1
-\]
 
-This proves that the eigenvalues of a unitary operator \( U \) have unit magnitude.
+$$ |\lambda|^2 = 1 \Rightarrow |\lambda| = 1$$
