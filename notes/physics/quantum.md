@@ -19,15 +19,15 @@ The physical properties can be shown as matrices (linear operators). When acted 
 
 That is why we use linear algebra for quantum mechanics.
 
-$$ \vert \psi \rangle = \sum_{i} c_{i| \vert \phi_i \rangle $$
+$$ \vert \psi \rangle = \sum_{i} c_{i} \vert \phi_i \rangle $$
 
 These sums can be allowed to be infinite. But consider position as a property. It is continuous so showing it as a discrete sum is not efficient. We may replace the sum with an integral.
 
 We can say that state vector is the integral:
 
-$$ \int dx c(x) \vert x \ranlge $$
+$$ \int dx c(x) \vert x \rangle $$
 
-$c(x)$ is a function for each position state $\vert x \ranlge$ so that we can use it to find the probability.
+$c(x)$ is a function for each position state $\vert x \rangle$ so that we can use it to find the probability.
 
 It is mathematically possible that adding an infinite number of vectors together the sum may come out as not an element of the vector space. 
 
