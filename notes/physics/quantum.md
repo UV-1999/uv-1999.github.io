@@ -43,6 +43,7 @@ $$ \frac{d \mathcal{L}}{d {t}} =  \frac{\partial \mathcal{L}}{\partial {t}} + \f
 $$ \frac{d \mathcal{L}}{d {t}} =  \frac{\partial \mathcal{L}}{\partial {t}} + \frac{d}{dt} \left( \frac{\partial \mathcal{L}}{\partial \dot{q}} \right){\dot{q}} + \frac{\partial \mathcal{L}}{\partial \dot{q}} {\ddot{q}}$$
 
 We can find that:
+
 $$\frac{d}{dt}\left(\frac{\partial \mathcal{L}}{\partial \dot{q}} {\dot{q}}\right) = \frac{d}{dt}\left(\frac{\partial \mathcal{L}}{\partial \dot{q}}\right){\dot{q}} + \frac{\partial \mathcal{L}}{\partial \dot{q}} {\ddot{q}}$$
 
 Hence
