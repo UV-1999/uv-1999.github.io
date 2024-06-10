@@ -1,3 +1,8 @@
+<head>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
 # Quantum Physics
 
 ## Mathematical Framework of Quantum Mechanics
@@ -9,7 +14,6 @@ Hence it is reasonable to model them as continuous functions.
 
 In the Lagrangian formulation of classical mechanics, all the physical knowledge about the system is encoded in this Lagrangian functional. 
 
-\[\mathcal{L} = \mathcal{L}(t, q(t), \dot{q(t)})\]
 $$\mathcal{L} = \mathcal{L}(t, q(t), \dot{q(t)}) $$
 
 The Euler-Lagrange equation: 
