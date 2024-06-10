@@ -7,7 +7,7 @@ In classical physics, physical quantities have following important features:
 3. Evolve continuously
 Hence it is reasonable to model them as continuous functions.
 
-In the Lagrangian formulation of classical mechanics, all the physical knowledge about the system is incoded in this Lagrangian functional. 
+In the Lagrangian formulation of classical mechanics, all the physical knowledge about the system is encoded in this Lagrangian functional. 
 
 $$\mathcal{L} = \mathcal{L}(t, q(t), \dot{q(t)}) $$
 
