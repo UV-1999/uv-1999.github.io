@@ -52,3 +52,53 @@ A classic example is the theory of general relativity. One of the logical conseq
 In the famous eclipse experiment of 1919, the positions of stars near the sun were carefully measured while the sun was eclipsed by the moon. Those measurements were compared with the positions of those same stars when the sun was in another part of the sky. And it was found that their positions had changed: the gravitational field of the sun had deflected the light from the stars. In other words, the theory of general relativity predicted that light will be affected by gravity. And if that prediction had been proven false, that would have meant that the theory could not have been completely true. However, proving the truth of the prediction was not enough by itself to prove the truth of the theory.
 
 That’s why theories are tested as much as possible by logically deriving many different predictions from them, and then using observation or experiment to determine whether those predictions are true. A single failed prediction would be enough to prove the theory false. Therefore, the more true predictions the theory produces, the more likely it is that the theory itself is true. So that is the primary way that empirical sciences are based on logic. They use the laws of logical deduction (which include mathematics) to generate predictions, based on the hypotheses of their theories. It’s then up to the observers and experimentalists to determine whether those predictions are true.
+
+# Scientific Measurements
+
+A scientific experiment can be understood as a question which science poses to Nature, and a measurement is the recording of Nature's answer.
+
+Measurements can be made of a property of a system considered in the study. Instruments may be required to make some measurements. A measurement is the central idea in experiments and has two parts, a number and a unit.
+Natural units - when one or more fundamental physical constants are assigned to be unity.
+Planck units - c, ħ, G, k_{B} = 1
+Atomic units - e, me, ħ, (ke = 1/4πε0) = 1
+Geometrized units - c = G = 1
+Gaussian Units = http://www.pgccphy.net/ref/gaussian-conv.pdf
+
+What IS a measurement?
+It is a property of a system, a system is something we define ourselves, it is not necessary that we have clear cut boundaries of the system. Properties are constructed predicates that conforms to reality subject to our experience aided by our senses. We cannot sense electric charge, but it is a physical property because it comes with a theory that works. Since we can only have a comparative description of these properties, we create reference values which are called units. 1 Coulomb charge may not be something real ontologically. It is just a computable property of the system that we compute or in an informal way, measure, by some instruments. The instrument works by an effect that makes us feel sensible experiences, like seeing two gold leaf repelling each other by some amount. So even if charges are a part of the absolute objective reality still all we can do is see its effects only. The effects we can observe and sense by some analysis. These effects are the act of making a measurement. Such and other sensible experiences are the only way we can decide if the theory works or not. Data visualisation is also just an effect of nature in a way that we can sense. A model or theory fits not objectively but rather always subjectively. When we all agree over the same subjective experience somehow that's when we say something is effectively objective about our experiences, and our measurements. Hence physical quantities are never measured but only computed. Effects are measured.
+
+An instrument measures a property numerically.
+
+Let’s say “010.1040”
+
+Since here the 0 (left to 1 before decimal) is not a significant digit, we safely re-write it to be 10.1040.
+
+Why are we writing the rightmost 0? Because it is significant.
+
+It is obvious that non-zero digits are significant but the significance of zeros between nonzero digits and trailing zeros have a little more for us to understand. These zeros are tailing us that there is 0 contribution of that particular digit place (power of 10) and having such tells the least possible measurements that can be made with an instrument, often called the least count which also serves as a measure of precision for the instrument.
+
+For the above example, the least count is 0.0001.
+
+Accuracy is the closeness of agreement between a measured value and a true or accepted value.
+
+Measurement error is the amount of inaccuracy and is defined as the difference between the measured value and the ‘true value’ of the thing being measured.
+
+Error = measured value - true value
+
+Random errors are statistical fluctuations (in either direction) in the measured data due to the precision limitations of the measurement device. Random errors can be evaluated through statistical analysis and can be reduced by averaging over a large number of observations. Random errors decrease precision. 
+
+Systematic errors are reproducible inaccuracies that are consistently in the same direction. These errors are difficult to detect and cannot be analysed statistically. If a systematic error is identified when calibrating against a standard, applying a correction or correction factor to compensate for the effect can reduce the bias. Unlike random errors, systematic errors cannot be detected or reduced by increasing the number of observations.
+
+Precision is a measure of how well a result can be determined (without reference to a theoretical or true value). It is the degree of consistency and agreement among independent measurements of the same quantity; also the reliability or reproducibility of the result. 
+
+Any error whose value we do not know is a source of uncertainty. More is the precision less is the uncertainty and vice versa.
+
+We want to know the properties of a system as they really are (true-values). We can do something to get there but often we may have the truths covered in some noises (unwanted information). The most common way to show the range of values that we believe includes the true value is:
+measurement = (best estimate +/- uncertainty) units
+It is possible to find the following notations for expressing a measurement.
+measured value ± uncertainty
+measured value −uncertainty+uncertainty
+measured value (uncertainty)
+Reality simplified by assumptions leads to a theory, model or hypothesis. Reality measured with some senses, or instruments leads to data with uncertainty. If we only know the result of an experiment but do not know the error or uncertainty, then we are completely unable to judge the significance of the result. 
+
+The result of an experiment may have several measurements and it becomes naturally crucial to describe the quality of a measurement (in order to have trust in the results). It is desirable to have a very good estimate and a minimum uncertainty in your measurements. As soon as we make measurements we are dealing with data. Sometimes called experimental data. observations, or readings. To understand the quality of data, statistics is needed to infer general information from samples and also to quantify the quality of the data.
