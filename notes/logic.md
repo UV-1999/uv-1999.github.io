@@ -103,55 +103,55 @@ If a proposition that is always true regardless of the truth values of the propo
 A compound proposition that is always false is called a contradiction or absurdity.
 And a compound proposition that is neither a tautology nor a contradiction is referred to as a contingency. The truth value depends on the contents of the propositions.
 
-| Air is necessary for life but not sufficient
-You need more things for life
-You need the sufficient conditions also like food
+Air is necessary for life but not sufficient.
+You need more things for life.
+You need the sufficient conditions also like food.
 
-Too much eating is sufficient for weight gain but not necessary
-Not eating too much doesn't guarantee weight gain control 
+Too much eating is sufficient for weight gain but not necessary.
+Not eating too much doesn't guarantee weight gain control.
 Other conditions are also necessary to maintain weight like exercise.
 
-Studying is necessary for passing exam
-Since no study guarantee no passing
-But studying is not sufficient for passing exam
-Since study doesn't guarantee passing 
+Studying is necessary for passing exam.
+Since no study guarantee no passing.
+But studying is not sufficient for passing exam.
+Since study doesn't guarantee passing.
 
-Using an umbrella is sufficient for protection from rain
-Since umbrella guarantee to avoid rainfall on you
-But umbrella is not necessary to avoid rainfall on you
+Using an umbrella is sufficient for protection from rain.
+Since umbrella guarantee to avoid rainfall on you.
+But umbrella is not necessary to avoid rainfall on you.
 You could use a raincoat as well.
 
-"Having all the necessary conditions together" is the sufficient and necessary condition 
+"Having all the necessary conditions together" is the sufficient and necessary condition .
 
 (The above follows from the AND logic)
 
-"Having all the sufficient conditions together" is the sufficient but not necessary condition
+"Having all the sufficient conditions together" is the sufficient but not necessary condition.
 
-(The above follows from the OR logic) |
+(The above follows from the OR logic)
 
 ### Cases of combination of sufficient and necessary condition:
 
 > **Case1**
-> Sufficient conditions are true (implies proposition to be true
-> Necessary conditions are false (implies proposition to be false)
-> So this is a contradiction, (true and false simultaneously)
+> Sufficient conditions are true (implies proposition to be true.
+> Necessary conditions are false (implies proposition to be false).
+> So this is a contradiction, (true and false simultaneously).
 
 > **Case2**
-> Sufficient conditions are false
-> Necessary conditions are true
-> Truth of proposition is not guaranteed
+> Sufficient conditions are false.
+> Necessary conditions are true.
+> Truth of proposition is not guaranteed.
 
 > **Case3**
-> Sufficient conditions are false
-> Necessary conditions are false
-> Proposition is guaranteed to be false
+> Sufficient conditions are false.
+> Necessary conditions are false.
+> Proposition is guaranteed to be false.
 
 > **Case4**
-> Sufficient conditions are true
-> Necessary conditions are true
-> Proposition is guaranteed to be true
+> Sufficient conditions are true.
+> Necessary conditions are true.
+> Proposition is guaranteed to be true.
 
-## [LOGICAL PARADOXES](https://uv-1999.github.io/logic.html)
+## [Logical Paradoxes](https://uv-1999.github.io/logic.html)
 
 Principles of explosion: Let say : “no pigs can fly” and “there are flying pigs”
 “There are flying pigs or There exist unicorns.” This statement is true in the above inconsistent system of axioms. The truth value of “there are flying pigs” is one and the truth value of “unicorns exists” is say x. So the combined truth value is one But also “no pigs can fly”, so the truth value of “there are flying pigs” is now zero. But since the combined Statement is true. Unicorns must exist. So using inconsistent axioms, we can prove anything, any nonsense. In the same manner we can simultaneously prove that unicorns don't exist. So if we start with inconsistent axioms, we will reach self-contradicting theorems and results.
@@ -171,3 +171,5 @@ The regressive argument, in which each proof requires a further proof, ad infini
 The dogmatic argument, which rests on accepted precepts which are merely asserted rather than defended
 
 The trilemma, then, is the decision among the three equally unsatisfying options. Karl Popper's suggestion was to accept the trilemma as unsolvable and work with knowledge by way of conjecture and criticism.
+
+
