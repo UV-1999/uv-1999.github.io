@@ -100,15 +100,18 @@ $$ \langle U \psi | U \phi \rangle = \langle \psi | \phi \rangle $$
 Proof:
 
 $$ \langle U \psi | U \phi \rangle = (U \psi)^\dagger (U \phi) $$
+
 $$ (U \psi)^\dagger = \psi^\dagger U^\dagger $$
+
 $$ (U \psi)^\dagger (U \phi) = \psi^\dagger U^\dagger U \phi $$
+
 $$ \psi^\dagger U^\dagger U \phi = \psi^\dagger I \phi = \psi^\dagger \phi = \langle \psi | \phi \rangle $$
 
 The eigenvalues of a unitary operator $ U $ have unit magnitude.
 
 Proof:
 $$ U |\lambda\rangle = \lambda |\lambda\rangle $$
-$$\langle \lambda | U |\lambda\rangle = \langle \lambda | \lambda |\lambda\rangle$$
+$$ \langle \lambda | U |\lambda\rangle = \langle \lambda | \lambda |\lambda\rangle$$
 $$ \langle \lambda | U^\dagger U |\lambda\rangle = \langle \lambda | I |\lambda\rangle$$
 
 Since \( \langle \lambda | I |\lambda\rangle = \langle \lambda | \lambda \rangle = 1 \), we have:
