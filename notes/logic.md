@@ -199,6 +199,7 @@ Base case is verified to be true, the inductive step is proved, then all else is
 
 If it is asked how any given proposition is known to be true, proof in support of that proposition may be provided. Yet that same question can be asked of that supporting proof, and any subsequent supporting proof.
 The Münchhausen trilemma is that there are only three ways of completing a proof:
+
 The circular argument, in which the proof of some proposition presupposes the truth of that very proposition
 
 The regressive argument, in which each proof requires a further proof, ad infinitum.
@@ -206,5 +207,4 @@ The regressive argument, in which each proof requires a further proof, ad infini
 The dogmatic argument, which rests on accepted precepts which are merely asserted rather than defended
 
 The trilemma, then, is the decision among the three equally unsatisfying options. Karl Popper's suggestion was to accept the trilemma as unsolvable and work with knowledge by way of conjecture and criticism.
-
 
