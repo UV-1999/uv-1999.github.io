@@ -111,7 +111,9 @@ The eigenvalues of a unitary operator $U$ have unit magnitude.
 
 Proof:
 $$ U |\lambda\rangle = \lambda |\lambda\rangle $$
+
 $$ \langle \lambda | U |\lambda\rangle = \langle \lambda | \lambda |\lambda\rangle$$
+
 $$ \langle \lambda | U^\dagger U |\lambda\rangle = \langle \lambda | I |\lambda\rangle$$
 
 Since \( \langle \lambda | I |\lambda\rangle = \langle \lambda | \lambda \rangle = 1 \), we have:
