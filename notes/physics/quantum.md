@@ -15,10 +15,10 @@
 
 ### Unitary Operators
 
-A unitary operator \( U \) satisfies the condition:
+A unitary operator $$ U $$ satisfies the condition:
 $$ U^\dagger U = U U^\dagger = I $$
 
-where $ U^\dagger $ is the Hermitian conjugate (or adjoint) of $ U $, and $ I $ is the identity operator.
+where $$ U^\dagger $$ is the Hermitian conjugate (or adjoint) of $$ U $$, and $$ I $$ is the identity operator.
 
 Additionally, the inner product is preserved under a unitary transformation:
 
@@ -34,7 +34,7 @@ $$ (U \psi)^\dagger (U \phi) = \psi^\dagger U^\dagger U \phi $$
 
 $$ \psi^\dagger U^\dagger U \phi = \psi^\dagger I \phi = \psi^\dagger \phi = \langle \psi | \phi \rangle $$
 
-The eigenvalues of a unitary operator $ U $ have unit magnitude.
+The eigenvalues of a unitary operator $$ U $$ have unit magnitude.
 
 Proof:
 
@@ -44,19 +44,19 @@ $$ \langle \lambda | U |\lambda\rangle = \langle \lambda | \lambda |\lambda\rang
 
 $$ \langle \lambda | U^\dagger U |\lambda\rangle = \langle \lambda | I |\lambda\rangle$$
 
-Since $\langle \lambda | I |\lambda\rangle = \langle \lambda | \lambda \rangle = 1$, we have:
+Since $$\langle \lambda | I |\lambda\rangle = \langle \lambda | \lambda \rangle = 1$$, we have:
 
 $$ \langle \lambda | U^\dagger U |\lambda\rangle = 1 $$
 
-But $U |\lambda\rangle = \lambda |\lambda\rangle$, so:
+But $$U |\lambda\rangle = \lambda |\lambda\rangle$$, so:
 
 $$ \langle \lambda | U^\dagger (\lambda |\lambda\rangle) = \lambda \langle \lambda | U^\dagger |\lambda\rangle $$
 
-Since $U^\dagger |\lambda\rangle = \overline{\lambda} U^\dagger |\lambda\rangle$, where $\overline{\lambda}$ is the complex conjugate of $\lambda$:
+Since $$U^\dagger |\lambda\rangle = \overline{\lambda} U^\dagger |\lambda\rangle$$, where $$\overline{\lambda}$$ is the complex conjugate of $$\lambda$$:
 
 $$ \lambda \langle \lambda | U^\dagger |\lambda\rangle = \lambda \overline{\lambda} \langle \lambda | \lambda \rangle $$
 
-Since $\langle \lambda | \lambda \rangle = 1$:
+Since $$\langle \lambda | \lambda \rangle = 1$$:
 
 $$\lambda \overline{\lambda} = 1$$
 
@@ -64,5 +64,5 @@ Thus:
 
 $$ |\lambda|^2 = 1 \Rightarrow |\lambda| = 1 $$
 
-Since the probability of the state vector $\langle \psi \rangle$ to collapse in the eigenstate say $\langle \phi \rangle$ is ${|\langle \phi | \psi \rangle|}^2$.
+Since the probability of the state vector $$\langle \psi \rangle$$ to collapse in the eigenstate say $$\langle \phi \rangle$$ is $${|\langle \phi | \psi \rangle|}^2$$.
 Therefore the application of an unitary operator on these states will conserve probability since it conserves the innner product.
