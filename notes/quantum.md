@@ -141,4 +141,94 @@ $\Rightarrow f(c) = (c)^2 = \text{square of magnitude of inner product} \langle 
 
 THE BORN RULE DERIVED !!
 
-BUT such a derivation works only for vector space having equal or more than 3 dimensions. Since in 1 dimension state vector the state is fixed anyway. In two dimensions the two eigen
+BUT such a derivation works only for vector space having equal or more than 3 dimensions. Since in 1 dimension state vector the state is fixed anyway. 
+
+In two dimensions the two eigenstates will not be independent if we keep the length to be constant. So for two or less dimensions we take the Born rule as an axiom.
+
+For observables with continuous eigenbasis, the probability density is the square of the coefficient function.
+
+So back to quantum operators. The eigenvalues must be real and the operator must not change the length of the state vector. Also the eigenvectors must span the vector space. Eigenvectors are also orthonormal.
+
+Say some operator \( A \).
+
+⇒ Consider \( A|\text{state}\rangle = \sum_{i} c_i A|\text{eigenvectors}\rangle = \sum_{i} c_i \text{eigenvalue} |\text{eigenvectors}\rangle \)
+
+⇒ \( c = \langle \text{eigenvector} | \text{state} \rangle \)
+
+⇒ \( \text{Sum over } c_i \text{ eigenvalue } |\text{eigenvectors}\rangle = \sum_{i} \langle \text{eigenvector} | \text{state} \rangle \text{ eigenvalue } |\text{eigenvectors}\rangle \)
+
+⇒ \( \text{Sum over } \text{ eigenvalue } |\text{eigenvectors}\rangle \langle \text{eigenvector} | | \text{ state }\rangle \)
+
+⇒ \( A = \sum_{i} \text{ Eigenvalue } |\text{eigenvectors}\rangle \langle \text{eigenvectors}| \)
+
+The Hermitian conjugate of \( A \) is also \( A \) hence \( A \) is a Hermitian Operator. Hence all quantum observables are Hermitian operators.
+
+**THE COMMUTATOR == \([A, B] = AB - BA\)**
+
+\( A \) and \( B \) are operators.
+
+Consider operators that commute:
+
+Say state \( |\alpha\rangle \) is an eigenstate of operator \( A \). So \( BA|\alpha\rangle = B \lambda |\alpha\rangle \). Here \( \lambda \) is the eigenvalue.
+
+\( B \lambda |\alpha\rangle = \lambda B |\alpha\rangle = AB |\alpha\rangle \Rightarrow B |\alpha\rangle \) is eigenvector of \( A \).
+
+So both \( |\alpha\rangle \) and \( |B \alpha\rangle \) are both eigenvectors of \( A \) having the same \( \lambda \) eigenvalue.
+
+Non-degenerate eigenvector is something that has a unique eigenvalue.
+
+If \( |\alpha\rangle \) is a non-degenerate eigenvector of \( A \) then it is a unique eigenvalue \( \lambda \).
+But \( |B \alpha\rangle \) is also an eigenvector of \( A \) with the same eigenvalue so
+
+\( |B \alpha\rangle = \text{some scalar time } |\alpha\rangle \)
+
+So \( |\alpha\rangle \) is also an eigenvector of \( B \).
+
+In the degenerate case:
+
+Consider that we span the vector space by the eigenvectors of \( A \) (the eigenspace of \( A \)).
+
+Since \( AB|\alpha\rangle = \lambda B |\alpha\rangle \) hence \( |B \alpha\rangle \) has to stay in the vector space.
+
+If there is some vector \( |p\rangle \) that is orthogonal to the eigenspace of \( A \), then the inner product \( \langle p | B \alpha \rangle = 0 \).
+
+Since \( B \) is Hermitian \( \Rightarrow \langle p | B \alpha \rangle = \langle B^* p | \alpha \rangle = 0 \).
+
+\( |B p\rangle \) is orthogonal to the eigenspace.
+
+So a vector that is one component inside the eigenspace and one that is orthogonal, when applied with \( B \), will just scale that vector since both the parallel and perpendicular components have to stay that way.
+
+**CONCLUSION**: Commuting operators share eigenvectors. Also, they share a simultaneous eigenbasis.
+
+Why does it matter? Because the system can stay in a definite state for both of the operators simultaneously.
+
+Measurement of one observable does not affect the other.
+
+Non-commuting operators don't have such property. So simultaneous measurements are NOT possible.
+
+We can derive the Uncertainty principle from here.
+
+Standard deviation \( A \) * Standard deviation \( B \geq \text{magnitude of } \frac{1}{2i} \times \text{average value of commutator operator} \).
+
+**UNITARY OPERATOR** : \( U^*U = I \).
+
+\( \langle U \psi | U \phi \rangle = U^*U \langle \psi | \phi \rangle = \langle \psi | \phi \rangle \).
+
+The eigenvalues of \( U \) have unit length. Unitary operators conserve probability.
+
+**Time evolution operator**:
+\( U(t) \) this evolves the state by \( t \) amount of time. Since time evolution is assumed to be reversible. So the inverse of \( U \) must exist.
+
+Position, Translational and Rotational operators.
+
+**GENERATOR IN CLASSICAL MECHANICS**:
+The lagrangian tells us the state of the system in classical physics.
+
+**FROM A QUANTUM LAGRANGIAN TO QUANTUM EOM**
+
+**SCHRODINGER EQUATION**
+
+**Energy and Generalised Momentum and Generalised position operator**
+
+**Applications**
+
