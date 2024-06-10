@@ -13,3 +13,16 @@ This forces us to ask what is knowledge? what are beliefs? and what is good? And
 ### [Logic - study of nature of reason](https://uv-1999.github.io/notes/logic)
 ### [Metaphysics- study of nature of reality](https://uv-1999.github.io/notes/metaphysics)
 ### [Axiology - study of nature of value](https://uv-1999.github.io/notes/axiology)
+
+## Science and Physics:
+### [Science and Physics](https://uv-1999.github.io/notes/science)
+### [Scientific Measurements](https://uv-1999.github.io/notes/physics/measure)
+### [Classical Physics](https://uv-1999.github.io/notes/physics/classical)
+### [Classical Gravitation](https://uv-1999.github.io/notes/physics/gravity)
+### [Quantum Physics](https://uv-1999.github.io/notes/physics/quantum)
+### [Classical Electromagnetism](https://uv-1999.github.io/notes/physics/emt)
+### [Solid State Physics](https://uv-1999.github.io/notes/physics/solid)
+### [Thermodynamics and Statistical Physics](https://uv-1999.github.io/notes/physics/thermal)
+### [Atomic and Molecular Physics](https://uv-1999.github.io/notes/physics/amol)
+### [Nuclear Physics](https://uv-1999.github.io/notes/physics/nuclear)
+### [Particle Physics](https://uv-1999.github.io/notes/physics/particle)
