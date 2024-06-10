@@ -1,8 +1,19 @@
 # Quantum Physics
 
-In Classical physics, quantities are single valued and evolve continuously hence it is reasonable to model them by continuous functions. (Deterministic)
+## Mathematical Framework of Quantum Mechanics
+In classical physics, physical quantities have following important features:
+1. Single-valued
+2. Deterministic
+3. Evolve continuously
+Hence it is reasonable to model them as continuous functions.
 
-In Quantum physics, quantities can NOT be single valued (Probabilistic) and can evolve discreetly. How to model these properties?
+In the Lagrangian formulation of classical mechanics, all the physical knowledge about the system is incoded in this Lagrangian functional.
+
+$$\mathcal{L} = \mathcal{L}(t, q(t), \dot{q(t)} $$
+
+In Quantum physics, quantities are not always be single-valued but evolve discreetly in a probabilistic nature. How to model these quantum properties?
+
+
 
 We need a mathematical object that can take the values of the quantity, and since each value has a probability, the mathematical object must tell us the probability of each of those values.
 
