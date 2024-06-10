@@ -102,3 +102,24 @@ measured value (uncertainty)
 Reality simplified by assumptions leads to a theory, model or hypothesis. Reality measured with some senses, or instruments leads to data with uncertainty. If we only know the result of an experiment but do not know the error or uncertainty, then we are completely unable to judge the significance of the result. 
 
 The result of an experiment may have several measurements and it becomes naturally crucial to describe the quality of a measurement (in order to have trust in the results). It is desirable to have a very good estimate and a minimum uncertainty in your measurements. As soon as we make measurements we are dealing with data. Sometimes called experimental data. observations, or readings. To understand the quality of data, statistics is needed to infer general information from samples and also to quantify the quality of the data.
+
+The best estimate = Expectation value of the probability distribution that models the data. For normal distribution it is the arithmetic mean.
+The uncertainty = Standard deviation of the mean or “standard error” which is the standard deviation divided by the square root of the number of observations made (measurements made).
+The standard deviation is the square root of variance.
+The variance is the expectation value of squares of data values minus the square of Expectation value of data.
+Expectation value is integral of xP(x) dx over the whole range of x.
+Propagation of error: Let us have a property we want to measure, say f and according to some theory, it depends on some a priori independent variables x, y, z etc.
+Error in f = (partial fx * error in x)  + (partial fy * error in y) + (partial fz * error in z) + … so on.
+Propagation of uncertainty: Let us have a property we want to measure, say f and according to some theory, it depends on some a priori independent variables x, y, z etc.
+Square of uncertainty in f = (partial fx * Square of uncertainty in x)  + (partial fy * Square of uncertainty in y) + (partial fz * Square of uncertainty in z) + … so on.
+But if there are unexpected covariances in the variables x, y and z the above rule (addition in quadrature) may not work. It is important to know that un-correlation means that there is no linear dependence between the two variables, while independence means that no types of dependence exist between the two variables
+An artefact is any error in the perception or representation of any information introduced by the involved equipment or technique(s).
+
+In statistics, an outlier is a data point that differs significantly from other observations (assuming some model). You could argue that outliers are more likely to be errors than correct observations, but there’s a bit of circular reasoning going on here: I think my model is correct, and this outlier has low probability according to my model, therefore it is incorrect. And when I remove the points that violate my assumptions, see how well my assumptions hold? Often outliers are errors but it is necessary to study each outlier and remove it conclusively.
+
+Correlation is a statistical measure of how two things are related.
+
+Do my experimental results agree with a theoretical prediction or results from other experiments?
+A measured result agrees with a theoretical prediction if the prediction lies within the range of experimental uncertainty. 
+
+if two measured values have standard uncertainty ranges that overlap, then the measurements are said to be consistent (they agree). If the uncertainty ranges do not overlap, then the measurements are said to be discrepant (they do not agree). Assuming that there are no artificial changes in the data.
