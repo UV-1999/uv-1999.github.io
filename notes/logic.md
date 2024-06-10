@@ -103,6 +103,41 @@ If a proposition that is always true regardless of the truth values of the propo
 A compound proposition that is always false is called a contradiction or absurdity.
 And a compound proposition that is neither a tautology nor a contradiction is referred to as a contingency. The truth value depends on the contents of the propositions.
 
+A proposition P is necessary for a proposition Q 
+We say this when  “If P is false, then Q is also false” 
+Or  “If Q is true then P is also true” 
+Or “Q if P”.
+But We cannot always say that “If P is true then Q is also true”
+Because P is merely necessary but not sufficient for Q.
+Example
+“Air is necessary for life” Or  “If No air then no life” Or “Life if Air” Or “If life is there , air is also there.”
+But
+If Air then life? No!
+Assuming something like that is called the fallacy of converse.
+
+Modus ponens, it is the act of concluding consequent if the antecedent is true and the implication is also true.
+
+If No air then no life 
+No air on moon, true,
+So No life on moon, true by modus ponens.
+
+A proposition R is sufficient for a proposition Q
+We say this when “If R is true then Q is also true” Or “If Q is false then R is also false” Or “R only if Q”
+But We cannot always say that “If R is false then Q is also false”
+Because R is mere sufficient but not necessary for Q
+Example
+“Too much food increases weight” Or “Too much food is sufficient condition for gaining weight” Or “If you eat too much food, you will gain weight” Or “If you are not gaining weight then you are not eating too much”
+But 
+If you are not eating too much then you will not gain weight? No!
+Assuming something like this is the fallacy of inverse.
+
+Modus tollens, it is an act of concluding the negation of antecedent, if negation of consequent is true and the implication is also true.
+
+If Too much food, then weight gain
+No weight gain
+So no too much food (true by modus tollens)
+
+
 Air is necessary for life but not sufficient.
 You need more things for life.
 You need the sufficient conditions also like food.
