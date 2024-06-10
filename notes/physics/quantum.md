@@ -135,7 +135,14 @@ $$\vert \psi(dt) \rangle - \vert \psi \rangle = \dot{\hat{U}}\vert \psi \rangle 
 
 $$\dot{\hat{U}}\vert \psi \rangle = \frac{\vert \psi(dt) \rangle - \vert \psi \rangle}{dt} = \frac{\vert \psi(t) \rangle}{dt}$$
 
+Is $\dot{\hat{U}}$ Hermition? No, it is Anti-Hermition. But \dot{\hat{U}} scaled any imaginary number is Hermition.
+
+
+
+
 
 ### Translation Operator
+
+$$\hat{T(a)}\vert x \rangle = \vert x+a \rangle$$
 
 ### Rotational Operator
