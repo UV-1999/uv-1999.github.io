@@ -68,9 +68,9 @@ The most important is how the changes in energy correponds to how the lagrangian
 
 The Lagrangian of a system can be intuitively understood as the totatlity of physical laws that the system follows.
 
-If the laws don't depend on time then we get conservation of energy.
-If the laws don't depend on a particular coordiante (often called the symmetric or cyclic coordinate) then we get conservation of momentum corresponding to that coordinate.
-If the laws don't depend on a momentum then we get uniform motion along the corresponding coordinate.
+1. If the laws don't depend on time then we get conservation of energy.
+2. If the laws don't depend on a particular coordiante (often called the symmetric or cyclic coordinate) then we get conservation of momentum corresponding to that coordinate.
+3. If the laws don't depend on a momentum then we get uniform motion along the corresponding coordinate.
 
 ***
 
