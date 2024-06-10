@@ -1,9 +1,9 @@
 # Science
 
-### TYPES OF SCIENCES
-## FORMAL SCIENCE
+## TYPES OF SCIENCES
+### FORMAL SCIENCE
 Useful mental constructs: logic, mathematics and computer science, etc.
-## EMPIRICAL/NATURAL SCIENCE
+### EMPIRICAL/NATURAL SCIENCE
 Explaining the observations. Includes Physics, Chemistry, Biology, Social Science includes humanities, history, psychology. Scientific Method is used.
 
 ## SCIENTIFIC METHOD
@@ -28,7 +28,7 @@ Laws = Mathematical statements that are derived from experimental results relati
 
 All laws are just postulates. Every law is a postulate, that is true only by support of experiments. Science can only answer the "how" questions. It cannot answer "why" questions. One can only find some set of postulates, rather be scalar or vector relations or a differential equation of anything from which one can finally derive the behaviour of a system. There are no proofs in theoretical physics, just some statements that can be written mathematically, only some results are derivable from those postulates. Science is finding a better description of nature. Better means that experimentally conforms with nature. In science, we don't care about its interpretation, or its intuition. We just want to make sure that it works. The why questions are not left in the corner, but they are handled in metaphysics.
 
-## Kuhn’s phases of science:
+### Kuhn’s phases of science:
 1. Pre Paradigmatic science (e.g. physics before Newton)
 2. Normal Science (e.g. classical mechanics)
 3. Crisis (e.g. UV catastrophe)
@@ -36,7 +36,7 @@ All laws are just postulates. Every law is a postulate, that is true only by sup
 
 You go from 1 to 2 to 3 to either return to 2 or to go to 4 to again create a new paradigm and call it new normal science.
 
-## Characteristics of a scientific theory:
+### Characteristics of a scientific theory:
 
 1. Popper’s rule: A theory must be testable, refutable and falsifiable.
 
