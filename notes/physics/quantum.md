@@ -78,12 +78,9 @@ In Quantum physics, quantities are not always be single-valued but evolve discre
 
 From the above review of classical mechanics, we see that having a mathematical object that encompasses all physical properties and laws of the system is quite convenient and how the time evolution of such mathematical object can be obtained through some known functionals hints us to generalise this for quantum physics.
 
-We need a mathematical object that can take the values of the quantity, and since each value has a probability, the mathematical object must tell us the probability of each of those values.
-
-Zero probability of some values takes care of the discreteness of the physical quantities.
+We need a mathematical object that can take the values of the quantity, and since each value has a probability, the mathematical object must tell us the probability of each of those values. Zero probability of some values takes care of the discreteness of the physical quantities.
 
 We hence can represent objects as abstract vectors where the basis vectors represent all the discrete states it can take.
-
 The physical properties can be shown as matrices (linear operators) that when acted upon on the state vectors give us the possible values of the physical properties.
 
 That is why we use linear algebra for quantum mechanics.
@@ -102,17 +99,9 @@ It is mathematically possible that adding an infinite number of vectors together
 
 E.g. Adding an infinite number of polynomial terms is not a polynomial and polynomials can be thought of as vectors.
 
-Hence we need to assert that the sum always converges to another vector in the same vector space.
+Hence we need to assert that the sum always converges to another vector in the same vector space. Such a vector space is called a Hilbert space. So Quantum vector space $=$ Hilbert vector space. But Hilbert space has an inner product also. 
 
-Such a vector space is called a Hilbert space.
-
-So Quantum vector space $=$ Hilbert vector space
-
-But Hilbert space has an inner product also.
-
-An inner product is a map that takes two vectors and gives out a scalar from the field over which the vector space is defined.
-
-Inner product is not always commutative:
+An inner product is a map that takes two vectors and gives out a scalar from the field over which the vector space is defined. Inner product is not always commutative:
 
 Say $\langle i P | i P \rangle$ where $i$ is the imaginary unit.
 
@@ -147,25 +136,17 @@ For position value say “a”:
 
 $c(x=a) = \int dx \, c(x) \delta(x-a)$
 
-Consider the inner product of two states $= \int dx \, C_1(x) |x\rangle \times \int dy \, C_2(y) |y\rangle$
+Consider the inner product of two states $= \int dx \ C_1(x) |x\rangle \times \int dy \ C_2(y) |y\rangle$
 
-$\Rightarrow \iint dx \, dy \, C_1'(x) C_2(y) \langle x | y \rangle$
+$\Rightarrow \iint dx \ dy \ C_1'(x) C_2(y) \langle x | y \rangle$
 
 $\Rightarrow$ Since $x$ and $y$ are orthonormal states hence only when they are the same ($x=y$) they are non-zero.
 
-$\Rightarrow \iint dx \, C_1'(x) C_2(x)$
+$\Rightarrow \iint dx \ C_1'(x) C_2(x)$
 
-Dual space of vector space $V$ is a vector space that has vectors as all the linear functionals in $V$ (row vectors).
-
-Since inner products and linear functional spit out scalars hence they are useful to find the values of physical quantities.
-
-And linear functionals (row vectors) applied to column vectors is just the inner product of those two vectors.
-
-This is the consequence of the Riesz representation theorem in maths.
+Dual space of vector space $V$ is a vector space that has vectors as all the linear functionals in $V$ (row vectors). Since inner products and linear functional spit out scalars hence they are useful to find the values of physical quantities. And linear functionals (row vectors) applied to column vectors is just the inner product of those two vectors.
 
 Row vector $= \text{Bra} = \langle x |$ and Column vector $= \text{Ket} = |x\rangle$
-
-HOW LINEAR OPERATORS REPRESENT PHYSICAL QUANTITIES?
 
 A system can be in several possible definite states (states we can observe). Such states have the corresponding values of the physical properties that we measure or observe.
 
@@ -173,9 +154,7 @@ The linear operator for a particular physical observable quantity acted upon by 
 
 Hence the state vector is a linear combination of eigenstates (mutually orthogonal vectors $=$ basis vectors).
 
-The eigenvalues must be real. 
-
-Okay. HOW TO FIND THE PROBABILITY?
+The eigenvalues of the operators must be real. 
 
 Since the eigenvector with the component such that its complex magnitude is largest implies a larger probability, 
 Hence it is seemingly reasonable to just say that probability distribution is equal to that complex magnitude of the coefficient.
@@ -295,13 +274,3 @@ The eigenvalues of \( U \) have unit length. Unitary operators conserve probabil
 
 Position, Translational and Rotational operators.
 
-**GENERATOR IN CLASSICAL MECHANICS**:
-The lagrangian tells us the state of the system in classical physics.
-
-**FROM A QUANTUM LAGRANGIAN TO QUANTUM EOM**
-
-**SCHRODINGER EQUATION**
-
-**Energy and Generalised Momentum and Generalised position operator**
-
-**Applications**
