@@ -115,13 +115,13 @@ $$\hat{U}(0)\vert \psi \rangle = I \vert \psi \rangle = \vert \psi \rangle $$
 
 Time evolution is theorised to be reversible so the inverse of time-evolution operator must also exist and it should conserve the probability so it must be unitary well.
 
-$$ \langle \vert \hat{U}^\daggar \hat{U} \vert \psi \rangle = \langle \vert I \vert \psi \rangle $$
+$$ \langle \vert \hat{U}^\dagger \hat{U} \vert \psi \rangle = \langle \vert I \vert \psi \rangle $$
 
-$$ \langle \vert \hat{U}^\daggar \hat{U} - I \vert \psi \rangle = 0$$
+$$ \langle \vert \hat{U}^\dagger \hat{U} - I \vert \psi \rangle = 0$$
 
-$$ \hat{U}^\daggar \hat{U} - I = 0$$
+$$ \hat{U}^\dagger \hat{U} - I = 0$$
 
-$$ \hat{U}^\daggar \hat{U} = I$$
+$$ \hat{U}^\dagger \hat{U} = I$$
 
 So $\hat{U}$ unitary as well as Hermition.
 
@@ -133,7 +133,7 @@ $$\hat{U}(dt)\vert \psi \rangle = I\vert \psi \rangle + \dot{\hat{U}}\vert \psi 
 
 $$\vert \psi(dt) \rangle - \vert \psi \rangle = \dot{\hat{U}}\vert \psi \rangle dt + \hat{O}\vert \psi \rangle dt^2$$
 
-$$\dot{\hat{U}}\vert \psi \rangle = \frac{\vert \psi(dt) \rangle - \vert \psi \rangle}{dt}$$
+$$\dot{\hat{U}}\vert \psi \rangle = \frac{\vert \psi(dt) \rangle - \vert \psi \rangle}{dt} = \frac{\vert \psi(t) \rangle}{dt}$$
 
 
 ### Translation Operator
