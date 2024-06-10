@@ -231,4 +231,3 @@ The lagrangian tells us the state of the system in classical physics.
 **Energy and Generalised Momentum and Generalised position operator**
 
 **Applications**
-
