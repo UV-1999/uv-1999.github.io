@@ -145,10 +145,10 @@ These operators have the same properties as the Time evolution operator.
 
 ### Quantum operators
 
-$$ \hat{p} \vert \psi \rangle = i \frac{\hbar} \frac{d}{dx} \vert \psi \rangle$$
+$$ \hat{p} \vert x \rangle = i \frac{\hbar} \frac{d}{dx} \vert x \rangle$$
 
 $$ \hat{H} \vert \psi \rangle = i \frac{\hbar} \frac{d}{t} \vert \psi \rangle$$
 
-$$ \hat{L} \vert \psi \rangle = i \frac{\hbar} \frac{d}{\theta} \vert \psi \rangle$$
+$$ \hat{L} \vert \theta \rangle = i \frac{\hbar} \frac{d}{\theta} \vert \theta \rangle$$
 
-$$ \hat{x} \vert \psi \rangle = i \frac{\hbar} \frac{d}{p} \vert \psi \rangle$$
+$$ \hat{x} \vert p \rangle = i \frac{\hbar} \frac{d}{p} \vert p \rangle$$
