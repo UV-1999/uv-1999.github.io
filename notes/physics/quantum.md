@@ -137,12 +137,18 @@ $$\dot{\hat{U}}\vert \psi \rangle = \frac{\vert \psi(dt) \rangle - \vert \psi \r
 
 Is $\dot{\hat{U}}$ Hermition? No, it is Anti-Hermition. But \dot{\hat{U}} scaled any imaginary number is Hermition.
 
+### Translation and rotational operators
 
+$$\hat{T}(a)\vert x \rangle = \vert x+a \rangle$$
 
+These operators have the same properties as the Time evolution operator.
 
+### Quantum operators
 
-### Translation Operator
+$$ \hat{p} \vert \psi \rangle = i \frac{\hbar} \frac{d}{dx} \vert \psi \rangle$$
 
-$$\hat{T(a)}\vert x \rangle = \vert x+a \rangle$$
+$$ \hat{H} \vert \psi \rangle = i \frac{\hbar} \frac{d}{t} \vert \psi \rangle$$
 
-### Rotational Operator
+$$ \hat{L} \vert \psi \rangle = i \frac{\hbar} \frac{d}{\theta} \vert \psi \rangle$$
+
+$$ \hat{x} \vert \psi \rangle = i \frac{\hbar} \frac{d}{p} \vert \psi \rangle$$
