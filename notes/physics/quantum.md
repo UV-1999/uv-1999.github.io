@@ -25,7 +25,7 @@ $$ \frac{\partial \mathcal{L}}{\partial q} = \frac{d}{dt} \left( \frac{\partial 
 
 Since:
 
-$$ p = \frac{\partial \mathcal{L}}{\partial \dot{x}}$$
+$$ p = \frac{\partial \mathcal{L}}{\partial \dot{q}}$$
 
 But we do not need to stop here rather we can investigate further:
 
