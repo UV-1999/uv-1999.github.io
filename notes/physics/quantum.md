@@ -54,8 +54,8 @@ $$ H = \frac{\partial \mathcal{L}}{\partial \dot{q}} {\dot{q}} - \mathcal{L} $$
 
 This is the definition of Hamiltonian and we can get the following relations:
 
-|   $$ \frac{\partial \mathcal{L}}{\partial {x}} = \frac{d}{dt} p $$    |  $$ \frac{\partial \mathcal{L}}{\partial {p}} =  \frac{d}{dt} x $$   |
-|   $$ \frac{\partial \mathcal{L}}{\partial {t}} = - \frac{d}{dt} H $$  |  $$ \frac{\partial \mathcal{L}}{\partial {\theta}} =  \frac{d}{dt} L $$   |
+|   $ \frac{\partial \mathcal{L}}{\partial {x}} = \frac{d}{dt} p $    |  $ \frac{\partial \mathcal{L}}{\partial {p}} =  \frac{d}{dt} x $        |
+|   $ \frac{\partial \mathcal{L}}{\partial {t}} = - \frac{d}{dt} H $  |  $ \frac{\partial \mathcal{L}}{\partial {\theta}} =  \frac{d}{dt} L $   |
 
 This hints that the changes in momentum of the system corresponds to how the Lagrangian depends on the coordianate.
 Also that the changes in coordinate of the system corresponds to how the Lagrangian depends on the momentum.
