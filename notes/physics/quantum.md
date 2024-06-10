@@ -33,7 +33,11 @@ $$ \frac{\partial \mathcal{L}}{\partial {p}} = \frac{\partial \mathcal{L}}{\part
 
 Finally, we try:
 
-$$ \frac{d \mathcal{L}}{d {t}} =  \frac{\partial \mathcal{L}}{\partial {t}} dt + \frac{\partial \mathcal{L}}{\partial {q}} dq + \frac{\partial \mathcal{L}}{\partial \dot{q}} d{\dot{q}}$$
+$$ \frac{d \mathcal{L}}{d {t}} =  \frac{\partial \mathcal{L}}{\partial {t}} + \frac{\partial \mathcal{L}}{\partial {q}} d{\dot{q}} + \frac{\partial \mathcal{L}}{\partial \dot{q}} d{\ddot{q}}$$
+
+$$ \frac{d \mathcal{L}}{d {t}} =  \frac{\partial \mathcal{L}}{\partial {t}} + \frac{d}{dt} \left( \frac{\partial \mathcal{L}}{\partial \dot{q_i}} \right)d{\dot{q}} + \frac{\partial \mathcal{L}}{\partial \dot{q}} d{\ddot{q}}$$
+
+$$$$
 
 In Quantum physics, quantities are not always be single-valued but evolve discreetly in a probabilistic nature. How to model these quantum properties?
 
