@@ -14,4 +14,4 @@ The physical properties can be shown as matrices (linear operators) that when ac
 
 That is why we use linear algebra for quantum mechanics.
 
-$$|\Psi\rangle = \sum_{\text{all states}} c_i |\text{phi_i}\rangle$$
+$$|\Psi\rangle = \sum_{\text{all states}} c_i |\phi_i\rangle$$
