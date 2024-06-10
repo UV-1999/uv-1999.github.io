@@ -55,7 +55,7 @@ $$r^2 \dot{\theta} = \text{constant} = h,$$
 
 $$\dot{\theta} = \frac{h}{r^2}.$$
 
-Substituting (10) into the radial equation \eqref{radial_eq}, we get:
+Substituting into the radial equation \eqref{radial_eq}, we get:
 
 $$ m \left( \ddot{r} - \frac{h^2}{r^3} \right) = f(r).$$
 
@@ -65,13 +65,13 @@ $$\dot{r} = \dot{\frac{1}{u}} = \frac{-1}{u^2}\frac{du}{dt} = \frac{-1}{u^2}\fra
 
 $$\ddot{r} = \frac{d}{dt} -h\frac{du}{d\theta} = -h \frac{d^2u}{d{\theta}^2}\dot\theta = -h \frac{d^2u}{d{\theta}^2} h u^2 = -h^2{u^2} \frac{d^2u}{d{\theta}^2}$$
 
-Finally putting (14) in (11), we get the \textbf{Binet equation}. \textbf{Here m is reduced mass}:
+Finally we get the \textbf{Binet equation}. \textbf{Here m is reduced mass}:
 
 $$m \left(-h^2{u^2} \frac{d^2u}{d{\theta}^2}  - {h^2}{u^3} \right) = f(u).$$
 
 $$-h^2 {u^2} m \left( \frac{d^2u}{d{\theta}^2}  + u \right) = f(u).$$
 
-For a central force that follows an inverse square law, such as gravitational force, we have the \textbf{Kepler problem}:
+For a central force that follows an inverse square law, such as gravitational force, we have the $\textbf{Kepler problem}$:
 
 $$f(r) = -\frac{K}{r^2}, f(u) = -K u^2 $$
 
