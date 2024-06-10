@@ -26,4 +26,4 @@ They are such that they could not be untrue. Analytic truth (also called a neces
 Factually true propositions are called synthetic truths or facts. A fact (also called a contingency), is only true in this world as it has historically unfolded.
 It is a proposition that is true by conforming to reality.
 
-[Logic - study of nature of reason](https://uv-1999.github.io/notes/logic.md)
+[Logic - study of nature of reason](https://uv-1999.github.io/notes/logic)
