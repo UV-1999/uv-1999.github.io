@@ -114,7 +114,3 @@ p {
             height: 100%; /* Ensures the image fills the circle */
             object-fit: cover; /* This maintains aspect ratio and covers the entire circle */
             }
-
-html, body {
-            overflow: hidden;
-            }
