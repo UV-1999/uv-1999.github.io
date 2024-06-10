@@ -7,9 +7,17 @@ In classical physics, physical quantities have following important features:
 3. Evolve continuously
 Hence it is reasonable to model them as continuous functions.
 
-In the Lagrangian formulation of classical mechanics, all the physical knowledge about the system is incoded in this Lagrangian functional.
+In the Lagrangian formulation of classical mechanics, all the physical knowledge about the system is incoded in this Lagrangian functional. 
 
 $$\mathcal{L} = \mathcal{L}(t, q(t), \dot{q(t)} $$
+
+The Euler-Lagrange equation that governs the evolution of the system is derived from the **principle of stationary action**.
+
+$$ \frac{\partial \mathcal{L}}{\partial q_i} - \frac{d}{dt} \left( \frac{\partial \mathcal{L}}{\partial \dot{q_i}} \right) = 0 $$
+
+It is different from the Newtonian mechanics since there we deal with all dynamical quantities seperately like force, momenta, energy, position, etc.
+
+
 
 In Quantum physics, quantities are not always be single-valued but evolve discreetly in a probabilistic nature. How to model these quantum properties?
 
