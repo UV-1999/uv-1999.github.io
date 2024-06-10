@@ -15,13 +15,21 @@ The Euler-Lagrange equation:
 
 $$ \frac{\partial \mathcal{L}}{\partial q_i} - \frac{d}{dt} \left( \frac{\partial \mathcal{L}}{\partial \dot{q_i}} \right) = 0 $$
 
-that governs the evolution of the system is derived from the **principle of stationary action**.
+that governs the evolution of the system is derived from the **principle of stationary action**:
 
 $$ \delta S = \delta \int_{t_1}^{t_2} \mathcal{L}(q, \dot{q}, t) \, dt = 0 $$
 
-It is different from the Newtonian mechanics since there we deal with all dynamical quantities seperately like force, momenta, energy, position, etc.
+It is different from the Newtonian mechanics since there we deal with all dynamical quantities seperately like force, momenta, energy, position, etc. But the Euler-Lagrange equation is nothing but a generalisation of the Newton's second law of motion.
 
+$$ \frac{\partial \mathcal{L}}{\partial q} = \frac{d}{dt} \left( \frac{\partial \mathcal{L}}{\partial \dot{q}} \right) = \frac{d}{dt} p \right)$$
 
+Since:
+
+$$ p = \frac{\partial \mathcal{L}}{\partial \dot{x}}$$
+
+But we do not need to stop here rather we can investigate further:
+
+$$ \frac{\partial \mathcal{L}}{\partial {p}} = \frac{\partial \mathcal{L}}{\partial \dot{q}} \frac{\partial \dot{q}}{\partial {p}} = \dot{q} =  \frac{d}{dt} \q$$
 
 In Quantum physics, quantities are not always be single-valued but evolve discreetly in a probabilistic nature. How to model these quantum properties?
 
