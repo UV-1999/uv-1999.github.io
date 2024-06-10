@@ -13,3 +13,5 @@ We hence can represent objects as abstract vectors where the basis vectors repre
 The physical properties can be shown as matrices (linear operators) that when acted upon on the state vectors give us the possible values of the physical properties.
 
 That is why we use linear algebra for quantum mechanics.
+
+$$|\Psi\rangle = \sum_{\text{all states}} c_i |\text{a particular state}\rangle$$
