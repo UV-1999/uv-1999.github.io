@@ -18,7 +18,7 @@ Kinetics is the study of forces that cause motion while kinematics is a mathemat
 Statics - Kinematics of rest
 Dynamics - Kinematics of motion
 
-### [Physics from Aristotle to Newton]{https://uv-1999.github.io/motion.html}
+### [Physics from Aristotle to Newton](https://uv-1999.github.io/motion.html)
 
 ## Classical Mechanics
 
