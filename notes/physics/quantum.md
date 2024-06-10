@@ -25,7 +25,7 @@ These sums can be allowed to be infinite. But consider position as a property. I
 
 We can say that state vector is the integral:
 
-$$ \int dx c(x) \vert x \rangle $$
+$$ \int {dx} {c(x)} {\vert x \rangle} $$
 
 $c(x)$ is a function for each position state $\vert x \rangle$ so that we can use it to find the probability.
 
@@ -145,10 +145,10 @@ These operators have the same properties as the Time evolution operator.
 
 ### Quantum operators
 
-$$ \hat{p} \vert x \rangle = i \frac{\hbar} \frac{d}{dx} \vert x \rangle$$
+$$ \hat{p} \vert x \rangle = i \hbar \frac{d}{dx} \vert x \rangle$$
 
-$$ \hat{H} \vert \psi \rangle = i \frac{\hbar} \frac{d}{t} \vert \psi \rangle$$
+$$ \hat{H} \vert \psi \rangle = i \hbar \frac{d}{t} \vert \psi \rangle$$
 
-$$ \hat{L} \vert \theta \rangle = i \frac{\hbar} \frac{d}{\theta} \vert \theta \rangle$$
+$$ \hat{L} \vert \theta \rangle = i \hbar \frac{d}{\theta} \vert \theta \rangle$$
 
-$$ \hat{x} \vert p \rangle = i \frac{\hbar} \frac{d}{p} \vert p \rangle$$
+$$ \hat{x} \vert p \rangle = i \hbar\frac{d}{p} \vert p \rangle$$
