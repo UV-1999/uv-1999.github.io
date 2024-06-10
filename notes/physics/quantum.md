@@ -48,9 +48,13 @@ $$ \frac{\partial \mathcal{L}}{\partial {t}} = \frac{d \mathcal{L}}{d {t}} - \fr
 
 $$ \frac{\partial \mathcal{L}}{\partial {t}} = \frac{d}{dt}\left(\mathcal{L} - \frac{\partial \mathcal{L}}{\partial \dot{q}} {\dot{q}}\right) $$
 
-$$ \frac{\partial \mathcal{L}}{\partial {t}} = \frac{d}{dt} H $$
+$$ \frac{\partial \mathcal{L}}{\partial {t}} = - \frac{d}{dt} H $$
 
-$$ H = \mathcal{L} - \frac{\partial \mathcal{L}}{\partial \dot{q}} {\dot{q}} $$
+$$ H = \frac{\partial \mathcal{L}}{\partial \dot{q}} {\dot{q}} - \mathcal{L} $$
+
+This is the definition of Hamiltonian.
+
+***
 
 In Quantum physics, quantities are not always be single-valued but evolve discreetly in a probabilistic nature. How to model these quantum properties?
 
