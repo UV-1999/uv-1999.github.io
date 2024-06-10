@@ -9,9 +9,9 @@ Judgements or decisions are the **beliefs** that motivate certain actions.
 This forces us to ask what is knowledge? what are beliefs? and what is good? And several more questions.
 
 ## Major branches of Philosophy:
-### [Epistemology - study of nature of Truth](# Epistemology)
-### [Logic - study of nature of reason](# Logic)
-### [Metaphysics- study of nature of reality](# Metaphysics)
+### [Epistemology - study of nature of Truth](#epistemology)
+### [Logic - study of nature of reason](#logic)
+### [Metaphysics- study of nature of reality](#metaphysics)
 ### Axiology - study of nature of value
 
 ## Science and Physics:
