@@ -107,7 +107,7 @@ $$ (U \psi)^\dagger (U \phi) = \psi^\dagger U^\dagger U \phi $$
 
 $$ \psi^\dagger U^\dagger U \phi = \psi^\dagger I \phi = \psi^\dagger \phi = \langle \psi | \phi \rangle $$
 
-The eigenvalues of a unitary operator $ U $ have unit magnitude.
+The eigenvalues of a unitary operator $U$ have unit magnitude.
 
 Proof:
 $$ U |\lambda\rangle = \lambda |\lambda\rangle $$
