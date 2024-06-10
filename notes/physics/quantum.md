@@ -79,4 +79,61 @@ The Lagrangian of a system can be intuitively understood as the totatlity of phy
 3. If the laws don't depend on a momentum then we get uniform motion along the corresponding coordinate.
 
 ***
+### Quantum state
+### Hilbert Space and Inner Product
+### Quantum operators
+### Born's Rule
+### Commutator
+### Hermitian Operators
 
+### Unitary Operators
+
+A unitary operator \( U \) satisfies the condition:
+$$ U^\dagger U = U U^\dagger = I $$
+
+where $ U^\dagger $ is the Hermitian conjugate (or adjoint) of $ U $, and $ I $ is the identity operator.
+
+Additionally, the inner product is preserved under a unitary transformation:
+
+$$ \langle U \psi | U \phi \rangle = \langle \psi | \phi \rangle $$
+
+Proof:
+
+$$ \langle U \psi | U \phi \rangle = (U \psi)^\dagger (U \phi) $$
+$$ (U \psi)^\dagger = \psi^\dagger U^\dagger $$
+$$ (U \psi)^\dagger (U \phi) = \psi^\dagger U^\dagger U \phi $$
+$$ \psi^\dagger U^\dagger U \phi = \psi^\dagger I \phi = \psi^\dagger \phi = \langle \psi | \phi \rangle $$
+
+The eigenvalues of a unitary operator $ U $ have unit magnitude.
+
+Proof:
+$$ U |\lambda\rangle = \lambda |\lambda\rangle $$
+$$\langle \lambda | U |\lambda\rangle = \langle \lambda | \lambda |\lambda\rangle$$
+$$ \langle \lambda | U^\dagger U |\lambda\rangle = \langle \lambda | I |\lambda\rangle$$
+
+Since \( \langle \lambda | I |\lambda\rangle = \langle \lambda | \lambda \rangle = 1 \), we have:
+\[
+\langle \lambda | U^\dagger U |\lambda\rangle = 1
+\]
+
+But \( U |\lambda\rangle = \lambda |\lambda\rangle \), so:
+\[
+\langle \lambda | U^\dagger (\lambda |\lambda\rangle) = \lambda \langle \lambda | U^\dagger |\lambda\rangle
+\]
+
+Since \( U^\dagger |\lambda\rangle = \overline{\lambda} U^\dagger |\lambda\rangle \), where \( \overline{\lambda} \) is the complex conjugate of \( \lambda \):
+\[
+\lambda \langle \lambda | U^\dagger |\lambda\rangle = \lambda \overline{\lambda} \langle \lambda | \lambda \rangle
+\]
+
+Since \( \langle \lambda | \lambda \rangle = 1 \):
+\[
+\lambda \overline{\lambda} = 1
+\]
+
+Thus:
+\[
+|\lambda|^2 = 1 \Rightarrow |\lambda| = 1
+\]
+
+This proves that the eigenvalues of a unitary operator \( U \) have unit magnitude.
