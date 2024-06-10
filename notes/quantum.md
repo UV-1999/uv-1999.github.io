@@ -14,4 +14,11 @@ The physical properties can be shown as matrices (linear operators) that when ac
 
 That is why we use linear algebra for quantum mechanics.
 
-$$|\Psi\rangle = \sum_{\text{all states}} c_i |\phi_i\rangle$$
+$$|\Psi\rangle = \sum_i c_i |\phi_i\rangle$$
+
+These sums can be allowed to be infinite.
+
+But consider position as a property. It is continuous so showing it as a discrete sum is not efficient. We may replace the sum with an integral.
+
+We can say that state vector is the $$\int dx \, c(x) |x\rangle$$
+
