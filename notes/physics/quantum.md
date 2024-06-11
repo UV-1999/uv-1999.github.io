@@ -27,7 +27,7 @@ We can say that state vector is the integral:
 
 $$ \int {dx} {c(x)} {\vert x \rangle} $$
 
-$c(x)$ is a function for each position state $\vert x \rangle$ so that we can use it to find the probability.
+$ c(x) $ is a function for each position state $\vert x \rangle$ so that we can use it to find the probability.
 
 It is mathematically possible that adding an infinite number of vectors together the sum may come out as not an element of the vector space. 
 
