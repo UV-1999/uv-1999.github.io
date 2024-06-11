@@ -19,14 +19,14 @@ Judgements are the **beliefs** that motivate certain actions.
 ### 4. Axiology - What is the nature of values?
 ### 5. Maybe more since one can always philosophise...
 
-### [Science and Physics](#science)
+### [Science](#science)
 ### [Classical Physics](https://uv-1999.github.io/notes/physics/classical)
 ### [Quantum Physics](https://uv-1999.github.io/notes/physics/quantum)
 ### [Thermal Physics](https://uv-1999.github.io/notes/physics/thermal)
-### [Solid State Physics Physics](https://uv-1999.github.io/notes/physics/solid)
-### [Atomic and Molecular Physics Physics](https://uv-1999.github.io/notes/physics/amol)
+### [Solid State Physics](https://uv-1999.github.io/notes/physics/solid)
+### [Atomic and Molecular Physics](https://uv-1999.github.io/notes/physics/amol)
 ### [Nuclear Physics](https://uv-1999.github.io/notes/physics/nuclear)
-### [Particle Physics Physics](https://uv-1999.github.io/notes/physics/particle)
+### [Particle Physics](https://uv-1999.github.io/notes/physics/particle)
 
 ***
 
