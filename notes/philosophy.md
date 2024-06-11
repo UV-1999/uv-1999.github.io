@@ -141,15 +141,13 @@ Only deductive reasoning guarantees truth of conclusion. Abductive and Inductive
 ## Logical Proofs
 A proof is a series of implications.
 
-**Principles of explosion:**
+**Principle of explosion:**
 Let say : “no pigs can fly” and “there are flying pigs”
 “There are flying pigs or There exist unicorns.” This statement is true in the above inconsistent system of axioms. The truth value of “there are flying pigs” is one and the truth value of “unicorns exists” is say x. So the combined truth value is one But also “no pigs can fly”, so the truth value of “there are flying pigs” is now zero. But since the combined Statement is true. Unicorns must exist. So using inconsistent axioms, we can prove anything, any nonsense. In the same manner we can simultaneously prove that unicorns don't exist. So if we start with inconsistent axioms, we will reach self-contradicting theorems and results.
 
-**Proof by contradiction or “reduction to absurdity”**
-If something absurd (statement is both true and false at same time) follows then the premise must be false. This follows from the principle of explosion.
+**Proof by contradiction or “reduction to absurdity”**: If something absurd (statement is both true and false at same time) follows then the premise must be false. This follows from the principle of explosion.
 
-**Proof by induction is modus ponens applied many times.**
-Base case is verified to be true, the inductive step is proved, then all else is modus ponens ad infinitum.
+**Proof by induction is modus ponens applied many times.**: Base case is verified to be true, the inductive step is proved, then all else is modus ponens ad infinitum.
 
 The **Münchhausen trilemma** is that there are only three ways of completing a proof:
 
@@ -194,7 +192,7 @@ Assuming it to be true is called the **fallacy of converse**.
 
 ## Modus Ponens
 
-**Modus ponens**, it is the act of concluding consequent if the antecedent is true and the implication is also true.
+**Modus ponens**: It is the act of concluding consequent if the antecedent is true and the implication is also true.
 
 If No air then no life. 
 No air on moon.
@@ -220,13 +218,13 @@ Assuming it to be true is called the **fallacy of inverse.**
 
 ## Modus tollens
 
-**Modus tollens**, it is an act of concluding the negation of antecedent, if negation of consequent is true and the implication is also true.
+**Modus tollens**: It is an act of concluding the negation of antecedent, if negation of consequent is true and the implication is also true.
 
 If Too much food, then weight gain.
 No weight gain.
 By modus tollens, Not too much food.
 
-### Sufficient and necessary conditions are not same
+### Examples of "Sufficient Conditions $$\neq$$ Necessary Conditions"
 
 Air is necessary for life but not sufficient.
 You need more things for life.
@@ -256,22 +254,22 @@ You could use a raincoat as well.
 
 ### Cases of combination of sufficient and necessary condition:
 
-**Case1**
+**Case 1**
 - Sufficient conditions are true (implies proposition to be true.
 - Necessary conditions are false (implies proposition to be false).
 - So this is a contradiction, (true and false simultaneously).
 
-**Case2**
+**Case 2**
 - Sufficient conditions are false.
 - Necessary conditions are true.
 - Truth of proposition is not guaranteed.
 
-**Case3**
+**Case 3**
 - Sufficient conditions are false.
 - Necessary conditions are false.
 - Proposition is guaranteed to be false.
 
-**Case4**
+**Case 4**
 - Sufficient conditions are true.
 - Necessary conditions are true.
 - Proposition is guaranteed to be true.
