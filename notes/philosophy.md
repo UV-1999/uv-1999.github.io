@@ -178,7 +178,7 @@ And a compound proposition that is neither a tautology nor a contradiction is re
 
 ### [Logical Paradoxes](https://uv-1999.github.io/logic.html)
 
-## Necessary conditions
+### Necessary conditions
 
 A proposition P is **necessary** for a proposition Q.
 We say this when  “If P is false, then Q is also false”. 
@@ -195,7 +195,7 @@ Or “If life is there then air is also there.”
 But is "If Air then life" true? No!
 Assuming it to be true is called the **fallacy of converse**.
 
-## Modus Ponens
+### Modus Ponens
 
 **Modus ponens**: It is the act of concluding consequent if the antecedent is true and the implication is also true.
 
@@ -203,7 +203,7 @@ If No air then no life.
 No air on moon.
 By modus ponens, no life on moon.
 
-## Sufficient conditions
+### Sufficient conditions
 
 A proposition R is **sufficient** for a proposition Q.
 We say this when “If R is true then Q is also true”.
@@ -221,7 +221,7 @@ Or “If you are not gaining weight then you are not eating too much”
 But is "If you are not eating too much then you will not gain weight" is true? No!
 Assuming it to be true is called the **fallacy of inverse.**
 
-## Modus tollens
+### Modus tollens
 
 **Modus tollens**: It is an act of concluding the negation of antecedent, if negation of consequent is true and the implication is also true.
 
