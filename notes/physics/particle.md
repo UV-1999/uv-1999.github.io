@@ -3,6 +3,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
+[Back to main menu](https://uv-1999.github.io/notes/philosophy)
+
 # Particle Physics
 
 # Note on Particle Physics
@@ -69,3 +71,7 @@ Resonance particles are short-lived excited states of particles, such as:
 - **Delta particle**: An excited state of protons.
 
 In any reaction, the strong interaction dominates unless one of the particles involved does not participate in the strong interaction.
+
+***
+
+[Back to main menu](https://uv-1999.github.io/notes/philosophy)
