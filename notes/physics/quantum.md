@@ -3,6 +3,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
+[Back to main menu](https://uv-1999.github.io/notes/philosophy)
+
 # Quantum Physics
 
 ## Problems with Classical Mechanics
@@ -278,3 +280,6 @@ $$ \psi(x+a) = e^{iKa} \psi(x) $$
 
 for some constant K.
 
+***
+
+[Back to main menu](https://uv-1999.github.io/notes/philosophy)
