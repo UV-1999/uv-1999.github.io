@@ -3,6 +3,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
+[Back to main menu](https://uv-1999.github.io/notes/philosophy)
+
 # Classical Physics
 
 What is Physics? 
@@ -179,3 +181,5 @@ The Lagrangian of a system can be intuitively understood as the totatlity of phy
 3. If the laws don't depend on a momentum then we get uniform motion along the corresponding coordinate.
 
 ***
+
+[Back to main menu](https://uv-1999.github.io/notes/philosophy)
