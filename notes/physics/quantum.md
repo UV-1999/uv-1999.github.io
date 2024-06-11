@@ -73,6 +73,95 @@ So Quantum vector space = Hilbert vector space
 But Hilbert space has an inner product also.
 
 
+The inner product is useful to find the probability coefficients:
+Consider |state vector> = c1|C1> + c2|C2> +  …
+So taking inner product of state vector with |C1> with the requirements that |C1> and |C2> and etc. are orthonormal.
+We get < C1 | state > = c1
+But what about the inner product for the integrals? When the state vector is integral of { dx c(x) |x> }.
+For position value say “a”:
+
+c(x=a) = integral of { dx c(x) Diracdelta(x-a) }
+Consider the inner product of two states = integral of { dx C1(x) |x> } X integral of { dy C2(y) |y> }
+⇒ double integral of { dx dy C1’(x) C2(y) <x | y> }
+⇒ Since x and y are orthonormal states hence only when they are the same (x=y) they are non-zero.
+⇒  integral of { dx C1’(x) C2(x) }
+
+Dual space of vector space V is a vector space that has vectors as all the linear functionals in V (row vectors).
+Since inner products and linear functional spit out scalars hence they are useful to find the values of physical quantities.
+And linear functionals (row vectors) applied to column vectors is just the inner product of those two vectors.
+This is the consequence of the Riesz representation theorem in maths.
+Row vector = Bra = <x| and Column vector = Ket = |x>
+
+HOW LINEAR OPERATORS REPRESENT PHYSICAL QUANTITIES?
+A system can be in several possible definite states (states we can observe). Such states have the corresponding values of the physical properties that we measure or observe.
+The linear operator for a particular physical observable quantity acted upon by the state should spit out all possible values of the observable which are also exclusive. Such a feature is also shown by the eigenvalue problem.
+Hence the state vector is a linear combination of eigenstates (mutually orthogonal vectors = basis vectors).
+The eigenvalues must be real. 
+
+Okay. HOW TO FIND THE PROBABILITY?
+Since the eigenvector with the component such that its complex magnitude is largest implies a larger probability, 
+Hence it is seemingly reasonable to just say that probability distribution is equal to that complex magnitude of the coefficient.
+Well we should first decide what we expect from the probability distribution:
+Total probability is one.
+The length of the quantum state should not change.
+The probability does not depend on the sign of the coefficient.
+If the length could change as we apply the operator then we have to define the initial length of the vector which can not be known. Because all we observe is the eigenvalues, not the length of the state vectors.
+The length of the vector is the sum of squares of the coefficients.
+Sum of probability function say f(c_i) = 1
+⇒ Sum of f(c_i) + f(c_n) = 1
+⇒ c_n = +/- sqrt { length squared - (sum of squares of c_i other than n) } 
+⇒ since f is even f(c_n) = f(sqrt { length squared - (sum of squares of c_i other than n) })
+⇒ Sum of f(c_i) + f(c_n) = 1 ⇒ Sum of f(c_i) + f(sqrt { length squared - (sum of squares of c_i other than n) }) = 1
+⇒ we can differentiate this wrt say c1. Since all c are independent of each other.
+⇒ df(c1)/c1 + d/dc1 ( f (square root term from above) ) = 0
+⇒  (1/c1) * df(c1)/c1 = some terms having all c = constant
+⇒ So f = Ac^2 + B
+⇒ B is zero since f(0) = 0 if the coefficient is zero then the probability is also zero.
+⇒ f(length of state vector) = 1 ⇒ A = 1/ (length^2) and we choose length to be 1.
+⇒ f(c) = (c)^2 = square of magnitude of inner product <eigenvector for c | state vector> 
+THE BORN RULE DERIVED !!
+BUT such a derivation works only for vector space having equal or more than 3 dimensions. Since in 1 dimension state vector the state is fixed anyway. In two dimensions the two eigenstates will not be independent if we keep the length to be constant. So for two or less dimensions we take the Born rule as an axiom. 
+
+For observables with continuous eigenbasis, the probability density is the square of the coefficient function.
+So back to quantum operators. The eigenvalues must be real and the operator must not change the length of the state vector. Also the eigenvectors must span the vector space. Eigenvectors are also orthonormal.
+Say some operator A.
+⇒ Consider A|state> = Sum over { c A |eigenvectors> } = Sum over { c eigenvalue |eigenvectors> }
+⇒ c = < eigenvector | state >
+⇒ Sum over { c eigenvalue |eigenvectors> } = Sum over { < eigenvector | state >  eigenvalue |eigenvectors> }
+⇒ Sum over {  eigenvalue |eigenvectors> < eigenvector | } | state >
+⇒ A = Sum over { Eigenvalue |eigenvectors><eigenvectors| }
+The Hermitian conjugate of A is also A hence A is a Hermitian Operator. Hence all quantum observables are Hermitian operators.
+
+THE COMMUTATOR == [A, B] = AB - BA 
+A and B are operators.
+Consider operators that commute:
+Say state |alpha> is an eigenstate of operator A. So BA |alpha> = B lambda |alpha>. Here lambda is the eigenvalue. 
+B lambda |alpha> = lambda B |alpha> =  AB |alpha> ⇒ B |alpha> is eigenvector of A 
+So both |alpha> and |B alpha> are both eigenvectors of A having the same lambda eigenvalue.
+Non-degenerate eigenvector is something that has a unique eigenvalue.
+If |alpha> is a non-degenerate eigenvector of A then it is a unique eigenvalue lambda.
+But |B alpha>  is also an eigenvector of A with the same eigenvalue so 
+|B alpha> = some scalar time |alpha> 
+So |alpha> is also an eigenvector of B.
+In the degenerate case:
+Consider that we span the vector space by the eigenvectors of A (the eigenspace of A).
+Since AB |alpha> = lambda B |alpha> hence |B alpha> has to stay in the vector space.
+If there is some vector |p> that is orthogonal to the eigenspace of A, then the inner product <p | B alpha > = 0
+Since B is Hermitian ⇒ <p | B alpha > = < B* p | alpha > = 0.
+|B p> is orthogonal to the eigenspace.
+So a vector that is one component inside the eigenspace and one that is orthogonal, when applied with B, will just scale that vector since both of the parallel and perpendicular components have to stay that way.
+CONCLUSION: Commutating operators share eigenvectors. Also they share a simultaneous eigenbasis.
+Why does it matter? Because the system can stay in a definite state for both of the operators simultaneously. 
+Measurement of one observable does not affect the other.
+Non-commutating operators dont have such property. So simultaneous measurements are NOT possible.
+We can derive the Uncertainty principle from here.
+Standard deviation A * Standard deviation B >= magnitude of { 1/2i * average value of commutator operator }
+
+Time evolution operator:
+U(t) this evolves the state by t amount of time.Since time evolution is assumed to be reversible.
+So the inverse of U must exist.
+Position, Translational and Rotational operators.
+
 
 
 ### Unitary Operators
