@@ -1,33 +1,36 @@
-# Philosophy
+# From Philosophy to Science to Physics
 My unwarranted notes on whatever I write here.
 
 > “Tiger got to hunt, bird got to fly; Man got to sit and wonder 'why, why, why?' <br>
 > Tiger got to sleep, bird got to land; Man got to tell himself he understand.”
 
 Philosophy is the pursuit of **wisdom**. Wisdom is **knowledge** applied to make **good** judgements.
-Judgements or decisions are the **beliefs** that motivate certain actions.
-This forces us to ask what is knowledge? what are beliefs? and what is good? And several more questions.
+Judgements are the **beliefs** that motivate certain actions.
 
 ## Major branches of Philosophy:
-### [Epistemology - study of nature of Truth](#epistemology)
-### [Logic - study of nature of reason](#logic)
-### [Metaphysics- study of nature of reality](#metaphysics)
-### Axiology - study of nature of value
+### 1. Epistemology - What is the nature of truth?
+### 2. [Logic - What is the nature of reason?](#logic)
+### 3. Metaphysics- What is the nature of reality?](#metaphysics)
+### 4. Axiology - What is the nature of values?
+### 5. Maybe more since one can always philosophise...
 
 ## Science and Physics:
 ### [Science and Physics](https://uv-1999.github.io/notes/science)
 ### [Classical Physics](https://uv-1999.github.io/notes/physics/classical)
 ### [Quantum Physics](https://uv-1999.github.io/notes/physics/quantum)
+### [Thermal Physics](https://uv-1999.github.io/notes/physics/thermal)
+### [Solid State Physics Physics](https://uv-1999.github.io/notes/physics/solid)
+### [Atomic and Molecular Physics Physics](https://uv-1999.github.io/notes/physics/amol)
+### [Nuclear Physics](https://uv-1999.github.io/notes/physics/nuclear)
+### [Particle Physics Physics](https://uv-1999.github.io/notes/physics/particle)
 
-# Epistemology
+***
 
-Knowledge is a truth that is also properly justified. Gettier problem? The solution to Gettier cases is in accepting that the justification is limited to contingency and probability.
+# Logic
 
-Information is the pattern or the lack of randomness in data. One can say that the extent to which data is informative to someone depends on the extent to which it is unexpected by that person. More unexpected, more information in data. The amount of information contained in a data stream can be characterized by its Shannon entropy.
+Logic is the study of reasoning. Reasoning is how we make inferences. Inference is the act of gaining knowledge. Knowledge is true beliefs that are properly justified. Beliefs are what our mind is filled of. I can not define anything after that.
 
-**What is Data?** Thoughts obtained/recorded through experience/experiments are data.
-
-Truths are propositions that are true. [What is true?]
+Truths are propositions that are true. But what is true?
 
 Propositions are beliefs represented through some language as sentences that are not vague or ambiguous.
 
@@ -38,31 +41,17 @@ Propositions are beliefs represented through some language as sentences that are
 **When is a Proposition True?**
 
 **1. Analytically - True by Reasoning**
-
-A proposition such as "If p and q, then p" is considered to be an analytic truth because of the meaning of the symbols and words in it and not because of any fact of any particular world.
-They are such that they could not be untrue. Analytic truth (also called a necessary truth) is a proposition that is true in all possible worlds or under all possible interpretations.
+A proposition such as "If p and q, then p" is considered to be an analytic truth because of the meaning of the symbols and words in it and not because of any fact of any particular world. They are such that they could not be untrue. Analytic truth (also called a necessary truth) is a proposition that is true in all possible worlds or under all possible interpretations.
 
 **2. Factually - True by Reality**
-
 Factually true propositions are called synthetic truths or facts. A fact (also called a contingency), is only true in this world as it has historically unfolded.
 It is a proposition that is true by conforming to reality.
 
-***
+Inferences are also called conclusions and they are formed by arguments. An argument is a collection of premises that have some conclusion.
 
-# Logic
-
-Logic is the study of reasoning. Reasoning is how we make inferences. Inference is the act of gaining knowledge.
-
-Argument is a collection of premises that have some conclusion.
 Argument: if given some premises then they imply some conclusion.
-Type of arguments (process of stating premises that leads to some stated conclusion):
 
-Syllogism - conclusion from two premises.
-Enthymeme - conclusion form three premises.
-
-Socratic method - Dialogue based way to present arguments and counter arguments to reach a general conclusion.
-
-## IMPLICATIONS - the “if-then” statements.
+## Implications (The “if-then” statements)
 Consider this “If dogs are mammals, then I am human”. Both sub-statements are true. Dogs are mammals and I am a human. But clearly something is off about the compound statement. There is no causal relevance. The truth value of the antecedent does not imply the truth value of the consequent. 
 
 True implies true - valid implication
@@ -111,7 +100,13 @@ So to conclude another predicate about a subject from a known predicate, one mus
 
 One single premise is not enough for a conclusion.
 
-## Types of reasoning:
+Type of arguments (process of stating premises that leads to some stated conclusion):
+1. Syllogism - conclusion from two premises.
+2. Enthymeme - conclusion form three premises.
+
+Socratic method - Dialogue based way to present arguments and counter arguments to reach a general conclusion.
+
+## Types of reasoning
 
 Inductive - General conclusion from special observation.
 
@@ -143,51 +138,70 @@ Only deductive reasoning guarantees truth of conclusion. Abductive and Inductive
 
 **Higher-order logic**: It goes beyond first-order logic by allowing quantification over functions and predicates, not just individuals. This enables reasoning about properties of properties and functions of functions.
 
-## LAWS OF LOGIC:
+## LAWS OF LOGIC
 - Law of excluded middle - a proposition is either true or false. Not somewhere in the middle.
 - Law of contradiction - something is either A or not A. Where A can be anything.
 - Law of identity - a thing is identical or same to itself, A = A for all A.
 
-Law of excluded middle is necessary for logic. If a statement P is both true and false then anything can be proven to be true. The statement "law of excluded middle is true" can also be proven to be true which is contradictory. So either the law of excluded middle has to be true or all the propositions are true and false at the same time leading to the collapse of logic.
+**Law of excluded middle is necessary for logic.**
+If a statement P is both true and false then anything can be proven to be true. The statement "law of excluded middle is true" can also be proven to be true which is contradictory. So either the law of excluded middle has to be true or all the propositions are true and false at the same time leading to the collapse of logic.
 
-If a proposition that is always true regardless of the truth values of the propositional variables it contains is called a tautology.
-A compound proposition that is always false is called a contradiction or absurdity.
-And a compound proposition that is neither a tautology nor a contradiction is referred to as a contingency. The truth value depends on the contents of the propositions.
+If a proposition that is always true regardless of the truth values of the propositional variables it contains is called a **tautology**.
+A compound proposition that is always false is called a **contradiction** or absurdity.
+And a compound proposition that is neither a tautology nor a contradiction is referred to as a **contingency**. The truth value depends on the contents of the propositions.
 
-A proposition P is necessary for a proposition Q 
-We say this when  “If P is false, then Q is also false” 
-Or  “If Q is true then P is also true” 
+## Necessary conditions
+
+A proposition P is **necessary** for a proposition Q.
+We say this when  “If P is false, then Q is also false”. 
+Or  “If Q is true then P is also true”.
 Or “Q if P”.
-But We cannot always say that “If P is true then Q is also true”
+
+But We cannot always say that “If P is true then Q is also true”.
 Because P is merely necessary but not sufficient for Q.
-Example
-“Air is necessary for life” Or  “If No air then no life” Or “Life if Air” Or “If life is there , air is also there.”
-But
-If Air then life? No!
-Assuming something like that is called the fallacy of converse.
+Example: “Air is necessary for life”.
+Or “If No air then no life”.
+Or “Life if Air”.
+Or “If life is there then air is also there.”
 
-Modus ponens, it is the act of concluding consequent if the antecedent is true and the implication is also true.
+But is "If Air then life" true? No!
+Assuming it to be true is called the **fallacy of converse**.
 
-If No air then no life 
-No air on moon, true,
-So No life on moon, true by modus ponens.
+## Modus Ponens
 
-A proposition R is sufficient for a proposition Q
-We say this when “If R is true then Q is also true” Or “If Q is false then R is also false” Or “R only if Q”
-But We cannot always say that “If R is false then Q is also false”
-Because R is mere sufficient but not necessary for Q
-Example
-“Too much food increases weight” Or “Too much food is sufficient condition for gaining weight” Or “If you eat too much food, you will gain weight” Or “If you are not gaining weight then you are not eating too much”
-But 
-If you are not eating too much then you will not gain weight? No!
-Assuming something like this is the fallacy of inverse.
+**Modus ponens**, it is the act of concluding consequent if the antecedent is true and the implication is also true.
 
-Modus tollens, it is an act of concluding the negation of antecedent, if negation of consequent is true and the implication is also true.
+If No air then no life. 
+No air on moon.
+By modus ponens, no life on moon.
 
-If Too much food, then weight gain
-No weight gain
-So no too much food (true by modus tollens)
+## Sufficient conditions
 
+A proposition R is **sufficient** for a proposition Q.
+We say this when “If R is true then Q is also true”.
+Or “If Q is false then R is also false”.
+Or “R only if Q”.
+
+But We cannot always say that “If R is false then Q is also false”.
+Because R is mere sufficient but not necessary for Q.
+
+Example: “Too much food increases weight”.
+Or “Too much food is sufficient condition for gaining weight”.
+Or “If you eat too much food, you will gain weight”.
+Or “If you are not gaining weight then you are not eating too much”
+
+But is "If you are not eating too much then you will not gain weight" is true? No!
+Assuming it to be true is called the **fallacy of inverse.**
+
+## Modus tollens
+
+**Modus tollens**, it is an act of concluding the negation of antecedent, if negation of consequent is true and the implication is also true.
+
+If Too much food, then weight gain.
+No weight gain.
+By modus tollens, Not too much food.
+
+### sufficient and necessary conditions are not same
 
 Air is necessary for life but not sufficient.
 You need more things for life.
@@ -217,72 +231,44 @@ You could use a raincoat as well.
 
 ### Cases of combination of sufficient and necessary condition:
 
-> **Case1**
-> Sufficient conditions are true (implies proposition to be true.
-> Necessary conditions are false (implies proposition to be false).
-> So this is a contradiction, (true and false simultaneously).
+**Case1**
+- Sufficient conditions are true (implies proposition to be true.
+- Necessary conditions are false (implies proposition to be false).
+- So this is a contradiction, (true and false simultaneously).
 
-> **Case2**
-> Sufficient conditions are false.
-> Necessary conditions are true.
-> Truth of proposition is not guaranteed.
+**Case2**
+- Sufficient conditions are false.
+- Necessary conditions are true.
+- Truth of proposition is not guaranteed.
 
-> **Case3**
-> Sufficient conditions are false.
-> Necessary conditions are false.
-> Proposition is guaranteed to be false.
+**Case3**
+- Sufficient conditions are false.
+- Necessary conditions are false.
+- Proposition is guaranteed to be false.
 
-> **Case4**
-> Sufficient conditions are true.
-> Necessary conditions are true.
-> Proposition is guaranteed to be true.
+**Case4**
+- Sufficient conditions are true.
+- Necessary conditions are true.
+- Proposition is guaranteed to be true.
 
 ## [Logical Paradoxes](https://uv-1999.github.io/logic.html)
 
-Principles of explosion: Let say : “no pigs can fly” and “there are flying pigs”
+**Principles of explosion:**
+Let say : “no pigs can fly” and “there are flying pigs”
 “There are flying pigs or There exist unicorns.” This statement is true in the above inconsistent system of axioms. The truth value of “there are flying pigs” is one and the truth value of “unicorns exists” is say x. So the combined truth value is one But also “no pigs can fly”, so the truth value of “there are flying pigs” is now zero. But since the combined Statement is true. Unicorns must exist. So using inconsistent axioms, we can prove anything, any nonsense. In the same manner we can simultaneously prove that unicorns don't exist. So if we start with inconsistent axioms, we will reach self-contradicting theorems and results.
 
-Proof by contradiction or “reduction to absurdity”
+**Proof by contradiction or “reduction to absurdity”**
 If something absurd (statement is both true and false at same time) follows then the premise must be false. This follows from the principle of explosion.
 
-Proof by induction is modus ponens applied many times.
+**Proof by induction is modus ponens applied many times.**
 Base case is verified to be true, the inductive step is proved, then all else is modus ponens ad infinitum.
 
-If it is asked how any given proposition is known to be true, proof in support of that proposition may be provided. Yet that same question can be asked of that supporting proof, and any subsequent supporting proof.
-The Münchhausen trilemma is that there are only three ways of completing a proof:
+The **Münchhausen trilemma** is that there are only three ways of completing a proof:
 
-The circular argument, in which the proof of some proposition presupposes the truth of that very proposition
+1. The circular argument, in which the proof of some proposition presupposes the truth of that very proposition
 
-The regressive argument, in which each proof requires a further proof, ad infinitum.
+2. The regressive argument, in which each proof requires a further proof, ad infinitum.
 
-The dogmatic argument, which rests on accepted precepts which are merely asserted rather than defended
+3. The dogmatic argument, which rests on accepted precepts which are merely asserted rather than defended
 
 The trilemma, then, is the decision among the three equally unsatisfying options. Karl Popper's suggestion was to accept the trilemma as unsolvable and work with knowledge by way of conjecture and criticism.
-
-***
-
-# Metaphysics
-
-How real (factually true) a proposition is, that is dealt in metaphysics.
-
-You can’t make true statements about the world without input from the world. Eratosthenes didn’t really measure the Earth for its circumference, not even though he knew it as self-evident. He INFERRED it from the facts of shadows and geometry.
-
-Ontology is a branch of metaphysics studying existence in reality.
-
-**Ontological parasite**
-Their existence depends fully on the existence of others, e.g. holes, point, line and plane. Properties of existing objects are the trivial case of ontological parasites.
-
-**Ontological Reductionism**
-Thought experiment: INCARS - A INCAR is a car that is in the garage. If any car is in the garage then INCAR exists. When a car leaves, the INCAR diminishes into non-existence and can be again created when a car gets in the garage. So are INCARS real? Trivially it is a made-up thing because we can reduce its existence by saying that only cars exist and being in a garage is just a property of that car. Thus ontological reductionism helps us to identify the simplest of a composition and to understand which thing actually exists or not, depending on their properties. As more and more properties are known, more fundamental-er simples are discovered and more bigger and complex compositions can be understood.
-
-**Identical**
-All the properties must be exactly equal then only two things are identical.
-
-**Wrong Theorem** 
-A cat has nine tails. 
-
-**Wrong Proof**
-No cat has eight tails. A cat has one more tail than no cat. Therefore a cat has nine tails. 
-BUT. No cat has actually any number of tails The number of tails no cat has is indeterminate hence proof is wrong. Non-existent things have indeterminate properties.
-
-SCIENCE is a branch of METAPHYSICS that aims to find the facts of nature using experiments based on logical empiricism.
