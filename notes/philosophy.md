@@ -260,7 +260,7 @@ You could use a raincoat as well.
 
 # Science
 
-## SCIENTIFIC METHOD
+### Scientific Method
 
 Observation are done. Abductive reasoning is done to reach a hypothesis.
 Phenomenology - extracting meaningful insights from empirical data and often serves as a precursor to theoretical developments.
@@ -300,7 +300,7 @@ In the famous eclipse experiment of 1919, the positions of stars near the sun we
 
 That’s why theories are tested as much as possible by logically deriving many different predictions from them, and then using observation or experiment to determine whether those predictions are true. A single failed prediction would be enough to prove the theory false. Therefore, the more true predictions the theory produces, the more likely it is that the theory itself is true. So that is the primary way that empirical sciences are based on logic. They use the laws of logical deduction (which include mathematics) to generate predictions, based on the hypotheses of their theories. It’s then up to the observers and experimentalists to determine whether those predictions are true.
 
-# Scientific Measurements
+## Scientific Measurements
 Measurements can be made of a property of a system considered in the study. Instruments may be required to make some measurements. A measurement is the central idea in experiments and has two parts, a number and a unit.
 
 1. Natural units: when one or more fundamental physical constants are assigned to be unity.
@@ -309,10 +309,10 @@ Measurements can be made of a property of a system considered in the study. Inst
 4. Geometrized units: $$c = G = 1$$
 5. [Gaussian Units](http://www.pgccphy.net/ref/gaussian-conv.pdf)
 
-## What IS a measurement?
+### What IS a measurement?
 It is a property of a system, a system is something we define ourselves, it is not necessary that we have clear cut boundaries of the system. Properties are constructed predicates that conforms to reality subject to our experience aided by our senses. We cannot sense electric charge, but it is a physical property because it comes with a theory that works. Since we can only have a comparative description of these properties, we create reference values which are called units. 1 Coulomb charge may not be something real ontologically. It is just a computable property of the system that we compute or in an informal way, measure, by some instruments. The instrument works by an effect that makes us feel sensible experiences, like seeing two gold leaf repelling each other by some amount. So even if charges are a part of the absolute objective reality still all we can do is see its effects only. The effects we can observe and sense by some analysis. These effects are the act of making a measurement. Such and other sensible experiences are the only way we can decide if the theory works or not. Data visualisation is also just an effect of nature in a way that we can sense. A model or theory fits not objectively but rather always subjectively. When we all agree over the same subjective experience somehow that's when we say something is effectively objective about our experiences, and our measurements. Hence physical quantities are never measured but only computed. Effects are measured.
 
-## Properties of a measurement
+### Properties of a measurement
 An instrument measures a property numerically. Let’s say “010.1040”. 
 Since here the 0 (left to 1 before decimal) is not a **significant digit**, we safely re-write it to be 10.1040.
 Why are we writing the rightmost 0? Because it is significant.
