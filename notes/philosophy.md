@@ -152,7 +152,7 @@ Let say : “no pigs can fly” and “there are flying pigs”
 
 **Proof by contradiction or “reduction to absurdity”**: If something absurd (statement is both true and false at same time) follows then the premise must be false. This follows from the principle of explosion.
 
-**Proof by induction is modus ponens applied many times.**: Base case is verified to be true, the inductive step is proved, then all else is modus ponens ad infinitum.
+**Proof by induction is "modus ponens" applied many times.**: Base case is verified to be true, the inductive step is proved, then all else is modus ponens ad infinitum.
 
 The **Münchhausen trilemma** is that there are only three ways of completing a proof:
 
@@ -225,7 +225,7 @@ Assuming it to be true is called the **fallacy of inverse.**
 
 **Modus tollens**: It is an act of concluding the negation of antecedent, if negation of consequent is true and the implication is also true.
 
-If Too much food, then weight gain.
+If too much food, then weight gain.
 No weight gain.
 By modus tollens, Not too much food.
 
@@ -256,25 +256,3 @@ You could use a raincoat as well.
 "Having all the sufficient conditions together" is the sufficient but not necessary condition.
 
 (The above follows from the OR logic)
-
-### Cases of combination of sufficient and necessary condition:
-
-**Case 1**
-- Sufficient conditions are true (implies proposition to be true.
-- Necessary conditions are false (implies proposition to be false).
-- So this is a contradiction, (true and false simultaneously).
-
-**Case 2**
-- Sufficient conditions are false.
-- Necessary conditions are true.
-- Truth of proposition is not guaranteed.
-
-**Case 3**
-- Sufficient conditions are false.
-- Necessary conditions are false.
-- Proposition is guaranteed to be false.
-
-**Case 4**
-- Sufficient conditions are true.
-- Necessary conditions are true.
-- Proposition is guaranteed to be true.
