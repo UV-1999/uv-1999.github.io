@@ -9,6 +9,33 @@
 
 
 
+## Wave-particle duality and special relativity
+
+Premise 1: Each particle is associated with a wave and it is impossible to separate the motion of the particle from its wave.
+
+Premise 2: The 4-velocity of the particle flows in the same direction of the wave propagation (4-wave vector).
+
+Deduction 1: We get that the 4-momentum must also be in the same direction as the 4-wave vector.
+
+Deduction 2: Hence all the corresponding components of 4-momentum must be linearly proportional to the corresponding components of the 4-wave vector and the constant must be invariant since this is valid for all possible velocities. The 4-momentum is $$(p_0, p_1, p_2, p_3)$$ and the 4-wave vector is $$(k_0, k_1, k_2, k_3)$$.
+
+Deduction 3: We have $$p_i = \hbar {k_i}$$ (de-Broglie Hypothesis).
+
+Premise 3: It is also known that $$p_0 = \frac{E}{c}$$ and $$k_0 = \frac{\omega}{c}$$.
+
+Deduction 4: So we have $$E = \hbar \omega$$ (Planck’s Hypothesis).
+
+Deduction 5: From the energy momentum relation of special theory of relativity, Planck’s Hypothesis and de-Broglie Hypothesis, we can derive:
+
+$$\omega^2 = {cK}^2 + {\omega_0}^2$$
+
+Premise 4: Since group velocity $$v_g = \frac{domega}{dk}$$  and phase velocity $$v_p = \frac{omega}{k}$$ and $$v_g v_p = c^2$$
+
+So the wave associated with a matter particle travels faster than the invariant speed so it must not carry any mechanical influence.
+What does this wave represent then?
+
+
+
 ## Mathematical Framework of Quantum Mechanics
 
 In Classical physics, physical quantities are single-valued, deterministic and evolve continuously hence it is reasonable to model them by continuous functions.
@@ -148,8 +175,17 @@ These operators have the same properties as the Time evolution operator.
 
 $$ \hat{p} \vert x \rangle = i \hbar \frac{d}{dx} \vert x \rangle$$
 
-$$ \hat{H} \vert \psi \rangle = i \hbar \frac{d}{t} \vert \psi \rangle$$
+$$ \hat{H} \vert \psi \rangle = i \hbar \frac{d}{dt} \vert \psi \rangle$$
 
-$$ \hat{L} \vert \theta \rangle = i \hbar \frac{d}{\theta} \vert \theta \rangle$$
+$$ \hat{L} \vert \theta \rangle = i \hbar \frac{d}{d\theta} \vert \theta \rangle$$
 
-$$ \hat{x} \vert p \rangle = i \hbar\frac{d}{p} \vert p \rangle$$
+$$ \hat{x} \vert p \rangle = i \hbar\frac{d}{dp} \vert p \rangle$$
+
+## Bloch Theorem
+
+For periodic potentials $$V(x+a) = V(x)$$
+
+$$ \psi(x+a) = e^{iKa} \psi(x) $$
+
+for some constant K.
+
