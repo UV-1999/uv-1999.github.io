@@ -1,22 +1,11 @@
 # Science
 
-## TYPES OF SCIENCES
-### FORMAL SCIENCE
-Useful mental constructs: logic, mathematics and computer science, etc.
-### EMPIRICAL/NATURAL SCIENCE
-Explaining the observations. Includes Physics, Chemistry, Biology, Social Science includes humanities, history, psychology. Scientific Method is used.
-
 ## SCIENTIFIC METHOD
 
-Observation is there → Abductive reasoning is done to reach a hypothesis.
-
+Observation are done. Abductive reasoning is done to reach a hypothesis.
 Phenomenology - extracting meaningful insights from empirical data and often serves as a precursor to theoretical developments.
 
-Hypothesis predicts something by deductive reasoning → Prediction is tested by experiment.
-
-An experiment is designed either to demonstrate the observations or to check the predictions.
-
-If prediction is experimentally verified to be true then the hypothesis becomes theory, by inductive reasoning it is taken as part of scientific knowledge.
+Hypothesis predicts something by deductive reasoning. Predictions are tested by experiments. An experiment is designed either to demonstrate the observations or to check the predictions. If prediction is experimentally verified to be true then the hypothesis becomes theory, by inductive reasoning it is taken as part of scientific knowledge.
 
 If prediction comes out to be false then the theory is discarded or labelled as of limited validity.
 
