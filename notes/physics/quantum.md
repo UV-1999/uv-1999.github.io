@@ -5,6 +5,10 @@
 
 # Quantum Physics
 
+## Problems with Classical Mechanics
+
+
+
 ## Mathematical Framework of Quantum Mechanics
 
 In Classical physics, physical quantities are single-valued, deterministic and evolve continuously hence it is reasonable to model them by continuous functions.
@@ -27,7 +31,7 @@ We can say that state vector is the integral:
 
 $$ \int {dx} {c(x)} {\vert x \rangle} $$
 
-$ c(x) $ is a function for each position state $\vert x \rangle$ so that we can use it to find the probability.
+$$c(x)$$ is a function for each position state $$\vert x \rangle$$ so that we can use it to find the probability.
 
 It is mathematically possible that adding an infinite number of vectors together the sum may come out as not an element of the vector space. 
 
@@ -41,9 +45,6 @@ So Quantum vector space = Hilbert vector space
 
 But Hilbert space has an inner product also.
 
-An inner product is a map that takes two vectors and gives out a scalar from the field over which the vector space is defined.
-
-Inner product is not always commutative:
 
 
 
