@@ -10,7 +10,7 @@ Judgements are the **beliefs** that motivate certain actions.
 ## Major branches of Philosophy:
 ### 1. Epistemology - What is the nature of truth?
 ### 2. [Logic - What is the nature of reason?](#logic)
-### 3. Metaphysics- What is the nature of reality?](#metaphysics)
+### 3. Metaphysics- What is the nature of reality?
 ### 4. Axiology - What is the nature of values?
 ### 5. Maybe more since one can always philosophise...
 
@@ -106,7 +106,7 @@ Type of arguments (process of stating premises that leads to some stated conclus
 
 Socratic method - Dialogue based way to present arguments and counter arguments to reach a general conclusion.
 
-## Types of reasoning
+## Types of Reasoning
 
 Inductive - General conclusion from special observation.
 
@@ -138,7 +138,30 @@ Only deductive reasoning guarantees truth of conclusion. Abductive and Inductive
 
 **Higher-order logic**: It goes beyond first-order logic by allowing quantification over functions and predicates, not just individuals. This enables reasoning about properties of properties and functions of functions.
 
-## LAWS OF LOGIC
+## Logical Proofs
+A proof is a series of implications.
+
+**Principles of explosion:**
+Let say : “no pigs can fly” and “there are flying pigs”
+“There are flying pigs or There exist unicorns.” This statement is true in the above inconsistent system of axioms. The truth value of “there are flying pigs” is one and the truth value of “unicorns exists” is say x. So the combined truth value is one But also “no pigs can fly”, so the truth value of “there are flying pigs” is now zero. But since the combined Statement is true. Unicorns must exist. So using inconsistent axioms, we can prove anything, any nonsense. In the same manner we can simultaneously prove that unicorns don't exist. So if we start with inconsistent axioms, we will reach self-contradicting theorems and results.
+
+**Proof by contradiction or “reduction to absurdity”**
+If something absurd (statement is both true and false at same time) follows then the premise must be false. This follows from the principle of explosion.
+
+**Proof by induction is modus ponens applied many times.**
+Base case is verified to be true, the inductive step is proved, then all else is modus ponens ad infinitum.
+
+The **Münchhausen trilemma** is that there are only three ways of completing a proof:
+
+1. The circular argument, in which the proof of some proposition presupposes the truth of that very proposition
+
+2. The regressive argument, in which each proof requires a further proof, ad infinitum.
+
+3. The dogmatic argument, which rests on accepted precepts which are merely asserted rather than defended
+
+The trilemma, then, is the decision among the three equally unsatisfying options. Karl Popper's suggestion was to accept the trilemma as unsolvable and work with knowledge by way of conjecture and criticism.
+
+### Laws of logic
 - Law of excluded middle - a proposition is either true or false. Not somewhere in the middle.
 - Law of contradiction - something is either A or not A. Where A can be anything.
 - Law of identity - a thing is identical or same to itself, A = A for all A.
@@ -149,6 +172,8 @@ If a statement P is both true and false then anything can be proven to be true. 
 If a proposition that is always true regardless of the truth values of the propositional variables it contains is called a **tautology**.
 A compound proposition that is always false is called a **contradiction** or absurdity.
 And a compound proposition that is neither a tautology nor a contradiction is referred to as a **contingency**. The truth value depends on the contents of the propositions.
+
+### [Logical Paradoxes](https://uv-1999.github.io/logic.html)
 
 ## Necessary conditions
 
@@ -201,7 +226,7 @@ If Too much food, then weight gain.
 No weight gain.
 By modus tollens, Not too much food.
 
-### sufficient and necessary conditions are not same
+### Sufficient and necessary conditions are not same
 
 Air is necessary for life but not sufficient.
 You need more things for life.
@@ -250,25 +275,3 @@ You could use a raincoat as well.
 - Sufficient conditions are true.
 - Necessary conditions are true.
 - Proposition is guaranteed to be true.
-
-## [Logical Paradoxes](https://uv-1999.github.io/logic.html)
-
-**Principles of explosion:**
-Let say : “no pigs can fly” and “there are flying pigs”
-“There are flying pigs or There exist unicorns.” This statement is true in the above inconsistent system of axioms. The truth value of “there are flying pigs” is one and the truth value of “unicorns exists” is say x. So the combined truth value is one But also “no pigs can fly”, so the truth value of “there are flying pigs” is now zero. But since the combined Statement is true. Unicorns must exist. So using inconsistent axioms, we can prove anything, any nonsense. In the same manner we can simultaneously prove that unicorns don't exist. So if we start with inconsistent axioms, we will reach self-contradicting theorems and results.
-
-**Proof by contradiction or “reduction to absurdity”**
-If something absurd (statement is both true and false at same time) follows then the premise must be false. This follows from the principle of explosion.
-
-**Proof by induction is modus ponens applied many times.**
-Base case is verified to be true, the inductive step is proved, then all else is modus ponens ad infinitum.
-
-The **Münchhausen trilemma** is that there are only three ways of completing a proof:
-
-1. The circular argument, in which the proof of some proposition presupposes the truth of that very proposition
-
-2. The regressive argument, in which each proof requires a further proof, ad infinitum.
-
-3. The dogmatic argument, which rests on accepted precepts which are merely asserted rather than defended
-
-The trilemma, then, is the decision among the three equally unsatisfying options. Karl Popper's suggestion was to accept the trilemma as unsolvable and work with knowledge by way of conjecture and criticism.
