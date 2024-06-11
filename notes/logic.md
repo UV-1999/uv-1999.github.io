@@ -3,7 +3,7 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
-[Back to main menu]([#science](https://uv-1999.github.io/notes/philosophy))
+[Back to main menu](https://uv-1999.github.io/notes/philosophy)
 
 # Logic
 
@@ -232,4 +232,4 @@ You could use a raincoat as well.
 (The above follows from the OR logic)
 
 ***
-[Back to main menu]([#science](https://uv-1999.github.io/notes/philosophy))
+[Back to main menu](https://uv-1999.github.io/notes/philosophy)
