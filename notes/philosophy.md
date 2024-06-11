@@ -304,8 +304,8 @@ That’s why theories are tested as much as possible by logically deriving many 
 Measurements can be made of a property of a system considered in the study. Instruments may be required to make some measurements. A measurement is the central idea in experiments and has two parts, a number and a unit.
 
 1. Natural units: when one or more fundamental physical constants are assigned to be unity.
-2. Planck units: $$c, \hbar, G, k_{B} = 1$$
-3. Atomic units: $$e, m_e, \hbar, (k_e = \frac{1}{4πε_0}) = 1$$
+2. Planck units: $$c = \hbar = G = k_{B} = 1$$
+3. Atomic units: $$e = m_e = \hbar = k_e = \frac{1}{4πε_0} = 1$$
 4. Geometrized units: $$c = G = 1$$
 5. [Gaussian Units](http://www.pgccphy.net/ref/gaussian-conv.pdf)
 
@@ -339,7 +339,7 @@ We want to know the properties of a system as they really are (true-values). We 
 It is possible to find the following notations for expressing a measurement.
 
 - $$\text{measured value} \pm \text{uncertainty}$$
-- $${\text{measured value}_\text{-uncertainty}}^\text{+uncertainty}$$
+- $${\text{measured value}^\text{+uncertainty}_\text{-uncertainty}}$$
 - $$\text{measured value} \text{(uncertainty)}$$
 
 Reality simplified by assumptions leads to a theory, model or hypothesis. Reality measured with some senses, or instruments leads to data with uncertainty. If we only know the result of an experiment but do not know the error or uncertainty, then we are completely unable to judge the significance of the result. 
@@ -357,12 +357,12 @@ The result of an experiment may have several measurements and it becomes natural
 **Propagation of error**
 Let us have a property we want to measure, say $$f$$ and according to some theory, it depends on some a priori independent variables x, y, z, etc.
 
-$$ \Delta f = \sum_i \partial_{x_i} f \Delta x_i $$
+$$ \Delta f = \sum_i \partial_{x_i} f \times \Delta x_i $$
 
 **Propagation of uncertainty**
 Let us have a property we want to measure, say $$f$$ and according to some theory, it depends on some a priori independent variables x, y, z, etc.
 
-$$ {\sigma_f}^2 = \sum_i \partial_{x_i} f {\sigma_{x_i}}^2$$
+$$ {\sigma_f}^2 = \sum_i \partial_{x_i} f \times {\sigma_{x_i}}^2$$
 
 But if there are unexpected covariances in the variables x, y, z, etc. the above rule **(addition in quadrature)** may not work.
 
