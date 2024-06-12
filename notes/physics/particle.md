@@ -77,7 +77,7 @@
 - **Delta rays**: Electrons ejected from a medium by high-energy cosmic rays.
 - **Cosmic rays**: Primarily protons and muons, with pions and kaons formed in the upper atmosphere.
 
-
+Since neutrons and protons have very similar masses but differ only by the amount of charge while being commonly found in atomic nuclei. It was suspected that they both might be two different manifestations of some fundamental entity. This was also observed with other hadrons.
 
 ### Additional Points
 - Hadrons participate only in strong and electromagnetic interactions.
