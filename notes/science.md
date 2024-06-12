@@ -85,9 +85,9 @@ We want to know the properties of a system as they really are (true-values). We 
 
 It is possible to find the following notations for expressing a measurement.
 
-- $$\text{measured value} \pm \text{uncertainty}$$
-- $${\text{measured value}^\text{+uncertainty}_\text{-uncertainty}}$$
-- $$\text{measured value} \text{(uncertainty)}$$
+1. $$\text{measured value} \pm \text{uncertainty}$$.
+2. $${\text{measured value}^\text{+uncertainty}_\text{-uncertainty}}$$.
+3. $$\text{measured value} \text{(uncertainty)}$$.
 
 Reality simplified by assumptions leads to a theory, model or hypothesis. Reality measured with some senses, or instruments leads to data with uncertainty. If we only know the result of an experiment but do not know the error or uncertainty, then we are completely unable to judge the significance of the result. 
 
@@ -95,6 +95,8 @@ The result of an experiment may have several measurements and it becomes natural
 
 **The best estimate** = Expectation value of the probability distribution that models the data. For normal distribution it is the arithmetic mean.
 **The uncertainty** = Standard deviation of the mean or “standard error” which is the standard deviation divided by the square root of the number of observations made (measurements made).
+
+It is possible that people use the words "error" and "uncertainty" interchangeably but error values can be any real number and uncertainity is always a non-negative real number.
 
 **Standard deviation** is the square root of **variance**.
 **Variance** is the **expectation value** of squares of data values minus the square of Expectation value of data.
@@ -109,7 +111,9 @@ $$ \Delta f = \sum_i \partial_{x_i} f \times \Delta x_i $$
 **Propagation of uncertainty**
 Let us have a property we want to measure, say $$f$$ and according to some theory, it depends on some a priori independent variables x, y, z, etc.
 
-$$ {\sigma_f}^2 = \sum_i \partial_{x_i} f \times {\sigma_{x_i}}^2$$
+$$ {\sigma_f}^2 = \sum_i {\partial_{x_i} f \times \sigma_{x_i}}^2$$
+
+[A python code to use this formula.](https://github.com/UV-1999/Misc-codes/blob/main/uncertainty-propagation.py)
 
 But if there are unexpected covariances in the variables x, y, z, etc. the above rule **(addition in quadrature)** may not work.
 
