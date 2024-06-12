@@ -64,13 +64,17 @@
 
 
 ### Mesons (Tyically two quarks)
+
 | Composite Particles - Hadrons - Composite Bosons (Mesons)                        | Electric Charge | Color Charge | Baryon Number | Strangeness | Isospin 3rd Component | Lepton Number | Spin |
 |----------------------------------------------------------------------------------|-----------------|--------------|---------------|-------------|-----------------------|---------------|------|
 | - Pions ($$\pi^+ (u\bar{d}), \pi^0 (u\bar{u}) or (d\bar{d}), \pi^- (d\bar{u})$$) | +1, 0, -1       | None         | 0             | 0           | +1, 0, -1             | 0             | 0    |
 | - Kaons ($$K^+, K^0, K^-$$)                                                      | +1, 0, -1       | None         | 0             | +1, -1      | +1/2, -1/2            | 0             | 0    |
 | - Eta Mesons ($$\eta, \eta'$$)                                                   | 0               | None         | 0             | 0           | 0                     | 0             | 0    |
 
+
+
 ### Particle rays
+
 - **Alpha rays**: Composed of 2 protons and 2 neutrons, heavy with thick, short tracks, and least penetrating.
 - **Beta rays**: High-energy electrons, with long and chaotic tracks.
 - **Gamma rays**: Photons, highly penetrating.
