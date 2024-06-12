@@ -111,7 +111,7 @@ $$ \Delta f = \sum_i \partial_{x_i} f \times \Delta x_i $$
 **Propagation of uncertainty**
 Let us have a property we want to measure, say $$f$$ and according to some theory, it depends on some a priori independent variables x, y, z, etc.
 
-$$ {\sigma_f}^2 = \sum_i {\partial_{x_i} f \times \sigma_{x_i}}^2$$
+$$ {\sigma_f} = \sqrt{\sum_i \left( {\partial_{x_i} f \times \sigma_{x_i}} \right) ^2}$$
 
 [A python code to use this formula.](https://github.com/UV-1999/Misc-codes/blob/main/uncertainty-propagation.py)
 
