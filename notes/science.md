@@ -130,8 +130,5 @@ if two measured values have standard uncertainty ranges that overlap, then the m
 If the uncertainty ranges do not overlap, then the measurements are said to be discrepant (they do not agree).
 Assuming that there are no artificial changes in the data.
 
-# Statistics
-
-
 ***
 [Back to main menu](https://uv-1999.github.io/notes/philosophy)
