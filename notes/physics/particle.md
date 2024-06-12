@@ -7,6 +7,7 @@
 
 # A Summary of Particle Physics
 
+### Fundamental forces
 | Fundamental Force | Charge                                   | Mediator / Force Carrier | Range of order of $$(\frac{\hbar}{mc})$$ | Decay Lifetime (seconds)       |
 |-------------------|------------------------------------------|--------------------------|---------------------------------------------------------------------------|
 | Strong            | Colour Charge (R G B)                    | Gluon                    | $$10^{-15}m$$                            | $$10^{-23}m$$                  |
@@ -14,23 +15,29 @@
 | Electromagnetism  | Electric Charge and Spin                 | Photon                   | infinity                                 | $$10^{-19}m$$ to $$10^{-21}m$$ |  
 | Gravitation       | Gravitational Mass                       | Graviton?                | infinity                                 | Infinity                       |
 
+---
+
+### Elementary Fermions
 | Elementary Fermions      | Electric Charge | Color Charge | Baryon Number | Strangeness | Isospin 3rd Component | Lepton Number | Spin |
 |--------------------------|-----------------|--------------|---------------|-------------|-----------------------|---------------|------|
 | **Quarks**               |                 |              |               |             |                       |               |      |
-| - Up                     | +2/3            | R, G, B      | 1/3           | 0           | +1/2                  | 0             | 1/2  |
-| - Down                   | -1/3            | R, G, B      | 1/3           | 0           | -1/2                  | 0             | 1/2  |
-| - Charm                  | +2/3            | R, G, B      | 1/3           | 0           | 0                     | 0             | 1/2  |
-| - Strange                | -1/3            | R, G, B      | 1/3           | -1          | 0                     | 0             | 1/2  |
-| - Top                    | +2/3            | R, G, B      | 1/3           | 0           | 0                     | 0             | 1/2  |
-| - Bottom                 | -1/3            | R, G, B      | 1/3           | 0           | 0                     | 0             | 1/2  |
+|   Up                     | +2/3            | R, G, B      | 1/3           | 0           | +1/2                  | 0             | 1/2  |
+|   Down                   | -1/3            | R, G, B      | 1/3           | 0           | -1/2                  | 0             | 1/2  |
+|   Charm                  | +2/3            | R, G, B      | 1/3           | 0           | 0                     | 0             | 1/2  |
+|   Strange                | -1/3            | R, G, B      | 1/3           | -1          | 0                     | 0             | 1/2  |
+|   Top                    | +2/3            | R, G, B      | 1/3           | 0           | 0                     | 0             | 1/2  |
+|   Bottom                 | -1/3            | R, G, B      | 1/3           | 0           | 0                     | 0             | 1/2  |
 | **Leptons**              |                 |              |               |             |                       |               |      |
-| - Electron               | -1              | None         | 0             | 0           | 0                     | 1             | 1/2  |
-| - Electron Neutrino      | 0               | None         | 0             | 0           | 0                     | 1             | 1/2  |
-| - Muon                   | -1              | None         | 0             | 0           | 0                     | 1             | 1/2  |
-| - Muon Neutrino          | 0               | None         | 0             | 0           | 0                     | 1             | 1/2  |
-| - Tau                    | -1              | None         | 0             | 0           | 0                     | 1             | 1/2  |
-| - Tau Neutrino           | 0               | None         | 0             | 0           | 0                     | 1             | 1/2  |
+|   Electron               | -1              | None         | 0             | 0           | 0                     | 1             | 1/2  |
+|   Electron Neutrino      | 0               | None         | 0             | 0           | 0                     | 1             | 1/2  |
+|   Muon                   | -1              | None         | 0             | 0           | 0                     | 1             | 1/2  |
+|   Muon Neutrino          | 0               | None         | 0             | 0           | 0                     | 1             | 1/2  |
+|   Tau                    | -1              | None         | 0             | 0           | 0                     | 1             | 1/2  |
+|   Tau Neutrino           | 0               | None         | 0             | 0           | 0                     | 1             | 1/2  |
 
+---
+
+### Elementary Bosons
 | Elementary Bosons        | Electric Charge | Color Charge | Baryon Number | Strangeness | Isospin 3rd Component | Lepton Number | Spin |
 |--------------------------|-----------------|--------------|---------------|-------------|-----------------------|---------------|------|
 | Photon                   | 0               | None         | 0             | 0           | 0                     | 0             | 1    |
@@ -40,27 +47,35 @@
 | Higgs Boson              | 0               | None         | 0             | 0           | 0                     | 0             | 0    |
 | Graviton?                | 0               | None         | 0             | 0           | 0                     | 0             | 2    |
 
+---
+
+### Baryons
 | Composite Particles - Hadrons - Composite Fermions (Baryons) | Electric Charge | Color Charge | Baryon Number | Strangeness | Isospin 3rd Component | Lepton Number | Spin |
 |-------------------------------------------------------------|-----------------|--------------|---------------|-------------|-----------------------|---------------|------|
-| - Proton (uud)                                              | +1              | None         | 1             | 0           | +1/2                  | 0             | 1/2  |
-| - Neutron (udd)                                             | 0               | None         | 1             | 0           | -1/2                  | 0             | 1/2  |
+| - Proton ($$uud$$)                                          | +1              | None         | 1             | 0           | +1/2                  | 0             | 1/2  |
+| - Neutron ($$udd$$)                                         | 0               | None         | 1             | 0           | -1/2                  | 0             | 1/2  |
 | - Lambda ($$uds$$)                                          | 0               | None         | 1             | -1          | 0                     | 0             | 1/2  |
 | - Sigma ($$uus, uds, dds$$)                                 | +1, 0, -1       | None         | 1             | -1          | +1, 0, -1             | 0             | 1/2  |
 | - Xi ($$uss, dss$$)                                         | 0, -1           | None         | 1             | -2          | +1/2, -1/2            | 0             | 1/2  |
 | - Omega ($$sss$$)                                           | -1              | None         | 1             | -3          | 0                     | 0             | 3/2  |
 
+---
+
+### Mesons (Tyically two quarks)
 | Composite Particles - Hadrons - Composite Bosons (Mesons)   | Electric Charge | Color Charge | Baryon Number | Strangeness | Isospin 3rd Component | Lepton Number | Spin |
 |-------------------------------------------------------------|-----------------|--------------|---------------|-------------|-----------------------|---------------|------|
-| - Pions ($$\pi^+, \pi^0, \pi^-$$)                           | +1, 0, -1       | None         | 0             | 0           | +1, 0, -1             | 0             | 0    |
+| - Pions ($$\pi^+ (u\bar{d}), \pi^0 (u\bar{u}) or (d\bar{d}), \pi^- (d\bar{u})$$)                           | +1, 0, -1       | None         | 0             | 0           | +1, 0, -1             | 0             | 0    |
 | - Kaons ($$K^+, K^0, K^-$$)                                 | +1, 0, -1       | None         | 0             | +1, -1      | +1/2, -1/2            | 0             | 0    |
 | - Eta Mesons ($$\eta, \eta'$$)                              | 0               | None         | 0             | 0           | 0                     | 0             | 0    |
-| - Other Mesons ($$D, B, J/\psi, \Upsilon$$)                 | Various         | None         | 0             | Various     | 0                     | 0             | 0    |
 
-| Composite Particles - Non Hadrons | Electric Charge | Color Charge | Baryon Number | Strangeness | Isospin 3rd Component | Lepton Number | Spin |
-|-----------------------------------|-----------------|--------------|---------------|-------------|-----------------------|---------------|------|
-| Atomic Nuclei                     | Various         | None         | >1            | 0           | 0                     | 0             | Various |
-| Atoms                             | Various         | None         | >1            | 0           | 0                     | Various       | Various |
-| Molecules                         | Various         | None         | >1            | 0           | 0                     | Various       | Various |
+---
+
+### Particle rays
+- **Alpha rays**: Composed of 2 protons and 2 neutrons, heavy with thick, short tracks, and least penetrating.
+- **Beta rays**: High-energy electrons, with long and chaotic tracks.
+- **Gamma rays**: Photons, highly penetrating.
+- **Delta rays**: Electrons ejected from a medium by high-energy cosmic rays.
+- **Cosmic rays**: Primarily protons and muons, with pions and kaons formed in the upper atmosphere.
 
 ### Additional Points
 - Hadrons participate only in strong and electromagnetic interactions.
@@ -91,12 +106,7 @@ For particle decays, $$R \propto \frac{1}{T}$$, where $$T$$ is the lifetime of t
 
 In a decay process, the only stable particles are the photon, electron, both electron and muon neutrinos, and the proton. For specific decays, other factors, such as mass, can influence the particle's lifetime. Stronger interactions tend to dominate weaker ones, meaning particles often decay via the fastest available route.
 
-### Particle rays
-- **Alpha rays**: Composed of 2 protons and 2 neutrons, heavy with thick, short tracks, and least penetrating.
-- **Beta rays**: High-energy electrons, with long and chaotic tracks.
-- **Gamma rays**: Photons, highly penetrating.
-- **Delta rays**: Electrons ejected from a medium by high-energy cosmic rays.
-- **Cosmic rays**: Primarily protons and muons, with pions and kaons formed in the upper atmosphere.
+
 
 ***
 
