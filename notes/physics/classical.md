@@ -27,9 +27,7 @@ Dynamics - Kinematics of motion
 
 ### [Physics from Aristotle to Newton](https://uv-1999.github.io/motion.html)
 
-## Classical Mechanics
-
-
+## Classical Mechanics in Newtonian Formulation
 
 ### Central Force
 A central force is a force that is directed along the line joining the particle and a fixed point, called the center. The magnitude of this force depends only on the distance between the particle and the center. Mathematically, a central force $\mathbf{F}$ can be expressed as:
@@ -108,7 +106,7 @@ $$e = \sqrt{1 + \frac{2mEh^2}{K^2}} = \sqrt{1 + \frac{2EL^2}{mK^2}}$$
 
 Here $m$ is reduced mass above.
 
-***
+## Classical Mechanics in Lagrangian Formulation
 
 In classical physics, physical quantities have following important features:
 1. Single-valued
@@ -181,6 +179,12 @@ The Lagrangian of a system can be intuitively understood as the totatlity of phy
 1. If the laws don't depend on time then we get conservation of energy.
 2. If the laws don't depend on a particular coordiante (often called the symmetric or cyclic coordinate) then we get conservation of momentum corresponding to that coordinate.
 3. If the laws don't depend on a momentum then we get uniform motion along the corresponding coordinate.
+
+## Classical Mechanics in Hamiltonian Formulation
+
+In the Hamiltonian formulation of classical mechanics, all the physical knowledge about the system is encoded in this Hamiltonian functional. 
+
+
 
 ***
 
