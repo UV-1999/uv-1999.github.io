@@ -9,7 +9,7 @@
 
 | Fundamental Force | Charge                                   | Mediator / Force Carrier | Range of order of $$(\frac{\hbar}{mc})$$ | Decay Lifetime (seconds)       |
 |-------------------|------------------------------------------|--------------------------|---------------------------------------------------------------------------|
-| Strong            | Colour Charge (R G B)                    | Gluon                    | $$10^{-15)m$$                            | $$10^{-23}m$$                  |
+| Strong            | Colour Charge (R G B)                    | Gluon                    | $$10^{-15}m$$                            | $$10^{-23}m$$                  |
 | Weak              | Weak charge                              | W$$\pm$$ and Z           | $$10^{-18}m$$                            | $$10^{-8}m$$ to $$10^{-10}m$$  |
 | Electromagnetism  | Electric Charge and Spin                 | Photon                   | infinity                                 | $$10^{-19}m$$ to $$10^{-21}m$$ |  
 | Gravitation       | Gravitational Mass                       | Graviton?                | infinity                                 | Infinity                       |
