@@ -28,15 +28,15 @@ It is a proposition that is true by conforming to reality.
 
 Inferences are also called conclusions and they are formed by arguments. An argument is a collection of premises that have some conclusion.
 
-Argument: if given some premises then they imply some conclusion.
+Argument: Given premises **imply** some conclusion.
 
 ## Implications (The “if-then” statements)
 Consider this “If dogs are mammals, then I am human”. Both sub-statements are true. Dogs are mammals and I am a human. But clearly something is off about the compound statement. There is no causal relevance. The truth value of the antecedent does not imply the truth value of the consequent. 
 
-True implies true - valid implication
-False implies false - valid implication
-Trues does not imply false - if it would that is an invalid implication
-But false can imply true as well - how?
+1. True implies true: Valid and sound implication
+2. False implies false: Valid implication
+3. True does not imply false: If it would that is an invalid implication
+4. False can imply true as well: How?
 
 Consider the sentence "if a given number is smaller than 10 then it is also smaller than 100". 
 This is clearly a true statement. Therefore, if we specialise the statement by replacing the words 'any number' by a number, we should still consider it to be true. So let's look at some of these specialised cases.
@@ -55,11 +55,11 @@ We learn that true only implies true and false implies anything.
 But it is clear that all implications in this example are directly connected.
 
 Consider 
-1. If Paris is in France then French people are from france. [true implies true]  - no okay
+1. If Paris is in France then French people are from france (true implies true).
 
-2. If Paris is in England then English people are from France. [false implies false]  - still okay
+2. If Paris is in England then English people are from France (false implies false).
 
-3. If Paris is in England then French people are from France. [false implies true] - still okay
+3. If Paris is in England then French people are from France (false implies true).
 
 The problem is that the implications are irrelevant. True implies true but there is no connection between antecedent and consequent.
 
@@ -223,13 +223,13 @@ Since umbrella guarantee to avoid rainfall on you.
 But umbrella is not necessary to avoid rainfall on you.
 You could use a raincoat as well.
 
-"Having all the necessary conditions together" is the sufficient and necessary condition .
+"Having all the necessary conditions together" is the sufficient and necessary condition.
 
-(The above follows from the AND logic)
+The above follows from the AND logic.
 
 "Having all the sufficient conditions together" is the sufficient but not necessary condition.
 
-(The above follows from the OR logic)
+The above follows from the OR logic.
 
 ***
 [Back to main menu](https://uv-1999.github.io/notes/philosophy)
