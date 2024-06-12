@@ -59,7 +59,11 @@ Measurements can be made of a property of a system considered in the study. Inst
 ### What IS a measurement?
 It is a property of a system, a system is something we define ourselves, it is not necessary that we have clear cut boundaries of the system. Properties are constructed predicates that conforms to reality subject to our experience aided by our senses. We cannot sense electric charge, but it is a physical property because it comes with a theory that works. Since we can only have a comparative description of these properties, we create reference values which are called units. 1 Coulomb charge may not be something real ontologically. It is just a computable property of the system that we compute or in an informal way, measure, by some instruments. The instrument works by an effect that makes us feel sensible experiences, like seeing two gold leaf repelling each other by some amount. So even if charges are a part of the absolute objective reality still all we can do is see its effects only. The effects we can observe and sense by some analysis. These effects are the act of making a measurement. Such and other sensible experiences are the only way we can decide if the theory works or not. Data visualisation is also just an effect of nature in a way that we can sense. A model or theory fits not objectively but rather always subjectively. When we all agree over the same subjective experience somehow that's when we say something is effectively objective about our experiences, and our measurements. Hence physical quantities are never measured but only computed. Effects are measured.
 
-### Properties of a measurement
+Reality simplified by assumptions leads to a theory, model or hypothesis. Reality measured with some senses, or instruments leads to data with errors and uncertainties. If we only know the result of an experiment but do not know the errors or uncertainties, then we are completely unable to judge the significance of the result. 
+
+The result of an experiment may have several measurements and it becomes naturally crucial to describe the quality of a measurement (in order to have trust in the results). It is desirable to have a very good estimate and a minimum uncertainty in your measurements. As soon as we make measurements we are dealing with data. Sometimes called experimental data. observations, or readings. To understand the quality of data, statistics is needed to infer general information from samples and also to quantify the quality of the data.
+
+### Statistical Properties of a Measurement
 An instrument measures a property numerically. Let’s say “010.1040”. 
 Since here the 0 (left to 1 before decimal) is not a **significant digit**, we safely re-write it to be 10.1040.
 Why are we writing the rightmost 0? Because it is significant.
@@ -69,7 +73,7 @@ For the above example, the least count is 0.0001.
 **Accuracy** is the closeness of agreement between a measured value and a true or accepted value.
 **Measurement** error is the amount of inaccuracy and is defined as the difference between the measured value and the ‘true value’ of the thing being measured.
 
-Error = measured value - true value
+**Error = measured value - true value**
 
 **Random errors** are statistical fluctuations (in either direction) in the measured data due to the precision limitations of the measurement device. Random errors can be evaluated through statistical analysis and can be reduced by averaging over a large number of observations. Random errors decrease precision. 
 
@@ -89,10 +93,6 @@ It is possible to find the following notations for expressing a measurement.
 2. $${\text{measured value}^\text{+uncertainty}_\text{-uncertainty}}$$.
 3. $$\text{measured value} \text{(uncertainty)}$$.
 
-Reality simplified by assumptions leads to a theory, model or hypothesis. Reality measured with some senses, or instruments leads to data with uncertainty. If we only know the result of an experiment but do not know the error or uncertainty, then we are completely unable to judge the significance of the result. 
-
-The result of an experiment may have several measurements and it becomes naturally crucial to describe the quality of a measurement (in order to have trust in the results). It is desirable to have a very good estimate and a minimum uncertainty in your measurements. As soon as we make measurements we are dealing with data. Sometimes called experimental data. observations, or readings. To understand the quality of data, statistics is needed to infer general information from samples and also to quantify the quality of the data.
-
 **The best estimate** = Expectation value of the probability distribution that models the data. For normal distribution it is the arithmetic mean.
 **The uncertainty** = Standard deviation of the mean or “standard error” which is the standard deviation divided by the square root of the number of observations made (measurements made).
 
@@ -101,7 +101,7 @@ It is possible that people use the words "error" and "uncertainty" interchangeab
 **Standard deviation** is the square root of **variance**.
 **Variance** is the **expectation value** of squares of data values minus the square of Expectation value of data.
 
-**Expectation value** is $$\int x P(x) dx $$  over the whole range of $$x$$.
+**Expectation value** of a variable x with probability distribution P(x) is $$\int x P(x) dx $$  over the whole range of $$x$$.
 
 **Propagation of error**
 Let us have a property we want to measure, say $$f$$ and according to some theory, it depends on some a priori independent variables x, y, z, etc.
