@@ -5,7 +5,7 @@
 
 [Back to main menu](https://uv-1999.github.io/notes/philosophy)
 
-# Classical Physics
+# Physics
 
 What is Physics? 
 Physics is a category of natural science where the system of interest is anything.
@@ -28,6 +28,8 @@ Dynamics - Kinematics of motion
 ### [Physics from Aristotle to Newton](https://uv-1999.github.io/motion.html)
 
 ## Classical Mechanics
+
+
 
 ### Central Force
 A central force is a force that is directed along the line joining the particle and a fixed point, called the center. The magnitude of this force depends only on the distance between the particle and the center. Mathematically, a central force $\mathbf{F}$ can be expressed as:
