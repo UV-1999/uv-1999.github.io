@@ -19,6 +19,7 @@ If prediction comes out to be false then the theory is discarded or labelled as 
 Every theory is tested repeatedly to avoid mistakes. If new observations violate the theory then again the theory becomes limited or even discarded when better theory is there. The description provided by theory became more concise as unnecessary details are removed, and they became more precise as the details are increased but it become accurate only by the experimental verification of it.
 
 Theory = Laws + Model.
+
 Model = A description of a system using assumptions and approximations, introduces physical quantities.
 Laws = Mathematical statements that are derived from experimental results relating physical quantities.
 
@@ -28,7 +29,7 @@ Laws = Mathematical statements that are derived from experimental results relati
 3. Crisis (e.g. UV catastrophe)
 4. Scientific revolution (e.g. Relativity and QM)
 
-You go from 1 to 2 to 3 to either return to 2 or to go to 4 to again create a new paradigm and call it new normal science.
+You go from (1) to (2) to (3) to either return to (2) or to go to (4) to again create a new paradigm and call it new normal science.
 
 ### Characteristics of a scientific theory:
 
