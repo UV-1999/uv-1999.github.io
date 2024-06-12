@@ -130,5 +130,51 @@ if two measured values have standard uncertainty ranges that overlap, then the m
 If the uncertainty ranges do not overlap, then the measurements are said to be discrepant (they do not agree).
 Assuming that there are no artificial changes in the data.
 
+# Statistics
+
+### Least-Squares Fitting
+
+1. **Define the Problem**: We have a set of data points $$ (x_i, y_i) $$ for $$ i = 1, 2, \ldots, n $$, and we want to fit these points with a linear function $$ y = mx + b $$.
+
+2. **Error Term**: The error term for each data point is the difference between the observed value and the value predicted by the model:
+   $$ e_i = y_i - (mx_i + b) $$
+
+3. **Objective Function**: The goal of least-squares fitting is to minimize the sum of the squares of these error terms. The objective function to minimize is:
+   $$ S = \sum_{i=1}^n e_i^2 = \sum_{i=1}^n \left( y_i - (mx_i + b) \right)^2 $$
+
+4. **Minimize the Objective Function**:
+   To find the values of $$ m $$ and $$ b $$ that minimize $$ S $$, we take partial derivatives with respect to $$ m $$ and $$ b $$, and set them to zero.
+
+   **Partial Derivative with respect to $$ b $$**:
+   $$ \frac{\partial S}{\partial b} = \sum_{i=1}^n 2 \left( y_i - (mx_i + b) \right) (-1) = -2 \sum_{i=1}^n \left( y_i - mx_i - b \right) $$
+
+   Setting this derivative to zero:
+   $$ -2 \sum_{i=1}^n \left( y_i - mx_i - b \right) = 0 $$
+   $$ \sum_{i=1}^n y_i - m \sum_{i=1}^n x_i - n b = 0 $$
+   $$ b = \frac{1}{n} \sum_{i=1}^n y_i - m \frac{1}{n} \sum_{i=1}^n x_i $$
+   $$ b = \bar{y} - m \bar{x} $$
+
+   **Partial Derivative with respect to $$ m $$**:
+   $$ \frac{\partial S}{\partial m} = \sum_{i=1}^n 2 \left( y_i - (mx_i + b) \right) (-x_i) = -2 \sum_{i=1}^n x_i \left( y_i - mx_i - b \right) $$
+
+   Setting this derivative to zero:
+   $$ -2 \sum_{i=1}^n x_i \left( y_i - mx_i - b \right) = 0 $$
+   $$ \sum_{i=1}^n x_i y_i - m \sum_{i=1}^n x_i^2 - b \sum_{i=1}^n x_i = 0 $$
+   Using $$ b = \bar{y} - m \bar{x} $$:
+   $$ \sum_{i=1}^n x_i y_i - m \sum_{i=1}^n x_i^2 - (\bar{y} - m \bar{x}) \sum_{i=1}^n x_i = 0 $$
+   $$ \sum_{i=1}^n x_i y_i - m \sum_{i=1}^n x_i^2 - \bar{y} \sum_{i=1}^n x_i + m \bar{x} \sum_{i=1}^n x_i = 0 $$
+   $$ \sum_{i=1}^n x_i y_i - \bar{y} \sum_{i=1}^n x_i = m \left( \sum_{i=1}^n x_i^2 - \bar{x} \sum_{i=1}^n x_i \right) $$
+   $$ m = \frac{\sum_{i=1}^n x_i y_i - \bar{y} \sum_{i=1}^n x_i}{\sum_{i=1}^n x_i^2 - \bar{x} \sum_{i=1}^n x_i} $$
+
+   Using $$ \bar{x} = \frac{1}{n} \sum_{i=1}^n x_i $$ and $$ \bar{y} = \frac{1}{n} \sum_{i=1}^n y_i $$:
+   $$ m = \frac{\sum_{i=1}^n x_i y_i - n \bar{x} \bar{y}}{\sum_{i=1}^n x_i^2 - n \bar{x}^2} $$
+
+5. **Final Formulas**:
+   $$ m = \frac{\sum_{i=1}^n x_i y_i - n \bar{x} \bar{y}}{\sum_{i=1}^n x_i^2 - n \bar{x}^2} $$
+   $$ b = \bar{y} - m \bar{x} $$
+
+Thus, the least-squares estimates for the slope $$ m $$ and the intercept $$ b $$ of the best-fit line are given by the formulas above.
+
+
 ***
 [Back to main menu](https://uv-1999.github.io/notes/philosophy)
