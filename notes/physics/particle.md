@@ -8,16 +8,16 @@
 # A Summary of Particle Physics
 
 ### Fundamental forces
+
 | Fundamental Force | Charge                                   | Mediator / Force Carrier | Range of order of $$(\frac{\hbar}{mc})$$ | Decay Lifetime (seconds)       |
-|-------------------|------------------------------------------|--------------------------|---------------------------------------------------------------------------|
+|-------------------|------------------------------------------|--------------------------|------------------------------------------|--------------------------------|
 | Strong            | Colour Charge (R G B)                    | Gluon                    | $$10^{-15}m$$                            | $$10^{-23}m$$                  |
 | Weak              | Weak charge                              | W$$\pm$$ and Z           | $$10^{-18}m$$                            | $$10^{-8}m$$ to $$10^{-10}m$$  |
 | Electromagnetism  | Electric Charge and Spin                 | Photon                   | infinity                                 | $$10^{-19}m$$ to $$10^{-21}m$$ |  
 | Gravitation       | Gravitational Mass                       | Graviton?                | infinity                                 | Infinity                       |
 
-
-
 ### Elementary Fermions
+
 | Elementary Fermions      | Electric Charge | Color Charge | Baryon Number | Strangeness | Isospin 3rd Component | Lepton Number | Spin |
 |--------------------------|-----------------|--------------|---------------|-------------|-----------------------|---------------|------|
 | **Quarks**               |                 |              |               |             |                       |               |      |
@@ -38,6 +38,7 @@
 
 
 ### Elementary Bosons
+
 | Elementary Bosons        | Electric Charge | Color Charge | Baryon Number | Strangeness | Isospin 3rd Component | Lepton Number | Spin |
 |--------------------------|-----------------|--------------|---------------|-------------|-----------------------|---------------|------|
 | Photon                   | 0               | None         | 0             | 0           | 0                     | 0             | 1    |
@@ -50,25 +51,24 @@
 
 
 ### Baryons
+
 | Composite Particles - Hadrons - Composite Fermions (Baryons) | Electric Charge | Color Charge | Baryon Number | Strangeness | Isospin 3rd Component | Lepton Number | Spin |
 |-------------------------------------------------------------|-----------------|--------------|---------------|-------------|-----------------------|---------------|------|
 | - Proton ($$uud$$)                                          | +1              | None         | 1             | 0           | +1/2                  | 0             | 1/2  |
 | - Neutron ($$udd$$)                                         | 0               | None         | 1             | 0           | -1/2                  | 0             | 1/2  |
 | - Lambda ($$uds$$)                                          | 0               | None         | 1             | -1          | 0                     | 0             | 1/2  |
 | - Sigma ($$uus, uds, dds$$)                                 | +1, 0, -1       | None         | 1             | -1          | +1, 0, -1             | 0             | 1/2  |
-| - Xi ($$uss, dss$$)                                         | 0, -1           | None         | 1             | -2          | +1/2, -1/2            | 0             | 1/2  |
+| - Xi (cascade) ($$uss, dss$$)                               | 0, -1           | None         | 1             | -2          | +1/2, -1/2            | 0             | 1/2  |
 | - Omega ($$sss$$)                                           | -1              | None         | 1             | -3          | 0                     | 0             | 3/2  |
 
 
 
 ### Mesons (Tyically two quarks)
-| Composite Particles - Hadrons - Composite Bosons (Mesons)   | Electric Charge | Color Charge | Baryon Number | Strangeness | Isospin 3rd Component | Lepton Number | Spin |
-|-------------------------------------------------------------|-----------------|--------------|---------------|-------------|-----------------------|---------------|------|
-| - Pions ($$\pi^+ (u\bar{d}), \pi^0 (u\bar{u}) or (d\bar{d}), \pi^- (d\bar{u})$$)                           | +1, 0, -1       | None         | 0             | 0           | +1, 0, -1             | 0             | 0    |
-| - Kaons ($$K^+, K^0, K^-$$)                                 | +1, 0, -1       | None         | 0             | +1, -1      | +1/2, -1/2            | 0             | 0    |
-| - Eta Mesons ($$\eta, \eta'$$)                              | 0               | None         | 0             | 0           | 0                     | 0             | 0    |
-
-
+| Composite Particles - Hadrons - Composite Bosons (Mesons)                        | Electric Charge | Color Charge | Baryon Number | Strangeness | Isospin 3rd Component | Lepton Number | Spin |
+|----------------------------------------------------------------------------------|-----------------|--------------|---------------|-------------|-----------------------|---------------|------|
+| - Pions ($$\pi^+ (u\bar{d}), \pi^0 (u\bar{u}) or (d\bar{d}), \pi^- (d\bar{u})$$) | +1, 0, -1       | None         | 0             | 0           | +1, 0, -1             | 0             | 0    |
+| - Kaons ($$K^+, K^0, K^-$$)                                                      | +1, 0, -1       | None         | 0             | +1, -1      | +1/2, -1/2            | 0             | 0    |
+| - Eta Mesons ($$\eta, \eta'$$)                                                   | 0               | None         | 0             | 0           | 0                     | 0             | 0    |
 
 ### Particle rays
 - **Alpha rays**: Composed of 2 protons and 2 neutrons, heavy with thick, short tracks, and least penetrating.
@@ -76,6 +76,8 @@
 - **Gamma rays**: Photons, highly penetrating.
 - **Delta rays**: Electrons ejected from a medium by high-energy cosmic rays.
 - **Cosmic rays**: Primarily protons and muons, with pions and kaons formed in the upper atmosphere.
+
+
 
 ### Additional Points
 - Hadrons participate only in strong and electromagnetic interactions.
