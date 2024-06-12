@@ -15,7 +15,7 @@
 | Electromagnetism  | Electric Charge and Spin                 | Photon                   | infinity                                 | $$10^{-19}m$$ to $$10^{-21}m$$ |  
 | Gravitation       | Gravitational Mass                       | Graviton?                | infinity                                 | Infinity                       |
 
----
+
 
 ### Elementary Fermions
 | Elementary Fermions      | Electric Charge | Color Charge | Baryon Number | Strangeness | Isospin 3rd Component | Lepton Number | Spin |
@@ -35,7 +35,7 @@
 |   Tau                    | -1              | None         | 0             | 0           | 0                     | 1             | 1/2  |
 |   Tau Neutrino           | 0               | None         | 0             | 0           | 0                     | 1             | 1/2  |
 
----
+
 
 ### Elementary Bosons
 | Elementary Bosons        | Electric Charge | Color Charge | Baryon Number | Strangeness | Isospin 3rd Component | Lepton Number | Spin |
@@ -47,7 +47,7 @@
 | Higgs Boson              | 0               | None         | 0             | 0           | 0                     | 0             | 0    |
 | Graviton?                | 0               | None         | 0             | 0           | 0                     | 0             | 2    |
 
----
+
 
 ### Baryons
 | Composite Particles - Hadrons - Composite Fermions (Baryons) | Electric Charge | Color Charge | Baryon Number | Strangeness | Isospin 3rd Component | Lepton Number | Spin |
@@ -59,7 +59,7 @@
 | - Xi ($$uss, dss$$)                                         | 0, -1           | None         | 1             | -2          | +1/2, -1/2            | 0             | 1/2  |
 | - Omega ($$sss$$)                                           | -1              | None         | 1             | -3          | 0                     | 0             | 3/2  |
 
----
+
 
 ### Mesons (Tyically two quarks)
 | Composite Particles - Hadrons - Composite Bosons (Mesons)   | Electric Charge | Color Charge | Baryon Number | Strangeness | Isospin 3rd Component | Lepton Number | Spin |
@@ -68,7 +68,7 @@
 | - Kaons ($$K^+, K^0, K^-$$)                                 | +1, 0, -1       | None         | 0             | +1, -1      | +1/2, -1/2            | 0             | 0    |
 | - Eta Mesons ($$\eta, \eta'$$)                              | 0               | None         | 0             | 0           | 0                     | 0             | 0    |
 
----
+
 
 ### Particle rays
 - **Alpha rays**: Composed of 2 protons and 2 neutrons, heavy with thick, short tracks, and least penetrating.
