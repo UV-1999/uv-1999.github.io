@@ -8,18 +8,16 @@
 # Physics
 
 What is Physics? 
-Physics is a category of natural science where the system of interest is anything.
-
-System is a part of the reality that one is interested in studying. Everything else is hence labelled as Surroundings of the system.
-
-Degree of freedom - The minimum number of independent variables to define the state of a system completely.
-
-Generalised Coordinates - The independent variables needed to define the state of a system completely.
+Physics is a category of natural science where the system of interest is anything. A physical system is a part of the reality that one is interested in studying. Everything else is hence labelled as Surroundings of the system.
 
 How do we describe the system?
 The set of fundamental properties of a system is called the state of the system. The state of the system may change. What properties are fundamental? Any property that we possibly cannot reduce to some other property is a fundamental property. It is also affected by the choice of a physicist.
 
 Emergence - Some properties of the system are emergent, hence may not be possessed by the composting simpler parts. "Many are different" or “The whole is greater and different than the sum of its parts” is Emergence: an important fact that, in physics several characteristic properties just exist when things are bulk: Temperature, Pressure are two examples. Sometimes we invent parameters to define some property like say “conductivity”, we know that quantum statistical mechanics can give us the model to explain the conductivity so we reduce this property to fundamental-er properties. But the reason we use conductivity or any other parameter is to allow us to quantify all those fundamental-er properties without a contemporary mechanism or model for it. Later we can replace it with some underlying mechanism.
+
+Degree of freedom - The minimum number of independent variables to define the state of a system completely.
+
+Generalised Coordinates - The independent variables needed to define the state of a system completely.
 
 Kinetics is the study of forces that cause motion while kinematics is a mathematical description of motion that doesn't refer to forces. Doing kinetics is finding the laws of motion while doing kinematics is finding the equations of motion.
 Statics - Kinematics of rest
@@ -28,6 +26,27 @@ Dynamics - Kinematics of motion
 ### [Physics from Aristotle to Newton](https://uv-1999.github.io/motion.html)
 
 ## Classical Mechanics in Newtonian Formulation
+### Phase space
+### Stability
+### Two-Body Problem
+### Central Force Motion
+### Rigid-body Problem
+### Virtual Work
+
+## Classical Mechanics in Lagrangian Formulation
+### Principle of Stationary Action
+### Euler-Lagrange Equations
+### Poisson Brackets
+### Canonical Transformations
+### Noether's Theorem
+### Hamilton-Jacobi Theory
+### Simple Harmonic Motion
+### Normal modes
+### Classical Mechanics in Hamiltonian Formulation
+
+## Special Theory of Relativity
+## Classical Electrodynamics
+## Optics
 
 ### Central Force
 A central force is a force that is directed along the line joining the particle and a fixed point, called the center. The magnitude of this force depends only on the distance between the particle and the center. Mathematically, a central force $\mathbf{F}$ can be expressed as:
@@ -106,8 +125,6 @@ $$e = \sqrt{1 + \frac{2mEh^2}{K^2}} = \sqrt{1 + \frac{2EL^2}{mK^2}}$$
 
 Here $m$ is reduced mass above.
 
-## Classical Mechanics in Lagrangian Formulation
-
 In classical physics, physical quantities have following important features:
 1. Single-valued
 2. Deterministic
@@ -179,8 +196,6 @@ The Lagrangian of a system can be intuitively understood as the totatlity of phy
 1. If the laws don't depend on time then we get conservation of energy.
 2. If the laws don't depend on a particular coordiante (often called the symmetric or cyclic coordinate) then we get conservation of momentum corresponding to that coordinate.
 3. If the laws don't depend on a momentum then we get uniform motion along the corresponding coordinate.
-
-## Classical Mechanics in Hamiltonian Formulation
 
 In the Hamiltonian formulation of classical mechanics, all the physical knowledge about the system is encoded in this Hamiltonian functional. 
 
