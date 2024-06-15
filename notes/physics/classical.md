@@ -199,6 +199,17 @@ The Lagrangian of a system can be intuitively understood as the totatlity of phy
 2. If the laws don't depend on a particular coordiante (often called the symmetric or cyclic coordinate) then we get conservation of momentum corresponding to that coordinate.
 3. If the laws don't depend on a momentum then we get uniform motion along the corresponding coordinate.
 
+In other news:
+
+$$ \frac{dS}{dt} = \mathcal{L} = p {\dot{q}} - \mathcal{H}$$
+
+$$ \frac{dS}{dt} = \frac{\partial S}{\partial q} \dot{q} + \frac{\partial S}{\partial p} \dot{p} + \frac{\partial S}{\partial t} $$
+
+$$ \frac{\partial S}{\partial q} = p $$
+
+$$ \frac{\partial S}{\partial t} = H $$
+
+and Hamilton Jacobi Theory
 
 ***
 
