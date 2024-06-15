@@ -10,12 +10,8 @@
 What is Physics? 
 Physics is a category of natural science where the system of interest is anything. A physical system is a part of the reality that one is interested in studying. Everything else is hence labelled as Surroundings of the system.
 
-### [Physics from Aristotle to Newton](https://uv-1999.github.io/motion.html)
-
 How do we describe the system?
 The set of fundamental properties of a system is called the state of the system. The state of the system may change. What properties are fundamental? Any property that we possibly cannot reduce to some other property is a fundamental property. It is also affected by the choice of a physicist.
-
-
 
 Degree of freedom - The minimum number of independent variables to define the state of a system completely.
 
@@ -25,8 +21,28 @@ Kinetics is the study of forces that cause motion while kinematics is a mathemat
 Statics - Kinematics of rest
 Dynamics - Kinematics of motion
 
+Constraint make the the equations of motion dependent to each other. They are like force laws for which we don't have the expression of force but the expression of their effect. 
 
+1. Holonomic and Rheonomous (functional and time is an explicit variable)
+2. Holonomic and Scleronomous (functional and time is not an explicit variable)
+3. Non-Holonomic and Rheonomous (non-functional and time is an explicit variable)
+4. Non-Holonomic and Scleronomous (non-functional and time is not an explicit variable)
 
+### [Physics from Aristotle to Newton](https://uv-1999.github.io/motion.html)
+
+1. Weak form of Newton's 3rd law :  2 objects apply equal and opposite forces to each other (may not be along the line joining the two)
+
+It implies the conservation of linear momentum of a system of particles as all internal forces vanish, if there is no net external force on any particle.
+
+2. Strong form of the Newton's 3rd law: 2 objects apply equal and opposite forces to each other along the line joining the two.
+
+it implies the conservation of angular momentum of a system of particles as all internal forces and also torques vanish, if there is no net external torque on any particle. Internal force have to be "central" in nature.
+
+for forces that does not follow any of the two versions of the law, once can assign momenta to the force fields themselves so that the combined momenta (mechanical plus field) are conserved.
+
+Angular momentum of a system of particle is sum of angular momentum of each particle.
+
+For Rigid bodies internal forces do not work.
 
 ### Central Force
 A central force is a force that is directed along the line joining the particle and a fixed point, called the center. The magnitude of this force depends only on the distance between the particle and the center. Mathematically, a central force $\mathbf{F}$ can be expressed as:
@@ -105,6 +121,8 @@ $$e = \sqrt{1 + \frac{2mEh^2}{K^2}} = \sqrt{1 + \frac{2EL^2}{mK^2}}$$
 
 Here $m$ is reduced mass above.
 
+## Analytical Mechanics
+
 In classical physics, physical quantities have following important features:
 1. Single-valued
 2. Deterministic
@@ -155,17 +173,21 @@ $$ \frac{\partial \mathcal{L}}{\partial {t}} = \frac{d}{dt}\left(\mathcal{L} - \
 
 $$ \frac{\partial \mathcal{L}}{\partial {t}} = - \frac{d}{dt} H $$
 
-$$ H = \frac{\partial \mathcal{L}}{\partial \dot{q}} {\dot{q}} - \mathcal{L} $$
+$$ \mathcal{H} = \frac{\partial \mathcal{L}}{\partial \dot{q}} {\dot{q}} - \mathcal{L} $$
 
-This is the definition of Hamiltonian and we can get the following relations:
+$$ \mathcal{H} = p {\dot{q}} - \mathcal{L} $$
 
-$$ \frac{\partial \mathcal{L}}{\partial {x}} = \frac{d}{dt} p $$
+The above is the definition of Hamiltonian. 
 
-$$ \frac{\partial \mathcal{L}}{\partial {p}} = \frac{d}{dt} x $$
+We can get the following important relations:
 
-$$ \frac{\partial \mathcal{L}}{\partial {t}} = -\frac{d}{dt} H $$
+$$ \frac{\partial \mathcal{H}}{\partial {\dot{q}}} = p = \frac{\partial \mathcal{L}}{\partial {\dot{q}}}$$
 
-$$ \frac{\partial \mathcal{L}}{\partial {\theta}} = \frac{d}{dt} L $$
+$$ \frac{\partial \mathcal{H}}{\partial {p}} = \dot{q} $$
+
+$$ \frac{\partial \mathcal{H}}{\partial {q}} = - \frac{\partial \mathcal{L}}{\partial {{q}}} = - \dot{p}$$
+
+$$ \frac{\partial \mathcal{H}}{\partial {t}} = - \frac{\partial \mathcal{L}}{\partial {t}}$$
 
 This hints that the changes in momentum of the system corresponds to how the Lagrangian depends on the coordianate.
 Also that the changes in coordinate of the system corresponds to how the Lagrangian depends on the momentum.
