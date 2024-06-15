@@ -9,8 +9,6 @@
 
 ## Problems with Classical Mechanics
 
-
-
 ## Wave-particle duality and special relativity
 
 Premise 1: Each particle is associated with a wave and it is impossible to separate the motion of the particle from its wave.
@@ -31,12 +29,10 @@ Deduction 5: From the energy momentum relation of special theory of relativity, 
 
 $$\omega^2 = {cK}^2 + {\omega_0}^2$$
 
-Premise 4: Since group velocity $$v_g = \frac{domega}{dk}$$  and phase velocity $$v_p = \frac{omega}{k}$$ and $$v_g v_p = c^2$$
+Premise 4: Since group velocity $$v_g = \frac{d\omega}{dk}$$  and phase velocity $$v_p = \frac{\omega}{k}$$ and $$v_g v_p = c^2$$
 
 So the wave associated with a matter particle travels faster than the invariant speed so it must not carry any mechanical influence.
 What does this wave represent then?
-
-
 
 ## Mathematical Framework of Quantum Mechanics
 
