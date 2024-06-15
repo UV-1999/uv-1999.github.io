@@ -7,6 +7,8 @@
 
 # A Summary of Particle Physics
 
+
+
 ### Fundamental forces
 
 | Fundamental Force | Charge                                   | Mediator / Force Carrier | Range of order of $$(\frac{\hbar}{mc})$$ | Decay Lifetime (seconds)       |
@@ -15,6 +17,9 @@
 | Weak              | Weak charge                              | W$$\pm$$ and Z           | $$10^{-18}m$$                            | $$10^{-8}m$$ to $$10^{-10}m$$  |
 | Electromagnetism  | Electric Charge and Spin                 | Photon                   | infinity                                 | $$10^{-19}m$$ to $$10^{-21}m$$ |  
 | Gravitation       | Gravitational Mass                       | Graviton?                | infinity                                 | Infinity                       |
+
+
+
 
 ### Elementary Fermions
 
