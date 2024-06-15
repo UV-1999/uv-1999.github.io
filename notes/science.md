@@ -48,6 +48,12 @@ In the famous eclipse experiment of 1919, the positions of stars near the sun we
 
 That’s why theories are tested as much as possible by logically deriving many different predictions from them, and then using observation or experiment to determine whether those predictions are true. A single failed prediction would be enough to prove the theory false. Therefore, the more true predictions the theory produces, the more likely it is that the theory itself is true. So that is the primary way that empirical sciences are based on logic. They use the laws of logical deduction (which include mathematics) to generate predictions, based on the hypotheses of their theories. It’s then up to the observers and experimentalists to determine whether those predictions are true.
 
+### Reductionism and Emergence
+
+Emergence - Some properties of the system are emergent, hence may not be possessed by the composting simpler parts. "Many are different" or “The whole is greater and different than the sum of its parts” is Emergence: an important fact that, in physics several characteristic properties just exist when things are bulk: Temperature, Pressure are two examples. Sometimes we invent parameters to define some property like say “conductivity”, we know that quantum statistical mechanics can give us the model to explain the conductivity so we reduce this property to fundamental-er properties. But the reason we use conductivity or any other parameter is to allow us to quantify all those fundamental-er properties without a contemporary mechanism or model for it. Later we can replace it with some underlying mechanism.
+
+
+
 ## Scientific Measurements
 Measurements can be made of a property of a system considered in the study. Instruments may be required to make some measurements. A measurement is the central idea in experiments and has two parts, a number and a unit.
 
