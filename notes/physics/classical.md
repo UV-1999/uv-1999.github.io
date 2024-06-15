@@ -185,7 +185,7 @@ $$ \frac{\partial \mathcal{H}}{\partial {\dot{q}}} = p = \frac{\partial \mathcal
 
 $$ \frac{\partial \mathcal{H}}{\partial {p}} = \dot{q} $$
 
-$$ \frac{\partial \mathcal{H}}{\partial {q}} = - \frac{\partial \mathcal{L}}{\partial {{q}}} = - \dot{p}$$
+$$ \frac{\partial \mathcal{H}}{\partial {q}} = - \frac{\partial \mathcal{L}}{\partial{q}} = - \dot{p}$$
 
 $$ \frac{\partial \mathcal{H}}{\partial {t}} = - \frac{\partial \mathcal{L}}{\partial {t}}$$
 
