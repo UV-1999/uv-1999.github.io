@@ -5,6 +5,8 @@
 
 [Back to main menu](https://uv-1999.github.io/notes/philosophy)
 
+[Edit this page](https://github.com/UV-1999/uv-1999.github.io/edit/main/notes/physics/classical.md)
+
 # Physics
 
 What is Physics? 
