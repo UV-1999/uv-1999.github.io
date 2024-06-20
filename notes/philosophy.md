@@ -1,26 +1,7 @@
 <head>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="main.css">
 </head>
-
-<style>
-.dark-mode-button {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    font-size: 30px;
-    background-color: transparent;
-    color: #fff8e7;
-    border: none;
-    padding: 0px 0px;
-    cursor: pointer;
-}
-</style>
-
-</strong>
-<button class="dark-mode-button" id="darkmodebutton">☀️</button>
-</header>
 
 # From Philosophy to Science to Physics
 My unwarranted notes on whatever I write here.
