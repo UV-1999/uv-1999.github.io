@@ -43,9 +43,9 @@
        <br>
    </div>
     
-       <hr>
+<hr>
 
-    <footer class="container" id="footer-container">
+<footer class="container" id="footer-container">
         <div style="text-align: center;">
         <p style="justify-content: center; align-items: center; text-align: center;">
         <a href="mailto:pmarmat@ph.iitr.ac.in" class="icon-link" target="_blank"><i class="far fa-envelope"></i></a>
@@ -59,7 +59,7 @@
         </div>
     </footer>
     
-    <script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="main.js"></script>
       
 </body>
 </html>
