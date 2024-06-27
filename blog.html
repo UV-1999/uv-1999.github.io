@@ -25,14 +25,30 @@
 </header>
 
   <div id="content"></div>
-  <script src="assets/js/markdown-it.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/markdown-it@12.3.2/dist/markdown-it.min.js"></script>
   <script>
-    fetch('path-to-your-markdown-file.md')
+    fetch('/notes/science.md')
       .then(response => response.text())
       .then(text => {
         const md = window.markdownit();
         document.getElementById('content').innerHTML = md.render(text);
       });
   </script>
+
+<hr>
+<footer class="container" id="footer-container">
+<div style="text-align: center;">
+<p style="justify-content: center; align-items: center; text-align: center;">
+<a href="pmarmat@ph.iitr.ac.in" class="icon-link" target="_blank"><i class="far fa-envelope"></i></a>
+<a href="https://twitter.com/PiyushM41282215" class="icon-link" target="_blank"><i class="fab fa-twitter"></i></a>
+<a href="https://scholar.google.com/citations?user=yhwBklQAAAAJ&hl=en&oi=ao" class="icon-link" target="_blank"><i class="fab fa-google"></i></a>
+<a href="https://www.linkedin.com/in/piyush-marmat-0ba913240/" class="icon-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+<a href="https://www.researchgate.net/profile/Piyush_Marmat" class="icon-link" target="_blank"><i class="fab fa-researchgate"></i></a>
+<a href="https://github.com/UV-1999" class="icon-link" target="_blank"><i class="fab fa-github"></i></a>
+</p>
+<p>&copy; 2023 Piyush Marmat. All rights reserved. <a style="text-align: right;" href="#">Back to top</a></p>
+</div>
+</footer>
+<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
