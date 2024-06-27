@@ -233,4 +233,4 @@ The above follows from the AND logic.
 The above follows from the OR logic.
 
 ***
-[Back to main menu](https://uv-1999.github.io/notes/philosophy)
+[Back to main menu](https://uv-1999.github.io/notes/main)
