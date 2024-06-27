@@ -74,7 +74,7 @@ p {
             transition: background-color 0.3s, color 0.3s;
         }
 .container.dark-mode {
-            background-color: black;
+            background-color: transparent;
             color: #fff8e7;
         }
 .dark-mode-button {
