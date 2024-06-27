@@ -2,6 +2,10 @@
     transition: none !important;
 }
 
+window.addEventListener('DOMContentLoaded', (event) => {
+    document.documentElement.style.transition = '';
+});
+
 body {
             font-family: 'Karma';
             background-color: #fff8e7;
@@ -23,10 +27,6 @@ header {
             padding:20px 20px 0px 20px;
             transition: background-color 0.3s, color 0.3s;
         }
-
-window.addEventListener('DOMContentLoaded', (event) => {
-    document.documentElement.style.transition = '';
-});
 
 .pages {
             font-size: 25px;
