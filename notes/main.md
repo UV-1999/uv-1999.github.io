@@ -15,10 +15,5 @@ My unwarranted notes on whatever I write here.
 ## [Science](https://uv-1999.github.io/notes/science)
 ### 1. [Classical Physics](https://uv-1999.github.io/notes/physics/classical)
 ### 2. [Quantum Physics](https://uv-1999.github.io/notes/physics/quantum)
-### 3. [Thermal Physics](https://uv-1999.github.io/notes/physics/thermal)
-### 4. [Solid State Physics](https://uv-1999.github.io/notes/physics/solid)
-### 5. [Atomic and Molecular Physics](https://uv-1999.github.io/notes/physics/amol)
-### 6. [Nuclear Physics](https://uv-1999.github.io/notes/physics/nuclear)
-### 7. [Particle Physics](https://uv-1999.github.io/notes/physics/particle)
 
 ***
