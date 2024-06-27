@@ -13,7 +13,8 @@ function toggleDarkMode() {
     he.forEach(hline => {
         hline.classList.add('dark-mode');
     });
-    const contra = document.querySelector('container');
+    
+    const contra = document.querySelectorAll('container');
     contra.forEach(contain => {
     contain.classList.add('dark-mode');
     });
@@ -32,7 +33,8 @@ function toggleLightMode() {
     he.forEach(hline => {
         hline.classList.remove('dark-mode');
     });
-    const contra = document.querySelector('container');
+    
+    const contra = document.querySelectorAll('container');
     contra.forEach(contain => {
     contain.classList.remove('dark-mode');
     });
