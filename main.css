@@ -2,10 +2,6 @@
     transition: none !important;
 }
 
-window.addEventListener('DOMContentLoaded', (event) => {
-    document.documentElement.style.transition = '';
-});
-
 body {
             font-family: 'Karma';
             background-color: #fff8e7;
