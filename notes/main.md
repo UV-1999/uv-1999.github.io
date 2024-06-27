@@ -3,6 +3,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
+[Edit this page](https://github.com/UV-1999/uv-1999.github.io/edit/main/notes/main.md)
+
 # From Philosophy to Science to Physics
 My unwarranted notes on whatever I write here.
 
