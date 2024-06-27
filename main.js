@@ -30,6 +30,19 @@ function toggleLightMode() {
     });
 }
 
+const userPreference = localStorage.getItem('preferred-theme');
+if (userPreference === 'dark') {
+    const icon = button.querySelector('i');
+    icon.classList.remove('fa-sun');
+    icon.classList.add('fa-moon');
+    toggleDarkMode();
+} else  {
+    const icon = button.querySelector('i');
+    icon.classList.remove('fa-moon');
+    icon.classList.add('fa-sun');
+    toggleLightMode();
+}
+
 button.addEventListener("click", function () {
     const icon = button.querySelector('i');
     if (icon.classList.contains('fa-sun')) {
@@ -45,15 +58,4 @@ button.addEventListener("click", function () {
     }
 });
 
-const userPreference = localStorage.getItem('preferred-theme');
-if (userPreference === 'dark') {
-    const icon = button.querySelector('i');
-    icon.classList.remove('fa-sun');
-    icon.classList.add('fa-moon');
-    toggleDarkMode();
-} else if (userPreference === 'light') {
-    const icon = button.querySelector('i');
-    icon.classList.remove('fa-moon');
-    icon.classList.add('fa-sun');
-    toggleLightMode();
-}
+
