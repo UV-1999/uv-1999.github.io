@@ -38,7 +38,7 @@ header.dark-mode {
 a { 
             text-decoration: none; 
             color: #800020;
-            transition: background-color 0.3s, color 0.3s;
+            
           }
 
 a:hover {
@@ -71,7 +71,7 @@ p {
             background-color: transparent;
             margin: 0 auto;
             padding: 20px;
-            transition: background-color 0.3s, color 0.3s;
+            
         }
 .container.dark-mode {
             background-color: transparent;
