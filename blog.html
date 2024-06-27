@@ -27,7 +27,7 @@
   <div class = "container" id="content"></div>
   <script src="https://cdn.jsdelivr.net/npm/markdown-it@12.3.2/dist/markdown-it.min.js"></script>
   <script>
-    fetch('/notes/science.md')
+    fetch('/notes/main.md')
       .then(response => response.text())
       .then(text => {
         const md = window.markdownit();
