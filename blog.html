@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Blog</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js"></script>
+</head>
+<body>
+  <div id="content"></div>
+  <script src="assets/js/markdown-it.js"></script>
+  <script>
+    fetch('path-to-your-markdown-file.md')
+      .then(response => response.text())
+      .then(text => {
+        const md = window.markdownit();
+        document.getElementById('content').innerHTML = md.render(text);
+      });
+  </script>
+</body>
+</html>
