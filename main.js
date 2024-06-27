@@ -14,7 +14,9 @@ function toggleDarkMode() {
         hline.classList.add('dark-mode');
     });
     const contra = document.querySelector('container');
-    element.classList.add('dark-mode');
+    contra.forEach(contain => {
+    contain.classList.add('dark-mode');
+    });
 }
 
 function toggleLightMode() {
@@ -31,7 +33,9 @@ function toggleLightMode() {
         hline.classList.remove('dark-mode');
     });
     const contra = document.querySelector('container');
-    element.classList.remove('dark-mode');
+    contra.forEach(contain => {
+    contain.classList.remove('dark-mode');
+    });
 }
 
 const userPreference = localStorage.getItem('preferred-theme');
