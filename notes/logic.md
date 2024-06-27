@@ -4,7 +4,7 @@
 </head>
 
 [Back to main menu](https://uv-1999.github.io/notes/philosophy)
-
+[Edit this page](https://github.com/UV-1999/uv-1999.github.io/edit/main/notes/logic.md)
 # Logic
 
 Logic is the study of reasoning. Reasoning is how we make inferences. Inference is the act of gaining knowledge. Knowledge is true beliefs that are properly justified. Beliefs are what our mind is filled of. I can not define anything after that.
