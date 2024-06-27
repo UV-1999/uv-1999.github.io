@@ -16,7 +16,7 @@ function toggleDarkMode() {
     
     const contra = document.querySelectorAll('.container');
     contra.forEach(contain => {
-    contain.classList.add('dark-mode');
+        contain.classList.add('dark-mode');
     });
 }
 
@@ -36,7 +36,7 @@ function toggleLightMode() {
     
     const contra = document.querySelectorAll('.container');
     contra.forEach(contain => {
-    contain.classList.remove('dark-mode');
+        contain.classList.remove('dark-mode');
     });
 }
 
