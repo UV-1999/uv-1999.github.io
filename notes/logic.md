@@ -6,19 +6,16 @@
 [Back to main menu](https://uv-1999.github.io/notes/main)
 
 [Edit this page](https://github.com/UV-1999/uv-1999.github.io/edit/main/notes/logic.md)
+
 # Logic
 
-Logic is the study of reasoning. Reasoning is how we make inferences. Inference is the act of gaining knowledge. Knowledge is true beliefs that are properly justified. Beliefs are what our mind is filled of. I can not define anything after that.
+Logic is the study of reasoning. Reasoning is the process through the mind forms beliefs. Beliefs are the fundamental things in our minds. Propositions are beliefs represented through some language that are not vague or ambiguous.
 
-Truths are propositions that are true. But what is true?
+- **Ambiguity** is about a word having several meanings. Context or definition is needed to avoid ambiguity. For example, a plane (aircraft or surface).
 
-Propositions are beliefs represented through some language as sentences that are not vague or ambiguous.
+- **Vagueness** is about words that describe some quantity but are not at all precise, like large and small. To avoid vagueness, we use numbers or give comparative statements.
 
-**Ambiguity** is about a word having several meanings. Context or definition is needed to avoid ambiguity. For example, a plane (aircraft or surface).
-
-**Vagueness** is about words that describe some quantity but are not at all precise, like large and small. To avoid vagueness, we use numbers or give comparative statements.
-
-**When is a Proposition True?**
+## When is a Proposition True?**
 
 **1. Analytically - True by Reasoning**
 A proposition such as "If p and q, then p" is considered to be an analytic truth because of the meaning of the symbols and words in it and not because of any fact of any particular world. They are such that they could not be untrue. Analytic truth (also called a necessary truth) is a proposition that is true in all possible worlds or under all possible interpretations.
@@ -27,11 +24,7 @@ A proposition such as "If p and q, then p" is considered to be an analytic truth
 Factually true propositions are called synthetic truths or facts. A fact (also called a contingency), is only true in this world as it has historically unfolded.
 It is a proposition that is true by conforming to reality.
 
-Inferences are also called conclusions and they are formed by arguments. An argument is a collection of premises that have some conclusion.
-
-Argument: Given premises **imply** some conclusion.
-
-## Implications (The “if-then” statements)
+## Implications
 Consider this “If dogs are mammals, then I am human”. Both sub-statements are true. Dogs are mammals and I am a human. But clearly something is off about the compound statement. There is no causal relevance. The truth value of the antecedent does not imply the truth value of the consequent. 
 
 1. True implies true: Valid and sound implication
@@ -139,13 +132,11 @@ The **Münchhausen trilemma** is that there are only three ways of completing a 
 
 The trilemma, then, is the decision among the three equally unsatisfying options. Karl Popper's suggestion was to accept the trilemma as unsolvable and work with knowledge by way of conjecture and criticism.
 
-### Laws of logic
-- Law of excluded middle - a proposition is either true or false. Not somewhere in the middle.
-- Law of contradiction - something is either A or not A. Where A can be anything.
-- Law of identity - a thing is identical or same to itself, A = A for all A.
 
-**Law of excluded middle is necessary for logic.**
-If a statement P is both true and false then anything can be proven to be true. The statement "law of excluded middle is true" can also be proven to be true which is contradictory. So either the law of excluded middle has to be true or all the propositions are true and false at the same time leading to the collapse of logic.
+
+**Law of excluded middle**
+
+"A proposition is either true or false. Not somewhere in the middle." If a statement P is both true and false then anything can be proven to be true. The statement "law of excluded middle is true" can also be proven to be true which is contradictory. So either the law of excluded middle has to be true or all the propositions are true and false at the same time leading to the collapse of logic.
 
 If a proposition that is always true regardless of the truth values of the propositional variables it contains is called a **tautology**.
 A compound proposition that is always false is called a **contradiction** or absurdity.
