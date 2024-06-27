@@ -24,6 +24,10 @@ header {
             transition: background-color 0.3s, color 0.3s;
         }
 
+window.addEventListener('DOMContentLoaded', (event) => {
+    document.documentElement.style.transition = '';
+});
+
 .pages {
             font-size: 25px;
             float:right;
