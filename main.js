@@ -1,18 +1,5 @@
 const button = document.getElementById("darkmodebutton");
 
-const userPreference = localStorage.getItem('preferred-theme');
-if (userPreference === 'dark') {
-    const icon = button.querySelector('i');
-    icon.classList.remove('fa-sun');
-    icon.classList.add('fa-moon');
-    toggleDarkMode();
-} else  {
-    const icon = button.querySelector('i');
-    icon.classList.remove('fa-moon');
-    icon.classList.add('fa-sun');
-    toggleLightMode();
-}
-
 function toggleDarkMode() {
     const element = document.querySelector('body');
     element.classList.add('dark-mode');
@@ -43,7 +30,18 @@ function toggleLightMode() {
     });
 }
 
-
+const userPreference = localStorage.getItem('preferred-theme');
+if (userPreference === 'dark') {
+    const icon = button.querySelector('i');
+    icon.classList.remove('fa-sun');
+    icon.classList.add('fa-moon');
+    toggleDarkMode();
+} else  {
+    const icon = button.querySelector('i');
+    icon.classList.remove('fa-moon');
+    icon.classList.add('fa-sun');
+    toggleLightMode();
+}
 
 button.addEventListener("click", function () {
     const icon = button.querySelector('i');
