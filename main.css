@@ -1,3 +1,7 @@
+:root {
+    transition: none !important;
+}
+
 body {
             font-family: 'Karma';
             background-color: #fff8e7;
