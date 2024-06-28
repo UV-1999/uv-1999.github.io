@@ -24,16 +24,18 @@
 <button id="darkmodebutton" class="dark-mode-button"><i class="fa-solid fa-sun" style="color: #FFD43B;"></i></button>
 </header>
 
-  <div class = "container" id="content"></div>
-  <script src="https://cdn.jsdelivr.net/npm/markdown-it@12.3.2/dist/markdown-it.min.js"></script>
-  <script>
-    fetch('/notes/main.md')
+<div class = "container" id="content"></div>
+<script type="module">
+import markdownIt from 'https://cdn.jsdelivr.net/npm/markdown-it@14.1.0/+esm'
+</script>
+<script>
+    fetch('/notes/logic.md')
       .then(response => response.text())
       .then(text => {
         const md = window.markdownit();
         document.getElementById('content').innerHTML = md.render(text);
       });
-  </script>
+</script>
 
 <hr>
 <footer class="container" id="footer-container">
