@@ -14,25 +14,56 @@ body.dark-mode {
 header {
     background-color: #fff8e7; /* Light mode header background */
     color: #800020; /* Light mode header text color */
-    height: auto;
     max-width: 800px;
     margin: auto;
-    padding: 20px 20px 0px 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Distribute space between elements */
+    align-items: center; /* Align items vertically in the center */
 }
 
 header.dark-mode {
     background-color: #1E201E; /* Dark mode header background */
 }
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.site-title {
+    font-size: 36px;
+    text-decoration: none;
+    color: #800020;
+}
+
 .pages {
+    display: flex; /* Use flexbox for better alignment */
+    gap: 30px; /* Adds space between links */
+}
+
+.pages a {
     font-size: 25px;
-    float: right;
-    display: block;
+    text-decoration: none;
+    color: #800020;
+}
+
+.pages a:hover {
+    background-color: #ff5252;
 }
 
 @media screen and (max-width: 500px) {
+    header {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        align-items: flex-start;
+    }
+    
     .pages {
-        float: left;
+        justify-content: flex-start;
+        gap: 15px; /* Smaller gap for mobile */
+        margin-top: 10px; /* Add spacing on mobile */
     }
 }
 
