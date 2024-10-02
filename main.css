@@ -1,116 +1,126 @@
 body {
-            font-family: 'Karma';
-            background-color: #fff8e7;
-            margin: 0 ;
-            padding: 0;
-            
-        }
-
-body.dark-mode {
-            background-color: #000000;
-            color: #fff;
-        }
-header {
-            background-color: #fff8e7;
-            color: #800020;
-            height: auto;
-            max-width: 800px;
-            margin: auto;
-            padding:20px 20px 0px 20px;
-            
-        }
-
-.pages {
-            font-size: 25px;
-            float:right;
-            display: block;
+    font-family: 'Karma';
+    background-color: #fff8e7; /* Light mode background */
+    margin: 0;
+    padding: 0;
+    color: black; /* Normal text color for light mode */
 }
 
-@media screen and (max-width: 500px) {
-          .pages {
-            float:left;}
+body.dark-mode {
+    background-color: #1E201E; /* Dark mode background */
+    color: white; /* Normal text color for dark mode */
+}
+
+header {
+    background-color: #fff8e7; /* Light mode header background */
+    color: #800020; /* Light mode header text color */
+    height: auto;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px 20px 0px 20px;
 }
 
 header.dark-mode {
-            background-color: #000000;
-            color: #fff8e7;
-        }
-a { 
-            text-decoration: none; 
-            color: #800020;
-            
-          }
+    background-color: #1E201E; /* Dark mode header background */
+}
+
+.pages {
+    font-size: 25px;
+    float: right;
+    display: block;
+}
+
+@media screen and (max-width: 500px) {
+    .pages {
+        float: left;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #800020; /* Light mode anchor color */
+}
 
 a:hover {
-             text-decoration: underline;
-        }
+    background-color: rgba(255, 82, 82, 0.2); /* Light mode hover effect (very light reddish) */
+}
 
 a.dark-mode {
-            color: #3ded97;
-        }
-        
+    color: #ECDFCC; /* Dark mode anchor color */
+}
+
+a.dark-mode:hover {
+    background-color: rgba(255, 239, 204, 0.2); /* Dark mode hover effect (very light beige) */
+}
+
 hr {
-             border: 1px solid #800020;
-        }
+    border: 1px solid #800020; /* Light mode hr color */
+}
+
 hr.dark-mode {
-            border: 1px solid green;
-        }
-        
+    border: 1px solid green; /* Dark mode hr color */
+}
+
 h1 {
-            font-size: 36px;
-        }
+    font-size: 36px;
+}
+
 h2 {
-            font-size: 24px;
-        }
+    font-size: 24px;
+}
+
 p {
-            font-size: 18px;
-            margin: 20px 0;
-        }
+    font-size: 18px;
+    margin: 20px 0;
+}
+
 .container {
-            max-width: 800px;
-            background-color: transparent;
-            margin: 0 auto;
-            padding: 20px;
-            
-        }
+    max-width: 800px;
+    background-color: transparent;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 .container.dark-mode {
-            background-color: transparent;
-            color: #fff8e7;
-        }
+    background-color: transparent; /* Dark mode container */
+    color: #fff8e7; /* Dark mode container text color */
+}
+
 .dark-mode-button {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            font-size: 30px;
-            background-color: transparent;
-            color: #fff8e7;
-            border: none;
-            padding: 0px 0px;
-            cursor: pointer;
-        }
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    background-color: transparent;
+    color: #fff8e7; /* Dark mode button text color */
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
 .icon-link {
-            color: #800020; /* Color for icon buttons */
-            font-size: 30px;
-            margin-right: 10px;
-            text-decoration: none;
-        }
+    color: #800020; /* Color for icon buttons in light mode */
+    font-size: 30px;
+    margin-right: 10px;
+    text-decoration: none;
+}
 
 .icon-link.dark-mode {
-            color: #fff8e7;
-        }
+    color: #fff8e7; /* Color for icon buttons in dark mode */
+}
 
 .circle {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%; /* This creates the circular shape */
-            overflow: hidden; /* This ensures the image stays within the circle */
-            float: left; /* This maintains the float behavior */
-            margin-right: 10px; /* Add margin for spacing */
-            margin-bottom: 10px; /* Add margin for spacing */
-        }
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* This creates the circular shape */
+    overflow: hidden; /* This ensures the image stays within the circle */
+    float: left; /* This maintains the float behavior */
+    margin-right: 10px; /* Add margin for spacing */
+    margin-bottom: 10px; /* Add margin for spacing */
+}
 
 .circle img {
-            width: 100%; /* Ensures the image fills the circle */
-            height: 100%; /* Ensures the image fills the circle */
-            object-fit: cover; /* This maintains aspect ratio and covers the entire circle */
-            }
+    width: 100%; /* Ensures the image fills the circle */
+    height: 100%; /* Ensures the image fills the circle */
+    object-fit: cover; /* This maintains aspect ratio and covers the entire circle */
+}
