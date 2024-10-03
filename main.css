@@ -138,7 +138,7 @@ th, td {
             background-color: transparent; /* Ensures no background color */
         }
 
-th.dark=mode, td.dark-mode 
+th.dark-mode, td.dark-mode 
         {
             color: white;  
         }
