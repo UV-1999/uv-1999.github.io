@@ -26,13 +26,13 @@ header.dark-mode {
     display: flex;
     justify-content: space-between; /* Align items with space between */
     align-items: center;
-    max-width: 1200px; /* Adjust based on your preference */
+    max-width: 500px; /* Adjust based on your preference */
     margin: auto;
     padding: 0 20px;
 }
 
 .title {
-    font-size: 36px;
+    font-size: 38px;
     text-decoration: none;
     color: #800020;
 }
@@ -61,11 +61,11 @@ header.dark-mode {
 /* Dark mode adjustments */
 header.dark-mode .title,
 header.dark-mode .pages a {
-    color: #FFD43B;
+    color: #fff8e7;
 }
 
 /* Mobile-specific styling */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     .header-content {
         flex-direction: column;
         align-items: flex-start;
