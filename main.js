@@ -18,6 +18,16 @@ function toggleDarkMode() {
     contra.forEach(contain => {
         contain.classList.add('dark-mode');
     });
+
+    const thh = document.querySelectorAll('th');
+    thh.forEach(contain => {
+        contain.classlist.add('dark-mode');
+    });
+
+    const tdh = document.querySelectorAll('td');
+    tdh.forEach(contain => {
+        contain.classlist.add('dark-mode');
+    });
 }
 
 function toggleLightMode() {
@@ -37,6 +47,16 @@ function toggleLightMode() {
     const contra = document.querySelectorAll('.container');
     contra.forEach(contain => {
         contain.classList.remove('dark-mode');
+    });
+
+    const thh = document.querySelectorAll('th');
+    thh.forEach(contain => {
+        contain.classlist.remove('dark-mode');
+    });
+
+    const tdh = document.querySelectorAll('td');
+    tdh.forEach(contain => {
+        contain.classlist.remove('dark-mode');
     });
 }
 
