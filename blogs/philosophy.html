@@ -47,7 +47,268 @@ A belief is the attitude (perception) of an agent towards any entity or property
     </tr>
     <tr>
         <td colspan="2">
-        Logic
+        <h1>Zero-order Logic</h1>
+    <p>
+        Propositions are beliefs expressed in some language. “True” and “False” are names of two logical values that we can assign to propositions (Law of excluded middle).
+    </p>
+    <p>
+        Once having determined the truth values of atomic propositions, the truth value of the compound proposition (comprising the atomic propositions) can be determined. Logical connectives are fundamental operations that act on proposition(s) to develop compound propositions. If a compound proposition that is always true regardless of the truth values of the atomic propositions it contains is called a tautology. Similarly, a compound proposition that is always false is called a contradiction. A compound proposition that is neither a tautology nor a contradiction is referred to as a contingency. The truth value depends on the atomic propositions.
+    </p>
+
+    <h2>Logical Connectives</h2>
+    <ul>
+        <li>
+            <strong>Negation (not)</strong> - Every proposition has a corresponding negation (opposition). The negation of true is false and vice versa.
+        </li>
+        <li>
+            <strong>Conjunction (and)</strong> - True only if all propositions are true. P &amp; Q. Conjunction is commutative and associative.
+        </li>
+        <li>
+            <strong>Disjunction (or)</strong> - True when at least one proposition is true. P &or; Q. Disjunction is commutative and associative.
+        </li>
+    </ul>
+
+    <p>
+        We can write a compound proposition and at each new step, use the definitions of logical connectives to ultimately determine its truth value. Such a series of logical steps is called an argument. The starting atomic propositions become the premises and the resulting compound proposition is the conclusion. When the conclusion is always true given the premises are true, then the argument is called a deductive argument or a proof.
+    </p>
+
+    <h2>De Morgan’s Laws</h2>
+    <ol>
+        <li>
+            &sim; (P &amp; Q) = (P &amp; Q = F) = ((P = F) &or; (Q = F)) = &sim;P &or; &sim;Q
+        </li>
+        <li>
+            &sim; (P &or; Q) = (P &or; Q = F) = ((P = F) &amp; (Q = F)) = &sim;P &amp; &sim;Q
+        </li>
+    </ol>
+
+    <h2>Implications</h2>
+    <p>
+        “A implies B.” This means that if A is true, then B is true. Since either A can be true or false. “A &or; &sim;A” is true. Which can be written as “B &or; &sim;A”. Since A being false doesn't say anything about B. It may happen that despite A being false, B may be true. Falsity of antecedent (A) doesn't determine anything about consequence (B). This fact is commonly said as false implies anything (true or false). Also, true only implies true. E.g., If you kill a mosquito then it dies. Here A is “you kill a mosquito” and B is “it dies”. If you kill a mosquito, surely it dies, but if you don't kill a mosquito, then the mosquito may or may not die.
+    </p>
+
+<h2>Implication Formulas</h2>
+    <ol>
+        <li>
+            &sim;P &rarr; &sim;Q = &sim;Q &or; P = Q &rarr; P
+        </li>
+        <li>
+            ((P &rarr; Q) &wedge; (Q &rarr; P)) = (P &harr; Q)
+        </li>
+        <li>
+            (P = P) &harr; (P &rarr; P) &wedge; (&sim;P &rarr; &sim;P) = (P &harr; P)
+        </li>
+        <li>
+            (P &rarr; &sim;P) = (&sim;P &or; &sim;P)
+        </li>
+         <li>Modus Ponens: ((P &rarr; Q) &wedge; P) &rarr; Q.</li>
+        <li>Modus Tollens: ((P &rarr; Q) &wedge; &sim;Q) &rarr; &sim;P.</li>
+        <li>Fallacy of Converse: (Q &wedge; (P &rarr; Q)) &rarr; P.</li>
+        <li>Fallacy of Inverse: (&sim;P &wedge; (P &rarr; Q)) &rarr; &sim;Q.</li>
+    </ol>
+
+    <h2>Self-Referential Statements</h2>
+    <h3>Self-affirming statements</h3>
+    <p>
+        Consider “this statement is true.” This statement is meaningless since if it is true, then it is true, or if it is false, then it is false. The implication is true (valid) but the statement is meaningless since we know that for any A, A &rarr; A is always true irrespective of the truth value of A. But a self-affirming statement can be either true or false, hence are not propositions.
+    </p>
+
+    <h3>Self-negating statements</h3>
+    <p>
+        Consider “this statement is false.” This statement is also meaningless since if it is true, then it is false, or if it is false, then it is true. The implication is contingent on the truth value of the statement. The self-negating statements are neither true nor false, hence are not propositions.
+    </p>
+
+    <h2>Sufficient Conditions</h2>
+    <p>
+        P &rarr; Q (if P then Q). If P is true then Q is true. P is hence a sufficient condition for Q.
+    </p>
+
+    <h2>Necessary Conditions</h2>
+    <p>
+        P &rarr; Q (if P then Q) = &sim;Q &rarr; &sim;P. If Q is false then P is false. Q is hence a necessary condition for P.
+    </p>
+    
+    <h3>The conjunction of some necessary conditions is also a necessary condition.</h3>
+    <p>
+        ((P &rarr; A) &wedge; (P &rarr; B)) = (A &or; &sim;P) &wedge; (B &or; &sim;P) 
+        = (A &wedge; B) &or; (A &wedge; &sim;P) &or; (B &wedge; &sim;P) &or; (&sim;P)
+        = (A &wedge; B) &or; (&sim;A &or; P) &or; (&sim;B &or; &sim;P) &or; (&sim;P) 
+        = (A &wedge; B) &or; (&sim;P) = P &rarr; (A &wedge; B)
+    </p>
+
+    <h1>First-order Logic</h1>
+    <p>
+        Consider:
+    </p>
+    <ul>
+        <li>If Paris is in France then French people are from France (true implies true).</li>
+        <li>If Paris is in England then English people are from France (false implies false).</li>
+        <li>If Paris is in England then French people are from France (false implies true).</li>
+    </ul>
+    <p>
+        The problem here is that the implications are irrelevant. True implies true, but there is no connection between antecedent and consequent.
+    </p>
+    <p>
+        First-order logic solves the above problem by allowing for the formalization of statements about entities and their properties. A proposition is resolved into a subject (description of entities) and predicates (description of properties). A predicate is a part of propositions that talks about a property of some variable (an instance of the subject). The meaning of a predicate is exactly a function from the domain of variables to the truth-values “true” and “false”. A domain is the set of all variables for which the property is defined. A domain is necessary to determine the truth value of any predicate. A property is not defined for variables outside its domain.
+    </p>
+    <p>
+        In checking the consistency and causal relevance of implications, first-order logic uses quantification.
+    </p>
+
+    <h2>Quantification</h2>
+    <p>
+        This ensures that statements apply either universally or exist under certain conditions. For instance, in an implication P(x) &rarr; Q(x), first-order logic requires that there be a consistent domain of discourse. The predicates P and Q must involve entities within the same domain (i.e., x should refer to the same entity in both cases).
+    </p>
+
+    <h3>Quantifiers</h3>
+    <p>
+        Quantifiers tell you for how many elements in a collection (that take place as variables) the given predicate is true or false.
+    </p>
+    <ol>
+        <li>
+            <strong>Universal quantifier</strong> - “for all” (∀) - True when predicate is true for all variables.
+            <br>
+            ∀x(P(x)) = P(x<sub>1</sub>) &wedge; P(x<sub>2</sub>) &wedge; P(x<sub>1</sub>) &wedge; ...
+        </li>
+        <li>
+            <strong>Existential quantifier</strong> - “there exists” (∃) - True when predicate is true for at least one variable.
+            <br>
+            ∃x(P(x)) = P(x<sub>1</sub>) &or; P(x<sub>2</sub>) &or; P(x<sub>1</sub>) &or; ...
+        </li>
+    </ol>
+
+    <h3>De Morgan’s Laws</h3>
+    <p>
+        From De Morgan’s Laws:
+    </p>
+    <ul>
+        <li>&sim;∃x(P(x)) = ∀x(&sim;P(x))</li>
+        <li>&sim;∀x(P(x)) = ∃x(&sim;P(x))</li>
+    </ul>
+
+    <p>
+        If a property P is true for all x, then P is an identity of x. If an identity exists, then it is necessary for all x but it is not sufficient. Being a mammal is an identity of cats. Cats are necessarily mammals, but that's not the sufficient condition to be a cat.
+    </p>
+
+    <h2>An example of first-order proof</h2>
+    <p>Proof that if a proposition p has a finite number of necessary conditions, then the conjunction of those necessary conditions is sufficient for p:</p>
+    <ol>
+        <li>Consider a and b to be necessary conditions for p. &nbsp; [ (p &rarr; a) &wedge; (p &rarr; b) ]</li>
+        <li>Consider no other proposition c is necessary for p. &nbsp; [ &not;∃c(p &rarr; c) ]</li>
+        <li>
+            Then let us assume that a and b are true but p is false. (p &rarr; a) &wedge; (p &rarr; b) is True. (false can imply true). It means that even if a and b are true, p can be false since they are not sufficient.
+        </li>
+        <li>
+            If p is false and c is false, then p &rarr; c holds true. This should not be the case.
+        </li>
+        <li>
+            If p is false and c is true, then again p &rarr; c holds true. This should not be the case.
+        </li>
+        <li>
+            If p is true and c is true, then again p &rarr; c holds true. This should not be the case.
+        </li>
+        <li>
+            If p is true and c is false, then only p &rarr; c holds false. Which is the condition (2).
+        </li>
+    </ol>
+    <p>
+        So with condition (2), p is true while a and b are true, so a and b together is a sufficient condition for p.
+    </p>
+
+    <p>
+        ((p &rarr; a) &wedge; (p &rarr; b) &wedge; &not;∃c(p &rarr; c)) &rarr; ((a &wedge; b) &harr; p)
+    </p>
+
+    <h1>Types of Arguments in First-order Logic</h1>
+    
+    <h2>Types of Arguments</h2>
+    <ul>
+        <li>
+            <strong>Deductive</strong> - Special conclusion from general rule. As long as the general rule is true, a valid special conclusion is also true; hence the deduction is sound. 
+            <br>
+            ∀x(P(x)) &rarr; ∃x(P(x))
+        </li>
+        <li>
+            <strong>Inductive</strong> - Probable general conclusion from special observation. 
+            <br>
+            ∃x(P(x)) &rarr; ∀x(P(x))
+        </li>
+        <li>
+            <strong>Abductive</strong> - Probable cause of conclusion from a general rule (making the most likely explanation based on evidence). 
+            <br>
+            (p &rarr; q) &wedge; q &rarr; p
+        </li>
+    </ul>
+
+<p>A table highlighting different types of argument in a syllogism used famously by Peirce.</p>
+
+    <table>
+    
+    <tr>
+        <td>Abduction</td>
+        <td>Deduction</td>
+        <td>Induction</td>
+    </tr>
+    <tr>
+        <td>Case from Rule and Result</td>
+        <td>Result from Rule and Case</td>
+        <td>Rule from Case and Result</td>
+    </tr>
+    <tr>
+        <td>Rule (first principle) All the beans in this bag are white</td>
+        <td>Rule (first principle) All the beans in this bag are white</td>
+        <td>Case (hypothesis): These beans are from this bag</td>
+    </tr>
+    <tr>
+        <td>Result (conclusion): These beans are white</td>
+        <td>Case (hypothesis): These beans are from this bag</td>
+        <td>Result (conclusion): These beans are white</td>
+    </tr>
+    <tr>
+        <td>Case (hypothesis): These beans are from this bag. (The beans were taken out of this bag)</td>
+        <td>Result (conclusion): These beans are white.</td>
+        <td>(These beans that we have now are white)</td>
+    </tr>
+    <tr>
+        <td>Rule (first principle) All the beans in this bag are white.</td>
+        <td>(all the beans taken out will be white)</td>
+        <td></td>
+    </tr>
+</table>
+
+    <p>
+        The idea of non-deductive arguments introduces the concept of probability.
+    </p>
+
+    <p>
+        Only deductive reasoning guarantees the truth of the conclusion. Abductive and inductive reasoning are trial fits to make the deduction work.
+    </p>
+
+    <p>
+        In abduction, we seek a probable case that makes the conclusion deductively true given the rule is true. In induction, we seek a probable rule that makes the conclusion deductively true given the case is true. In a way, abduction is about finding what probably happened, and induction is about what probably will happen. Deduction is finding what happens.
+    </p>
+
+    <p>
+        Proof by induction has no induction in it. The inductive hypothesis "p(x<sub>0</sub>)" and the inductive step "p(x<sub>k</sub>) &rarr; p(x<sub>k+1</sub>)" are proven, and then by repeated modus ponens, p(x) is proven for all x. It is all deductive.
+    </p>
+
+    <h2>Münchhausen Trilemma</h2>
+    <p>There are only three ways of completing an argument:</p>
+    <ol>
+        <li>
+            <strong>The circular argument</strong>, in which the proof of some proposition presupposes the truth of that very proposition.
+        </li>
+        <li>
+            <strong>The regressive argument</strong>, in which each proof requires a further proof, ad infinitum.
+        </li>
+        <li>
+            <strong>The dogmatic argument</strong>, which rests on accepted precepts that are merely asserted rather than defended.
+        </li>
+    </ol>
+
+    <p>
+        The trilemma, then, is the decision among the three equally unsatisfying options. Karl Popper’s suggestion was to accept the trilemma as unsolvable and work with knowledge by way of conjecture and criticism. This is the essence of science. We do not seek the “ultimate truths” but rather we approximate reality for our uses. If we find errors, we jump to a new, better approximation.
+    </p>    
         </td>
     </tr>
     <tr>
@@ -142,7 +403,9 @@ Instead, they describe the physical world rather than the metaphysical foundatio
 as the definition on which synthetic a priori truths are contingent, is themselves contingent on how agents observe reality.
 Metaphysical truths are necessary for experience to be possible, but to reach them one has to observe reality and revise the analytic truths.
 So we can come up with metaphysical truths abductively and then only test them.
-This is why metaphysics is “analysis” of reality since we set up analytic claims and derive synthetic a priori claims from them and test them like synthetic a posteriori.</p>
+This is why metaphysics is “analysis” of reality since we set up analytic claims and derive synthetic
+a priori claims from them and test them like synthetic a posteriori. 
+</p>
         </td>
     </tr>
     <tr>
