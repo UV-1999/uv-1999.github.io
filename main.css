@@ -32,14 +32,14 @@ header.dark-mode {
 }
 
 .title {
-    font-size: 36px;
+    font-size: 80px;
     text-decoration: none;
     color: #800020;
 }
 
 .pages {
     display: flex;
-    gap: 30px; /* Space between links */
+    gap: 50px; /* Space between links */
     font-size: 25px;
 }
 
