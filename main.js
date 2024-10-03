@@ -20,12 +20,12 @@ function toggleDarkMode() {
     });
 
     const thh = document.querySelectorAll('th');
-    thh.forEach(contain => {
+    thh.forEach(header => {
         contain.classlist.add('dark-mode');
     });
 
     const tdh = document.querySelectorAll('td');
-    tdh.forEach(contain => {
+    tdh.forEach(cell => {
         contain.classlist.add('dark-mode');
     });
 }
@@ -50,12 +50,12 @@ function toggleLightMode() {
     });
 
     const thh = document.querySelectorAll('th');
-    thh.forEach(contain => {
+    thh.forEach(header => {
         contain.classlist.remove('dark-mode');
     });
 
     const tdh = document.querySelectorAll('td');
-    tdh.forEach(contain => {
+    tdh.forEach(cell => {
         contain.classlist.remove('dark-mode');
     });
 }
