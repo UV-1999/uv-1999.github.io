@@ -11,28 +11,69 @@ body.dark-mode {
     color: white; /* Normal text color for dark mode */
 }
 
+/* General header styling */
 header {
     background-color: #fff8e7; /* Light mode header background */
     color: #800020; /* Light mode header text color */
-    height: auto;
-    max-width: 800px;
-    margin: auto;
-    padding: 20px 20px 0px 20px;
+    padding: 20px 0;
 }
 
 header.dark-mode {
     background-color: #1E201E; /* Dark mode header background */
 }
 
-.pages {
-    font-size: 25px;
-    float: right;
-    display: block;
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Align items with space between */
+    align-items: center;
+    max-width: 1200px; /* Adjust based on your preference */
+    margin: auto;
+    padding: 0 20px;
 }
 
-@media screen and (max-width: 500px) {
+.title {
+    font-size: 36px;
+    text-decoration: none;
+    color: #800020;
+}
+
+.pages {
+    display: flex;
+    gap: 30px; /* Space between links */
+    font-size: 25px;
+}
+
+.pages a {
+    text-decoration: none;
+    color: #800020;
+}
+
+.dark-mode-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dark-mode-button i {
+    font-size: 24px;
+}
+
+/* Dark mode adjustments */
+header.dark-mode .title,
+header.dark-mode .pages a {
+    color: #FFD43B;
+}
+
+/* Mobile-specific styling */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .pages {
-        float: left;
+        margin-top: 10px;
+        font-size: 20px;
     }
 }
 
