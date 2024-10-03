@@ -106,7 +106,7 @@ td.dark-mode
 
 .container.dark-mode {
     background-color: transparent; /* Dark mode container */
-    color: #fff8e7; /* Dark mode container text color */
+    color: white; /* Dark mode container text color */
 }
 
 .dark-mode-button {
