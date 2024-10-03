@@ -85,6 +85,7 @@ th, td {
             text-align: left;
             color: black; /* Change this color to set text and border color */
             background-color: transparent; /* Ensures no background color */
+            text-align:justify;
         }
 
 th.dark-mode 
