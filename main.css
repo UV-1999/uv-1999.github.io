@@ -124,3 +124,21 @@ p {
     height: 100%; /* Ensures the image fills the circle */
     object-fit: cover; /* This maintains aspect ratio and covers the entire circle */
 }
+
+ table {
+            border-collapse: collapse; /* Ensures borders collapse into a single border */
+            width: 100%;
+        }
+
+th, td {
+            border: 1px solid; /* Set border color to match the text color */
+            padding: 8px; /* Add some padding inside cells */
+            text-align: left;
+            color: black; /* Change this color to set text and border color */
+            background-color: transparent; /* Ensures no background color */
+        }
+
+th.dark=mode, td.dark-mode 
+        {
+            color: white;  
+        }
