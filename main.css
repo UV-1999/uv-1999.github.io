@@ -26,13 +26,13 @@ header.dark-mode {
     display: flex;
     justify-content: space-between; /* Align items with space between */
     align-items: center;
-    max-width: 500px; /* Adjust based on your preference */
+    max-width: 1200px; /* Adjust based on your preference */
     margin: auto;
     padding: 0 20px;
 }
 
 .title {
-    font-size: 38px;
+    font-size: 40px;
     text-decoration: none;
     color: #800020;
 }
