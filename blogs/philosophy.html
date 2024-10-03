@@ -29,25 +29,25 @@
 
 <table>
     <tr>
-        <td>Philosophy</td>
-        <td>The study of Reality (including agents) and the relationships of agents with reality.</td>
+        <td><p>Philosophy</p></td>
+        <td><p>The study of Reality (including agents) and the relationships of agents with reality.</p></td>
     </tr>
     <tr>
-        <td>Reality</td>
-        <td>Everything (entities and properties).</td>
+        <td><p>Reality</p></td>
+        <td><p>Everything (entities and properties).</p></td>
     </tr>
     <tr>
-        <td>Agent</td>
-        <td>Agents are entities that are able to experience reality and do reasoning. Reasoning is the process through which the agent forms beliefs.
-A belief is the attitude (perception) of an agent towards any entity or property.</td>
+        <td><p>Agent</p></td>
+        <td></p>Agents are entities that are able to experience reality and do reasoning. Reasoning is the process through which the agent forms beliefs.
+A belief is the attitude (perception) of an agent towards any entity or property.<p></td>
     </tr>
     <tr>
-        <td>Logic</td>
-        <td>The language (communication and description) of philosophy. All philosophical inquiry is conducted by an agent.</td>
+        <td><p>Logic</p></td>
+        <td><p>The language (communication and description) of philosophy. All philosophical inquiry is conducted by an agent.</p></td>
     </tr>
     <tr>
         <td colspan="2">
-        <h1>Zero-order Logic</h1>
+        <h2>Zero-order Logic</h2>
     <p>
         Propositions are beliefs expressed in some language. “True” and “False” are names of two logical values that we can assign to propositions (Law of excluded middle).
     </p>
@@ -55,7 +55,7 @@ A belief is the attitude (perception) of an agent towards any entity or property
         Once having determined the truth values of atomic propositions, the truth value of the compound proposition (comprising the atomic propositions) can be determined. Logical connectives are fundamental operations that act on proposition(s) to develop compound propositions. If a compound proposition that is always true regardless of the truth values of the atomic propositions it contains is called a tautology. Similarly, a compound proposition that is always false is called a contradiction. A compound proposition that is neither a tautology nor a contradiction is referred to as a contingency. The truth value depends on the atomic propositions.
     </p>
 
-    <h2>Logical Connectives</h2>
+    <h3>Logical Connectives</h3>
     <ul>
         <li>
             <strong>Negation (not)</strong> - Every proposition has a corresponding negation (opposition). The negation of true is false and vice versa.
@@ -72,7 +72,7 @@ A belief is the attitude (perception) of an agent towards any entity or property
         We can write a compound proposition and at each new step, use the definitions of logical connectives to ultimately determine its truth value. Such a series of logical steps is called an argument. The starting atomic propositions become the premises and the resulting compound proposition is the conclusion. When the conclusion is always true given the premises are true, then the argument is called a deductive argument or a proof.
     </p>
 
-    <h2>De Morgan’s Laws</h2>
+    <h3>De Morgan’s Laws</h3>
     <ol>
         <li>
             &sim; (P &amp; Q) = (P &amp; Q = F) = ((P = F) &or; (Q = F)) = &sim;P &or; &sim;Q
@@ -82,12 +82,12 @@ A belief is the attitude (perception) of an agent towards any entity or property
         </li>
     </ol>
 
-    <h2>Implications</h2>
+    <h3>Implications</h3>
     <p>
         “A implies B.” This means that if A is true, then B is true. Since either A can be true or false. “A &or; &sim;A” is true. Which can be written as “B &or; &sim;A”. Since A being false doesn't say anything about B. It may happen that despite A being false, B may be true. Falsity of antecedent (A) doesn't determine anything about consequence (B). This fact is commonly said as false implies anything (true or false). Also, true only implies true. E.g., If you kill a mosquito then it dies. Here A is “you kill a mosquito” and B is “it dies”. If you kill a mosquito, surely it dies, but if you don't kill a mosquito, then the mosquito may or may not die.
     </p>
 
-<h2>Implication Formulas</h2>
+<h3>Implication Formulas</h3>
     <ol>
         <li>
             &sim;P &rarr; &sim;Q = &sim;Q &or; P = Q &rarr; P
@@ -107,28 +107,28 @@ A belief is the attitude (perception) of an agent towards any entity or property
         <li>Fallacy of Inverse: (&sim;P &wedge; (P &rarr; Q)) &rarr; &sim;Q.</li>
     </ol>
 
-    <h2>Self-Referential Statements</h2>
-    <h3>Self-affirming statements</h3>
+    <h3>Self-Referential Statements</h3>
+    <p><strong>Self-affirming statements</strong></p>
     <p>
         Consider “this statement is true.” This statement is meaningless since if it is true, then it is true, or if it is false, then it is false. The implication is true (valid) but the statement is meaningless since we know that for any A, A &rarr; A is always true irrespective of the truth value of A. But a self-affirming statement can be either true or false, hence are not propositions.
     </p>
 
-    <h3>Self-negating statements</h3>
+    <p><strong>Self-negating statements</strong></p>
     <p>
         Consider “this statement is false.” This statement is also meaningless since if it is true, then it is false, or if it is false, then it is true. The implication is contingent on the truth value of the statement. The self-negating statements are neither true nor false, hence are not propositions.
     </p>
 
-    <h2>Sufficient Conditions</h2>
+    <p><strong>Sufficient Conditions</strong></p>
     <p>
         P &rarr; Q (if P then Q). If P is true then Q is true. P is hence a sufficient condition for Q.
     </p>
 
-    <h2>Necessary Conditions</h2>
+    <p><strong>Necessary Conditions</strong></p>
     <p>
         P &rarr; Q (if P then Q) = &sim;Q &rarr; &sim;P. If Q is false then P is false. Q is hence a necessary condition for P.
     </p>
     
-    <h3>The conjunction of some necessary conditions is also a necessary condition.</h3>
+    <p><strong>The conjunction of some necessary conditions is also a necessary condition.</strong></p>
     <p>
         ((P &rarr; A) &wedge; (P &rarr; B)) = (A &or; &sim;P) &wedge; (B &or; &sim;P) 
         = (A &wedge; B) &or; (A &wedge; &sim;P) &or; (B &wedge; &sim;P) &or; (&sim;P)
@@ -136,7 +136,7 @@ A belief is the attitude (perception) of an agent towards any entity or property
         = (A &wedge; B) &or; (&sim;P) = P &rarr; (A &wedge; B)
     </p>
 
-    <h1>First-order Logic</h1>
+    <h2>First-order Logic</h2>
     <p>
         Consider:
     </p>
@@ -155,7 +155,7 @@ A belief is the attitude (perception) of an agent towards any entity or property
         In checking the consistency and causal relevance of implications, first-order logic uses quantification.
     </p>
 
-    <h2>Quantification</h2>
+    <h3>Quantification</h3>
     <p>
         This ensures that statements apply either universally or exist under certain conditions. For instance, in an implication P(x) &rarr; Q(x), first-order logic requires that there be a consistent domain of discourse. The predicates P and Q must involve entities within the same domain (i.e., x should refer to the same entity in both cases).
     </p>
@@ -190,7 +190,7 @@ A belief is the attitude (perception) of an agent towards any entity or property
         If a property P is true for all x, then P is an identity of x. If an identity exists, then it is necessary for all x but it is not sufficient. Being a mammal is an identity of cats. Cats are necessarily mammals, but that's not the sufficient condition to be a cat.
     </p>
 
-    <h2>An example of first-order proof</h2>
+    <h3>An example of first-order proof</h3>
     <p>Proof that if a proposition p has a finite number of necessary conditions, then the conjunction of those necessary conditions is sufficient for p:</p>
     <ol>
         <li>Consider a and b to be necessary conditions for p. &nbsp; [ (p &rarr; a) &wedge; (p &rarr; b) ]</li>
@@ -221,7 +221,7 @@ A belief is the attitude (perception) of an agent towards any entity or property
 
     <h1>Types of Arguments in First-order Logic</h1>
     
-    <h2>Types of Arguments</h2>
+    <h3>Types of Arguments</h3>
     <ul>
         <li>
             <strong>Deductive</strong> - Special conclusion from general rule. As long as the general rule is true, a valid special conclusion is also true; hence the deduction is sound. 
@@ -292,7 +292,7 @@ A belief is the attitude (perception) of an agent towards any entity or property
         Proof by induction has no induction in it. The inductive hypothesis "p(x<sub>0</sub>)" and the inductive step "p(x<sub>k</sub>) &rarr; p(x<sub>k+1</sub>)" are proven, and then by repeated modus ponens, p(x) is proven for all x. It is all deductive.
     </p>
 
-    <h2>Münchhausen Trilemma</h2>
+    <h3>Münchhausen Trilemma</h3>
     <p>There are only three ways of completing an argument:</p>
     <ol>
         <li>
@@ -312,15 +312,15 @@ A belief is the attitude (perception) of an agent towards any entity or property
         </td>
     </tr>
     <tr>
-        <td>Epistemology</td>
-        <td>The study of how agents interact with reality, theoretically. It is the study of how the agent knows the reality.
+        <td><p>Epistemology</p></td>
+        <td><p>The study of how agents interact with reality, theoretically. It is the study of how the agent knows the reality.
 It is the analysis of knowledge. Knowledge is justified true beliefs without luck. Hence, Knowledge is proven true belief.
 Proof is a stricter standard than justification, which eliminates the problem of epistemic luck by empirical demonstration.
-JTB (justified true belief) should be formally regarded as informed guesswork.</td>
+JTB (justified true belief) should be formally regarded as informed guesswork.<p></td>
     </tr>
     <tr>
-        <td>Metaphysics</td>
-        <td>The analysis of reality.</td>
+        <td><p>Metaphysics</p></td>
+        <td><p>The analysis of reality.</p></td>
     </tr>
     <tr>
         <td colspan="2">
@@ -409,12 +409,12 @@ a priori claims from them and test them like synthetic a posteriori.
         </td>
     </tr>
     <tr>
-        <td>Ethics</td>
-        <td>The study of how agents interact with reality, practically.
+        <td><p>Ethics</p></td>
+        <td><p>The study of how agents interact with reality, practically.
 Ethics only applies to moral agents. Moral agents are agents that can make choices.
 Hence ethics becomes the study of an agent’s choices. In ethics, the goal is to find the right choices.
 This defines what the agent ought to do. But ought implies can. Ethics presume the concepts of free-will (for choices) and harm (for morally right choices).
-Ought implies can but what implies ought? And one is ought to do?</td>
+Ought implies can but what implies ought? And one is ought to do?</p></td>
     </tr>
 </table>
 
