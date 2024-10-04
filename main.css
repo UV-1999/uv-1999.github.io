@@ -195,16 +195,23 @@ td.dark-mode
             background-color: transparent;
             color: #800020;
             cursor: pointer;
-            padding: 0px;
+            padding: 10px;
             width: 100%;
             text-align: left;
             border: none;
             outline: none;
             font-size: 20px;
         }
+.collapsible:hover {
+    background-color: rgba(255, 82, 82, 0.2);
+}
 
 .collapsible.dark-mode {
     color:#fff8e7;
+}
+
+.collapsible.dark-mode:hover {
+    background-color: rgba(255, 239, 204, 0.2);
 }
 
 /* Style for the content inside the collapsible */
