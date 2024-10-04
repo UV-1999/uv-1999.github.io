@@ -1,16 +1,18 @@
-    // Get the collapsible button
-    const collapsible = document.getElementById('collapsar');
+// Get all elements with the class 'collapsar'
+const collapsibles = document.querySelectorAll('.collapsar');
 
-    // Add an event listener to toggle content visibility on click
+// Loop through each collapsible element and add an event listener
+collapsibles.forEach(function(collapsible) {
     collapsible.addEventListener('click', function() {
-        const content = this.nextElementSibling; // Get the content div
-
+        const content = this.nextElementSibling; // Get the content div that follows the button
+        
         if (content.style.display === "block") {
             content.style.display = "none"; // Hide content if it's visible
         } else {
             content.style.display = "block"; // Show content if it's hidden
         }
     });
+});
 
 const button = document.getElementById("darkmodebutton");
 
