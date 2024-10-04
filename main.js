@@ -1,5 +1,5 @@
 // Get all elements with the class 'collapsar'
-const collapsibles = document.querySelectorAll('.collapsar');
+const collapsibles = document.getElementById('collapsar');
 
 // Loop through each collapsible element and add an event listener
 collapsibles.forEach(function(collapsible) {
