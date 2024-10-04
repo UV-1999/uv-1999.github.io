@@ -88,4 +88,16 @@ button.addEventListener("click", function () {
     }
 });
 
+    // Get the collapsible button
+    const collapsible = document.querySelector('.collapsible');
 
+    // Add an event listener to toggle content visibility on click
+    collapsible.addEventListener('click', function() {
+        const content = this.nextElementSibling; // Get the content div
+
+        if (content.style.display === "block") {
+            content.style.display = "none"; // Hide content if it's visible
+        } else {
+            content.style.display = "block"; // Show content if it's hidden
+        }
+    });
