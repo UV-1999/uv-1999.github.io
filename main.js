@@ -1,3 +1,17 @@
+    // Get the collapsible button
+    const collapsible = document.querySelector('.collapsible');
+
+    // Add an event listener to toggle content visibility on click
+    collapsible.addEventListener('click', function() {
+        const content = this.nextElementSibling; // Get the content div
+
+        if (content.style.display === "block") {
+            content.style.display = "none"; // Hide content if it's visible
+        } else {
+            content.style.display = "block"; // Show content if it's hidden
+        }
+    });
+
 const button = document.getElementById("darkmodebutton");
 
 function toggleDarkMode() {
@@ -27,6 +41,11 @@ function toggleDarkMode() {
     const tdh = document.querySelectorAll('td');
     tdh.forEach(cell => {
         cell.classList.add('dark-mode');
+    });
+
+    const dibba = document.querySelectorAll('.collapsible');
+    dibba.forEach(colla => {
+        colla.classList.add('dark-mode');
     });
 }
 
@@ -58,6 +77,11 @@ function toggleLightMode() {
     tdh.forEach(cell => {
         cell.classList.remove('dark-mode');
     });
+
+    const dibba = document.querySelectorAll('.collapsible');
+    dibba.forEach(colla => {
+        colla.classList.remove('dark-mode');
+    });
 }
 
 const userPreference = localStorage.getItem('preferred-theme');
@@ -88,16 +112,3 @@ button.addEventListener("click", function () {
     }
 });
 
-    // Get the collapsible button
-    const collapsible = document.querySelector('.collapsible');
-
-    // Add an event listener to toggle content visibility on click
-    collapsible.addEventListener('click', function() {
-        const content = this.nextElementSibling; // Get the content div
-
-        if (content.style.display === "block") {
-            content.style.display = "none"; // Hide content if it's visible
-        } else {
-            content.style.display = "block"; // Show content if it's hidden
-        }
-    });
