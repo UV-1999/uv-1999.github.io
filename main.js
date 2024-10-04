@@ -1,5 +1,5 @@
     // Get the collapsible button
-    const collapsible = document.querySelectorAll('.collapsible');
+    const collapsible = document.getElementById('collapsar');
 
     // Add an event listener to toggle content visibility on click
     collapsible.addEventListener('click', function() {
