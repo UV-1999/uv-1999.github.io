@@ -46,6 +46,7 @@ header.dark-mode {
     font-size: 40px;
     text-decoration: none;
     color: #800020;
+    font-weight: bold;
 }
 
 .pages {
@@ -57,6 +58,7 @@ header.dark-mode {
 .pages a {
     text-decoration: none;
     color: #800020;
+    font-weight: bold;
 }
 
 .dark-mode-button {
