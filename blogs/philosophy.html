@@ -60,14 +60,14 @@
   True only if all propositions are true. Conjunction is commutative and associative.
 </p>
 <p>
-  <strong>Disjunction (or)</strong> - Connects propositions with "or". ( P &or; Q).
+  <strong>Disjunction (or)</strong> - Connects propositions with "or". (P &or; Q).
   True when at least one proposition is true. Disjunction is also commutative and associative.
 </p>
 <p>
   Once having determined the truth values of atomic propositions,
   the truth value of the compound proposition (propositions composed of some atomic propositions)
   can be determined using the definitions of the logical connectives.
-  This process is called a logical proof.
+  This process is called a <strong>logical proof</strong>.
   If a compound proposition that is always true regardless of the truth values of the atomic propositions it contains,
   is called a <strong>tautology</strong>.
   Similarly, a compound proposition that is always false is called a <strong>contradiction</strong>.
@@ -82,14 +82,16 @@
   Also, true only implies true. E.g., If you kill a mosquito then it dies. Here A is “you kill a mosquito” and B is “it dies”.
   If you kill a mosquito, surely it dies, but if you don't kill a mosquito, then the mosquito may or may not die.
 </p>
-<h3>Implication Formulas and Proofs</h3>
-<ol>
-<li> Biconditional: (P &harr; Q) = ((P &rarr; Q) &wedge; (Q &rarr; P)). <br>
-If P then Q, and If Q then P. P if Q, and Q if P. P iff Q.
-</li>
-<li> &not;P &rarr; &not;Q = &not;Q &or; P = Q &rarr; P </li>
-<li> (P = Q) = ((P &rarr; Q) &wedge; (&not;P &rarr; &not;Q)) = (P &harr; Q) </li>
-<li>Modus Ponens: ((P &rarr; Q) &wedge; P) &rarr; Q.</li>
+<h3>Implications and Proofs</h3>
+<p><strong>Biconditional Propositions:</strong> They are defined as "If P then Q, and If Q then P" or "P if Q, and Q if P" or P iff Q. (P &harr; Q) = ((P &rarr; Q) &wedge; (Q &rarr; P)).</p>
+<p><strong>Inverse of Implication:</strong> &not;P &rarr; &not;Q = P &or; &not;Q = &not;Q &or; P = Q &rarr; P </p>
+<p><strong>Biconditional Equivalence:</strong>(P = Q) = ((P &rarr; Q) &wedge; (&not;P &rarr; &not;Q)) = (P &harr; Q) </p>
+
+
+<p><strong>Modus Ponens:</strong> ((P &rarr; Q) &wedge; P) &rarr; Q <br>
+((P &rarr; Q) &wedge; P) = ((Q &or; &not;P) &wedge; P) = ((Q &wedge; P) &or; (&not;P &wedge; P)) = (Q &wedge; P)<br>
+((Q &wedge; P) &rarr; Q) = (&not;(Q &wedge; P) &or; Q) = (&not;Q &or; &not;P &or; Q)
+</p>
 <li>Modus Tollens: ((P &rarr; Q) &wedge; &sim;Q) &rarr; &sim;P.</li>
 <li>Fallacy of Converse: (Q &wedge; (P &rarr; Q)) &rarr; P.</li>
 <li>Fallacy of Inverse: (&sim;P &wedge; (P &rarr; Q)) &rarr; &sim;Q.</li>
@@ -99,6 +101,26 @@ If P then Q, and If Q then P. P if Q, and Q if P. P iff Q.
 <li> &not; (P &wedge; Q) = &not;P &or; &not;Q </li>
 <li> &not; (P &or; Q) = &not;P &wedge; &not;Q </li>
 </ol>
+
+    <p>
+      <strong>Sufficient Conditions</strong> - P &rarr; Q (if P then Q). If P is true then Q is true. P is hence a sufficient condition for Q.
+    </p>
+
+    <p>
+      <strong>Necessary Conditions</strong> - P &rarr; Q (if P then Q) = &not;Q &rarr; &not;P.
+      If Q is false then P is false.
+      Q is hence a necessary condition for P.
+    </p>
+    
+    <p>
+    <strong>The conjunction of some necessary conditions is also a necessary condition:</strong>
+    <br>
+        ((P &rarr; A) &wedge; (P &rarr; B)) <br>
+        = (A &or; &not;P) &wedge; (B &or; &not;P) <br>
+        = (A &wedge; B) &or; (A &wedge; &not;P) &or; (B &wedge; &not;P) &or; (&not;P) <br>
+        = (A &wedge; B) &or; (&not;A &or; P) &or; (&not;B &or; &not;P) &or; (&not;P) <br>
+        = (A &wedge; B) &or; (&not;P) = P &rarr; (A &wedge; B)
+    </p>
 
   <h3>Self-Referential Statements</h3>
     <p>
@@ -114,25 +136,6 @@ If P then Q, and If Q then P. P if Q, and Q if P. P iff Q.
       This statement is also meaningless since if it is true, then it is false, or if it is false, then it is true.
       The implication is contingent on the truth value of the statement.
       The self-negating statements are neither true nor false, hence are not propositions.
-    </p>
-
-    <p>
-      <strong>Sufficient Conditions</strong> - P &rarr; Q (if P then Q). If P is true then Q is true. P is hence a sufficient condition for Q.
-    </p>
-
-    <p>
-      <strong>Necessary Conditions</strong> - P &rarr; Q (if P then Q) = &not;Q &rarr; &not;P.
-      If Q is false then P is false.
-      Q is hence a necessary condition for P.
-    </p>
-    
-    <p><strong>The conjunction of some necessary conditions is also a necessary condition.</strong></p>
-    <p>
-        ((P &rarr; A) &wedge; (P &rarr; B)) <br>
-        = (A &or; &not;P) &wedge; (B &or; &not;P) <br>
-        = (A &wedge; B) &or; (A &wedge; &not;P) &or; (B &wedge; &not;P) &or; (&not;P) <br>
-        = (A &wedge; B) &or; (&not;A &or; P) &or; (&not;B &or; &not;P) &or; (&not;P) <br>
-        = (A &wedge; B) &or; (&not;P) = P &rarr; (A &wedge; B)
     </p>
 </div>
 
