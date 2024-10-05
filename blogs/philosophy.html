@@ -56,12 +56,12 @@
   The negation of true is false and vice versa. if P is true then &not; P is false.
 </p>
 <p>
-  <strong>Conjunction (and)</strong> - Connects propositions with "and". (P &wedge; Q).
-  True only if all propositions are true. Conjunction is commutative and associative.
+  <strong>Disjunction (or)</strong> - Connects propositions with "or". (P &or; Q).
+  True when at least one proposition is true. Disjunction is commutative and associative.
 </p>
 <p>
-  <strong>Disjunction (or)</strong> - Connects propositions with "or". (P &or; Q).
-  True when at least one proposition is true. Disjunction is also commutative and associative.
+  <strong>Conjunction (and)</strong> - Connects propositions with "and". (P &wedge; Q).
+  True only if all propositions are true. Conjunction is commutative, associative and distributive over disjunction. 
 </p>
 <p>
   Once having determined the truth values of atomic propositions,
@@ -75,21 +75,18 @@
   The truth value of a contingent proposition hence depends on the atomic propositions.
 </p>
 <h3>De Morgan’s Laws</h3>
-<ol>
-  <li><strong>First Law:</strong> &not; (P &wedge; Q) &equiv; &not;P &or; &not;Q</li>
-  <p>Start with the biconditional:</p>
-  <p>1. &not; (P &wedge; Q) &equiv; &not;P &or; &not;Q</p>
-  <p>2. &not; (P &wedge; Q) is true when P or Q is false.</p>
-  <p>3. This means at least one of &not;P or &not;Q must be true.</p>
-  <p>4. Therefore, &not; (P &wedge; Q) &equiv; &not;P &or; &not;Q.</p>
+<p>
+  <p><strong>First Law:</strong> &not; (P &wedge; Q) = &not;P &or; &not;Q
+  <br>&not; (P &wedge; Q) is true when P or Q is false.
+  <br>This means at least one of &not;P or &not;Q must be true.
+  <br>Therefore, &not; (P &wedge; Q) = &not;P &or; &not;Q.
+</p>
 
-  <li><strong>Second Law:</strong> &not; (P &or; Q) &equiv; &not;P &wedge; &not;Q</li>
-  <p>Start with the biconditional:</p>
-  <p>1. &not; (P &or; Q) &equiv; &not;P &wedge; &not;Q</p>
-  <p>2. &not; (P &or; Q) is true when both P and Q are false.</p>
-  <p>3. This means both &not;P and &not;Q must be true.</p>
-  <p>4. Therefore, &not; (P &or; Q) &equiv; &not;P &wedge; &not;Q.</p>
-</ol>
+<p><strong>Second Law:</strong> &not; (P &or; Q) = &not;P &wedge; &not;Q
+  <br>&not; (P &or; Q) is true when both P and Q are false.
+  <br>This means both &not;P and &not;Q must be true.
+  <br>Therefore, &not; (P &or; Q) = &not;P &wedge; &not;Q.
+</p>
 
 <h3>Implications</h3>
 <p>
@@ -116,24 +113,33 @@
   (((&not;P &or; Q) &wedge; &not;Q) &rarr; &not;P) = &not;((&not;P &or; Q) &wedge; &not;Q) &or; &not;P <br>
   From De Morgan's Law: <br>
   = &not;(&not;P &or; Q) &or; Q &or; &not;P <br>
-  = (P &and; &not;Q) &or; Q &or; &not;P. This is a tautology.
+  = &not;(&not;P &or; Q) &or; (&not;P &or; Q). This is a tautology.
 </p>
 
 <p><strong>Fallacy of Converse:</strong> (Q &wedge; (P &rarr; Q)) &rarr; P <br>
   (P &rarr; Q) = (&not;P &or; Q) <br>
-  (Q &wedge; (&not;P &or; Q)) = Q &wedge; (&not;P &or; Q) <br>
   ((Q &wedge; (&not;P &or; Q)) &rarr; P) = &not;(Q &wedge; (&not;P &or; Q)) &or; P <br>
   From De Morgan's Law: <br>
   = &not;Q &or; &not;(&not;P &or; Q) &or; P <br>
-  = &not;Q &or; (P &and; &not;Q) &or; P <br>
-  = P &or; &not;Q. This is not a tautology.
+  = &not;Q &or; (P &wedge; &not;Q) &or; P <br>
+  = &not;Q &or; P &wedge; (&not;Q &or; True) <br>
+  = &not;Q &or; P &wedge; &not;Q. <br>
+  = &not;Q &wedge; (P &or; True) <br>
+  = P &wedge; &not;Q <br>
+  This is not a tautology.
 </p>
 
 <p><strong>Fallacy of Inverse:</strong> (&not;P &wedge; (P &rarr; Q)) &rarr; &not;Q <br>
   (P &rarr; Q) = (&not;P &or; Q) <br>
-  (&not;P &wedge; (&not;P &or; Q)) = &not;P <br>
-  ((&not;P &wedge; (&not;P &or; Q)) &rarr; &not;Q) = &not;(&not;P) &or; &not;Q <br>
-  = P &or; &not;Q. This is not a tautology.
+  ((&not;P &wedge; (&not;P &or; Q)) &rarr; &not;Q) = &not;(&not;P &wedge; (&not;P &or; Q)) &or; &not;Q <br>
+  From De Morgan's Law: <br>
+  = P &or; &not;(&not;P &or; Q) &or; &not;Q <br>
+  = P &or; &not;Q &or; (P &wedge; &not;Q) <br>
+  = P &or; &not;Q &wedge; (True &or; P) <br>
+  = P &or; (&not;Q &wedge; P) <br>
+  = P &wedge; (&not;Q &or; True) <br>
+  = P &wedge; &not;Q <br>
+  This is not a tautology.
 </p>
 
     <p>
