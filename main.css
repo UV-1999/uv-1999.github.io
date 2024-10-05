@@ -11,6 +11,17 @@ body.dark-mode {
     color: white; /* Normal text color for dark mode */
 }
 
+::selection {
+  background-color: rgba(255, 82, 82, 0.2);
+  color: #000000;
+}
+
+/* Dark mode styles */
+body.dark-mode ::selection {
+  background-color: rgba(255, 239, 204, 0.2);
+  color: #ffffff; 
+}
+
 /* General header styling */
 header {
     background-color: #fff8e7; /* Light mode header background */
