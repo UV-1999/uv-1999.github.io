@@ -191,52 +191,52 @@
         The problem here is that the implications are irrelevant. True implies true, but there is no connection between antecedent and consequent.
     </p>
     <p>
-        First-order logic solves the above problem by allowing for the formalization of statements about entities and their properties. A proposition is resolved into a subject (description of entities) and predicates (description of properties). A predicate is a part of propositions that talks about a property of some variable (an instance of the subject). The meaning of a predicate is exactly a function from the domain of variables to the truth-values “true” and “false”. A domain is the set of all variables for which the property is defined. A domain is necessary to determine the truth value of any predicate. A property is not defined for variables outside its domain.
+        First-order logic solves the above problem by allowing for the formalization of statements about entities and their properties.
+        A proposition is resolved into a subject (description of entities) and predicates (description of properties).
+        A predicate is a part of propositions that talks about a property of some variable (an instance of the subject).
+        The meaning of a predicate is exactly a function from the domain of variables to the truth-values “true” and “false”.
+        A domain is the set of all variables for which the property is defined. A domain is necessary to determine the truth value of any predicate.
+        A property is not defined for variables outside its domain.
     </p>
     <p>
         In checking the consistency and causal relevance of implications, first-order logic uses quantification.
     </p>
-
-    <h3>Quantification</h3>
     <p>
-        This ensures that statements apply either universally or exist under certain conditions. For instance, in an implication P(x) &rarr; Q(x), first-order logic requires that there be a consistent domain of discourse. The predicates P and Q must involve entities within the same domain (i.e., x should refer to the same entity in both cases).
+      <strong>Quantification</strong> - This ensures that statements apply either universally or exist under certain conditions.
+      For instance, in an implication P(x) &rarr; Q(x), first-order logic requires that there be a consistent domain of discourse.
+      The predicates P and Q must involve entities within the same domain (i.e., x should refer to the same entity in both cases).
     </p>
 
-    <h3>Quantifiers</h3>
+    
     <p>
-        Quantifiers tell you for how many elements in a collection (that take place as variables) the given predicate is true or false.
+      <strong>Quantifiers</strong> - Quantifiers tell you for how many elements in a collection (that take place as variables)
+      the given predicate is true or false.
     </p>
-    <ol>
-        <li>
-            <strong>Universal quantifier</strong> - “for all” (∀) - True when predicate is true for all variables.
-            <br>
-            ∀x(P(x)) = P(x<sub>1</sub>) &wedge; P(x<sub>2</sub>) &wedge; P(x<sub>1</sub>) &wedge; ...
-        </li>
-        <li>
-            <strong>Existential quantifier</strong> - “there exists” (∃) - True when predicate is true for at least one variable.
-            <br>
-            ∃x(P(x)) = P(x<sub>1</sub>) &or; P(x<sub>2</sub>) &or; P(x<sub>1</sub>) &or; ...
-        </li>
-    </ol>
-
-    <h3>De Morgan’s Laws</h3>
     <p>
-        From De Morgan’s Laws:
+      <strong>Universal quantifier</strong> - “for all” (∀) - True when predicate is true for all variables. <br>
+      ∀x(P(x)) = P(x<sub>1</sub>) &wedge; P(x<sub>2</sub>) &wedge; P(x<sub>1</sub>) &wedge; ...
     </p>
-    <ul>
-        <li>&sim;∃x(P(x)) = ∀x(&sim;P(x))</li>
-        <li>&sim;∀x(P(x)) = ∃x(&sim;P(x))</li>
-    </ul>
+    <p>
+       <strong>Existential quantifier</strong> - “there exists” (∃) - True when predicate is true for at least one variable. <br>
+       ∃x(P(x)) = P(x<sub>1</sub>) &or; P(x<sub>2</sub>) &or; P(x<sub>1</sub>) &or; ...
+    </p>
+    <p>
+      From De Morgan’s Laws:
+      <br>&sim;∃x(P(x)) = ∀x(&sim;P(x))
+      <br>&sim;∀x(P(x)) = ∃x(&sim;P(x))
+   </p>
 
     <p>
-        If a property P is true for all x, then P is an identity of x. If an identity exists, then it is necessary for all x but it is not sufficient. Being a mammal is an identity of cats. Cats are necessarily mammals, but that's not the sufficient condition to be a cat.
+        If a property P is true for all x, then P is an identity of x.
+        If an identity exists, then it is necessary for all x but it is not sufficient.
+        Being a mammal is an identity of cats. Cats are necessarily mammals, but that's not the sufficient condition to be a cat.
     </p>
 
     <h3>An example of first-order proof</h3>
     <p>Proof that if a proposition p has a finite number of necessary conditions, then the conjunction of those necessary conditions is sufficient for p:</p>
     <ol>
         <li>Consider a and b to be necessary conditions for p. &nbsp; [ (p &rarr; a) &wedge; (p &rarr; b) ]</li>
-        <li>Consider no other proposition c is necessary for p. &nbsp; [ &not;∃c(p &rarr; c) ]</li>
+        <li>Consider no other proposition c that is necessary for p. &nbsp; [ &not;∃c(p &rarr; c) ]</li>
         <li>
             Then let us assume that a and b are true but p is false. (p &rarr; a) &wedge; (p &rarr; b) is True. (false can imply true). It means that even if a and b are true, p can be false since they are not sufficient.
         </li>
