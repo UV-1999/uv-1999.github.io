@@ -65,56 +65,47 @@
 </p>
 <p>
   Once having determined the truth values of atomic propositions,
-  the truth value of the compound proposition (propositions composed of some atomic propositions) can be determined.
-  If a compound proposition that is always true regardless of the truth values of the atomic propositions it contains, is called a <strong>tautology</strong>.
+  the truth value of the compound proposition (propositions composed of some atomic propositions)
+  can be determined using the definitions of the logical connectives.
+  This process is called a logical proof.
+  If a compound proposition that is always true regardless of the truth values of the atomic propositions it contains,
+  is called a <strong>tautology</strong>.
   Similarly, a compound proposition that is always false is called a <strong>contradiction</strong>.
   A compound proposition that is neither a tautology nor a contradiction is referred to as a <strong>contingency</strong>.
   The truth value of a contingent proposition hence depends on the atomic propositions.
 </p>
-<h3>Logical Proof</h3>
-<p>A compound proposition is also called a logical formula. The determination of truth value of any logical formula </p>
-<h3>De Morgan’s Laws</h3>
-<ol>
-<li>
-&not; (P &wedge; Q) = &not;P &or; &not;Q
-</li>
-<li>
-&not; (P &or; Q) = &not;P &wedge; &not;Q
-</li>
-</ol>
 <h3>Implications</h3>
 <p>
-  “A implies B.” This means that if A is true, then B is true. Since either A can be true or false. “A &or; &not;A” is true.
+  For propositions A and B, if A implies B (A &rarr; B) then it means that if A is true, then B is true. Since either A can be true or false. “A &or; &not;A” is true.
   Which can be written as “B &or; &not;A”. Since A being false doesn't say anything about B. It may happen that despite A being false, B may be true.
   Falsity of antecedent (A) doesn't determine anything about consequence (B). This fact is commonly said as false implies anything (true or false).
   Also, true only implies true. E.g., If you kill a mosquito then it dies. Here A is “you kill a mosquito” and B is “it dies”.
   If you kill a mosquito, surely it dies, but if you don't kill a mosquito, then the mosquito may or may not die.
 </p>
-<h3>Implication Formulas</h3>
-    <ol>
-        <li>
-            &sim;P &rarr; &sim;Q = &sim;Q &or; P = Q &rarr; P
-        </li>
-        <li>
-            ((P &rarr; Q) &wedge; (Q &rarr; P)) = (P &harr; Q)
-        </li>
-        <li>
-            (P = P) &harr; (P &rarr; P) &wedge; (&sim;P &rarr; &sim;P) = (P &harr; P)
-        </li>
-        <li>
-            (P &rarr; &sim;P) = (&sim;P &or; &sim;P)
-        </li>
-         <li>Modus Ponens: ((P &rarr; Q) &wedge; P) &rarr; Q.</li>
-        <li>Modus Tollens: ((P &rarr; Q) &wedge; &sim;Q) &rarr; &sim;P.</li>
-        <li>Fallacy of Converse: (Q &wedge; (P &rarr; Q)) &rarr; P.</li>
-        <li>Fallacy of Inverse: (&sim;P &wedge; (P &rarr; Q)) &rarr; &sim;Q.</li>
-    </ol>
+<h3>Implication Formulas and Proofs</h3>
+<ol>
+<li> Biconditional: (P &harr; Q) = ((P &rarr; Q) &wedge; (Q &rarr; P)). <br>
+If P then Q, and If Q then P. P if Q, and Q if P. P iff Q.
+</li>
+<li> &not;P &rarr; &not;Q = &not;Q &or; P = Q &rarr; P </li>
+<li> (P = Q) = ((P &rarr; Q) &wedge; (&not;P &rarr; &not;Q)) = (P &harr; Q) </li>
+<li>Modus Ponens: ((P &rarr; Q) &wedge; P) &rarr; Q.</li>
+<li>Modus Tollens: ((P &rarr; Q) &wedge; &sim;Q) &rarr; &sim;P.</li>
+<li>Fallacy of Converse: (Q &wedge; (P &rarr; Q)) &rarr; P.</li>
+<li>Fallacy of Inverse: (&sim;P &wedge; (P &rarr; Q)) &rarr; &sim;Q.</li>
+</ol>
+<h3>De Morgan’s Laws</h3>
+<ol>
+<li> &not; (P &wedge; Q) = &not;P &or; &not;Q </li>
+<li> &not; (P &or; Q) = &not;P &wedge; &not;Q </li>
+</ol>
 
-    <h3>Self-Referential Statements</h3>
+  <h3>Self-Referential Statements</h3>
     <p>
       <strong>Self-affirming statements</strong> - Consider “this statement is true.”
       This statement is meaningless since if it is true, then it is true, or if it is false, then it is false.
-      The implication is true (valid) but the statement is meaningless since we know that for any A, A &rarr; A is always true irrespective of the truth value of A.
+      The implication is true (valid) but the statement is meaningless since we know that for any A, A &rarr;
+      A is always true irrespective of the truth value of A.
       But a self-affirming statement can be either true or false, hence is not a proposition.
     </p>
 
