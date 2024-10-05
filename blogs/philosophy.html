@@ -179,7 +179,7 @@
     </p>
 </div>
 
-<button id="collapsar" class="collapsible">First-order Logic</button>
+<button id="collapsar" class="collapsible">First-order or Predicate Logic</button>
 <div class="content">
 <p>Consider:</p>
     <ul>
@@ -260,106 +260,12 @@
     <p>
         ((p &rarr; a) &wedge; (p &rarr; b) &wedge; &not;∃c(p &rarr; c)) &rarr; ((a &wedge; b) &harr; p)
     </p>
-
-    <h3>Types of Arguments</h3>
-    <ul>
-        <li>
-            <strong>Deductive</strong> - Special conclusion from general rule. As long as the general rule is true, a valid special conclusion is also true; hence the deduction is sound. 
-            <br>
-            ∀x(P(x)) &rarr; ∃x(P(x))
-        </li>
-        <li>
-            <strong>Inductive</strong> - Probable general conclusion from special observation. 
-            <br>
-            ∃x(P(x)) &rarr; ∀x(P(x))
-        </li>
-        <li>
-            <strong>Abductive</strong> - Probable cause of conclusion from a general rule (making the most likely explanation based on evidence). 
-            <br>
-            (p &rarr; q) &wedge; q &rarr; p
-        </li>
-    </ul>
-
-<p>A table highlighting different types of argument in a syllogism used famously by Peirce.</p>
-
-    <table>
-    
-    <tr>
-        <td>Abduction</td>
-        <td>Deduction</td>
-        <td>Induction</td>
-    </tr>
-    <tr>
-        <td>Case from Rule and Result</td>
-        <td>Result from Rule and Case</td>
-        <td>Rule from Case and Result</td>
-    </tr>
-    <tr>
-        <td>Rule (first principle) All the beans in this bag are white</td>
-        <td>Rule (first principle) All the beans in this bag are white</td>
-        <td>Case (hypothesis): These beans are from this bag</td>
-    </tr>
-    <tr>
-        <td>Result (conclusion): These beans are white</td>
-        <td>Case (hypothesis): These beans are from this bag</td>
-        <td>Result (conclusion): These beans are white</td>
-    </tr>
-    <tr>
-        <td>Case (hypothesis): These beans are from this bag. (The beans were taken out of this bag)</td>
-        <td>Result (conclusion): These beans are white. (These beans that we have now are white)</td>
-        <td>Rule (first principle) All the beans in this bag are white. (all the beans taken out will be white)</td>
-    </tr>
-</table>
-
-    <p>
-        The idea of non-deductive arguments introduces the concept of probability.
-    </p>
-
-    <p>
-        Only deductive reasoning guarantees the truth of the conclusion. Abductive and inductive reasoning are trial fits to make the deduction work.
-    </p>
-
-    <p>
-        In abduction, we seek a probable case that makes the conclusion deductively true given the rule is true. In induction, we seek a probable rule that makes the conclusion deductively true given the case is true. In a way, abduction is about finding what probably happened, and induction is about what probably will happen. Deduction is finding what happens.
-    </p>
-
-    <p>
-        Proof by induction has no induction in it. The inductive hypothesis "p(x<sub>0</sub>)" and the inductive step "p(x<sub>k</sub>) &rarr; p(x<sub>k+1</sub>)" are proven, and then by repeated modus ponens, p(x) is proven for all x. It is all deductive.
-    </p>
-
-    <h3>Münchhausen Trilemma</h3>
-    <p>There are only three ways of completing an argument:</p>
-    <ol>
-        <li>
-            <strong>The circular argument</strong>, in which the proof of some proposition presupposes the truth of that very proposition.
-        </li>
-        <li>
-            <strong>The regressive argument</strong>, in which each proof requires a further proof, ad infinitum.
-        </li>
-        <li>
-            <strong>The dogmatic argument</strong>, which rests on accepted precepts that are merely asserted rather than defended.
-        </li>
-    </ol>
-
-    <p>
-      The trilemma, then, is the decision among the three equally unsatisfying options.
-      Karl Popper’s suggestion was to accept the trilemma as unsolvable and work with knowledge by way of conjecture and criticism.
-      This is the essence of science. We do not seek the “ultimate truths” but rather we approximate reality for our uses.
-      If we find errors, we jump to a new, better approximation.
-    </p>
-
-  <p> The goal of science is to create a description of the system (The part of reality you are interested in studying) by
-establishing relations among the properties of the system by knowing all of its properties.
-At any instant such a description is called a theory.
-The theory does not exactly describe the system but a model of the system which is an approximation of it.
-Every observation of a system may give us knowledge of some properties of the system.
-The model has to be developed such that it explains all the known properties.
-But such a model is not complete; it has to predict new properties.
-If such predictions are observed then such observations become evidence for the theory.
-If observations are contrary to the predictions then the theory is revised or discarded.
-This process has to be repeated and be called science.
-  </p>
 </div>
+
+  <p><strong>Epistemology</strong> - The study of how agents interact with reality, theoretically. It is the study of how the agent knows the reality.
+It is the analysis of knowledge. Knowledge is justified true beliefs without luck. Hence, knowledge is proven true belief.
+Proof is a stricter standard than justification, which eliminates the problem of epistemic luck by empirical demonstration.
+JTB (justified true belief) should be formally regarded as informed guesswork.</p>
 
 <button id="collapsar" class="collapsible">Analytic-Synthetic Distinction</button>
 <div class="content">
@@ -373,7 +279,7 @@ If there exists an x such that (all definitive properties are true for x), then 
 They do not necessarily conform to reality but are true because the definitive properties must not contradict each other (coherent truth).
 The predicate is hence the definition of the subject. So these propositions are true because of coherence. They are definitive statements.
 They are a priori as they do not require empirical evidence. They are contingent but only on the consistency of the definitive properties.</p>
-    
+
     <p>Examples:</p>
     <ol>
         <li>“A quadrilateral has four sides.” (Quadrilaterals are defined as planar shapes which have four sides.)</li>
@@ -446,11 +352,108 @@ This is why metaphysics is “analysis” of reality since we set up analytic cl
 a priori claims from them and test them like synthetic a posteriori. 
 </p>
 </div>
+  
+<button id="collapsar" class="collapsible">Reasoning, Arguments and Science</button>
+<div class="content">
+  <h3>Types of Reasoning</h3>
+    <ul>
+        <li>
+            <strong>Deductive</strong> - Special conclusion from general rule. As long as the general rule is true, a valid special conclusion is also true; hence the deduction is sound. 
+            <br>
+            ∀x(P(x)) &rarr; ∃x(P(x))
+        </li>
+        <li>
+            <strong>Inductive</strong> - Probable general conclusion from special observation. 
+            <br>
+            ∃x(P(x)) &rarr; ∀x(P(x))
+        </li>
+        <li>
+            <strong>Abductive</strong> - Probable cause of conclusion from a general rule (making the most likely explanation based on evidence). 
+            <br>
+            (p &rarr; q) &wedge; q &rarr; p
+        </li>
+    </ul>
 
-  <p><strong>Epistemology</strong> - The study of how agents interact with reality, theoretically. It is the study of how the agent knows the reality.
-It is the analysis of knowledge. Knowledge is justified true beliefs without luck. Hence, knowledge is proven true belief.
-Proof is a stricter standard than justification, which eliminates the problem of epistemic luck by empirical demonstration.
-JTB (justified true belief) should be formally regarded as informed guesswork.</p>
+<p>A table highlighting different types of reasoning in a syllogism used by Peirce.</p>
+
+    <table>
+    
+    <tr>
+        <td>Abduction</td>
+        <td>Deduction</td>
+        <td>Induction</td>
+    </tr>
+    <tr>
+        <td>Case from Rule and Result</td>
+        <td>Result from Rule and Case</td>
+        <td>Rule from Case and Result</td>
+    </tr>
+    <tr>
+        <td>Rule (first principle) All the beans in this bag are white</td>
+        <td>Rule (first principle) All the beans in this bag are white</td>
+        <td>Case (hypothesis): These beans are from this bag</td>
+    </tr>
+    <tr>
+        <td>Result (conclusion): These beans are white</td>
+        <td>Case (hypothesis): These beans are from this bag</td>
+        <td>Result (conclusion): These beans are white</td>
+    </tr>
+    <tr>
+        <td>Case (hypothesis): These beans are from this bag. (The beans were taken out of this bag)</td>
+        <td>Result (conclusion): These beans are white. (These beans that we have now are white)</td>
+        <td>Rule (first principle) All the beans in this bag are white. (all the beans taken out will be white)</td>
+    </tr>
+</table>
+
+    <p>
+        The idea of non-deductive reasoning introduces the concept of probability.
+    </p>
+
+    <p>
+        Only deductive reasoning guarantees the truth of the conclusion. Abductive and inductive reasoning are trial fits to make the deduction work.
+    </p>
+
+    <p>
+        In abduction, we seek a probable case that makes the conclusion deductively true given the rule is true. In induction, we seek a probable rule that makes the conclusion deductively true given the case is true. In a way, abduction is about finding what probably happened, and induction is about what probably will happen. Deduction is finding what happens.
+    </p>
+
+    <p>
+        Proof by induction has no induction in it. The inductive hypothesis "p(x<sub>0</sub>)" and the inductive step "p(x<sub>k</sub>) &rarr; p(x<sub>k+1</sub>)" are proven, and then by repeated modus ponens, p(x) is proven for all x. It is all deductive.
+    </p>
+
+    <h3>Münchhausen Trilemma</h3>
+    <p>There are only three ways of completing an argument:</p>
+    <ol>
+        <li>
+            <strong>The circular argument</strong>, in which the proof of some proposition presupposes the truth of that very proposition.
+        </li>
+        <li>
+            <strong>The regressive argument</strong>, in which each proof requires a further proof, ad infinitum.
+        </li>
+        <li>
+            <strong>The dogmatic argument</strong>, which rests on accepted precepts that are merely asserted rather than defended.
+        </li>
+    </ol>
+
+    <p>
+      The trilemma, then, is the decision among the three equally unsatisfying options.
+      Karl Popper’s suggestion was to accept the trilemma as unsolvable and work with knowledge by way of conjecture and criticism.
+      This is the essence of science. We do not seek the “ultimate truths” but rather we approximate reality for our uses.
+      If we find errors, we jump to a new, better approximation.
+    </p>
+
+  <p> The goal of science is to create a description of the system (The part of reality you are interested in studying) by
+establishing relations among the properties of the system by knowing all of its properties.
+At any instant such a description is called a theory.
+The theory does not exactly describe the system but a model of the system which is an approximation of it.
+Every observation of a system may give us knowledge of some properties of the system.
+The model has to be developed such that it explains all the known properties.
+But such a model is not complete; it has to predict new properties.
+If such predictions are observed then such observations become evidence for the theory.
+If observations are contrary to the predictions then the theory is revised or discarded.
+This process has to be repeated and be called science.
+  </p>
+</div>
   
     <p><strong>Ethics</strong> - The study of how agents interact with reality, practically. Ethics only applies to moral agents.
 Moral agents are agents that can make choices. Hence, ethics becomes the study of an agent’s choices.
