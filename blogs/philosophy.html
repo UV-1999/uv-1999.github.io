@@ -55,6 +55,95 @@ Rasoning is the act of forming proposition from other propositions.
 Logic is the study of correct (checking the coherence) reasoning.
 </p>    
 
+  <p>
+   A true proposition is called truth. Knowledge is truth that is demonstrated or proven to be true.
+  Epistemology is the study of justification of truths or to decide what beliefs are regarded as knowledge.
+  Based on how a proposition is justified, they are differentiated in two kinds: Analytic and Synthetic.
+  </p>
+
+<button id="collapsar" class="collapsible">Analytic-Synthetic Distinction</button>
+<div class="content">
+    <h2>1. Analytic</h2>
+    <p>
+      Since the subject is the description of a thing, it requires some sufficient properties that hold for the thing to be labelled as the subject.
+      If there exists an x such that (all definitive properties are true for x), then x is labelled as whatever it is called.
+      They do not necessarily conform to reality but are true because the definitive properties must not contradict each other (coherent truth).
+      The predicate is hence the definition of the subject. So these propositions are true because of coherence.
+      They are a priori as they do not require empirical evidence. Examples:<br>
+      1. “A quadrilateral has four sides.” (Quadrilaterals are defined as planar shapes which have four sides.)<br>
+      2. “A sister is a female sibling.” (“Female siblings” and “sisters” are literally the same thing.)
+    </p>
+
+    <h2>2. Synthetic</h2>
+    <p>
+      The predicate is not the definition of the subject, where properties other than definitive properties are claimed.
+      They are contingent either on reason or observation:
+    </p>
+    
+    <h3>2.1. A-posteriori Synthetic</h3>
+    <p>
+      Without using any sensory information or inferential experiment, the truth value of these claims cannot be decided.
+      Observation is sufficient to be true. Hence they are true by conforming to reality. Examples:<br>
+      1. “It is raining."<br>
+      2. “Water is H2O.”
+    </p>
+    
+    <p>
+      Now consider "There is a hippopotamus in this matchbox." I can try to observe but cannot find it,
+      and then it can be argued that it is actually hidden maybe, because not observing the hippos does not make the claim false.
+      But one can take the definition of a hippopotamus and a matchbox and analyze that it is bigger than a matchbox,
+      so it cannot be in this matchbox. So here, without observing a hippo, we can say that the claim is false. In a way,
+      we claimed that “A hippo cannot be in a matchbox” to be true, which is synthetic but not a posteriori.
+    </p>
+
+    <h3>2.2. A-priori Synthetic</h3>
+    <p>
+      No need for direct experience or observation to be true. Example: “For a triangle, the sum of the angles is 180 degrees.”
+      This is not the definition of a triangle but still is true without any direct observation. However,
+      it is impossible to prove the angle sum property of triangles without having the notion of space. To define something,  
+      all sufficient properties must be met. After that, one can find necessary properties.
+      Reason is needed but also some sufficient background experience (conceptual) and definitions.
+    </p>
+    
+    <p>
+      Consider “ought implies can.” It is not analytic and not a posteriori (though it can be verified),
+      but to be true, it requires reason alone starting from the definitions.
+      Ought to do something is a property of actions that are moral.
+      If someone cannot do an action, then the action is not there, hence cannot be judged for its morality.
+    </p>
+    
+    <p>
+      Now consider that all synthetic a priori claims are true in their conceptual framework,
+      so the cases where the conceptual framework does not work, the synthetic a priori claims do not work either.
+      For example, the angle sum property is true for triangles in Euclidean geometry only.
+      Hence, a priori synthetic claims are true only coherently.
+    </p>
+
+    <h2>Metaphysical Truths</h2>
+    <p>
+      Synthetic a priori claims are not metaphysical truths (opposed to what Kant argued) because their truth is contingent upon the conceptual framework
+      (e.g., Euclidean geometry or classical mechanics) in which they operate.
+      They are coherent within these frameworks (models of reality or definitions of concepts)
+      but not necessarily true of reality in an absolute metaphysical sense.
+    </p>
+    
+    <p>
+      Synthetic a posteriori claims, as emphasized by Hume, are based on empirical observation and inductive reasoning,
+      which makes them contingent truths about the physical world. Since they depend on observation and could be otherwise,
+      they are not truly metaphysical in the sense of being necessary truths about reality.
+      Instead, they describe the physical world rather than the metaphysical foundations of reality.
+    </p>
+    
+    <p>
+      Metaphysical truths are hence the limit of synthetic a priori truths when they are immune to revision,
+      as the definition on which synthetic a priori truths are contingent, is themselves contingent on how agents observe reality.
+      Metaphysical truths are necessary for experience to be possible, but to reach them one has to observe reality and revise the analytic truths.
+      So we can come up with metaphysical truths abductively and then only test them.
+      This is why metaphysics is “analysis” of reality since we set up analytic claims and derive synthetic
+      a priori claims from them and verify them like synthetic a posteriori claims. 
+    </p>
+</div>
+  
 <button id="collapsar" class="collapsible">Zero-order or Propositional Logic (to be expanded)</button>
 <div class="content">
 <p>
@@ -203,10 +292,15 @@ Logic is the study of correct (checking the coherence) reasoning.
         <li>If Paris is in England then French people are from France (false implies true).</li>
     </ul>
     <p>
-        The problem here is that the implications are irrelevant. True implies true, but there is no connection between antecedent and consequent.
+        The problem here is that the implications are irrelevant despite being logically valid.
+        There is no connection between the antecedent and the consequent in any of the above sentences.
+        Paris being in any country does not prove anything about french or english people.
+        The properties of the thing "Paris" does not say anything about the properties of the thing "French people".
+        The reason they are irrelevant is that the implication in propositional logic only deals with the truth value of a complete proposition
+        not the things described in those propositions.
     </p>
     <p>
-        First-order logic solves the above problem by allowing for the formalization of statements about entities and their properties.
+        First-order logic solves the above problem by allowing for the formalization of statements about things and their properties.
         A proposition is resolved into a subject (description of entities) and predicates (description of properties).
         A predicate is a part of propositions that talks about a property of some variable (an instance of the subject).
         The meaning of a predicate is exactly a function from the domain of variables to the truth-values “true” and “false”.
@@ -214,14 +308,13 @@ Logic is the study of correct (checking the coherence) reasoning.
         A property is not defined for variables outside its domain.
     </p>
     <p>
-        In checking the consistency and causal relevance of implications, first-order logic uses quantification.
+        In checking the consistency and relevance of implications, first-order logic uses quantification.
     </p>
     <p>
       <strong>Quantification</strong> - This ensures that statements apply either universally or exist under certain conditions.
       For instance, in an implication P(x) &rarr; Q(x), first-order logic requires that there be a consistent domain of discourse.
       The predicates P and Q must involve entities within the same domain (i.e., x should refer to the same entity in both cases).
     </p>
-
     
     <p>
       <strong>Quantifiers</strong> - Quantifiers tell you for how many elements in a collection (that take place as variables)
@@ -240,12 +333,6 @@ Logic is the study of correct (checking the coherence) reasoning.
       <br>&sim;∃x(P(x)) = ∀x(&sim;P(x))
       <br>&sim;∀x(P(x)) = ∃x(&sim;P(x))
    </p>
-
-    <p>
-        If a property P is true for all x, then P is an identity of x.
-        If an identity exists, then it is necessary for all x but it is not sufficient.
-        Being a mammal is an identity of cats. Cats are necessarily mammals, but that's not the sufficient condition to be a cat.
-    </p>
 
     <h3>An example of first-order proof</h3>
     <p>Proof that if a proposition p has a finite number of necessary conditions, then the conjunction of those necessary conditions is sufficient for p:</p>
@@ -274,6 +361,15 @@ Logic is the study of correct (checking the coherence) reasoning.
 
     <p>
         ((p &rarr; a) &wedge; (p &rarr; b) &wedge; &not;∃c(p &rarr; c)) &rarr; ((a &wedge; b) &harr; p)
+    </p>
+
+    <p>
+        Some simple first order arguments:<br>
+        If a property P is true for all x, then P is an identity of x.
+        If an identity exists, then it is necessary for all x but it is not sufficient.
+        Being a mammal is an identity of cats. Cats are necessarily mammals, but that's not the sufficient condition to be a cat. <br>
+        Y exists with properties P and Q. X is the definition of property P. So Y is a type of X. For example, X is "cat",
+        P is "being cat" and Q is "being orange". If "orange cat" has both properties P and Q then "orange cat is a type of cat".
     </p>
 </div>
 
@@ -378,95 +474,6 @@ If such predictions are observed then such observations become evidence for the 
 If observations are contrary to the predictions then the theory is revised or discarded.
 This process has to be repeated and be called science.
   </p>
-</div>
-
-  <p>
-   A true proposition is called truth. Knowledge is truth that is demonstrated or proven to be true.
-  Epistemology is the study of justification of truths or to decide what beliefs are regarded as knowledge.
-  Based on how a proposition is justified, they are differentiated in two kinds: Analytic and Synthetic.
-  </p>
-
-<button id="collapsar" class="collapsible">Analytic-Synthetic Distinction</button>
-<div class="content">
-    <h2>1. Analytic</h2>
-    <p>
-      Since the subject is the description of a thing, it requires some sufficient properties that hold for the thing to be labelled as the subject.
-      If there exists an x such that (all definitive properties are true for x), then x is labelled as whatever it is called.
-      They do not necessarily conform to reality but are true because the definitive properties must not contradict each other (coherent truth).
-      The predicate is hence the definition of the subject. So these propositions are true because of coherence.
-      They are a priori as they do not require empirical evidence. Examples:<br>
-      1. “A quadrilateral has four sides.” (Quadrilaterals are defined as planar shapes which have four sides.)<br>
-      2. “A sister is a female sibling.” (“Female siblings” and “sisters” are literally the same thing.)
-    </p>
-
-    <h2>2. Synthetic</h2>
-    <p>
-      The predicate is not the definition of the subject, where properties other than definitive properties are claimed.
-      They are contingent either on reason or observation:
-    </p>
-    
-    <h3>2.1. A-posteriori Synthetic</h3>
-    <p>
-      Without using any sensory information or inferential experiment, the truth value of these claims cannot be decided.
-      Observation is sufficient to be true. Hence they are true by conforming to reality. Examples:<br>
-      1. “It is raining."<br>
-      2. “Water is H2O.”
-    </p>
-    
-    <p>
-      Now consider "There is a hippopotamus in this matchbox." I can try to observe but cannot find it,
-      and then it can be argued that it is actually hidden maybe, because not observing the hippos does not make the claim false.
-      But one can take the definition of a hippopotamus and a matchbox and analyze that it is bigger than a matchbox,
-      so it cannot be in this matchbox. So here, without observing a hippo, we can say that the claim is false. In a way,
-      we claimed that “A hippo cannot be in a matchbox” to be true, which is synthetic but not a posteriori.
-    </p>
-
-    <h3>2.2. A-priori Synthetic</h3>
-    <p>
-      No need for direct experience or observation to be true. Example: “For a triangle, the sum of the angles is 180 degrees.”
-      This is not the definition of a triangle but still is true without any direct observation. However,
-      it is impossible to prove the angle sum property of triangles without having the notion of space. To define something,  
-      all sufficient properties must be met. After that, one can find necessary properties.
-      Reason is needed but also some sufficient background experience (conceptual) and definitions.
-    </p>
-    
-    <p>
-      Consider “ought implies can.” It is not analytic and not a posteriori (though it can be verified),
-      but to be true, it requires reason alone starting from the definitions.
-      Ought to do something is a property of actions that are moral.
-      If someone cannot do an action, then the action is not there, hence cannot be judged for its morality.
-    </p>
-    
-    <p>
-      Now consider that all synthetic a priori claims are true in their conceptual framework,
-      so the cases where the conceptual framework does not work, the synthetic a priori claims do not work either.
-      For example, the angle sum property is true for triangles in Euclidean geometry only.
-      Hence, a priori synthetic claims are true only coherently.
-    </p>
-
-    <h2>Metaphysical Truths</h2>
-    <p>
-      Synthetic a priori claims are not metaphysical truths (opposed to what Kant argued) because their truth is contingent upon the conceptual framework
-      (e.g., Euclidean geometry or classical mechanics) in which they operate.
-      They are coherent within these frameworks (models of reality or definitions of concepts)
-      but not necessarily true of reality in an absolute metaphysical sense.
-    </p>
-    
-    <p>
-      Synthetic a posteriori claims, as emphasized by Hume, are based on empirical observation and inductive reasoning,
-      which makes them contingent truths about the physical world. Since they depend on observation and could be otherwise,
-      they are not truly metaphysical in the sense of being necessary truths about reality.
-      Instead, they describe the physical world rather than the metaphysical foundations of reality.
-    </p>
-    
-    <p>
-      Metaphysical truths are hence the limit of synthetic a priori truths when they are immune to revision,
-      as the definition on which synthetic a priori truths are contingent, is themselves contingent on how agents observe reality.
-      Metaphysical truths are necessary for experience to be possible, but to reach them one has to observe reality and revise the analytic truths.
-      So we can come up with metaphysical truths abductively and then only test them.
-      This is why metaphysics is “analysis” of reality since we set up analytic claims and derive synthetic
-      a priori claims from them and verify them like synthetic a posteriori claims. 
-    </p>
 </div>
   
     <p>
