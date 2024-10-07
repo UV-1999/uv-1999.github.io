@@ -49,102 +49,113 @@ For example, the smell of food and the cat can also reason that something edible
 Obviously it may not have a langauge like humans but still the cat holds a belief.  
 </p>
 <p>
-A proposition is true if it corresponds to reality or is coherent with other truths or definitions.
-The act of deciding the truth value of a proposition is called justification.
-Rasoning is the act of forming proposition from other propositions.
-Logic is the study of correct (checking the coherence) reasoning.
-</p>    
 
-  <p>
-   A true proposition is called truth. Knowledge is truth that is demonstrated or proven to be true.
+The act of deciding the truth value of a proposition is called justification.
+Reasoning is the act of forming proposition from other propositions.
+The initial propositions from where reasoning starts are called premises and the inferred propositions are called conclusions.
+The premises proposed to derive some conclusions is called an argument.
+</p>
+
+    <p>
+  A true proposition is called truth. Knowledge is truth that is demonstrated or proven to be true.
   Epistemology is the study of justification of truths or to decide what beliefs are regarded as knowledge.
+  A proposition is true if it corresponds to reality or is coherent with other truths or definitions.
   Based on how a proposition is justified, they are differentiated in two kinds: Analytic and Synthetic.
   </p>
 
-<button id="collapsar" class="collapsible">Analytic-Synthetic Distinction</button>
+<button id="collapsar" class="collapsible">Philosophical Arguments and Science</button>
 <div class="content">
-    <h2>1. Analytic</h2>
+  <h3>Types of Arguments</h3>
+    <ul>
+        <li>
+            <strong>Deductive</strong> - Special conclusion from general rule. As long as the general rule is true,
+            a valid special conclusion is also true; hence the deduction is sound. 
+        </li>
+        <li>
+            <strong>Inductive</strong> - Probable general conclusion from special observation.
+        </li>
+        <li>
+            <strong>Abductive</strong> - Probable cause of conclusion from a general rule (making the most likely explanation based on evidence). 
+        </li>
+    </ul>
+<p>A table highlighting different types of reasoning, given by Peirce.</p>
+    <table>
+    <tr>
+        <td>Abduction</td>
+        <td>Deduction</td>
+        <td>Induction</td>
+    </tr>
+    <tr>
+        <td>Case from Rule and Result</td>
+        <td>Result from Rule and Case</td>
+        <td>Rule from Case and Result</td>
+    </tr>
+    <tr>
+        <td>Rule (first principle) All the beans in this bag are white</td>
+        <td>Rule (first principle) All the beans in this bag are white</td>
+        <td>Case (hypothesis): These beans are from this bag</td>
+    </tr>
+    <tr>
+        <td>Result (conclusion): These beans are white</td>
+        <td>Case (hypothesis): These beans are from this bag</td>
+        <td>Result (conclusion): These beans are white</td>
+    </tr>
+    <tr>
+        <td>Case (hypothesis): These beans are from this bag. (The beans were taken out of this bag)</td>
+        <td>Result (conclusion): These beans are white. (These beans that we have now are white)</td>
+        <td>Rule (first principle) All the beans in this bag are white. (all the beans taken out will be white)</td>
+    </tr>
+</table>
     <p>
-      Since the subject is the description of a thing, it requires some sufficient properties that hold for the thing to be labelled as the subject.
-      If there exists an x such that (all definitive properties are true for x), then x is labelled as whatever it is called.
-      They do not necessarily conform to reality but are true because the definitive properties must not contradict each other (coherent truth).
-      The predicate is hence the definition of the subject. So these propositions are true because of coherence.
-      They are a priori as they do not require empirical evidence. Examples:<br>
-      1. “A quadrilateral has four sides.” (Quadrilaterals are defined as planar shapes which have four sides.)<br>
-      2. “A sister is a female sibling.” (“Female siblings” and “sisters” are literally the same thing.)
+      Only deductive reasoning guarantees the truth of the conclusion.
+      Abductive and inductive reasoning are trial fits to make the deduction work.
+      The idea of non-deductive arguments introduces the concept of probability.
+      In abduction, we seek a probable case that makes the conclusion deductively true given the rule is true.
+      In induction, we seek a probable rule that makes the conclusion deductively true given the case is true.
+      In a way, abduction is about finding what probably happened, and induction is about what probably will happen.
+      Deduction is finding what happens.
+    </p>
+    
+    <h3>Münchhausen Trilemma</h3>
+    <p>There are only three ways of completing an argument:</p>
+    <ol>
+        <li>
+            <strong>The circular argument</strong>, in which the proof of some proposition presupposes the truth of that very proposition.
+        </li>
+        <li>
+            <strong>The regressive argument</strong>, in which each proof requires a further proof, ad infinitum.
+        </li>
+        <li>
+            <strong>The dogmatic argument</strong>, which rests on accepted precepts that are merely asserted rather than defended.
+        </li>
+    </ol>
+
+    <p>
+      The trilemma, then, is the decision among the three equally unsatisfying options.
+      Karl Popper’s suggestion was to accept the trilemma as unsolvable and work with knowledge by way of conjecture and criticism.
+      This is the essence of science. We do not seek the “ultimate truths” but rather we approximate reality for our uses.
+      If we find errors, we jump to a new, better approximation.
     </p>
 
-    <h2>2. Synthetic</h2>
-    <p>
-      The predicate is not the definition of the subject, where properties other than definitive properties are claimed.
-      They are contingent either on reason or observation:
-    </p>
-    
-    <h3>2.1. A-posteriori Synthetic</h3>
-    <p>
-      Without using any sensory information or inferential experiment, the truth value of these claims cannot be decided.
-      Observation is sufficient to be true. Hence they are true by conforming to reality. Examples:<br>
-      1. “It is raining."<br>
-      2. “Water is H2O.”
-    </p>
-    
-    <p>
-      Now consider "There is a hippopotamus in this matchbox." I can try to observe but cannot find it,
-      and then it can be argued that it is actually hidden maybe, because not observing the hippos does not make the claim false.
-      But one can take the definition of a hippopotamus and a matchbox and analyze that it is bigger than a matchbox,
-      so it cannot be in this matchbox. So here, without observing a hippo, we can say that the claim is false. In a way,
-      we claimed that “A hippo cannot be in a matchbox” to be true, which is synthetic but not a posteriori.
-    </p>
-
-    <h3>2.2. A-priori Synthetic</h3>
-    <p>
-      No need for direct experience or observation to be true. Example: “For a triangle, the sum of the angles is 180 degrees.”
-      This is not the definition of a triangle but still is true without any direct observation. However,
-      it is impossible to prove the angle sum property of triangles without having the notion of space. To define something,  
-      all sufficient properties must be met. After that, one can find necessary properties.
-      Reason is needed but also some sufficient background experience (conceptual) and definitions.
-    </p>
-    
-    <p>
-      Consider “ought implies can.” It is not analytic and not a posteriori (though it can be verified),
-      but to be true, it requires reason alone starting from the definitions.
-      Ought to do something is a property of actions that are moral.
-      If someone cannot do an action, then the action is not there, hence cannot be judged for its morality.
-    </p>
-    
-    <p>
-      Now consider that all synthetic a priori claims are true in their conceptual framework,
-      so the cases where the conceptual framework does not work, the synthetic a priori claims do not work either.
-      For example, the angle sum property is true for triangles in Euclidean geometry only.
-      Hence, a priori synthetic claims are true only coherently.
-    </p>
-
-    <h2>Metaphysical Truths</h2>
-    <p>
-      Synthetic a priori claims are not metaphysical truths (opposed to what Kant argued) because their truth is contingent upon the conceptual framework
-      (e.g., Euclidean geometry or classical mechanics) in which they operate.
-      They are coherent within these frameworks (models of reality or definitions of concepts)
-      but not necessarily true of reality in an absolute metaphysical sense.
-    </p>
-    
-    <p>
-      Synthetic a posteriori claims, as emphasized by Hume, are based on empirical observation and inductive reasoning,
-      which makes them contingent truths about the physical world. Since they depend on observation and could be otherwise,
-      they are not truly metaphysical in the sense of being necessary truths about reality.
-      Instead, they describe the physical world rather than the metaphysical foundations of reality.
-    </p>
-    
-    <p>
-      Metaphysical truths are hence the limit of synthetic a priori truths when they are immune to revision,
-      as the definition on which synthetic a priori truths are contingent, is themselves contingent on how agents observe reality.
-      Metaphysical truths are necessary for experience to be possible, but to reach them one has to observe reality and revise the analytic truths.
-      So we can come up with metaphysical truths abductively and then only test them.
-      This is why metaphysics is “analysis” of reality since we set up analytic claims and derive synthetic
-      a priori claims from them and verify them like synthetic a posteriori claims. 
-    </p>
+  <p>
+The goal of science is to create a description of the system (The part of reality you are interested in studying) by
+establishing relations among the properties of the system by knowing all of its properties.
+At any instant such a description is called a theory.
+The theory does not exactly describe the system but a model of the system which is an approximation of it.
+Every observation of a system may give us knowledge of some properties of the system.
+The model has to be developed such that it explains all the known properties.
+But such a model is not complete; it has to predict new properties.
+If such predictions are observed then such observations become evidence for the theory.
+If observations are contrary to the predictions then the theory is revised or discarded.
+This process has to be repeated and be called science.
+  </p>
 </div>
   
-<button id="collapsar" class="collapsible">Zero-order or Propositional Logic (to be expanded)</button>
+<p>
+  Logic is the study of correct (checking the coherence) reasoning. 
+</p>
+
+  <button id="collapsar" class="collapsible">Zero-order or Propositional Logic (to be expanded)</button>
 <div class="content">
 <p>
   Propositions are beliefs expressed in some language.
@@ -374,108 +385,92 @@ Logic is the study of correct (checking the coherence) reasoning.
 </div>
 
 
-<button id="collapsar" class="collapsible">Reasoning, Arguments and Science</button>
+
+<button id="collapsar" class="collapsible">Analytic-Synthetic Distinction</button>
 <div class="content">
-  <h3>Types of Reasoning</h3>
-    <ul>
-        <li>
-            <strong>Deductive</strong> - Special conclusion from general rule. As long as the general rule is true, a valid special conclusion is also true; hence the deduction is sound. 
-            <br>
-            ∀x(P(x)) &rarr; ∃x(P(x))
-        </li>
-        <li>
-            <strong>Inductive</strong> - Probable general conclusion from special observation. 
-            <br>
-            ∃x(P(x)) &rarr; ∀x(P(x))
-        </li>
-        <li>
-            <strong>Abductive</strong> - Probable cause of conclusion from a general rule (making the most likely explanation based on evidence). 
-            <br>
-            (p &rarr; q) &wedge; q &rarr; p
-        </li>
-    </ul>
+    <h2>1. Analytic</h2>
+    <p>
+      Since the subject is the description of a thing, it requires some sufficient properties that hold for the thing to be labelled as the subject.
+      If there exists an x such that (all definitive properties are true for x), then x is labelled as whatever it is called.
+      They do not necessarily conform to reality but are true because the definitive properties must not contradict each other (coherent truth).
+      The predicate is hence the definition of the subject. So these propositions are true because of coherence.
+      They are a priori as they do not require empirical evidence. Examples:<br>
+      1. “A quadrilateral has four sides.” (Quadrilaterals are defined as planar shapes which have four sides.)<br>
+      2. “A sister is a female sibling.” (“Female siblings” and “sisters” are literally the same thing.)
+    </p>
 
-<p>A table highlighting different types of reasoning in a syllogism used by Peirce.</p>
-
-    <table>
+    <h2>2. Synthetic</h2>
+    <p>
+      The predicate is not the definition of the subject, where properties other than definitive properties are claimed.
+      They are contingent either on reason or observation:
+    </p>
     
-    <tr>
-        <td>Abduction</td>
-        <td>Deduction</td>
-        <td>Induction</td>
-    </tr>
-    <tr>
-        <td>Case from Rule and Result</td>
-        <td>Result from Rule and Case</td>
-        <td>Rule from Case and Result</td>
-    </tr>
-    <tr>
-        <td>Rule (first principle) All the beans in this bag are white</td>
-        <td>Rule (first principle) All the beans in this bag are white</td>
-        <td>Case (hypothesis): These beans are from this bag</td>
-    </tr>
-    <tr>
-        <td>Result (conclusion): These beans are white</td>
-        <td>Case (hypothesis): These beans are from this bag</td>
-        <td>Result (conclusion): These beans are white</td>
-    </tr>
-    <tr>
-        <td>Case (hypothesis): These beans are from this bag. (The beans were taken out of this bag)</td>
-        <td>Result (conclusion): These beans are white. (These beans that we have now are white)</td>
-        <td>Rule (first principle) All the beans in this bag are white. (all the beans taken out will be white)</td>
-    </tr>
-</table>
-
+    <h3>2.1. A-posteriori Synthetic</h3>
     <p>
-        The idea of non-deductive reasoning introduces the concept of probability.
+      Without using any sensory information or inferential experiment, the truth value of these claims cannot be decided.
+      Observation is sufficient to be true. Hence they are true by conforming to reality. Examples:<br>
+      1. “It is raining."<br>
+      2. “Water is H2O.”
+    </p>
+    
+    <p>
+      Now consider "There is a hippopotamus in this matchbox." I can try to observe but cannot find it,
+      and then it can be argued that it is actually hidden maybe, because not observing the hippos does not make the claim false.
+      But one can take the definition of a hippopotamus and a matchbox and analyze that it is bigger than a matchbox,
+      so it cannot be in this matchbox. So here, without observing a hippo, we can say that the claim is false. In a way,
+      we claimed that “A hippo cannot be in a matchbox” to be true, which is synthetic but not a posteriori.
     </p>
 
+    <h3>2.2. A-priori Synthetic</h3>
     <p>
-        Only deductive reasoning guarantees the truth of the conclusion. Abductive and inductive reasoning are trial fits to make the deduction work.
+      No need for direct experience or observation to be true. Example: “For a triangle, the sum of the angles is 180 degrees.”
+      This is not the definition of a triangle but still is true without any direct observation. However,
+      it is impossible to prove the angle sum property of triangles without having the notion of space. To define something,  
+      all sufficient properties must be met. After that, one can find necessary properties.
+      Reason is needed but also some sufficient background experience (conceptual) and definitions.
+    </p>
+    
+    <p>
+      Consider “ought implies can.” It is not analytic and not a posteriori (though it can be verified),
+      but to be true, it requires reason alone starting from the definitions.
+      Ought to do something is a property of actions that are moral.
+      If someone cannot do an action, then the action is not there, hence cannot be judged for its morality.
+    </p>
+    
+    <p>
+      Now consider that all synthetic a priori claims are true in their conceptual framework,
+      so the cases where the conceptual framework does not work, the synthetic a priori claims do not work either.
+      For example, the angle sum property is true for triangles in Euclidean geometry only.
+      Hence, a priori synthetic claims are true only coherently.
     </p>
 
+    <h2>Metaphysical Truths</h2>
     <p>
-        In abduction, we seek a probable case that makes the conclusion deductively true given the rule is true. In induction, we seek a probable rule that makes the conclusion deductively true given the case is true. In a way, abduction is about finding what probably happened, and induction is about what probably will happen. Deduction is finding what happens.
+      Synthetic a priori claims are not metaphysical truths (opposed to what Kant argued) because their truth is contingent upon the conceptual framework
+      (e.g., Euclidean geometry or classical mechanics) in which they operate.
+      They are coherent within these frameworks (models of reality or definitions of concepts)
+      but not necessarily true of reality in an absolute metaphysical sense.
     </p>
-
+    
     <p>
-        Proof by induction has no induction in it. The inductive hypothesis "p(x<sub>0</sub>)" and the inductive step "p(x<sub>k</sub>) &rarr; p(x<sub>k+1</sub>)" are proven, and then by repeated modus ponens, p(x) is proven for all x. It is all deductive.
+      Synthetic a posteriori claims, as emphasized by Hume, are based on empirical observation and inductive reasoning,
+      which makes them contingent truths about the physical world. Since they depend on observation and could be otherwise,
+      they are not truly metaphysical in the sense of being necessary truths about reality.
+      Instead, they describe the physical world rather than the metaphysical foundations of reality.
     </p>
-
-    <h3>Münchhausen Trilemma</h3>
-    <p>There are only three ways of completing an argument:</p>
-    <ol>
-        <li>
-            <strong>The circular argument</strong>, in which the proof of some proposition presupposes the truth of that very proposition.
-        </li>
-        <li>
-            <strong>The regressive argument</strong>, in which each proof requires a further proof, ad infinitum.
-        </li>
-        <li>
-            <strong>The dogmatic argument</strong>, which rests on accepted precepts that are merely asserted rather than defended.
-        </li>
-    </ol>
-
+    
     <p>
-      The trilemma, then, is the decision among the three equally unsatisfying options.
-      Karl Popper’s suggestion was to accept the trilemma as unsolvable and work with knowledge by way of conjecture and criticism.
-      This is the essence of science. We do not seek the “ultimate truths” but rather we approximate reality for our uses.
-      If we find errors, we jump to a new, better approximation.
+      Metaphysical truths are hence the limit of synthetic a priori truths when they are immune to revision,
+      as the definition on which synthetic a priori truths are contingent, is themselves contingent on how agents observe reality.
+      Metaphysical truths are necessary for experience to be possible, but to reach them one has to observe reality and revise the analytic truths.
+      So we can come up with metaphysical truths abductively and then only test them.
+      This is why metaphysics is “analysis” of reality since we set up analytic claims and derive synthetic
+      a priori claims from them and verify them like synthetic a posteriori claims. 
     </p>
-
-  <p> The goal of science is to create a description of the system (The part of reality you are interested in studying) by
-establishing relations among the properties of the system by knowing all of its properties.
-At any instant such a description is called a theory.
-The theory does not exactly describe the system but a model of the system which is an approximation of it.
-Every observation of a system may give us knowledge of some properties of the system.
-The model has to be developed such that it explains all the known properties.
-But such a model is not complete; it has to predict new properties.
-If such predictions are observed then such observations become evidence for the theory.
-If observations are contrary to the predictions then the theory is revised or discarded.
-This process has to be repeated and be called science.
-  </p>
 </div>
+
   
+
     <p>
       <strong>Ethics</strong> - Moral agents are agents that can make choices. Ethics is the study of an agent’s choices.
       In ethics, the goal is to find the right choices (what an agent is ought to do - moral principles).
