@@ -12,13 +12,13 @@ body.dark-mode {
 }
 
 ::selection {
-  background-color: rgba(255, 82, 82, 0.2);
-  color: #000000;
+  background-color: #4B0082;
+  color: #ffffff;
 }
 
 /* Dark mode styles */
 body.dark-mode ::selection {
-  background-color: rgba(255, 239, 204, 0.2);
+  background-color: #4B0082;
   color: #ffffff; 
 }
 
