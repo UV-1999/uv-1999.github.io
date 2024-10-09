@@ -1,14 +1,14 @@
 body {
     font-family: 'Karma';
-    background-color: #fff8e7; /* Light mode background */
+    background-color: #fff8e7; 
     margin: 0;
     padding: 0;
-    color: black; /* Normal text color for light mode */
+    color: black; 
 }
 
 body.dark-mode {
-    background-color: #1E201E; /* Dark mode background */
-    color: white; /* Normal text color for dark mode */
+    background-color: #1E201E; 
+    color: white; 
 }
 
 ::selection {
@@ -16,28 +16,28 @@ body.dark-mode {
   color: #ffffff;
 }
 
-/* Dark mode styles */
+
 body.dark-mode ::selection {
   background-color: #4B0082;
   color: #ffffff; 
 }
 
-/* General header styling */
+
 header {
-    background-color: #fff8e7; /* Light mode header background */
-    color: #800020; /* Light mode header text color */
+    background-color: #fff8e7; 
+    color: #800020; 
     padding: 20px 0;
 }
 
 header.dark-mode {
-    background-color: #1E201E; /* Dark mode header background */
+    background-color: #1E201E; 
 }
 
 .header-content {
     display: flex;
-    justify-content: space-between; /* Align items with space between */
+    justify-content: space-between; 
     align-items: center;
-    max-width: 800px; /* Adjust based on your preference */
+    max-width: 800px; 
     margin: auto;
     padding: 0 20px;
 }
@@ -51,7 +51,7 @@ header.dark-mode {
 
 .pages {
     display: flex;
-    gap: 50px; /* Space between links */
+    gap: 50px;
     font-size: 25px;
 }
 
@@ -71,7 +71,6 @@ header.dark-mode {
     font-size: 24px;
 }
 
-/* Dark mode adjustments */
 header.dark-mode .title,
 header.dark-mode .pages a {
     color: #fff8e7;
@@ -92,27 +91,27 @@ header.dark-mode .pages a {
 
 a {
     text-decoration: none;
-    color: #800020; /* Light mode anchor color */
+    color: #800020;
 }
 
 a:hover {
-    background-color: rgba(255, 82, 82, 0.2); /* Light mode hover effect (very light reddish) */
+    background-color: rgba(255, 82, 82, 0.2); 
 }
 
 a.dark-mode {
-    color: #ECDFCC; /* Dark mode anchor color */
+    color: #ECDFCC; 
 }
 
 a.dark-mode:hover {
-    background-color: rgba(255, 239, 204, 0.2); /* Dark mode hover effect (very light beige) */
+    background-color: rgba(255, 239, 204, 0.2); 
 }
 
 hr {
-    border: 1px solid #800020; /* Light mode hr color */
+    border: 1px solid #800020; 
 }
 
 hr.dark-mode {
-    border: 1px solid green; /* Dark mode hr color */
+    border: 1px solid green;
 }
 
 h1 {
@@ -128,19 +127,26 @@ p {
     margin: 20px 0;
 }
 
+.table-container {
+    width: 100%;
+    overflow-x: auto; 
+}
+
+/* Keep your existing table styles */
 table {
-            border-collapse: collapse; /* Ensures borders collapse into a single border */
-            width: 100%;
-        }
+    border-collapse: collapse; 
+    width: 100%; 
+}
 
 th, td {
-            border: 1px solid; /* Set border color to match the text color */
-            padding: 8px; /* Add some padding inside cells */
-            text-align: left;
-            color: black; /* Change this color to set text and border color */
-            background-color: transparent; /* Ensures no background color */
-            text-align:justify;
-        }
+    border: 1px solid; 
+    padding: 8px; 
+    text-align: left;
+    color: black; 
+    background-color: transparent; 
+    text-align: justify;
+}
+
 
 th.dark-mode 
         {
@@ -160,8 +166,8 @@ td.dark-mode
 }
 
 .container.dark-mode {
-    background-color: transparent; /* Dark mode container */
-    color: white; /* Dark mode container text color */
+    background-color: transparent; 
+    color: white; 
 }
 
 .dark-mode-button {
@@ -170,41 +176,40 @@ td.dark-mode
     right: 20px;
     font-size: 30px;
     background-color: transparent;
-    color: #fff8e7; /* Dark mode button text color */
+    color: #fff8e7; 
     border: none;
     padding: 0;
     cursor: pointer;
 }
 
 .icon-link {
-    color: #800020; /* Color for icon buttons in light mode */
+    color: #800020;
     font-size: 30px;
     margin-right: 10px;
     text-decoration: none;
 }
 
 .icon-link.dark-mode {
-    color: #fff8e7; /* Color for icon buttons in dark mode */
+    color: #fff8e7; 
 }
 
 .circle {
     width: 200px;
     height: 200px;
-    border-radius: 50%; /* This creates the circular shape */
-    overflow: hidden; /* This ensures the image stays within the circle */
-    float: left; /* This maintains the float behavior */
-    margin-right: 10px; /* Add margin for spacing */
-    margin-bottom: 10px; /* Add margin for spacing */
+    border-radius: 50%; 
+    overflow: hidden; 
+    float: left; 
+    margin-right: 10px; 
+    margin-bottom: 10px; 
 }
 
 .circle img {
-    width: 100%; /* Ensures the image fills the circle */
-    height: 100%; /* Ensures the image fills the circle */
-    object-fit: cover; /* This maintains aspect ratio and covers the entire circle */
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
 }
 
-/* Style for the collapsible button */
-        .collapsible {
+.collapsible {
             background-color: transparent;
             color: #800020;
             cursor: pointer;
@@ -228,10 +233,9 @@ td.dark-mode
     background-color: rgba(255, 239, 204, 0.2);
 }
 
-/* Style for the content inside the collapsible */
-        .content {
+.content {
             padding: 0 10px;
-            display: none; /* Hidden by default */
+            display: none; 
             overflow: hidden;
             background-color: transparent;
             margin-top: 10px;
