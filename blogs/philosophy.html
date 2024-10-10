@@ -195,12 +195,10 @@ Karl Popper’s suggestion was to accept the trilemma as unsolvable and work wit
 </div>
 <button id="collapsar" class="collapsible">Predicate Logic</button>
 <div class="content">
-<p>Consider:<br>
-<ul>
-<li>If Paris is in France then French people are from France (true implies true).</li>
-<li>If Paris is in England then English people are from France (false implies false).</li>
-<li>If Paris is in England then French people are from France (false implies true).</li>
-</ul>
+<p>Consider the following three implications:<br>
+1. If Paris is in France then French people are from France (true implies true).<br>
+2. If Paris is in England then English people are from France (false implies false).<br>
+3. If Paris is in England then French people are from France (false implies true).<br>
 The problem here is that the implications are irrelevant despite being logically valid.
 There is no connection between the antecedent and the consequent in any of the above sentences.
 Paris being in any country does not prove anything about french or english people.
@@ -234,37 +232,12 @@ The predicates P and Q must involve thing within the same domain (i.e., x should
 ∃x(P(x)) = P(x<sub>1</sub>) &or; P(x<sub>2</sub>) &or; P(x<sub>1</sub>) &or; ...
 </p>
 <p>
-From De Morgan’s Laws:
+<strong>From De Morgan’s Laws:</strong>
 <br>&not;&exist;x(P(x)) = &forall;x(&not;P(x))
 <br>&not;&forall;x(P(x)) = &exist;x(&not;P(x))
 </p>
-<h3>An example of first-order proof</h3>
-<p>Proof that if a proposition p has a finite number of necessary conditions, then the conjunction of those necessary conditions is sufficient for p:</p>
-    <ol>
-        <li>Consider a and b to be necessary conditions for p. &nbsp; [ (p &rarr; a) &wedge; (p &rarr; b) ]</li>
-        <li>Consider no other proposition c that is necessary for p. &nbsp; [ &not;&exist;c(p &rarr; c) ]</li>
-        <li>
-            Then let us assume that a and b are true but p is false. (p &rarr; a) &wedge; (p &rarr; b) is True. (false can imply true). It means that even if a and b are true, p can be false since they are not sufficient.
-        </li>
-        <li>
-            If p is false and c is false, then p &rarr; c holds true. This should not be the case.
-        </li>
-        <li>
-            If p is false and c is true, then again p &rarr; c holds true. This should not be the case.
-        </li>
-        <li>
-            If p is true and c is true, then again p &rarr; c holds true. This should not be the case.
-        </li>
-        <li>
-            If p is true and c is false, then only p &rarr; c holds false. Which is the condition (2).
-        </li>
-    </ol>
-    <p>
-        So with condition (2), p is true while a and b are true, so a and b together is a sufficient condition for p.
-    </p>
-    <p>
-        ((p &rarr; a) &wedge; (p &rarr; b) &wedge; &not;&exist;c(p &rarr; c)) &rarr; ((a &wedge; b) &harr; p)
-    </p>
+<h3>Proof that conjunction of all necessary conditions is a necessary and sufficient condition</h3>
+
 </div>
 
 <h2>Knowledge and Epistemology</h2>
