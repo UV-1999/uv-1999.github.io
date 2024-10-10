@@ -191,9 +191,80 @@ Karl Popper’s suggestion was to accept the trilemma as unsolvable and work wit
 
 <button id="collapsar" class="collapsible">Propositional Logic</button>
 <div class="content">
+
 </div>
 <button id="collapsar" class="collapsible">Predicate Logic</button>
 <div class="content">
+<p>Consider:<br>
+<ul>
+<li>If Paris is in France then French people are from France (true implies true).</li>
+<li>If Paris is in England then English people are from France (false implies false).</li>
+<li>If Paris is in England then French people are from France (false implies true).</li>
+</ul>
+The problem here is that the implications are irrelevant despite being logically valid.
+There is no connection between the antecedent and the consequent in any of the above sentences.
+Paris being in any country does not prove anything about french or english people.
+The properties of the thing "Paris" does not say anything about the properties of the thing "French people".
+The reason they are irrelevant is that the implication in propositional logic only deals with the truth value of a complete proposition
+not the things described in those propositions.
+</p>
+<p>
+First-order logic solves the above problem by allowing for the formalization of statements about things and their properties.
+A proposition is resolved into a subject (description of things) and predicates (description of properties).
+A predicate is a part of propositions that talks about a property of some variable (an instance of the subject).
+The meaning of a predicate is exactly a function from the domain of variables to the truth-values “true” and “false”.
+A domain is the set of all variables for which the property is defined. A domain is necessary to determine the truth value of any predicate.
+A property is not defined for variables outside its domain.
+</p>
+<p>In checking the consistency and relevance of implications, first-order logic uses quantification.</p>
+<p>
+<strong>Quantification</strong> - This ensures that statements apply either universally or exist under certain conditions.
+For instance, in an implication P(x) &rarr; Q(x), first-order logic requires that there be a consistent domain of discourse.
+The predicates P and Q must involve thing within the same domain (i.e., x should refer to the same thing in both cases).
+</p>
+<p>
+<strong>Quantifiers</strong> - Quantifiers tell you for how many elements in a collection (that take place as variables) the given predicate is true or false.
+</p>
+<p>
+<strong>Universal quantifier</strong> - “for all” (∀) - True when predicate is true for all variables. <br>
+∀x(P(x)) = P(x<sub>1</sub>) &wedge; P(x<sub>2</sub>) &wedge; P(x<sub>1</sub>) &wedge; ...
+</p>
+<p>
+<strong>Existential quantifier</strong> - “there exists” (∃) - True when predicate is true for at least one variable. <br>
+∃x(P(x)) = P(x<sub>1</sub>) &or; P(x<sub>2</sub>) &or; P(x<sub>1</sub>) &or; ...
+</p>
+<p>
+From De Morgan’s Laws:
+<br>&not;&exist;x(P(x)) = &forall;x(&not;P(x))
+<br>&not;&forall;x(P(x)) = &exist;x(&not;P(x))
+</p>
+<h3>An example of first-order proof</h3>
+<p>Proof that if a proposition p has a finite number of necessary conditions, then the conjunction of those necessary conditions is sufficient for p:</p>
+    <ol>
+        <li>Consider a and b to be necessary conditions for p. &nbsp; [ (p &rarr; a) &wedge; (p &rarr; b) ]</li>
+        <li>Consider no other proposition c that is necessary for p. &nbsp; [ &not;&exist;c(p &rarr; c) ]</li>
+        <li>
+            Then let us assume that a and b are true but p is false. (p &rarr; a) &wedge; (p &rarr; b) is True. (false can imply true). It means that even if a and b are true, p can be false since they are not sufficient.
+        </li>
+        <li>
+            If p is false and c is false, then p &rarr; c holds true. This should not be the case.
+        </li>
+        <li>
+            If p is false and c is true, then again p &rarr; c holds true. This should not be the case.
+        </li>
+        <li>
+            If p is true and c is true, then again p &rarr; c holds true. This should not be the case.
+        </li>
+        <li>
+            If p is true and c is false, then only p &rarr; c holds false. Which is the condition (2).
+        </li>
+    </ol>
+    <p>
+        So with condition (2), p is true while a and b are true, so a and b together is a sufficient condition for p.
+    </p>
+    <p>
+        ((p &rarr; a) &wedge; (p &rarr; b) &wedge; &not;&exist;c(p &rarr; c)) &rarr; ((a &wedge; b) &harr; p)
+    </p>
 </div>
 
 <h2>Knowledge and Epistemology</h2>
