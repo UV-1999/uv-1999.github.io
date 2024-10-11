@@ -189,11 +189,11 @@ Karl Popper’s suggestion was to accept the trilemma as unsolvable and work wit
 </p>
 </div>
 
-<button id="collapsar" class="collapsible">Propositional Logic</button>
+<button id="collapsar" class="collapsible">Propositional Logic or Zero-Order Logic</button>
 <div class="content">
 
 </div>
-<button id="collapsar" class="collapsible">Predicate Logic</button>
+<button id="collapsar" class="collapsible">Predicate Logic or First-Order Logic</button>
 <div class="content">
 <p>Consider the following three implications:</p>
 <p>
@@ -239,8 +239,40 @@ The predicates P and Q must involve thing within the same domain (i.e., x should
 <br>&not;&exist;x(P(x)) = &forall;x(&not;P(x))
 <br>&not;&forall;x(P(x)) = &exist;x(&not;P(x))
 </p>
-<h3>Proof that conjunction of all necessary conditions is a necessary and sufficient condition</h3>
-
+<div class="table-container">
+  <table>
+  <tr>
+    <th>First-Order Argument</th>
+    <th>Logical Formula</th>
+    <th>Simple Example</th>
+    <th>Counter-Example (if applicable)</th>
+  </tr>
+  <tr>
+    <td>Existential Instantiation (Fallacy)</td>
+    <td>∃x (P(x)) &rarr; x exists</td>
+    <td>There is a unicorn that is magical, so a unicorn must exist.</td>
+    <td>Unicorns don't exist, despite the statement about magical unicorns.</td>
+  </tr>
+  <tr>
+    <td>Existential Generalisation</td>
+    <td>P(x) &rarr; ∃x (P(x))</td>
+    <td>Socrates is a philosopher, so there exists a philosopher.</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Universal Instantiation</td>
+    <td>∀x (P(x)) &rarr; P(c) for some specific c</td>
+    <td>All humans are mortal, so Socrates (a human) is mortal.</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Universal Generalisation (Fallacy)</td>
+    <td>P(c) &rarr; ∀x (P(x))</td>
+    <td>Socrates was a human, so all beings are humans.</td>
+    <td>Not all beings (e.g., animals) are humans.</td>
+  </tr>
+</table>
+</div>
 </div>
 
 <h2>Knowledge and Epistemology</h2>
