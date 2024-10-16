@@ -71,6 +71,16 @@ header.dark-mode {
     font-size: 24px;
 }
 
+.top-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.top-button i {
+    font-size: 24px;
+}
+
 header.dark-mode .title,
 header.dark-mode .pages a {
     color: #fff8e7;
@@ -173,6 +183,18 @@ td.dark-mode
 .dark-mode-button {
     position: fixed;
     top: 20px;
+    right: 20px;
+    font-size: 30px;
+    background-color: transparent;
+    color: #fff8e7; 
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.top-button {
+    position: fixed;
+    bottom: 20px;
     right: 20px;
     font-size: 30px;
     background-color: transparent;
