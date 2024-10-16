@@ -115,3 +115,15 @@ button.addEventListener("click", function () {
         });
     });
 
+window.onscroll = function() {
+    const btn = document.getElementById("topbutton");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        btn.style.display = "block"; // Show button
+    } else {
+        btn.style.display = "none"; // Hide button
+    }
+};
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
