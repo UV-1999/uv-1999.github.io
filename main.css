@@ -16,12 +16,10 @@ body.dark-mode {
   color: #ffffff;
 }
 
-
 body.dark-mode ::selection {
   background-color: #4B0082;
   color: #ffffff; 
 }
-
 
 header {
     background-color: #fff8e7; 
@@ -30,7 +28,8 @@ header {
 }
 
 header.dark-mode {
-    background-color: #1E201E; 
+    background-color: #1E201E;
+    color: #fff8e7;
 }
 
 .header-content {
@@ -68,15 +67,18 @@ header.dark-mode {
     right: 20px;
     font-size: 30px;
     background-color: transparent;
-    color: #fff8e7; 
+    color: #800020;
     border: none;
     padding: 0;
     cursor: pointer;
 }
 
-
 .dark-mode-button i {
-    font-size: 24px;
+    font-size: 30px;
+}
+
+.dark-mode-button.dark-mode{
+    color: #fff8e7;
 }
 
 .top-button {
@@ -84,6 +86,7 @@ header.dark-mode {
     bottom: 20px;
     right: 20px;
     display: none;
+    color: #800020;
     font-size: 30px;
     background-color: transparent; 
     border: none;
@@ -92,7 +95,11 @@ header.dark-mode {
 }
 
 .top-button i {
-    font-size: 24px;
+    font-size: 30px;
+}
+
+.top-button.dark-mode{
+    color: #fff8e7;
 }
 
 header.dark-mode .title,
@@ -101,7 +108,7 @@ header.dark-mode .pages a {
 }
 
 /* Mobile-specific styling */
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
     .header-content {
         flex-direction: column;
         align-items: flex-start;
@@ -135,7 +142,7 @@ hr {
 }
 
 hr.dark-mode {
-    border: 1px solid green;
+    border: 1px solid #fff8e7;
 }
 
 h1 {
