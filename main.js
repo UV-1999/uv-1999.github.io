@@ -34,6 +34,12 @@ function toggleDarkMode() {
     dibba.forEach(colla => {
         colla.classList.add('dark-mode');
     });
+  
+    const dark = document.querySelector('.dark-mode-button');
+    dark.classList.add('dark-mode');
+  
+    const top = document.querySelector('.top-button');
+    top.classList.add('dark-mode');
 }
 
 function toggleLightMode() {
@@ -69,6 +75,12 @@ function toggleLightMode() {
     dibba.forEach(colla => {
         colla.classList.remove('dark-mode');
     });
+  
+    const dark = document.querySelector('.dark-mode-button');
+    dark.classList.remove('dark-mode');
+  
+    const top = document.querySelector('.top-button');
+    top.classList.remove('dark-mode');
 }
 
 const userPreference = localStorage.getItem('preferred-theme');
