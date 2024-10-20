@@ -192,6 +192,7 @@ td.dark-mode
     max-width: 800px;
     background-color: transparent;
     margin: 0 auto;
+    text-align: justify;
     padding: 20px;
 }
 
