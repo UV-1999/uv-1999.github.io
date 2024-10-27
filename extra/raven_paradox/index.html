@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="H2amq0i6-PVpe2Z3l3iAmv1DRXhBwhsocjpHOfYXEU8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Piyush Marmat">
+    <title>Piyush Marmat</title>
+    <link href="https://fonts.googleapis.com/css?family=Karma" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/resources/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/main.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <a class="title" href="/">Piyush Marmat</a>
+        <nav class="pages">
+          <a href="/cv">CV</a>
+          <a href="/research">Research</a>
+          <a href="/extra">Extra</a>
+        </nav>
+        <button id="darkmodebutton" class="dark-mode-button">
+          <i class="fa-solid fa-sun"></i>
+        </button> 
+        <button id="topbutton" onclick="scrollToTop()" class="top-button">
+          <i class="fa-solid fa-circle-arrow-up"></i>
+        </button>
+      </div>
+    </header>
+<h1 style="text-align: center;">My Unwarranted Notes on Hempel's Raven Paradox</h1>
+<em style="display: block; text-align: center; ">Posted on 28th October 2024</em>
+<hr>
+<div class = "container">
+<h2>Introduction</h2>
+<p>
+In my last post, "My Unwarranted Notes of Philosophy," I attempted to define a lot of things that are necessary for any philosophical discourse. I wrote about a priori and a posteriori propositions. You may easily remember that a priori propositions are either definitions or deductions, but a posteriori propositions come with the baggage of ampliation and therefore there is a need for observational evidence to justify them.
+</p>
+<p>
+For example, the proposition "420 is an even number" is a synthetic a priori proposition, and if you know the definitions of "420" and "even number," deducing the truth of the proposition is not very difficult. Now consider "There are roughly 10 billion chickens on the Earth." The claim is clearly a posteriori and relatively difficult to justify. (cause who's gonna count all those chickens?)
+</p>
+<h2>Quantification in Logic</h2>
+<p>
+In the classical first-order theory of logic (also called predicate logic), there is a notion of quantification that is relevant to the justification of a posteriori propositions. Quantification is the semantic device to describe for how many things a certain predicate (description of properties) is true. A predicate works like a mathematical function that takes in things and quantifiers as variables and gives the truth value of the proposition as the output of the function. A domain is the set of all variables for which the predicate is defined. A domain is necessary to determine the truth value of any predicate, and a predicate is not defined for variables outside its domain.
+</p>
+<p>
+The "chicken sentence" I stated above can be re-written as "Approximately 10 billion chickens exist on the Earth." Here, chickens are the things, "approximately 10 billion" is a quantification, and "exists on the Earth" is the predicate.
+</p>
+<p>Based on quantification. There are two kinds of synthetic a posteriori propositions:
+</p>
+<p><strong>1. Particulars</strong> - Quantification of a unit or a few instances of a thing. For example: The chicken sentence above, "This raven is black" and "Some ravens are black."</p>
+<p><strong>2. Universals</strong> - Quantification of all instances or none of a thing. For example: "All ravens are black" and "No raven is black."</p>
+<p>
+Particulars are also called "cases". Universals are also called "rules". Now, the question is how to justify or establish the truth-value of particulars and universals.
+</p>
+<h2>The Raven Paradox</h2>
+<p>
+In terms of the properties of being raven and being black colored. Four possible observations are there: 
+</p>
+<p>
+1. Observing a black raven is a direct evidence to confirm the particular "There exists one black raven." But it is only a supporting evidence or example (not an evidential proof) for the universal "All ravens are black".
+</p>
+<p>
+2. Observing a non-black raven is a direct contradictory evidence (counter-example) disproving the universal "All ravens are black".
+</p>
+<p>
+3. Observing a black non-raven entity is an irrelevant evidence since it neither confirm nor contradict the universal "All ravens are black".
+</p>
+<p>
+4. But observing non-black no-raven entities seems to be indirectly supportive of "All ravens are black." through contrapositive reasoning since "All ravens are black." is equivalent to "All non-black entities are non-ravens." But this justification is intuitively irrelevant. This is the raven paradox. It asks how can intuitively irrelevant supportive evidence be a logically valid supportive evidence?</p>
+<h2>The solution from falsification and existential fallacy</h2>
+<p>
+If "All ravens are black" is true, then no contradictory evidence (counter-example) can be found.<br>
+If "All ravens are black" is false, then contradictory evidence (counter-example) can be found.
+</p>
+<p>
+So instead of searching for evidence or example, one must search for contradictory evidence or counter-example. The process of searching only for evidence is of limited use since whenever counter-evidence is found, the evidence found no longer holds useful. One can call it as a falsification approach to this paradox.
+</p>
+<p>The paradox is only there for universals, not for particulars hence there is no need for falsification for particulars. Searching for direct evidence suffices for particulars.
+</p>
+<p>
+But actually, it turns out that falsification is not enough to solve this paradox since the paradox actually arises from the introduction of contrapositive. 
+</p>
+<p>
+The contrapositive of the universal can also be falsified if a non-black raven is found but the the domain of variables is different. A different domain means that the existence of non-black non-ravens does not imply the existence of black ravens and for that matter even ravens.
+</p>
+<p>
+The big takeway is that the source of paradox in raven's paradox comes from the error of neglecting the domain of variables over which are quantifying.
+</p>
+<p>
+In first-order logic, the laws of propositional logic (like contraposition) must consider the domain over which quantifiers are applied, making evidence for contrapositives logically disconnected from evidence for the original statement when the domains differ.
+</p>
+<h2>Irrelevant Implications</h2>
+<p>To highlight how the rules of propositional rules of inference does not make sense in the different domains consider the following three implications:</p>
+<p>
+1. If Paris is in France then French people are from France (true implies true).<br>
+2. If Paris is in England then English people are from France (false implies false).<br>
+3. If Paris is in England then French people are from France (false implies true).<br>
+</p>
+<p>
+The problem here is that the implications are irrelevant despite being logically valid.
+There is no connection between the antecedent and the consequent in any of the above sentences.
+Paris being in any country does not prove anything about french or english people.
+The properties of the thing "Paris" does not say anything about the properties of the thing "French people".
+The reason they are irrelevant is that the implication in propositional logic only deals with the truth value of a complete proposition
+not the things described in those propositions.
+</p>
+<h2>Quantifiers</h2>
+<p>
+<strong>Quantifiers</strong> - Quantifiers tell you for how many elements in a collection (that take place as variables) the given predicate is true or false.
+</p>
+<p>
+<strong>Universal quantifier</strong> - “for all” (∀) - True when predicate is true for all variables. Here &wedge; represents logical AND. <br>
+∀x(P(x)) = P(x<sub>1</sub>) &wedge; P(x<sub>2</sub>) &wedge; P(x<sub>1</sub>) &wedge; ...
+</p>
+<p>
+<strong>Existential quantifier</strong> - “there exists” (∃) - True when predicate is true for at least one variable. Here &or; represents logical OR.<br>
+∃x(P(x)) = P(x<sub>1</sub>) &or; P(x<sub>2</sub>) &or; P(x<sub>1</sub>) &or; ...
+</p>
+<p>
+<strong>From De Morgan’s Laws:</strong>
+Here &not; is logical NOT.
+<br>&not;&exist;x(P(x)) = &forall;x(&not;P(x))
+<br>&not;&forall;x(P(x)) = &exist;x(&not;P(x))
+</p>
+<h2>Inference in First-order Logic</h2>
+<div class="table-container">
+  <table>
+  <tr>
+    <th>Rule / Fallacy</th>
+    <th>Logical Formula</th>
+    <th>Example</th>
+    <th>Counter-Example (if applicable)</th>
+  </tr>
+  <tr>
+    <td>Existential Instantiation (Fallacy)</td>
+    <td>∃x (P(x)) &rarr; x exists</td>
+    <td>There is a unicorn that is magical, so a unicorn must exist.</td>
+    <td>Unicorns don't exist, despite the statement about magical unicorns.</td>
+  </tr>
+  <tr>
+    <td>Existential Generalisation</td>
+    <td>P(x) &rarr; ∃x (P(x))</td>
+    <td>Socrates is a philosopher, so there exists a philosopher.</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Universal Instantiation</td>
+    <td>∀x (P(x)) &rarr; P(c) for some specific c</td>
+    <td>All humans are mortal, so Socrates (a human) is mortal.</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Universal Generalisation (Fallacy)</td>
+    <td>P(c) &rarr; ∀x (P(x))</td>
+    <td>Socrates was a human, so all beings are humans.</td>
+    <td>Not all beings (e.g., animals) are humans.</td>
+  </tr>
+</table>
+</div>
+</div>
+<hr>
+    <footer class="container" id="footer-container">
+      <div style="text-align: center;">
+        <p style="justify-content: center; align-items: center; text-align: center;">
+          <a href="pmarmat@ph.iitr.ac.in" class="icon-link" target="_blank"><i class="far fa-envelope"></i></a>
+          <a href="https://twitter.com/PiyushM41282215" class="icon-link" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://scholar.google.com/citations?user=yhwBklQAAAAJ&hl=en&oi=ao" class="icon-link" target="_blank"><i class="fab fa-google"></i></a>
+          <a href="https://www.linkedin.com/in/piyush-marmat-0ba913240/" class="icon-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.researchgate.net/profile/Piyush_Marmat" class="icon-link" target="_blank"><i class="fab fa-researchgate"></i></a>
+          <a href="https://github.com/UV-1999" class="icon-link" target="_blank"><i class="fab fa-github"></i></a>
+        </p>
+        <p>&copy; Piyush Marmat. All rights reserved.</p>
+      </div>
+    </footer>
+    <script type="text/javascript" src="/main.js"></script>
+  </body>
+</html>
