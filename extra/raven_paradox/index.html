@@ -34,41 +34,34 @@
 <div class = "container">
 <h2>Introduction</h2>
 <p>
-In my last post, "My Unwarranted Notes of Philosophy," I attempted to define a lot of things that are necessary for any philosophical discourse. I wrote about a priori and a posteriori propositions. You may easily remember that a priori propositions are either definitions or deductions, but a posteriori propositions come with the baggage of ampliation and therefore there is a need for observational evidence to justify them.
+In my last post, "My Unwarranted Notes of Philosophy," I attempted to define a lot of things that are necessary for any philosophical discourse. I wrote about a priori and a posteriori propositions. You may easily remember that a priori propositions are either definitions or deductions, but a posteriori propositions come with the need for observational evidence to justify them.
 </p>
 <p>
-For example, the proposition "420 is an even number" is a synthetic a priori proposition, and if you know the definitions of "420" and "even number," deducing the truth of the proposition is not very difficult. Now consider "There are roughly 10 billion chickens on the Earth." The claim is clearly a posteriori and relatively difficult to justify. (cause who's gonna count all those chickens?)
-</p>
-<h2>Quantification in Logic</h2>
-<p>
-In the classical first-order theory of logic (also called predicate logic), there is a notion of quantification that is relevant to the justification of a posteriori propositions. Quantification is the semantic device to describe for how many things a certain predicate (description of properties) is true. A predicate works like a mathematical function that takes in things and quantifiers as variables and gives the truth value of the proposition as the output of the function. A domain is the set of all variables for which the predicate is defined. A domain is necessary to determine the truth value of any predicate, and a predicate is not defined for variables outside its domain.
-</p>
-<p>
-The "chicken sentence" I stated above can be re-written as "Approximately 10 billion chickens exist on the Earth." Here, chickens are the things, "approximately 10 billion" is a quantification, and "exists on the Earth" is the predicate.
-</p>
-<p>Based on quantification. There are two kinds of synthetic a posteriori propositions:
-</p>
-<p><strong>1. Particulars</strong> - Quantification of a unit or a few instances of a thing. For example: The chicken sentence above, "This raven is black" and "Some ravens are black."</p>
-<p><strong>2. Universals</strong> - Quantification of all instances or none of a thing. For example: "All ravens are black" and "No raven is black."</p>
-<p>
-Particulars are also called "cases". Universals are also called "rules". Now, the question is how to justify or establish the truth-value of particulars and universals.
+For example, the proposition "420 is an even number" is a synthetic a priori proposition, and if you know the definitions of "420" and "even number," deducing the truth of the proposition is not very difficult. Now consider "All ravens are black." The claim is clearly a posteriori and relatively difficult to justify.
 </p>
 <h2>The Raven Paradox</h2>
 <p>
 In terms of the properties of being raven and being black colored. Four possible observations are there: 
 </p>
 <p>
-1. Observing a black raven is a direct evidence to confirm the particular "There exists one black raven." But it is only a supporting evidence or example (not an evidential proof) for the universal "All ravens are black".
+1. Observing a black raven is a direct evidence to confirm "There exists one black raven." But it is only a supporting evidence or example (not an evidential proof) for "All ravens are black".
 </p>
 <p>
-2. Observing a non-black raven is a direct contradictory evidence (counter-example) disproving the universal "All ravens are black".
+2. Observing a non-black raven is a direct contradictory evidence (counter-example) disproving "All ravens are black".
 </p>
 <p>
-3. Observing a black non-raven entity is an irrelevant evidence since it neither confirm nor contradict the universal "All ravens are black".
+3. Observing a black non-raven entity is an irrelevant evidence since it neither confirm nor contradict "All ravens are black".
 </p>
 <p>
-4. But observing non-black no-raven entities seems to be indirectly supportive of "All ravens are black." through contrapositive reasoning since "All ravens are black." is equivalent to "All non-black entities are non-ravens." But this justification is intuitively irrelevant. This is the raven paradox. It asks how can intuitively irrelevant supportive evidence be a logically valid supportive evidence?</p>
-<h2>The solution from falsification and existential fallacy</h2>
+4. But observing non-black no-raven entities seems to be indirectly supportive of "All ravens are black." Since via contrapositive reasoning (rule of contraposition) "All ravens are black" is equivalent to "All non-black entities are non-ravens." 
+</p>
+<p>
+To understand how contraposition works, consider that entities are either black or non-black. If all ravens are black then all ravens belong to the set of all black things. So all non-black entities can not be ravens as there are no non-black ravens. This is how contraposition works.
+</p>
+<p>
+But the observational justification of the contrapositive proposition is intuitively irrelevant. This is the raven paradox. It asks how can intuitively irrelevant supportive evidence (like a red robbin which is a non-black non-raven) be a logically valid supportive evidence?</p>
+
+<h2>First Half of the Solution</h2>
 <p>
 If "All ravens are black" is true, then no contradictory evidence (counter-example) can be found.<br>
 If "All ravens are black" is false, then contradictory evidence (counter-example) can be found.
@@ -76,38 +69,14 @@ If "All ravens are black" is false, then contradictory evidence (counter-example
 <p>
 So instead of searching for evidence or example, one must search for contradictory evidence or counter-example. The process of searching only for evidence is of limited use since whenever counter-evidence is found, the evidence found no longer holds useful. One can call it as a falsification approach to this paradox.
 </p>
-<p>The paradox is only there for universals, not for particulars hence there is no need for falsification for particulars. Searching for direct evidence suffices for particulars.
+<p>The paradox is only there for "All ravens are black" and similar propositions like "there are no green stars". Such propositions describe some rule or universality about the property of something. The paradox is not there for propositions describing particular cases like "This raven is black" or "Some monkeys have red face." Hence there is no need for falsification for particular cases. Searching for direct evidence suffices for particular cases.
 </p>
 <p>
-But actually, it turns out that falsification is not enough to solve this paradox since the paradox actually arises from the introduction of contrapositive. 
+But actually, it turns out that falsification is not enough to solve this paradox since the paradox actually arises from the introduction of contrapositive. But before we resolve it, we must discuss first-order logic.
 </p>
+<h2>First-order Logic</h2>
 <p>
-The contrapositive of the universal can also be falsified if a non-black raven is found but the the domain of variables is different. A different domain means that the existence of non-black non-ravens does not imply the existence of black ravens and for that matter even ravens.
-</p>
-<p>
-The big takeway is that the source of paradox in raven's paradox comes from the error of neglecting the domain of variables over which are quantifying.
-</p>
-<p>
-In first-order logic, the laws of propositional logic (like contraposition) must consider the domain over which quantifiers are applied, making evidence for contrapositives logically disconnected from evidence for the original statement when the domains differ.
-</p>
-<h2>Irrelevant Implications</h2>
-<p>To highlight how the rules of propositional rules of inference does not make sense in the different domains consider the following three implications:</p>
-<p>
-1. If Paris is in France then French people are from France (true implies true).<br>
-2. If Paris is in England then English people are from France (false implies false).<br>
-3. If Paris is in England then French people are from France (false implies true).<br>
-</p>
-<p>
-The problem here is that the implications are irrelevant despite being logically valid.
-There is no connection between the antecedent and the consequent in any of the above sentences.
-Paris being in any country does not prove anything about french or english people.
-The properties of the thing "Paris" does not say anything about the properties of the thing "French people".
-The reason they are irrelevant is that the implication in propositional logic only deals with the truth value of a complete proposition
-not the things described in those propositions.
-</p>
-<h2>Quantifiers</h2>
-<p>
-<strong>Quantifiers</strong> - Quantifiers tell you for how many elements in a collection (that take place as variables) the given predicate is true or false.
+In the classical first-order theory of logic (also called predicate logic), a proposition is resolved into subject and predicate. The subject is the description of a thing and the predicate is the description of that thing's properties. A predicate works like a mathematical function that takes in things and quantifiers as variables and gives the truth value of the proposition as the output of the function. Quantifiers tell you for how many subjects the given predicate is true or false.
 </p>
 <p>
 <strong>Universal quantifier</strong> - “for all” (∀) - True when predicate is true for all variables. Here &wedge; represents logical AND. <br>
@@ -123,7 +92,25 @@ Here &not; is logical NOT.
 <br>&not;&exist;x(P(x)) = &forall;x(&not;P(x))
 <br>&not;&forall;x(P(x)) = &exist;x(&not;P(x))
 </p>
-<h2>Inference in First-order Logic</h2>
+<p>  
+A domain is the set of all variables for which the predicate is defined. A domain is necessary to determine the truth value of any predicate, and a predicate is not defined for variables outside its domain.
+</p>
+<h3>Irrelevant Implications</h3>
+<p>To highlight how the rules of inference in propositional logic does not make sense in the different domains consider the following three implications:</p>
+<p>
+1. If Paris is in France then french people are from France (true implies true).<br>
+2. If Paris is in England then english people are from France (false implies false).<br>
+3. If Paris is in England then french people are from France (false implies true).<br>
+</p>
+<p>
+The problem here is that the implications are irrelevant despite being logically valid.
+There is no connection between the antecedent (the proposition after if and before then) and the consequent (the proposition after then) in any of the above sentences.
+Paris being in any country does not prove anything about french or english people.
+The properties of the thing "Paris" does not say anything about the properties of french people.
+The reason they are irrelevant is that the implication in propositional logic only deals with the truth value of a complete proposition
+not the things described in those propositions. Below is a table of some important first-order rules of inference and fallacies:
+</p>
+<h3>Inference in First-order Logic</h3>
 <div class="table-container">
   <table>
   <tr>
@@ -158,6 +145,16 @@ Here &not; is logical NOT.
   </tr>
 </table>
 </div>
+<h2>Second Half of The Solution</h2>  
+<p>
+The contrapositive of "All ravens are black" can also be falsified if a non-black raven is found but contraposition changes the domain of variables. A different domain means that the existence of non-black non-ravens does not imply the existence of black ravens and for that matter even ravens. This is an example of existential fallacy.
+</p>
+<p>
+The big takeway is that the source of paradox is the error of neglecting the domain of subjects in a proposition. Non black entities define a different domain compared to the domain defined by ravens.
+</p>
+<p>
+In first-order logic, the laws of propositional logic (like contraposition) must consider the domain over which quantifiers are applied. Evidence for contrapositives are logically disconnected from evidence for the original statement as the domains differ.
+</p>
 </div>
 <hr>
     <footer class="container" id="footer-container">
