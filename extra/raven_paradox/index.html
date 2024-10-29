@@ -76,7 +76,13 @@ But actually, it turns out that falsification is not enough to solve this parado
 </p>
 <h2>First-order Logic</h2>
 <p>
-In the classical first-order theory of logic (also called predicate logic), a proposition is resolved into subject and predicate. The subject is the description of a thing and the predicate is the description of that thing's properties. A predicate works like a mathematical function that takes in things and quantifiers as variables and gives the truth value of the proposition as the output of the function. Quantifiers tell you for how many subjects the given predicate is true or false.
+In the classical first-order theory of logic (also called predicate logic), a proposition is resolved into subject and predicate. The subject is the description of a thing and the predicate is the description of that thing's properties. A predicate works like a mathematical function that takes in things variables and gives the truth value of the proposition as the output of the function on a given quantifier. A quantifier is the description of for how many things the given predicate is true or false.
+</p>
+<p>
+If a predicate P is true for variable (thing) x then the proposition is written as P(x) which means that x has property defined in the predicate P.
+</p>
+<p>
+Consider "All ravens are black" and "Some ravens are black". While it is easy to identify "ravens" as the subject and "are black" as the predicate in the above sentences, the difference lies in the quantification. Quantification is of two kinds: universal-when we talk about all counts of a thing and existential-when we talk about one or some count of a thing. Formally the above sentence are stated as "For all ravens, they are black" and "There exists ravens that are black". Well it is a wierd way of writing but it is formal atleast in first order logic.
 </p>
 <p>
 <strong>Universal quantifier</strong> - “for all” (∀) - True when predicate is true for all variables. Here &wedge; represents logical AND. <br>
