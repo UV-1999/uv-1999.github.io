@@ -7,8 +7,8 @@ body {
 }
 
 body.dark-mode {
-    background-color: #1E201E; 
-    color: white; 
+    background-color: #181818; 
+    color: #a3a3a3; 
 }
 
 ::selection {
@@ -28,7 +28,7 @@ header {
 }
 
 header.dark-mode {
-    background-color: #1E201E;
+    background-color: #181818;
     color: #fff8e7;
 }
 
@@ -130,7 +130,7 @@ a:hover {
 }
 
 a.dark-mode {
-    color: #ECDFCC; 
+    color: #a3a3a3; 
 }
 
 a.dark-mode:hover {
