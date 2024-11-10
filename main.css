@@ -3,12 +3,12 @@ body {
     background-color: #fff8e7; 
     margin: 0;
     padding: 0;
-    color: black; 
+    color: black;
 }
 
 body.dark-mode {
     background-color: #181818; 
-    color: #a3a3a3; 
+    color: #964a7a; /* heading of the page content*/ 
 }
 
 ::selection {
@@ -29,7 +29,7 @@ header {
 
 header.dark-mode {
     background-color: #181818;
-    color: #fff8e7;
+    color: transparent;
 }
 
 .header-content {
@@ -78,7 +78,7 @@ header.dark-mode {
 }
 
 .dark-mode-button.dark-mode{
-    color: #fff8e7;
+    color: white;
 }
 
 .top-button {
@@ -104,7 +104,7 @@ header.dark-mode {
 
 header.dark-mode .title,
 header.dark-mode .pages a {
-    color: #fff8e7;
+    color: #5ab590;
 }
 
 /* Mobile-specific styling */
@@ -130,7 +130,7 @@ a:hover {
 }
 
 a.dark-mode {
-    color: #a3a3a3; 
+    color: #5ab590; 
 }
 
 a.dark-mode:hover {
@@ -142,15 +142,33 @@ hr {
 }
 
 hr.dark-mode {
-    border: 1px solid #fff8e7;
+    border: 1px solid #cccccc;
 }
 
 h1 {
     font-size: 36px;
+    color: black;
+}
+
+h1.dark-mode {
+  color: #964a7a;
 }
 
 h2 {
     font-size: 24px;
+    color: black;
+}
+
+h2.dark-mode {
+  color: #964a7a;
+}
+
+h3,h4,h5,h6 {
+  color: black;
+}
+
+h3.dark-mode, h4.dark-mode, h5.dark-mode, h6.dark-mode  {
+  color: #964a7a;
 }
 
 p {
@@ -198,7 +216,7 @@ td.dark-mode
 
 .container.dark-mode {
     background-color: transparent; 
-    color: white; 
+    color: #a4a4a4; 
 }
 
 
