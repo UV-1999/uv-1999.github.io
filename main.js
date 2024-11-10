@@ -14,6 +14,21 @@ function toggleDarkMode() {
     he.forEach(hline => {
         hline.classList.add('dark-mode');
     });
+  
+    const h11 = document.querySelectorAll('h1');
+    h11.forEach(th1 => {
+        th1.classList.add('dark-mode');
+    });
+  
+    const h22 = document.querySelectorAll('h2');
+    h22.forEach(th2 => {
+        th2.classList.add('dark-mode');
+    });
+  
+    const h33 = document.querySelectorAll('h3');
+    h33.forEach(th3 => {
+        th3.classList.add('dark-mode');
+    });
     
     const contra = document.querySelectorAll('.container');
     contra.forEach(contain => {
@@ -54,6 +69,21 @@ function toggleLightMode() {
     const he = document.querySelectorAll('hr');
     he.forEach(hline => {
         hline.classList.remove('dark-mode');
+    });
+  
+    const h11 = document.querySelectorAll('h1');
+    h11.forEach(th1 => {
+        th1.classList.remove('dark-mode');
+    });
+  
+    const h22 = document.querySelectorAll('h2');
+    h22.forEach(th2 => {
+        th2.classList.remove('dark-mode');
+    });
+  
+    const h33 = document.querySelectorAll('h3');
+    h33.forEach(th3 => {
+        th3.classList.remove('dark-mode');
     });
     
     const contra = document.querySelectorAll('.container');
