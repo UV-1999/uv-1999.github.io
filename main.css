@@ -198,12 +198,12 @@ th, td {
 
 th.dark-mode 
         {
-            color: white;  
+            color: #a4a4a4;  
         }
 
 td.dark-mode 
         {
-            color: white;  
+            color: #a4a4a4;  
         }
 
 .container {
