@@ -1,10 +1,6 @@
 // Get all elements with the class 'collapsar'
 const button = document.getElementById("darkmodebutton");
 
-var now = new Date();
-var datetime = now.toLocaleString();
-document.getElementById("datetime").innerHTML = datetime;
-
 function toggleDarkMode() {
     const element = document.querySelector('body');
     element.classList.add('dark-mode');
