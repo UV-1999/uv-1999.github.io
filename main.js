@@ -1,7 +1,7 @@
+const modifiedDate = new Date(document.lastModified);
 const options = { year: 'numeric', month: 'short', day: 'numeric' };
-const today = new Date();
-const formattedDate = today.toLocaleDateString('en-US', options).replace(',', '');
-document.getElementById('current-date').textContent = formattedDate;
+const formatted = modifiedDate.toLocaleDateString('en-US', options).replace(',', '');
+document.getElementById('last-updated').textContent = formatted;
 
 // Get all elements with the class 'collapsar'
 const button = document.getElementById("darkmodebutton");
