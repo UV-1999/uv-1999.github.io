@@ -142,5 +142,11 @@
       </div>
     </footer>
     <script type="text/javascript" src="/main.js"></script>
+    <script>
+  const modifiedDate = new Date(document.lastModified);
+  const options = { year: 'numeric', month: 'short', day: 'numeric' };
+  const formatted = modifiedDate.toLocaleDateString('en-US', options).replace(',', '');
+  document.getElementById('last-updated').textContent = formatted;
+</script>
   </body>
 </html>
