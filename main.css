@@ -171,6 +171,10 @@ h3.dark-mode, h4.dark-mode, h5.dark-mode, h6.dark-mode  {
   color: #964a7a;
 }
 
+h3 {
+    font-size: 20px;
+}
+
 p {
     font-size: 18px;
     margin: 20px 0;
