@@ -325,16 +325,30 @@ Statistics uses probability theory to make inferences. Inference is the process 
 <b>Probability - The mathematics of ignorance</b><br>
 <p>
 In probability theory, an experiment is any procedure that yields a well-defined result. A trial is a single execution of the experiment.
-The outcome of a trial is the specific result obtained, also called a sample point. The set of all possible outcomes is called the sample space, say &Omega;.
+The outcome of a trial is the specific result obtained, also called a sample point. The set of all possible outcomes is called the sample space.
 An event is a subset of the sample space, consisting of one or more outcomes that satisfy a particular condition of interest.
 To quantify the probability of an event say E, denoted as P(E) we can either:<br><br>
 1. Run real experiments (frequentist approach) - P(E) is the limiting ratio of the number of times the event E occurs to the number of trials say N, as the number of trials approaches infinity.<br><br>
 2. Or contruct a probability distribution model (theoretical approach, some may call it Bayesian)
-where we define probabilities as fractions going from 0 (certainly not happening) to 1 (certainly happening) for each outcome
+where we define probabilities as fractions going from 0 (certainly not happening) to 1 (certainly happening) for each outcome (this is the probabilty distribution function that maps outcomes to a real number in the closed range from 0 to 1)
 with the condition that the sum of all these probabilities has to be 1 since the sample space contain all possible outcomes
-hence it is certain that atleast one outcomes out of it will happen in any trial.
+and it is certain that atleast one outcome out of all will happen in any trial.
 P(E) now becomes the sum of all the probabilities of outcomes that belong to the subset of event E.
 This theoretical approach is verified or tested against the observed probabilities and updated to capture the patterns in an experiement.
+</p>
+<p>
+An instrument measures a property numerically. Let’s say it shows 010.1040. Since here the 0 (left to 1 before decimal) is not a significant digit, we safely re-write it to be 10.1040.
+Why are we keeping the rightmost 0? Because it is significant. It is obvious that non-zero digits are significant but the significance of zeros between nonzero digits and
+trailing zeros have a little more for us to understand.
+These zeros are telling us that there is 0 contribution of that particular digit place (power of 10) and having such shows the finest possible measurement that can be made with that instrument,
+often called the least count which also serves as a measure of precision for the instrument.
+For the above example, the least count is 0.0001 because the measurement is possible upto the fourth decimal place. To report any measurement we report both the best estimate and the uncertainty.
+</p>
+<p>
+The best estimate is the expectation value of the probability distribution that models the data.
+The uncertainty is the standard deviation of the mean, also called standard error, which is the standard deviation divided by the square root of the number of measurements made.
+Standard deviation is the square root of variance. Variance is the expectation value of squares of data values minus the square of expectation value of data.
+Expectation value of a variable x with probability distribution P(x) is the probablity weighted average of all the values of x over the entire sample space.
 </p>
 <hr>
 <p>
@@ -344,7 +358,8 @@ it came out as "subjective intellectual concerns to examine different beliefs" r
 Some people can argue that philosophical questions conventionally are such that they cannot be studied or answered via the scientific method and arguments are the only way to make progress in philosophy but the scientific method and research itself is a form of argumentation.
 If we stick to the "study of things" definition then any intellectual progress should be considered a part of philosophical progress.
 But since the meaning of progress is contigent on values of the agents then even sciences are not immune to such questions of "not making enough progress".
-In my view, the progress of philosophy resides in the variety of questions it can discover and the ways it compells us to refine our ways of experiencing and reason about our world.</p>
+In my view, the progress of philosophy resides in the variety of questions it can discover and the ways it compells us to refine our ways of experiencing and reason about our world.
+</p>
 
 </div>
 <hr>
