@@ -28,8 +28,8 @@
         </button>
       </div>
     </header>
-<h1 style="text-align: center;">My Unwarranted Notes on Hempel's Raven Paradox</h1>
-<em style="display: block; text-align: center; ">Posted on 28th October 2024</em>
+<h1 style="text-align: center;">My Unwarranted Notes on Hempel's Raven Paradox and Peirce's law</h1>
+<em style="display: block; text-align: center; ">Updated on 26th July 2025</em>
 <hr>
 <div class = "container">
 <h2>Introduction</h2>
@@ -85,14 +85,23 @@ Searching for direct evidence suffices for particular cases.
 </p>
 <p>
 But actually, it turns out that falsification is not enough to solve this paradox since the paradox actually arises from the introduction of contrapositive.
-But before we resolve it, we must discuss first-order logic.
+But before we resolve it, we must discuss classical and constructive theories of logic.
 </p>
-<h2>First-order Logic</h2>
+
+<h2>Classical Logic</h2>
+<p> 
+In the classical zero-order theory logic or propositional logic, propositions are considered as atomic and are either true or false. Combining such atomic propositions,
+the resulting compound propositions or logical formula can be of three types:</p>
 <p>
-In the classical first-order theory of logic (also called predicate logic), a proposition is resolved into subject and predicate.
+1. Tautology - Propositions that are always true irrespective of the truth value of atomic ones that form it.<br><br>
+2. Contradictions - Propositions that are always false irrespective of the truth value of atomic ones that form it.<br><br>
+3. Contingency - Propositions for which the truth value of atomic ones decide its truth value.
+</p>
+<p>
+In the classical first-order theory of logic (also called predicate logic), a proposition is resolved into subject and predicate. This allows for more expressive power compared to zero-order logic.
 The subject is the description of a thing and the predicate is the description of that thing's properties.
 A predicate works like a mathematical function that takes in things as variables and gives the truth value of the proposition as the output of the function on a given quantifier.
-A quantifier is the description of for how many things the given predicate is true or false. Standard mathematics also runs on classical first-order logic.
+A quantifier is the description of for how many things the given predicate is true or false.
 </p>
 <p>
 If a predicate P is true for variable (thing) x then the proposition is written as P(x) which means that x has property defined in the predicate P.
@@ -119,69 +128,62 @@ Here &not; is logical NOT.
 <p>  
 A domain is the set of all variables for which the predicate is defined.
 A domain is necessary to determine the truth value of any predicate, and a predicate is not defined for variables outside its domain.
+One can define second order logic or even beyond by introducing quantification over predicates or over predicates of predicates and so on.
 </p>
-<h3>Irrelevant Implications</h3>
-<p>To highlight how the rules of inference in propositional logic does not make sense in the different domains consider the following three implications:</p>
+<p>
+In classical logic, the contrapositive "All non-black entities are non-ravens" takes the same truth values as "All ravens are black" therefore evidence for any one the two propositions applies to the another
+but classical logic does not take into account relevance based reasoning. 
+</p>
+
+<h2>Constructive Logic</h2>
+<p>To highlight how the rules of inference in classical logic does not make sense in the different domains consider the following three implications:</p>
 <p>
 1. If Paris is in France then french people are from France (true implies true).<br>
 2. If Paris is in England then english people are from France (false implies false).<br>
 3. If Paris is in England then french people are from France (false implies true).<br>
 </p>
 <p>
-The problem here is that the implications are irrelevant despite being logically valid.
+The problem here is that the implications are irrelevant despite being valid in classical logic.
 There is no connection between the antecedent (the proposition after if and before then) and the consequent (the proposition after then) in any of the above sentences.
 Paris being in any country does not prove anything about french or english people.
 The properties of the thing "Paris" does not say anything about the properties of french people.
 The reason they are irrelevant is that the implication in propositional logic only deals with the truth value of a complete proposition
-not the things described in those propositions. Below is a table of some important first-order rules of inference and fallacies:
+not the things described in those propositions. This demands a logical theory that takes into account constructve proofs as a necessity to assert any property about a subject.
+Contructive logic (also called as intuitionistic logic) is classical logic without the assumption that a propositions is either true or false
+but rather the truth value is contingent on evidence or proof.
 </p>
-<h3>Inference in First-order Logic</h3>
-<div class="table-container">
-  <table>
-  <tr>
-    <th>Rule / Fallacy</th>
-    <th>Logical Formula</th>
-    <th>Example</th>
-    <th>Counter-Example (if applicable)</th>
-  </tr>
-  <tr>
-    <td>Existential Instantiation (Fallacy)</td>
-    <td>∃x (P(x)) &rarr; x exists</td>
-    <td>There is a unicorn that is magical, so a unicorn must exist.</td>
-    <td>Unicorns don't exist, despite the statement about magical unicorns.</td>
-  </tr>
-  <tr>
-    <td>Existential Generalisation</td>
-    <td>P(x) &rarr; ∃x (P(x))</td>
-    <td>Socrates is a philosopher, so there exists a philosopher.</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Universal Instantiation</td>
-    <td>∀x (P(x)) &rarr; P(c) for some specific c</td>
-    <td>All humans are mortal, so Socrates (a human) is mortal.</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Universal Generalisation (Fallacy)</td>
-    <td>P(c) &rarr; ∀x (P(x))</td>
-    <td>Socrates was a human, so all beings are humans.</td>
-    <td>Not all beings (e.g., animals) are humans.</td>
-  </tr>
-</table>
-</div>
+
 <h2>Second Half of The Solution</h2>  
 <p>
-The contrapositive of "All ravens are black" can also be falsified if a non-black raven is found but contraposition changes the domain of variables.
-A different domain means that the existence of non-black non-ravens does not imply the existence of black ravens and for that matter even ravens. This is an example of existential fallacy.
+In contructive logic, the contrapositive is not equivalent to the original assertion because the existence of non-black non-ravens does not imply the existence of black ravens and for that matter even ravens.
+Implications like "All ravens are black" first require the proof/evidence that something is a raven then to construct the proof or obtaining evidence that it is black.
+The big takeway is that the source of paradox is the error of applying classical logic where contructive logic is more suitable.
 </p>
+
+<h2>Bonus - Peirce's law</h2>  
 <p>
-The big takeway is that the source of paradox is the error of neglecting the domain of subjects in a proposition. Non black entities define a different domain compared to the domain defined by ravens.
+Peirce's law is a non-trivial tautology in zero-order logic that describes a valid implication but it is semantically not clear.
+For propositions P and Q, the laws reads:<br><br>
+((P → Q) → P) → P<br><br>
+This is infact a tautology which can be varified using a truth table but
+my goal is to highlight that while it is valid, it is not meaningful.
 </p>
+
 <p>
-In first-order logic, the laws of propositional logic (like contraposition) must consider the domain over which quantifiers are applied.
-Evidence for contrapositives are logically disconnected from evidence for the original statement as the domains differ.
+To understand the validity, we assume that the part (P → Q) → P is true. This demands that either (P → Q) is false or P is true.
+If P is true, then we directly reach to the conclusion of Peirce's law but if we consider that (P → Q) is false then either P is false or Q is true.
+So if we assume P to be true then surely the conclusion of Peirce's law follows (that P is true) hence it is valid.
 </p>
+
+<p>
+But to say that (P → Q) → P, means that if "if P then Q" holds then P is true. This is problematic.
+When we say "P implies Q" the truth value of P is not inferred but only chosen because "if" does not mean "is".
+For example if P is "this apple is red" and Q is "this apple is colored" then (P → Q) is
+"If this apple is red then this apple is colored" which is true but this does not imply that the apple is actually red.
+This problem is not limited to zero-order logic only but a feature of all classical logic since it is based on the assumption that a proposition is either true or false.
+In constructive logic, Peirce's law is not valid because the part (P → Q) → P) does not have a proof since we already showed that it is invalid.
+</p>
+  
 </div>
 <hr>
     <footer class="container" id="footer-container">
