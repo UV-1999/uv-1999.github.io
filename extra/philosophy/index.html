@@ -234,15 +234,13 @@ In a way, we claimed that “A hippo cannot be in a matchbox” to be true, whic
 <p>
 Synthetic A priori claims do not require direct experience or observation to be true. “For a triangle, the sum of the angles is 180 degrees.”
 This is not the definition of a triangle but it is still true without any direct observation.
-However, it is impossible to prove the angle sum property of triangles without having the notion of space.
-To define something, all sufficient properties must be met. After that, one can find necessary properties.
-Reason is needed but also some sufficient background experience (conceptual) and definitions.
+However, it is impossible to prove the angle sum property of triangles without having the notion of angles, points, lines and space.
+All synthetic a priori claims are true in their conceptual framework, so the cases where the conceptual framework does not work, the synthetic a priori claims do not work also.
+For example, the angle sum property is true for triangles in Euclidean geometry only.
 </p> 
 
 <p>
-All synthetic a priori claims are true in their conceptual framework, so the cases where the conceptual framework does not work, the synthetic a priori claims do not work also.
-For example, the angle sum property is true for triangles in Euclidean geometry only.
-Hence, a priori synthetic claims are true only coherently. For mathematicians all synthetic a priori claims are also analytic as such claims are derived out of axioms that are also analytic.
+Hence, a priori synthetic claims are true only coherently. For mathematicians all synthetic a priori claims are also analytic as such claims are derived out of propositions that are also analytic.
 </p>
 
 <h2>Philosophical Arguments</h2>
@@ -335,8 +333,9 @@ Based on how we proceed to supply proofs, we find the following problem:
 There are only three ways of absolutely completing an argument:<br>
 1. The circular argument - in which the proof of some proposition presupposes the truth of that very proposition.
 The problem is that it is not an argument but rather some elaborate rephrasing of the proposition to be proven as its proof.<br>
-2. The regressive argument - in which each proof requires a further proof, and so on. The problem is here the unending nature of such arguments.<br>
-3. The dogmatic argument - which rests on accepted propositions that are merely asserted rather than proven. Hence simply rejects to be an argument at all. 
+2. The regressive argument - in which each proof requires a further proof, and so on.
+The problem is here the unending nature of such arguments. It is commonly described as the un-ending "why?" questionnaire.<br>
+3. The dogmatic argument - which rests on accepted propositions that are merely asserted rather than proven. Hence simply rejects to be an argument at all.
 </p>
 
 <p>
@@ -389,7 +388,7 @@ Humans cannot make consistent, context-sensitive judgment all the time in every 
 Coming back to the Münchhausen Trilemma, the process of conjecture and criticism (Popper) when formalised is called science. In my view, science is the best method of philosophy.
 The goal of science is to create a description of any system (the part of world that is being studied) by establishing its properties and the relations among its properties by reason, experience or both.
 At any instant such a description is called a scientific theory. Scientific knowledge can hence be defined as coherent true beliefs which withstand repeated scrutiny and revision.
-The apparently non-scientific fields like humanities and social studies (law, politics, history, etc.) do contain partial features of the scientific method if the goal is to describe and make inferences.
+The apparently non-scientific fields like humanities and social studies (law, politics, history, etc.) do contain features of the scientific method since the goal is still to describe and make inferences.
 Depending on the system, scientific studies are of two types: empirical and formal.
 </p>
 
@@ -397,11 +396,12 @@ Depending on the system, scientific studies are of two types: empirical and form
 
 <p>
 In case of formal science, (where the system is abstract but may also have some correspondence to reality) the theories are exact but still can be revised.
-Logic, Mathematics, Statistics, Computer Science are all examples of formal science.
+Logic, Statistics, Computer Science are all examples of formal science.
 Formal sciences often work on exploring theories of abstract systems that may model some general features of natural systems.
-Specifically we can define mathematics as the branch of formal science which deals with abstract systems that may have idealised features of real world or natural systems.
+Formal science deals with abstract systems that may have idealised features of real world or natural systems.
 The axioms (fundamental premises that are assumed to be true) are set in such a way that the deductions lead to useful or
 at least interesting results (theorems) that are universal in application and deductively valid.
+This practice of finding useful or interesting results for any formal system is called mathematics.
 Theorems are the propositions deduced from axioms or already deduced theorems. The argument presented to verify the deduction of a theorem is called proof of that theorem.
 A system of axioms is called:
 </p>
@@ -469,6 +469,34 @@ a label we use to describe certain aspects of a system that consistently correla
 Every measured property is hence a record of a sensible effect arising from interaction of the observer with the system. Because of these interactions, measurements are inherently comparative.
 Measurement is either categorical or numerical. Unlike categorical measurements (assigning a category value to a measurement),
 in numerical measurements we have to define reference values to standardize measurements. These reference values are called units.
+</p>
+
+<p>
+<b>What is a relevant observational evidence?</b><br>
+You may easily remember that a priori propositions are either definitions or deductions, but a posteriori propositions come with the need for observational evidence to justify them.
+For example, the proposition "420 is an even number" is a synthetic a priori proposition, and if you know the definitions of "420" and "even number," deducing the truth of the proposition 
+is not very difficult. Now consider "All ravens are black." The claim is clearly a posteriori and impossible to justify as a formal proof
+but rather can only be accepted as a provisional truth unless falsified by observing a non-black raven.
+</p>
+
+<p>
+But a paradox arises under the framework of classical logic: Since "All raves are black" can be rephrased as "If something is raven then it must be black"
+therefore by contraposition rule in classical logic, it is equivalent to "If something is non black then it must be non-raven".
+This equivalence holds because classical logic equates propositions solely based on their truth values irrespective of the contents of the propositions.
+While a black-raven is a proper direct evidence in support of the claim "All ravens are black", something like a red robin or green lantern is direct
+an evidence to "If something is non black then it must be non-raven". This makes a red robin or anything non-black and non-raven allegedly an evidence for "All ravens are black".
+This is the raven paradox.
+</p>
+<p>
+Keeping in mind that bad results often come from bad assumptions, it is reasonable to doubt the usage of classical logic here.
+Empirical sciences in which propositions are often synthetic a posteriori, require an evidence based reasoning which classical logic cannot handle.
+In classical logic, because of the assumed law of excluded middle, propositions like "Either there is a black raven or there isn’t" is valid even if you’ve never seen a raven.
+Inference in classical logic operates by assuming a proposition either true or false and then checking the validity of any compound proposition.
+In constructive logic, instead of the law of excluded middle, the truth values of propositions are based on proofs (for a priori propositions) and evidences (for empirical propositions).
+Hence the contraposition rule does not apply and no raven paradox arises in constructive logic. Any claim regarding a raven requires an evidence that ravens exists first.
+While we cannot provide an absolute evidence for a claim like "All ravens are black", we can still conclude that a red robin is not a relevant evidence for the claim.
+It is worth noting that every proposition provable constructively is also valid classically.
+But not all classically valid propositions are provable constructively.
 </p>
 
 <p>
@@ -548,31 +576,6 @@ The best estimate is the expectation value of the probability distribution that 
 The uncertainty is the standard deviation of the mean, also called standard error, which is the standard deviation divided by the square root of the number of measurements made.
 Standard deviation is the square root of variance. Variance is the expectation value of squares of data values minus the square of expectation value of data.
 Expectation value of a variable x with probability distribution P(x) is the probability weighted average of all the values of x over the entire sample space.
-</p>
-
-<p>
-<b>What is a relevant observational evidence?</b><br>
-You may easily remember that a priori propositions are either definitions or deductions, but a posteriori propositions come with the need for observational evidence to justify them.
-For example, the proposition "420 is an even number" is a synthetic a priori proposition, and if you know the definitions of "420" and "even number," deducing the truth of the proposition 
-is not very difficult. Now consider "All ravens are black." The claim is clearly a posteriori and impossible to justify as a formal proof
-but rather can only be accepted as a provisional truth unless falsified by observing a non-black raven.
-</p>
-
-<p>
-But a paradox arises under the framework of classical logic: Since "All raves are black" can be rephrased as "If something is raven then it must be black"
-therefore by contraposition rule in classical logic, it is equivalent to "If something is non black then it must be non-raven".
-This equivalence holds because classical logic equates propositions solely based on their truth values irrespective of the contents of the propositions.
-While a black-raven is a proper direct evidence in support of the claim "All ravens are black", something like a red robin or green lantern is direct
-an evidence to "If something is non black then it must be non-raven". This makes a red robin or anything non-black and non-raven allegedly an evidence for "All ravens are black".
-This is the raven paradox. Keeping in mind that bad results often come from bad assumptions, it is reasonable to doubt the usage of classical logic here.
-Empirical sciences in which propositions are often synthetic a posteriori, require an evidence based reasoning which classical logic cannot handle.
-In classical logic, because of the assumed law of excluded middle, propositions like "Either there is a black raven or there isn’t" is valid even if you’ve never seen a raven.
-Inference in classical logic operates by assuming a proposition either true or false and then checking the validity of any compound proposition.
-In constructive logic, instead of the law of excluded middle, the truth values of propositions are based on proofs (for analytical propositions) and evidences (for empirical propositions).
-Hence the contraposition rule does not apply and no raven paradox arises in constructive logic. Any claim regarding a raven requires an evidence that ravens exists first.
-While we cannot provide an absolute evidence for a claim like "All ravens are black", we can still conclude that a red robin is not a relevant evidence for the claim.
-It is worth noting that every proposition provable constructively is also valid classically.
-But not all classically valid propositions are provable constructively.
 </p>
 
 <hr>
