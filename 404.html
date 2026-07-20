@@ -16,37 +16,39 @@
       <div class="header-content">
         <a class="title" href="/">Piyush Marmat</a>
         <nav class="pages">
-          <a href="/Piyush_Marmat_CV.pdf?v=<?= filemtime('Piyush_Marmat_CV.pdf') ?>" target="_blank">Curriculum vitae</a>
-          <a href="/research">Pulsars</a>
-          <a href="/extra">Philosophy</a>
+          <a href="/">About</a>
+          <a href="/cv">CV</a>
+          <a href="/research">Research</a>
+          <a href="/extra">Extra</a>
         </nav>
-        <button id="darkmodebutton" class="dark-mode-button">
-          <i class="fa-solid fa-sun"></i>
-        </button> 
-        <button id="topbutton" onclick="scrollToTop()" class="top-button">
-          <i class="fa-solid fa-circle-arrow-up"></i>
-        </button>
+        <div class="header-controls">
+          <button id="topbutton" onclick="scrollToTop()" class="top-button" aria-label="Scroll to top">
+            <i class="fa-solid fa-arrow-up"></i>
+          </button>
+          <button id="bottombutton" onclick="scrollToBottom()" class="bottom-button" aria-label="Scroll to bottom">
+            <i class="fa-solid fa-arrow-down"></i>
+          </button>
+          <button id="darkmodebutton" class="dark-mode-button" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-sun"></i>
+          </button>
+        </div>
       </div>
     </header>
-<h1 style="text-align: center;">404 - Welcome to Nowhere</h1>
-<div class = "container" style="text-align: center;">
 
-<p style="text-align: center;">
-Sorry but the link is either incorrect or this page does not exist.
-</p>
+    <main class="container not-found-page">
+      <h1>404</h1>
+      <p>Sorry, this page does not exist.</p>
+    </main>
 
-</div>
-<hr>
     <footer class="container" id="footer-container">
-      <div style="text-align: center;">
-        <p style="justify-content: center; align-items: center; text-align: center;">
-          <a href="mailto:pmarmat@ph.iitr.ac.in" class="icon-link" target="_blank"><i class="far fa-envelope"></i></a>
-          <a href="https://orcid.org/0000-0003-2802-113X" class="icon-link" target="_blank"> <i class="fa-brands fa-orcid"></i></a>
-          <a href="https://scholar.google.com/citations?user=yhwBklQAAAAJ&hl=en&oi=ao" class="icon-link" target="_blank"><i class="fab fa-google"></i></a>
-          <a href="https://www.linkedin.com/in/piyush-marmat-0ba913240/" class="icon-link" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://www.researchgate.net/profile/Piyush_Marmat" class="icon-link" target="_blank"><i class="fab fa-researchgate"></i></a>
-          <a href="https://github.com/UV-1999" class="icon-link" target="_blank"><i class="fab fa-github"></i></a>
-        </p>
+      <div class="footer-links">
+        <a href="mailto:piyush.marmat@stud.uz.zgora.pl" target="_blank">Email</a>
+        <a href="https://www.linkedin.com/in/piyush-marmat-0ba913240/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/UV-1999" target="_blank">GitHub</a>
+        <a href="https://scholar.google.com/citations?user=yhwBklQAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a>
+        <a href="https://orcid.org/0000-0003-2802-113X" target="_blank">ORCID</a>
+        <a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Marmat%2C+P%22&sort=date+desc" target="_blank">NASA-ADS</a>
+        <a href="https://www.researchgate.net/profile/Piyush_Marmat" target="_blank">Researchgate</a>
         <p>&copy; Piyush Marmat. All rights reserved.</p>
       </div>
     </footer>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curriculum vitae of Piyush Marmat">
+    <title>Curriculum Vitae | Piyush Marmat</title>
+    <link href="https://fonts.googleapis.com/css?family=Karma" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/resources/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/main.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <a class="title" href="/">Piyush Marmat</a>
+        <nav class="pages">
+          <a href="/">About</a>
+          <a href="/cv" class="active" aria-current="page">CV</a>
+          <a href="/research">Research</a>
+          <a href="/extra">Extra</a>
+        </nav>
+        <div class="header-controls">
+          <button id="topbutton" onclick="scrollToTop()" class="top-button" aria-label="Scroll to top">
+            <i class="fa-solid fa-arrow-up"></i>
+          </button>
+          <button id="bottombutton" onclick="scrollToBottom()" class="bottom-button" aria-label="Scroll to bottom">
+            <i class="fa-solid fa-arrow-down"></i>
+          </button>
+          <button id="darkmodebutton" class="dark-mode-button" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-sun"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="cv-page">
+      <nav class="cv-jump-links" aria-label="CV sections">
+        <a href="#education">Education</a>
+        <a href="#projects">Personal Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#publications">Publications</a>
+        <a href="#conferences">Conferences</a>
+        <a href="#training">Training</a>
+        <a href="#outreach">Outreach</a>
+      </nav>
+
+      <section class="cv-section" id="education">
+        <h1>Education</h1>
+        <article class="cv-entry">
+          <div class="cv-entry-header">
+            <h2>Doctor of Philosophy in Astronomy</h2>
+            <span>Mar 2026 - Sep 2028</span>
+          </div>
+          <p class="cv-affiliation"><a href="https://ia.uz.zgora.pl/en/" target="_blank" rel="noopener">Janusz Gil Institute of Astronomy, University of Zielona Gora, Poland</a></p>
+          <p>Advisor: dr hab. Wojciech Lewandowski, prof. UZ, Director of JGIA.</p>
+          <p>Thesis: Probing Anisotropy and Inhomogeneity in Interstellar Medium with Long Term Radio Pulsar Observations</p>
+          <ul>
+            <li>Developing <a href="https://github.com/UV-1999/psrism.git" target="_blank" rel="noopener">PSRISM</a>, a Linux CLI Python package for analysis of interstellar-medium effects in pulsar observations.</li>
+            <li>Developing <a href="https://github.com/UV-1999/psrdex.git" target="_blank" rel="noopener">PSRDEX</a>, a web-based GUI for complete ISM-related pulsar-analysis workflows.</li>
+          </ul>
+        </article>
+
+        <article class="cv-entry">
+          <div class="cv-entry-header">
+            <h2>Integrated Master of Science in Physics (Dual-Degree)</h2>
+            <span>Jul 2017 - May 2022</span>
+          </div>
+          <p class="cv-affiliation"><a href="https://iitr.ac.in/" target="_blank" rel="noopener">Indian Institute of Technology Roorkee, Roorkee, Uttarakhand, India</a></p>
+          <p>Advisor: Prof. Paramasivan Arumugam, Department of Physics, IIT Roorkee.</p>
+          <p>Thesis: <a href="http://dx.doi.org/10.13140/RG.2.2.13285.88803" target="_blank" rel="noopener">Equation of State based on phenomenological relativistic mean field theory for single and double fluid Neutron Stars</a></p>
+          <ul>
+            <li>Developed Python scripts to construct neutron-star equations of state by solving coupled field equations in relativistic mean-field theory.</li>
+            <li>Solved the Tolman-Oppenheimer-Volkoff equations to compute mass-radius relations, tidal deformability curves, and moment-of-inertia curves for neutron-star models in general relativity.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="cv-section" id="projects">
+        <h1>Personal Projects</h1>
+        <article class="cv-entry">
+          <div class="cv-entry-header">
+            <h2><a href="https://www.ncac.torun.pl/~pmarmat" target="_blank" rel="noopener">PReSPIDAR: Pulsar-Polarisation REsolved Single Pulse Interactive Data AnalyseR</a></h2>
+            <span>Dec 2025 - Present</span>
+          </div>
+          <ul>
+            <li>Led the scientific design of an open-source web application for interactive visualisation and analysis of single-pulse pulsar observations.</li>
+            <li>Supervised deployment on CAMK's public web infrastructure.</li>
+            <li>Developing feature specifications for polarisation, nulling, drifting, modulation, and other single-pulse analysis workflows.</li>
+          </ul>
+        </article>
+
+        <article class="cv-entry">
+          <div class="cv-entry-header">
+            <h2><a href="https://antimonytrisulfide.github.io/stellar_binary/" target="_blank" rel="noopener">p5.js Stellar Binary Simulator</a></h2>
+            <span>Nov 2024</span>
+          </div>
+          <ul>
+            <li>Designed the scientific model, algorithmic logic, and validation tests for an interactive p5.js web simulator of binary-star orbital dynamics.</li>
+            <li>Translated the underlying orbital mechanics into Python prototypes and implementation-ready pseudocode for web development.</li>
+            <li>Currently extending the project toward relativistic binaries, pulsar binaries, and an improved user interface.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="cv-section" id="experience">
+        <h1>Professional and Scientific Experience</h1>
+        <article class="cv-entry">
+          <div class="cv-entry-header">
+            <h2><a href="https://www.ncac.torun.pl/" target="_blank" rel="noopener">Visiting Researcher, Nicolaus Copernicus Astronomical Center, Torun, Poland</a></h2>
+            <span>Mar 2025 - Feb 2026</span>
+          </div>
+          <ul>
+            <li>Created a Streamlit-based <a href="https://pulsarpolarimetry.streamlit.app" target="_blank" rel="noopener">open-source web application</a> for analysing polarisation properties of radio pulsars using MeerKAT single-pulse data, with dr hab. Jaroslaw Dyks.</li>
+            <li>Visited Prof. Harish Vedantham at <a href="https://www.astron.nl/" target="_blank" rel="noopener">ASTRON, The Netherlands</a>, to collaborate on the observability of coherent radio emission from pulsar planets, supervised by Dr. Miljenko Cemeljic.</li>
+          </ul>
+        </article>
+
+        <article class="cv-entry">
+          <div class="cv-entry-header">
+            <h2><a href="https://www.issibern.ch/program/visiting-scientists/" target="_blank" rel="noopener">Visiting Scientist, International Space Science Institute, Bern, Switzerland</a></h2>
+            <span>Mar-Apr 2023</span>
+          </div>
+          <ul>
+            <li>Contributed to a white paper on lunar gravitational-wave detection, including analysis of tidal disruption of white dwarfs.</li>
+            <li>Improved Python simulations for phase-resolved spectra and frequency-resolved light curves of magnetic cataclysmic variables in the X-ray regime, including interstellar photoelectric absorption.</li>
+            <li>Analyzed the Gertsenshtein-Zel'dovich effect in the context of pulsar magnetospheres.</li>
+            <li>Assisted the late Prof. Maurizio Falanga in graduate-level teaching activities and grant proposal preparation.</li>
+          </ul>
+        </article>
+
+        <article class="cv-entry">
+          <div class="cv-entry-header">
+            <h2><a href="https://swissnex.org/india/thinkswiss/" target="_blank" rel="noopener">ThinkSwiss Research Scholar</a>, <a href="https://www.unibe.ch/index_eng.html" target="_blank" rel="noopener">University of Bern, Switzerland</a></h2>
+            <span>Sep-Nov 2022</span>
+          </div>
+          <ul>
+            <li>Implemented radial velocity models for spectroscopic binaries; simulated dynamics and velocity profiles.</li>
+            <li>Derived fractional changes to pulsar spin induced by gravitational waves leading to quadrupolar oscillations.</li>
+            <li>Compared the effect of magnetospheric radii on accretion luminosities in neutron stars and rotating black holes.</li>
+          </ul>
+        </article>
+
+        <article class="cv-entry">
+          <div class="cv-entry-header">
+            <h2><a href="http://inpta.iitr.ac.in/" target="_blank" rel="noopener">Associate Research Fellow, Indian Pulsar Timing Array Consortium, India</a></h2>
+            <span>May 2021 - Dec 2022</span>
+          </div>
+          <ul>
+            <li>Co-authored five peer-reviewed publications with contributions to uGMRT pulsar observations, data reduction, scientific computing infrastructure and web development.</li>
+            <li>Simulated time and frequency evolution of dispersion measure and scattering parameters.</li>
+          </ul>
+        </article>
+
+        <article class="cv-entry">
+          <div class="cv-entry-header">
+            <h2><a href="http://inpta.iitr.ac.in/" target="_blank" rel="noopener">Remote Intern, National Centre for Radio Astrophysics, Pune, India</a></h2>
+            <span>Apr 2020 - Mar 2021</span>
+          </div>
+          <ul>
+            <li>Developed a Python and PSRCHIVE based <a href="https://github.com/UV-1999/PulScinA" target="_blank" rel="noopener">script</a> to analyze scintillation spectra of pulsars observed with ORT and uGMRT.</li>
+          </ul>
+        </article>
+
+        <article class="cv-entry">
+          <div class="cv-entry-header">
+            <h2><a href="https://linktr.ee/paaciitr" target="_blank" rel="noopener">Head Secretary, Physics and Astronomy Club-IIT Roorkee, India</a></h2>
+            <span>Jul 2019 - Apr 2021</span>
+          </div>
+          <ul>
+            <li>Served as the joint and then head secretary leading a team of 40+ undergraduate students, supervising learning projects and organizing seminars by distinguished scientists worldwide.</li>
+            <li>Led a team of 3 and secured 1st position nationally in <a href="https://dare2compete.com/competition/hyperion-2021-indian-institute-of-technology-iit-kanpur-214355" target="_blank" rel="noopener">IIT Kanpur Hyperion Case Study Challenge</a>, involving <a href="http://dx.doi.org/10.13140/RG.2.2.31577.80483" target="_blank" rel="noopener">galactic dark-matter density modeling</a>.</li>
+            <li>Worked with a team of 8 and won a silver medal at the <a href="https://drive.google.com/file/d/1HexEdjDaz-zOptH6C2-MLzPwsXkafTzJ/view?usp=sharing" target="_blank" rel="noopener">9th Inter-IIT Tech-Meet, IIT Guwahati</a>, by developing a web-based catalogue for observations made with ISRO's AstroSat.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="cv-section" id="publications">
+        <h1>Publications</h1>
+        <ol class="cv-numbered-list">
+          <li>Planets in Pulsar Winds. T Kaister, S Mendez, P Marmat, M Cemeljic, M Velli, J Varela, M Falanga. arXiv preprint arXiv:2605.14077, 2026. <a href="https://doi.org/10.48550/arXiv.2605.14077">https://doi.org/10.48550/arXiv.2605.14077</a>.</li>
+          <li>Jaikhomba Singha, Bhal Chandra Joshi, ..., Piyush Marmat et al. Improving DM estimates using low-frequency scatter-broadening estimates, Monthly Notices of the Royal Astronomical Society, Volume 535, Issue 1, November 2024, Pages 1184-1192. <a href="https://doi.org/10.1093/mnras/stae2405">https://doi.org/10.1093/mnras/stae2405</a>.</li>
+          <li>Branchesi, M., Falanga, M., Harms, J., ..., Piyush Marmat et al. Lunar Gravitational-Wave Detection. Space Sci Rev 219, 67 (2023). <a href="https://doi.org/10.1007/s11214-023-01015-4">https://doi.org/10.1007/s11214-023-01015-4</a>.</li>
+          <li>Joshi, B.C., Gopakumar, A., Pandian A., ..., Piyush Marmat et al. Nanohertz gravitational wave astronomy during SKA era: An InPTA perspective. J Astrophys Astron 43, 98 (2022). <a href="https://doi.org/10.1007/s12036-022-09869-w">https://doi.org/10.1007/s12036-022-09869-w</a>.</li>
+          <li>Tarafdar, P., Nobleson, K., Rana, P., Singha, J., Krishnakumar, M., Joshi, B., ..., Piyush Marmat, ..., Pathak, D. The Indian Pulsar Timing Array: First data release. Publications of the Astronomical Society of Australia, 39, E053 (2022). <a href="https://doi.org/10.1017/pasa.2022.46">https://doi.org/10.1017/pasa.2022.46</a>.</li>
+          <li>K Nobleson, Nikita Agarwal, ..., Piyush Marmat et al. Low-frequency wideband timing of InPTA pulsars observed with the uGMRT, Monthly Notices of the Royal Astronomical Society, Volume 512, Issue 1, May 2022, Pages 1234-1243. <a href="https://doi.org/10.1093/mnras/stac532">https://doi.org/10.1093/mnras/stac532</a>.</li>
+          <li>Jaikhomba Singha, Mayuresh P Surnis, ..., Piyush Marmat et al. Evidence for profile changes in PSR J1713+0747 using the uGMRT, Monthly Notices of the Royal Astronomical Society: Letters, Volume 507, Issue 1, October 2021, Pages L57-L61. <a href="https://doi.org/10.1093/mnrasl/slab098">https://doi.org/10.1093/mnrasl/slab098</a>.</li>
+        </ol>
+      </section>
+
+      <section class="cv-section" id="conferences">
+        <h1>Conference Contributions</h1>
+        <ol class="cv-numbered-list">
+          <li><a href="https://indico.slu.cz/event/32/contributions/422/" target="_blank" rel="noopener">How magnetospheric propagation affects the polarised radio emission from pulsars, Conference Presentation, 27th RAGTIME, Silesian University in Opava, Czech Republic, Nov 2025.</a></li>
+          <li><a href="https://zjazd42.pta.edu.pl/event/1/page/8-program#:~:text=Mode%20Coupling%20%2C-,Piyush%20Marmat,-(CAMK%20PAN)" target="_blank" rel="noopener">Testing Polarization Models on the Radio Pulsar PSR J1900-2600: Birefringent Filtering, Angular Mode Separation, and Mode Coupling, Conference Presentation, 42nd Congress of the Polish Astronomical Society, University of Warsaw, Poland, Sep 2025.</a></li>
+          <li><a href="http://sympnp.org/proceedings/66/C38.pdf" target="_blank" rel="noopener">The Glitch Rise Times of Rotating Neutron Stars. J Singha, H Grover, P Marmat, P Arumugam, Proceedings of the DAE Symp. on Nucl. Phys 66, 798. (2022)</a></li>
+          <li><a href="http://sympnp.org/proceedings/66/C30.pdf" target="_blank" rel="noopener">Neutron Star Equation of state in single and two fluid formalism. B Bhat, P Marmat, H Grover, J Singha, A Kumar, P Arumugam, Proceedings of the DAE-BRNS symposium on nuclear physics. V. 66, 2-2. (2022)</a></li>
+          <li><a href="https://astron-soc.in/asi2022/abstract_details/ASI2022_333" target="_blank" rel="noopener">A python based pipeline to analyse Interstellar scintillation of radio pulsars observed with ORT and uGMRT. P Marmat, J Singha, BC Joshi, Poster - 40th Meeting of ASI 2022.</a></li>
+          <li><a href="https://astron-soc.in/asi2022/abstract_details/ASI2022_408" target="_blank" rel="noopener">Building a 5m aperture small radio-telescope at IIT Roorkee. Vanshaj Kerni, Piyush Marmat et al. Conference Poster, 40th Meeting of ASI 2022.</a></li>
+          <li><a href="https://astron-soc.in/asi2022/abstract_details/ASI2022_183" target="_blank" rel="noopener">Using low frequency scatter-broadening measurements for precision estimates of DM. Jaikhomba Singha, Bhal Chandra Joshi, P. Arumugam, Piyush Marmat, et al. Conference Poster, 40th Meeting of ASI 2022.</a></li>
+        </ol>
+      </section>
+
+      <section class="cv-section" id="training">
+        <h1>Training / Workshops / Schools</h1>
+        <ul>
+          <li>REBOUND N-body simulation workshop at the Institute of Astronomy, University of Zielona Gora, Mar 2026.</li>
+          <li><a href="https://indico.slu.cz/event/24/contributions/280/" target="_blank" rel="noopener">25th Relativistic Astrophysics Group Meeting, Silesian University in Opava, Czech Republic, Nov 2023.</a></li>
+          <li><a href="https://forum.issibern.ch/lunargravitationalwave/" target="_blank" rel="noopener">Forum on Lunar Gravitational-Wave Observation, ISSI-Bern, Switzerland, Oct 2022.</a></li>
+          <li><a href="https://sites.google.com/view/asi2022-skaworkshop/home?authuser=2" target="_blank" rel="noopener">HPC Workshop on Radio Astronomy Data Analysis in the SKA Era, IIT Roorkee, India, Mar 2022.</a></li>
+          <li><a href="https://astron-soc.in/asi2022/abstractdetails1/ASI2022_333" target="_blank" rel="noopener">40th Meeting of the Astronomical Society of India, IIT-Roorkee, India, Mar 2022.</a></li>
+          <li><a href="https://physics.iitm.ac.in/~csgc/events/csgc/csgc-2022/csgc-2022-list-of-participants.pdf" target="_blank" rel="noopener">Second Chennai Symposium on Gravitation and Cosmology - Online, Feb 2022.</a></li>
+          <li><a href="https://sofia-school-2022.constantcontactsites.com/registrants-2022#:~:text=Piyush%20Marmat%2C%20Indian%20Institute%20of%20Technology%20Roorkee" target="_blank" rel="noopener">Online IR Astronomy School organised by SOFIA-NASA, Feb 2022.</a></li>
+          <li><a href="https://www.icts.res.in/event/page/22178#:~:text=108-,Piyush%20Marmat,-Indian%20Institute%20of" target="_blank" rel="noopener">TIFR-ICTS CSGP Online Meeting, Dec 2021.</a></li>
+          <li><a href="https://greenbankobservatory.org/science/gatherings/sdss/" target="_blank" rel="noopener">GBO and Arecibo Online Single Dish School, Sep 2021.</a></li>
+          <li><a href="http://ipta4gw.org/meetings/2021/" target="_blank" rel="noopener">IPTA Online Student Week, Jun 2021.</a></li>
+        </ul>
+      </section>
+
+      <section class="cv-section" id="outreach">
+        <h1>Scientific Outreach</h1>
+        <ul>
+          <li>Delivered an invited online colloquium on careers in space science at St. Paul's Elementary School in Akola, Maharashtra, India, on 23 August 2025.</li>
+          <li>Presented work on the interactions of high-frequency gravitational waves with neutron stars and pulsars in a student colloquium organized by Prof. Martin Urbanec at the Silesian University of Opava, Czech Republic, Dec 2023.</li>
+          <li>Hosted a workshop on the basics of observational astronomy and using the Stellarium open-source planetarium software, organized by the Student Technical Council of IIT Roorkee, Dec 2020.</li>
+          <li>Presented a brief review of Betelgeuse's late-2019 dimming and its interpretation in the context of late-stage stellar evolution, in a student colloquium organized by the Indian Physics Association, Roorkee Chapter, Feb 2020.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="container" id="footer-container">
+      <div class="footer-links">
+        <a href="mailto:piyush.marmat@stud.uz.zgora.pl" target="_blank">Email</a>
+        <a href="https://www.linkedin.com/in/piyush-marmat-0ba913240/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/UV-1999" target="_blank">GitHub</a>
+        <a href="https://scholar.google.com/citations?user=yhwBklQAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a>
+        <a href="https://orcid.org/0000-0003-2802-113X" target="_blank">ORCID</a>
+        <a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Marmat%2C+P%22&sort=date+desc" target="_blank">NASA-ADS</a>
+        <a href="https://www.researchgate.net/profile/Piyush_Marmat" target="_blank">Researchgate</a>
+        <p>&copy; Piyush Marmat. All rights reserved.</p>
+      </div>
+    </footer>
+    <script type="text/javascript" src="/main.js"></script>
+  </body>
+</html>

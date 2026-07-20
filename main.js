@@ -55,6 +55,9 @@ function toggleDarkMode() {
   
     const top = document.querySelector('.top-button');
     top.classList.add('dark-mode');
+
+    const bottom = document.querySelector('.bottom-button');
+    bottom.classList.add('dark-mode');
 }
 
 function toggleLightMode() {
@@ -111,6 +114,9 @@ function toggleLightMode() {
   
     const top = document.querySelector('.top-button');
     top.classList.remove('dark-mode');
+
+    const bottom = document.querySelector('.bottom-button');
+    bottom.classList.remove('dark-mode');
 }
 
 const userPreference = localStorage.getItem('preferred-theme');
@@ -157,15 +163,165 @@ button.addEventListener("click", function () {
         });
     });
 
-window.onscroll = function() {
-    const btn = document.getElementById("topbutton");
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        btn.style.display = "block"; // Show button
-    } else {
-        btn.style.display = "none"; // Hide button
-    }
-};
-
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function scrollToBottom() {
+    window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
+}
+
+const resourceSearchInput = document.getElementById('resource-search-input');
+const resourceSearchCount = document.getElementById('resource-search-count');
+const resourceOrderToggle = document.getElementById('resource-order-toggle');
+const categoryFilterButtons = Array.from(document.querySelectorAll('[data-category-filter]'));
+
+if (resourceSearchInput) {
+    const resourceRows = Array.from(document.querySelectorAll('[data-search-row]'));
+    const resourceSections = Array.from(document.querySelectorAll('.resource-section'));
+    const resourceGroups = Array.from(document.querySelectorAll('.resource-group'));
+    const allLiteratureSection = document.querySelector('[data-all-section]');
+    const allLiteratureTitle = allLiteratureSection ? allLiteratureSection.querySelector('h2') : null;
+    const literatureCategorySections = Array.from(document.querySelectorAll('[data-category-section]'));
+    const selectedCategories = new Set();
+    let sortAscending = true;
+
+    resourceRows.forEach((row, index) => {
+        row.dataset.originalIndex = String(index);
+    });
+
+    function getRowYear(row) {
+        const yearText = row.querySelector('td') ? row.querySelector('td').textContent : '';
+        const match = yearText.match(/\d{4}/);
+        if (match) {
+            return Number(match[0]);
+        }
+        return Number.MAX_SAFE_INTEGER;
+    }
+
+    function sortRowsInSection(section) {
+        if (!section) {
+            return;
+        }
+        const tbody = section.querySelector('tbody');
+        if (!tbody) {
+            return;
+        }
+        Array.from(tbody.querySelectorAll('[data-search-row]'))
+            .sort((rowA, rowB) => {
+                const yearA = getRowYear(rowA);
+                const yearB = getRowYear(rowB);
+                const rowAHasUnknownYear = yearA === Number.MAX_SAFE_INTEGER;
+                const rowBHasUnknownYear = yearB === Number.MAX_SAFE_INTEGER;
+                if (rowAHasUnknownYear && rowBHasUnknownYear) {
+                    return Number(rowA.dataset.originalIndex) - Number(rowB.dataset.originalIndex);
+                }
+                if (rowAHasUnknownYear) {
+                    return 1;
+                }
+                if (rowBHasUnknownYear) {
+                    return -1;
+                }
+                const yearSort = sortAscending ? yearA - yearB : yearB - yearA;
+                if (yearSort !== 0) {
+                    return yearSort;
+                }
+                return Number(rowA.dataset.originalIndex) - Number(rowB.dataset.originalIndex);
+            })
+            .forEach(row => tbody.appendChild(row));
+    }
+
+    function sortVisibleTables() {
+        sortRowsInSection(allLiteratureSection);
+        literatureCategorySections.forEach(sortRowsInSection);
+    }
+
+    function updateResourceSearch() {
+        const query = resourceSearchInput.value.trim().toLowerCase();
+        const hasCategoryFilters = categoryFilterButtons.length > 0;
+        const hasSelectedCategories = selectedCategories.size > 0;
+        let visibleRows = 0;
+        const selectedCategoryNames = categoryFilterButtons
+            .map(button => button.dataset.categoryFilter)
+            .filter(category => selectedCategories.has(category));
+
+        if (hasCategoryFilters) {
+            categoryFilterButtons.forEach(button => {
+                button.classList.toggle('active', selectedCategories.has(button.dataset.categoryFilter));
+            });
+        }
+
+        sortVisibleTables();
+
+        resourceRows.forEach(row => {
+            const isInAllSection = Boolean(row.closest('[data-all-section]'));
+            const categoryIsActive = !hasCategoryFilters || (query ? isInAllSection : (hasSelectedCategories ? isInAllSection && selectedCategories.has(row.dataset.category) : isInAllSection));
+            const searchText = (row.dataset.searchText || row.textContent).toLowerCase();
+            const isMatch = categoryIsActive && (!query || searchText.includes(query));
+            row.classList.toggle('resource-hidden', !isMatch);
+            if (isMatch) {
+                visibleRows += 1;
+            }
+        });
+
+        if (hasCategoryFilters) {
+            if (allLiteratureSection) {
+                const allRows = Array.from(allLiteratureSection.querySelectorAll('[data-search-row]'));
+                const hasVisibleRows = allRows.some(row => !row.classList.contains('resource-hidden'));
+                allLiteratureSection.classList.toggle('resource-empty', !hasVisibleRows);
+            }
+            if (allLiteratureTitle) {
+                allLiteratureTitle.textContent = hasSelectedCategories ? selectedCategoryNames.join(', ') : 'All Categories';
+            }
+
+            literatureCategorySections.forEach(section => {
+                section.classList.add('resource-empty');
+            });
+        } else {
+            resourceSections.forEach(section => {
+                const sectionRows = Array.from(section.querySelectorAll('[data-search-row]'));
+                const hasVisibleRows = sectionRows.some(row => !row.classList.contains('resource-hidden'));
+                section.classList.toggle('resource-empty', !hasVisibleRows);
+                if (query && hasVisibleRows) {
+                    section.open = true;
+                }
+            });
+
+            resourceGroups.forEach(group => {
+                const groupRows = Array.from(group.querySelectorAll('[data-search-row]'));
+                const hasVisibleRows = groupRows.some(row => !row.classList.contains('resource-hidden'));
+                group.classList.toggle('resource-empty', !hasVisibleRows);
+                if (query && hasVisibleRows) {
+                    group.open = true;
+                }
+            });
+        }
+
+        resourceSearchCount.textContent = query ? `${visibleRows} matches` : `${visibleRows} rows`;
+    }
+
+    categoryFilterButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const category = this.dataset.categoryFilter;
+            if (selectedCategories.has(category)) {
+                selectedCategories.delete(category);
+            } else {
+                selectedCategories.add(category);
+            }
+            updateResourceSearch();
+        });
+    });
+
+    resourceSearchInput.addEventListener('input', updateResourceSearch);
+
+    if (resourceOrderToggle) {
+        resourceOrderToggle.addEventListener('click', function () {
+            sortAscending = !sortAscending;
+            this.textContent = sortAscending ? 'Chronological' : 'Reverse chronological';
+            this.setAttribute('aria-pressed', String(!sortAscending));
+            updateResourceSearch();
+        });
+    }
+
+    updateResourceSearch();
 }

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Piyush Marmat">
-    <title>Pulsars | Piyush Marmat</title>
+    <meta name="description" content="Piyush Marmat research">
+    <title>Research | Piyush Marmat</title>
     <link href="https://fonts.googleapis.com/css?family=Karma" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/resources/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -15,34 +15,54 @@
       <div class="header-content">
         <a class="title" href="/">Piyush Marmat</a>
         <nav class="pages">
-          <a href="/Piyush_Marmat_CV.pdf?v=<?= filemtime('Piyush_Marmat_CV.pdf') ?>" target="_blank">Curriculum vitae</a>
-          <a href="/research">Pulsars</a>
-          <a href="/extra">Philosophy</a>
+          <a href="/">About</a>
+          <a href="/cv">CV</a>
+          <a href="/research" class="active" aria-current="page">Research</a>
+          <a href="/extra">Extra</a>
         </nav>
-        <button id="darkmodebutton" class="dark-mode-button">
-          <i class="fa-solid fa-sun"></i>
-        </button>
-        <button id="topbutton" onclick="scrollToTop()" class="top-button">
-          <i class="fa-solid fa-circle-arrow-up"></i>
-        </button>
+        <div class="header-controls">
+          <button id="topbutton" onclick="scrollToTop()" class="top-button" aria-label="Scroll to top">
+            <i class="fa-solid fa-arrow-up"></i>
+          </button>
+          <button id="bottombutton" onclick="scrollToBottom()" class="bottom-button" aria-label="Scroll to bottom">
+            <i class="fa-solid fa-arrow-down"></i>
+          </button>
+          <button id="darkmodebutton" class="dark-mode-button" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-sun"></i>
+          </button>
+        </div>
       </div>
     </header>
-<h1 style="text-align: center;">Pulsars</h1>
-<hr>
-<div class = "container">
-<p style="text-align: center; font-size: 1.25rem;">Coming soon</p>
-</div>
-<hr>
+
+    <h1 style="text-align: center;">Research</h1>
+    <main class="container research-page">
+      <h2>Summary of my doctoral research - more details coming soon</h2>
+      <p>Radio pulsars are neutron stars that emit periodic radio pulses with remarkable stability spanning periods from milliseconds to few seconds. The name “pulsar” (pulsating star?) is in fact a misnomer since the emission is not intrinsically pulsed but arise from its rapid rotation and extreme magnetic fields creating a beam of radiation; the observed periodicity is a geometric effect analogous to a lighthouse.</p>
+
+      <p>The radio emission is believed to originate from coherent plasma processes within the magnetosphere. As the name suggests, a magnetosphere is a region filled with plasma constrained by the star’s magnetic field. For pulsars, the plasma is a mix of extremely relativistic electron-positron pairs. Despite almost 60 years of study, the exact emission mechanism remains a mystery, mainly due to the complexity of non-linear plasma interactions under extreme conditions.</p>
+
+      <p>Because of their stability and high energy, pulsars are useful tools for studying space between stars, known as the interstellar medium (ISM), in our Milky Way. ISM is all the matter that permeates the space between stars in our galaxy. It contains plasma, nebulae, astrophysical dust, planets, and space-rocks like asteroids, planetoids, etc.</p>
+
+      <p>When we observe pulsars, their signals do not travel to Earth unchanged. Instead, they pass through turbulent and cold ionized gas (plasma of electrons and other charged particles) in the ISM. This affects the signal in several ways: 
+      
+      It slows lower-frequency waves more than higher-frequency ones, which causes dispersion. Large structures can bend the signal through refraction, while smaller irregularities scatter it along many paths. This produces both slow and fast changes in brightness, called refractive and diffractive scintillation, and can also smear out the pulse. Magnetic fields in the plasma rotate the signal’s polarization through Faraday rotation.
+      
+      By measuring these effects, we can learn about the structure and properties of the ISM along the path between the pulsar and Earth. Also it can become a source of noise when the goal is to understand pulsar emission, hence understanding the ISM effects indirectly contributes to our understanding of pulsars as well.</p>
+
+      <p>Traditionally, the ISM is modelled as smooth and uniform turbulent plasma. However, real observations show that this is not accurate. The properties of pulsar signals change over time, which indicates that the ISM is actually uneven (inhomogeneous) and its optical properties are direction-dependent (anisotropic), with structures existing on many different size scales.</p>
+
+      <p>My PhD research project aims to better understand how the ISM affects pulsar signals. It involves analysing both existing (archival) and new radio observations of pulsars. The focus is on studying how scattering and other signal distortions vary with time and frequency. The results will be used to build improved models of the ISM. These models will then be tested using statistical methods and computer simulations to check how well they match real observations.</p>
+    </main>
+
     <footer class="container" id="footer-container">
-      <div style="text-align: center;">
-        <p style="justify-content: center; align-items: center; text-align: center;">
-          <a href="pmarmat@ph.iitr.ac.in" class="icon-link" target="_blank"><i class="far fa-envelope"></i></a>
-          <a href="https://orcid.org/0000-0003-2802-113X" class="icon-link" target="_blank"> <i class="fa-brands fa-orcid"></i></a>
-          <a href="https://scholar.google.com/citations?user=yhwBklQAAAAJ&hl=en&oi=ao" class="icon-link" target="_blank"><i class="fab fa-google"></i></a>
-          <a href="https://www.linkedin.com/in/piyush-marmat-0ba913240/" class="icon-link" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://www.researchgate.net/profile/Piyush_Marmat" class="icon-link" target="_blank"><i class="fab fa-researchgate"></i></a>
-          <a href="https://github.com/UV-1999" class="icon-link" target="_blank"><i class="fab fa-github"></i></a>
-        </p>
+      <div class="footer-links">
+        <a href="mailto:piyush.marmat@stud.uz.zgora.pl" target="_blank">Email</a>
+        <a href="https://www.linkedin.com/in/piyush-marmat-0ba913240/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/UV-1999" target="_blank">GitHub</a>
+        <a href="https://scholar.google.com/citations?user=yhwBklQAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a>
+        <a href="https://orcid.org/0000-0003-2802-113X" target="_blank">ORCID</a>
+        <a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Marmat%2C+P%22&sort=date+desc" target="_blank">NASA-ADS</a>
+        <a href="https://www.researchgate.net/profile/Piyush_Marmat" target="_blank">Researchgate</a>
         <p>&copy; Piyush Marmat. All rights reserved.</p>
       </div>
     </footer>
