@@ -15,8 +15,28 @@
     --header-height: 76px;
 }
 
+:root.dark-mode-preload {
+    --color-bg: #121212;
+    --color-surface: rgba(18, 18, 18, 0.88);
+    --color-text: #eeeeee;
+    --color-muted: #b8b8b8;
+    --color-heading: #ffffff;
+    --color-link: #74b9ff;
+    --color-link-hover-bg: rgba(116, 185, 255, 0.16);
+    --color-border: rgba(238, 238, 238, 0.24);
+    --color-selection-bg: #2f80ed;
+    --color-selection-text: #ffffff;
+    --color-footer-bg: linear-gradient(180deg, #121212 0%, #17213d 38%, #31245a 70%, #651c42 100%);
+}
+
 html {
     scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
 }
 
 body {
@@ -28,6 +48,8 @@ body {
     min-height: 100vh;
     padding: 0;
     color: var(--color-text);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 body.dark-mode {
@@ -44,6 +66,10 @@ body.dark-mode {
     --color-footer-bg: linear-gradient(180deg, #121212 0%, #17213d 38%, #31245a 70%, #651c42 100%);
     background-color: var(--color-bg); 
     color: var(--color-text);
+}
+
+body.literature-desktop-page {
+    min-width: 1100px;
 }
 
 ::selection {

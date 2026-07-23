@@ -2,6 +2,7 @@
 const button = document.getElementById("darkmodebutton");
 
 function toggleDarkMode() {
+    document.documentElement.classList.add('dark-mode-preload');
     const element = document.querySelector('body');
     element.classList.add('dark-mode');
     const head = document.querySelector('header');
@@ -61,6 +62,7 @@ function toggleDarkMode() {
 }
 
 function toggleLightMode() {
+    document.documentElement.classList.remove('dark-mode-preload');
     const element = document.querySelector('body');
     element.classList.remove('dark-mode');
     const head = document.querySelector('header');

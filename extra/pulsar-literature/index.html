@@ -2,23 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1200">
     <meta name="description" content="Pulsar literature table">
-    <title>Pulsar Literature | Piyush Marmat</title>
+    <title>Milestones in Pulsar Literature | Piyush Marmat</title>
     <link href="https://fonts.googleapis.com/css?family=Karma" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/resources/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+      (function () {
+        try {
+          if (localStorage.getItem('preferred-theme') === 'dark') {
+            document.documentElement.classList.add('dark-mode-preload');
+          }
+        } catch (error) {}
+      }());
+    </script>
     <link rel="stylesheet" href="/main.css">
   </head>
-  <body>
+  <body class="literature-desktop-page">
     <header>
       <div class="header-content">
         <a class="title" href="/">Piyush Marmat</a>
         <nav class="pages">
-          <a href="/">About</a>
-          <a href="/cv">CV</a>
-          <a href="/research">Research</a>
-          <a href="/extra" class="active" aria-current="page">Extra</a>
+          <a href="/" target="_self">About</a>
+          <a href="/cv" target="_self">CV</a>
+          <a href="/research" target="_self">Research</a>
+          <a href="/extra" class="active" aria-current="page" target="_self">Extra</a>
         </nav>
         <div class="header-controls">
           <button id="topbutton" onclick="scrollToTop()" class="top-button" aria-label="Scroll to top">
@@ -34,7 +43,7 @@
       </div>
     </header>
 
-    <h1 style="text-align: center;">Pulsar Literature</h1>
+    <h1 style="text-align: center;">Milestones in Pulsar Literature</h1>
     <main class="resource-container literature-browser">
       <p class="literature-acknowledgment">
         I acknowledge Prof. <a href="https://alex88ridolfi.altervista.org/pagine/about/about.html" target="_blank" rel="noopener">Alessandro Ridolfi</a> for inspiring me to make this page.

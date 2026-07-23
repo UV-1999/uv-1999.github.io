@@ -9,6 +9,15 @@
     <link href="https://fonts.googleapis.com/css?family=Karma" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/resources/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+      (function () {
+        try {
+          if (localStorage.getItem('preferred-theme') === 'dark') {
+            document.documentElement.classList.add('dark-mode-preload');
+          }
+        } catch (error) {}
+      }());
+    </script>
     <link rel="stylesheet" href="/main.css">
   </head>
   <body>
@@ -16,10 +25,10 @@
       <div class="header-content">
         <a class="title" href="/">Piyush Marmat</a>
         <nav class="pages">
-          <a href="/" class="active" aria-current="page">About</a>
-          <a href="/cv">CV</a>
-          <a href="/research">Research</a>
-          <a href="/extra">Extra</a>
+          <a href="/" class="active" aria-current="page" target="_self">About</a>
+          <a href="/cv" target="_self">CV</a>
+          <a href="/research" target="_self">Research</a>
+          <a href="/extra" target="_self">Extra</a>
         </nav>
         <div class="header-controls">
           <button id="topbutton" onclick="scrollToTop()" class="top-button" aria-label="Scroll to top">
@@ -44,7 +53,7 @@ I am a PhD student at the <a href="https://ia.uz.zgora.pl/en/" target="_blank">J
 <br><br>
 Since my undergrad days, astronomy and astrophysics particularly focused on neutron stars and pulsars have become my core research area. I also enjoy building scientific tools, especially for astronomy pedagogy, data visualization and analysis.
 <br><br>
-Outside the technical work, I like making sketches and doodles, curating music, and building my own understanding of philosophy in a naturalistic way. I am also available for anyone who wants help in anything related io science, academia, or internships or PhD applications. I had the fortunate opportunity to be able to help atleast a dozen students regarding my <a href="/extra/thinkswiss/">thinkswiss experience</a>.
+Outside the technical work, I like making sketches and doodles, curating music, and building my own understanding of philosophy in a naturalistic way. I am also available for anyone who wants help in anything related io science, academia, or internships or PhD applications. I had the fortunate opportunity to be able to help atleast a dozen students regarding my <a href="/extra/thinkswiss/" target="_self">thinkswiss experience</a>.
 </p>
 </div>
     <footer class="container" id="footer-container">
