@@ -193,7 +193,7 @@ if (resourceSearchInput) {
     });
 
     function getRowYear(row) {
-        const yearText = row.querySelector('td') ? row.querySelector('td').textContent : '';
+        const yearText = row.dataset.year || (row.querySelector('td') ? row.querySelector('td').textContent : '');
         const match = yearText.match(/\d{4}/);
         if (match) {
             return Number(match[0]);
@@ -257,7 +257,8 @@ if (resourceSearchInput) {
 
         resourceRows.forEach(row => {
             const isInAllSection = Boolean(row.closest('[data-all-section]'));
-            const categoryIsActive = !hasCategoryFilters || (query ? isInAllSection : (hasSelectedCategories ? isInAllSection && selectedCategories.has(row.dataset.category) : isInAllSection));
+            const rowCategories = (row.dataset.category || '').split('|').map(category => category.trim()).filter(Boolean);
+            const categoryIsActive = !hasCategoryFilters || (query ? isInAllSection : (hasSelectedCategories ? isInAllSection && rowCategories.some(category => selectedCategories.has(category)) : isInAllSection));
             const searchText = (row.dataset.searchText || row.textContent).toLowerCase();
             const isMatch = categoryIsActive && (!query || searchText.includes(query));
             row.classList.toggle('resource-hidden', !isMatch);
