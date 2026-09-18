@@ -176,7 +176,9 @@ function scrollToBottom() {
 const resourceSearchInput = document.getElementById('resource-search-input');
 const resourceSearchCount = document.getElementById('resource-search-count');
 const resourceOrderToggle = document.getElementById('resource-order-toggle');
-const categoryFilterButtons = Array.from(document.querySelectorAll('[data-category-filter]'));
+const topicFilterButtons = Array.from(document.querySelectorAll('[data-topic-filter]'));
+const typeFilterButtons = Array.from(document.querySelectorAll('[data-type-filter]'));
+const categoryFilterButtons = [...topicFilterButtons, ...typeFilterButtons];
 
 if (resourceSearchInput) {
     const resourceRows = Array.from(document.querySelectorAll('[data-search-row]'));
@@ -185,7 +187,8 @@ if (resourceSearchInput) {
     const allLiteratureSection = document.querySelector('[data-all-section]');
     const allLiteratureTitle = allLiteratureSection ? allLiteratureSection.querySelector('h2') : null;
     const literatureCategorySections = Array.from(document.querySelectorAll('[data-category-section]'));
-    const selectedCategories = new Set();
+    const selectedTopics = new Set();
+    const selectedTypes = new Set();
     let sortAscending = true;
 
     resourceRows.forEach((row, index) => {
@@ -241,24 +244,32 @@ if (resourceSearchInput) {
     function updateResourceSearch() {
         const query = resourceSearchInput.value.trim().toLowerCase();
         const hasCategoryFilters = categoryFilterButtons.length > 0;
-        const hasSelectedCategories = selectedCategories.size > 0;
+        const hasSelectedTopics = selectedTopics.size > 0;
+        const hasSelectedTypes = selectedTypes.size > 0;
         let visibleRows = 0;
-        const selectedCategoryNames = categoryFilterButtons
-            .map(button => button.dataset.categoryFilter)
-            .filter(category => selectedCategories.has(category));
+        const selectedCategoryNames = [
+            ...topicFilterButtons
+                .map(button => button.dataset.topicFilter)
+                .filter(topic => selectedTopics.has(topic)),
+            ...typeFilterButtons
+                .map(button => button.dataset.typeFilter)
+                .filter(type => selectedTypes.has(type))
+        ];
 
         if (hasCategoryFilters) {
-            categoryFilterButtons.forEach(button => {
-                button.classList.toggle('active', selectedCategories.has(button.dataset.categoryFilter));
-            });
+            topicFilterButtons.forEach(button => button.classList.toggle('active', selectedTopics.has(button.dataset.topicFilter)));
+            typeFilterButtons.forEach(button => button.classList.toggle('active', selectedTypes.has(button.dataset.typeFilter)));
         }
 
         sortVisibleTables();
 
         resourceRows.forEach(row => {
             const isInAllSection = Boolean(row.closest('[data-all-section]'));
-            const rowCategories = (row.dataset.category || '').split('|').map(category => category.trim()).filter(Boolean);
-            const categoryIsActive = !hasCategoryFilters || (query ? isInAllSection : (hasSelectedCategories ? isInAllSection && rowCategories.some(category => selectedCategories.has(category)) : isInAllSection));
+            const rowTopics = (row.dataset.topic || '').split('|').map(topic => topic.trim()).filter(Boolean);
+            const rowTypes = (row.dataset.type || '').split('|').map(type => type.trim()).filter(Boolean);
+            const topicMatches = !hasSelectedTopics || rowTopics.some(topic => selectedTopics.has(topic));
+            const typeMatches = !hasSelectedTypes || rowTypes.some(type => selectedTypes.has(type));
+            const categoryIsActive = !hasCategoryFilters || (query ? isInAllSection : isInAllSection && topicMatches && typeMatches);
             const searchText = (row.dataset.searchText || row.textContent).toLowerCase();
             const isMatch = categoryIsActive && (!query || searchText.includes(query));
             row.classList.toggle('resource-hidden', !isMatch);
@@ -274,7 +285,7 @@ if (resourceSearchInput) {
                 allLiteratureSection.classList.toggle('resource-empty', !hasVisibleRows);
             }
             if (allLiteratureTitle) {
-                allLiteratureTitle.textContent = hasSelectedCategories ? selectedCategoryNames.join(', ') : 'All Categories';
+                allLiteratureTitle.textContent = selectedCategoryNames.length ? selectedCategoryNames.join(', ') : 'All Categories';
             }
 
             literatureCategorySections.forEach(section => {
@@ -303,13 +314,25 @@ if (resourceSearchInput) {
         resourceSearchCount.textContent = query ? `${visibleRows} matches` : `${visibleRows} rows`;
     }
 
-    categoryFilterButtons.forEach(button => {
+    topicFilterButtons.forEach(button => {
         button.addEventListener('click', function () {
-            const category = this.dataset.categoryFilter;
-            if (selectedCategories.has(category)) {
-                selectedCategories.delete(category);
+            const topic = this.dataset.topicFilter;
+            if (selectedTopics.has(topic)) {
+                selectedTopics.delete(topic);
             } else {
-                selectedCategories.add(category);
+                selectedTopics.add(topic);
+            }
+            updateResourceSearch();
+        });
+    });
+
+    typeFilterButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const type = this.dataset.typeFilter;
+            if (selectedTypes.has(type)) {
+                selectedTypes.delete(type);
+            } else {
+                selectedTypes.add(type);
             }
             updateResourceSearch();
         });
