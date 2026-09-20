@@ -176,11 +176,13 @@ function scrollToBottom() {
 const resourceSearchInput = document.getElementById('resource-search-input');
 const resourceSearchCount = document.getElementById('resource-search-count');
 const resourceOrderToggle = document.getElementById('resource-order-toggle');
+const resourceEmptyMessage = document.getElementById('resource-empty-message');
 const topicFilterButtons = Array.from(document.querySelectorAll('[data-topic-filter]'));
 const typeFilterButtons = Array.from(document.querySelectorAll('[data-type-filter]'));
 const categoryFilterButtons = [...topicFilterButtons, ...typeFilterButtons];
 
 if (resourceSearchInput) {
+    const literatureStateKey = 'pulsar-literature-state-v1';
     const resourceRows = Array.from(document.querySelectorAll('[data-search-row]'));
     const resourceSections = Array.from(document.querySelectorAll('.resource-section'));
     const resourceGroups = Array.from(document.querySelectorAll('.resource-group'));
@@ -194,6 +196,119 @@ if (resourceSearchInput) {
     resourceRows.forEach((row, index) => {
         row.dataset.originalIndex = String(index);
     });
+
+    function normalizeSearchText(text) {
+        return text
+            .normalize('NFKD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, ' ')
+            .trim();
+    }
+
+    function stemSearchToken(token) {
+        if (token.length > 4 && token.endsWith('ies')) {
+            return `${token.slice(0, -3)}y`;
+        }
+        if (token.length > 4 && /(ches|shes|sses|xes|zes)$/.test(token)) {
+            return token.slice(0, -2);
+        }
+        if (token.length > 3 && token.endsWith('s') && !token.endsWith('ss')) {
+            return token.slice(0, -1);
+        }
+        return token;
+    }
+
+    function isSingleEditApart(left, right) {
+        if (Math.abs(left.length - right.length) > 1) {
+            return false;
+        }
+
+        let leftIndex = 0;
+        let rightIndex = 0;
+        let edits = 0;
+        while (leftIndex < left.length && rightIndex < right.length) {
+            if (left[leftIndex] === right[rightIndex]) {
+                leftIndex += 1;
+                rightIndex += 1;
+                continue;
+            }
+            edits += 1;
+            if (edits > 1) {
+                return false;
+            }
+            if (left.length > right.length) {
+                leftIndex += 1;
+            } else if (right.length > left.length) {
+                rightIndex += 1;
+            } else {
+                leftIndex += 1;
+                rightIndex += 1;
+            }
+        }
+        return edits + Number(leftIndex < left.length || rightIndex < right.length) <= 1;
+    }
+
+    function rowMatchesQuery(row, query) {
+        if (!query) {
+            return true;
+        }
+
+        const searchText = row.dataset.normalizedSearchText;
+        if ((query.length >= 4 || query.includes(' ')) && searchText.includes(query)) {
+            return true;
+        }
+
+        const rowTokens = row.dataset.normalizedSearchTokens.split(' ');
+        const queryTokens = query.split(' ').map(stemSearchToken);
+        return queryTokens.every(queryToken => rowTokens.some(rowToken => {
+            const stemmedRowToken = stemSearchToken(rowToken);
+            return stemmedRowToken === queryToken
+                || (queryToken.length >= 3 && stemmedRowToken.startsWith(queryToken))
+                || (queryToken.length >= 5 && isSingleEditApart(stemmedRowToken, queryToken));
+        }));
+    }
+
+    function saveLiteratureState() {
+        try {
+            sessionStorage.setItem(literatureStateKey, JSON.stringify({
+                query: resourceSearchInput.value,
+                topics: Array.from(selectedTopics),
+                types: Array.from(selectedTypes),
+                sortAscending
+            }));
+        } catch (error) {}
+    }
+
+    function restoreLiteratureState() {
+        try {
+            const state = JSON.parse(sessionStorage.getItem(literatureStateKey));
+            if (!state || typeof state !== 'object') {
+                return;
+            }
+
+            resourceSearchInput.value = typeof state.query === 'string' ? state.query : '';
+            const validTopics = new Set(topicFilterButtons.map(button => button.dataset.topicFilter));
+            const validTypes = new Set(typeFilterButtons.map(button => button.dataset.typeFilter));
+            if (Array.isArray(state.topics)) {
+                state.topics.filter(topic => validTopics.has(topic)).forEach(topic => selectedTopics.add(topic));
+            }
+            if (Array.isArray(state.types)) {
+                state.types.filter(type => validTypes.has(type)).forEach(type => selectedTypes.add(type));
+            }
+            if (typeof state.sortAscending === 'boolean') {
+                sortAscending = state.sortAscending;
+            }
+        } catch (error) {}
+    }
+
+    resourceRows.forEach(row => {
+        const searchText = normalizeSearchText(`${row.dataset.searchText || ''} ${row.textContent}`);
+        row.dataset.normalizedSearchText = searchText;
+        row.dataset.normalizedSearchTokens = searchText;
+    });
+
+    restoreLiteratureState();
 
     function getRowYear(row) {
         const yearText = row.dataset.year || (row.querySelector('td') ? row.querySelector('td').textContent : '');
@@ -242,7 +357,7 @@ if (resourceSearchInput) {
     }
 
     function updateResourceSearch() {
-        const query = resourceSearchInput.value.trim().toLowerCase();
+        const query = normalizeSearchText(resourceSearchInput.value);
         const hasCategoryFilters = categoryFilterButtons.length > 0;
         const hasSelectedTopics = selectedTopics.size > 0;
         const hasSelectedTypes = selectedTypes.size > 0;
@@ -257,8 +372,16 @@ if (resourceSearchInput) {
         ];
 
         if (hasCategoryFilters) {
-            topicFilterButtons.forEach(button => button.classList.toggle('active', selectedTopics.has(button.dataset.topicFilter)));
-            typeFilterButtons.forEach(button => button.classList.toggle('active', selectedTypes.has(button.dataset.typeFilter)));
+            topicFilterButtons.forEach(button => {
+                const isActive = selectedTopics.has(button.dataset.topicFilter);
+                button.classList.toggle('active', isActive);
+                button.setAttribute('aria-pressed', String(isActive));
+            });
+            typeFilterButtons.forEach(button => {
+                const isActive = selectedTypes.has(button.dataset.typeFilter);
+                button.classList.toggle('active', isActive);
+                button.setAttribute('aria-pressed', String(isActive));
+            });
         }
 
         sortVisibleTables();
@@ -269,9 +392,8 @@ if (resourceSearchInput) {
             const rowTypes = (row.dataset.type || '').split('|').map(type => type.trim()).filter(Boolean);
             const topicMatches = !hasSelectedTopics || rowTopics.some(topic => selectedTopics.has(topic));
             const typeMatches = !hasSelectedTypes || rowTypes.some(type => selectedTypes.has(type));
-            const categoryIsActive = !hasCategoryFilters || (query ? isInAllSection : isInAllSection && topicMatches && typeMatches);
-            const searchText = (row.dataset.searchText || row.textContent).toLowerCase();
-            const isMatch = categoryIsActive && (!query || searchText.includes(query));
+            const categoryIsActive = !hasCategoryFilters || (isInAllSection && topicMatches && typeMatches);
+            const isMatch = categoryIsActive && rowMatchesQuery(row, query);
             row.classList.toggle('resource-hidden', !isMatch);
             if (isMatch) {
                 visibleRows += 1;
@@ -311,7 +433,16 @@ if (resourceSearchInput) {
             });
         }
 
-        resourceSearchCount.textContent = query ? `${visibleRows} matches` : `${visibleRows} rows`;
+        const isFiltered = Boolean(query || hasSelectedTopics || hasSelectedTypes);
+        resourceSearchCount.textContent = isFiltered ? `${visibleRows} matches` : `${visibleRows} rows`;
+        if (resourceEmptyMessage) {
+            resourceEmptyMessage.hidden = visibleRows !== 0;
+        }
+        if (resourceOrderToggle) {
+            resourceOrderToggle.textContent = sortAscending ? 'Chronological' : 'Reverse chronological';
+            resourceOrderToggle.setAttribute('aria-pressed', String(!sortAscending));
+        }
+        saveLiteratureState();
     }
 
     topicFilterButtons.forEach(button => {
@@ -343,8 +474,6 @@ if (resourceSearchInput) {
     if (resourceOrderToggle) {
         resourceOrderToggle.addEventListener('click', function () {
             sortAscending = !sortAscending;
-            this.textContent = sortAscending ? 'Chronological' : 'Reverse chronological';
-            this.setAttribute('aria-pressed', String(!sortAscending));
             updateResourceSearch();
         });
     }

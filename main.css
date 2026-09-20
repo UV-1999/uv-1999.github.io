@@ -792,6 +792,13 @@ footer#footer-container {
     transform: translateY(-1px);
 }
 
+.resource-empty-message {
+    color: var(--color-heading);
+    font-size: 18px;
+    margin: 28px 0;
+    text-align: center;
+}
+
 .literature-all-section h2,
 .literature-category-section h2 {
     margin-top: 24px;
