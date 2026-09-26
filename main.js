@@ -305,14 +305,19 @@ if (resourceSearchInput) {
 
     function restoreLiteratureStateFromUrl() {
         const params = new URLSearchParams(window.location.search);
+        const hasUrlState = params.has('category') || params.has('q') || params.has('order');
         const categorySlugs = params.getAll('category')
             .flatMap(value => value.split(','))
             .map(value => value.trim())
             .filter(Boolean);
 
-        if (params.has('category')) {
+        if (hasUrlState) {
             selectedTopics.clear();
             selectedTypes.clear();
+            resourceSearchInput.value = '';
+            sortAscending = true;
+        }
+        if (params.has('category')) {
             categorySlugs.forEach(slug => {
                 const button = filterButtonsBySlug.get(slug);
                 if (button && button.dataset.topicFilter) {
