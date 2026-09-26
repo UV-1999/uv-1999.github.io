@@ -192,6 +192,7 @@ if (resourceSearchInput) {
     const selectedTopics = new Set();
     const selectedTypes = new Set();
     let sortAscending = true;
+    const filterButtonsBySlug = new Map(categoryFilterButtons.map(button => [button.dataset.filterSlug, button]));
 
     resourceRows.forEach((row, index) => {
         row.dataset.originalIndex = String(index);
@@ -302,6 +303,60 @@ if (resourceSearchInput) {
         } catch (error) {}
     }
 
+    function restoreLiteratureStateFromUrl() {
+        const params = new URLSearchParams(window.location.search);
+        const categorySlugs = params.getAll('category')
+            .flatMap(value => value.split(','))
+            .map(value => value.trim())
+            .filter(Boolean);
+
+        if (params.has('category')) {
+            selectedTopics.clear();
+            selectedTypes.clear();
+            categorySlugs.forEach(slug => {
+                const button = filterButtonsBySlug.get(slug);
+                if (button && button.dataset.topicFilter) {
+                    selectedTopics.add(button.dataset.topicFilter);
+                }
+                if (button && button.dataset.typeFilter) {
+                    selectedTypes.add(button.dataset.typeFilter);
+                }
+            });
+        }
+        if (params.has('q')) {
+            resourceSearchInput.value = params.get('q') || '';
+        }
+        if (params.has('order')) {
+            sortAscending = params.get('order') !== 'desc';
+        }
+    }
+
+    function syncLiteratureStateToUrl(mode) {
+        const url = new URL(window.location.href);
+        url.searchParams.delete('category');
+        url.searchParams.delete('q');
+        url.searchParams.delete('order');
+
+        categoryFilterButtons.forEach(button => {
+            const isSelected = button.dataset.topicFilter
+                ? selectedTopics.has(button.dataset.topicFilter)
+                : selectedTypes.has(button.dataset.typeFilter);
+            if (isSelected) {
+                url.searchParams.append('category', button.dataset.filterSlug);
+            }
+        });
+
+        const query = resourceSearchInput.value.trim();
+        if (query) {
+            url.searchParams.set('q', query);
+        }
+        if (!sortAscending) {
+            url.searchParams.set('order', 'desc');
+        }
+
+        window.history[mode === 'push' ? 'pushState' : 'replaceState']({}, '', url);
+    }
+
     resourceRows.forEach(row => {
         const searchText = normalizeSearchText(`${row.dataset.searchText || ''} ${row.textContent}`);
         row.dataset.normalizedSearchText = searchText;
@@ -309,6 +364,7 @@ if (resourceSearchInput) {
     });
 
     restoreLiteratureState();
+    restoreLiteratureStateFromUrl();
 
     function getRowYear(row) {
         const yearText = row.dataset.year || (row.querySelector('td') ? row.querySelector('td').textContent : '');
@@ -356,7 +412,7 @@ if (resourceSearchInput) {
         literatureCategorySections.forEach(sortRowsInSection);
     }
 
-    function updateResourceSearch() {
+    function updateResourceSearch(urlMode) {
         const query = normalizeSearchText(resourceSearchInput.value);
         const hasCategoryFilters = categoryFilterButtons.length > 0;
         const hasSelectedTopics = selectedTopics.size > 0;
@@ -443,6 +499,9 @@ if (resourceSearchInput) {
             resourceOrderToggle.setAttribute('aria-pressed', String(!sortAscending));
         }
         saveLiteratureState();
+        if (urlMode) {
+            syncLiteratureStateToUrl(urlMode);
+        }
     }
 
     topicFilterButtons.forEach(button => {
@@ -453,7 +512,7 @@ if (resourceSearchInput) {
             } else {
                 selectedTopics.add(topic);
             }
-            updateResourceSearch();
+            updateResourceSearch('push');
         });
     });
 
@@ -465,18 +524,29 @@ if (resourceSearchInput) {
             } else {
                 selectedTypes.add(type);
             }
-            updateResourceSearch();
+            updateResourceSearch('push');
         });
     });
 
-    resourceSearchInput.addEventListener('input', updateResourceSearch);
+    resourceSearchInput.addEventListener('input', function () {
+        updateResourceSearch('replace');
+    });
 
     if (resourceOrderToggle) {
         resourceOrderToggle.addEventListener('click', function () {
             sortAscending = !sortAscending;
-            updateResourceSearch();
+            updateResourceSearch('push');
         });
     }
+
+    window.addEventListener('popstate', function () {
+        selectedTopics.clear();
+        selectedTypes.clear();
+        resourceSearchInput.value = '';
+        sortAscending = true;
+        restoreLiteratureStateFromUrl();
+        updateResourceSearch();
+    });
 
     updateResourceSearch();
 }
