@@ -887,6 +887,11 @@ footer#footer-container {
     border-bottom-color: var(--color-border);
 }
 
+.literature-load-message {
+    padding: 24px 10px;
+    text-align: center;
+}
+
 .literature-table th:nth-child(1),
 .literature-table td:nth-child(1) {
     width: 180px;

@@ -181,7 +181,184 @@ const topicFilterButtons = Array.from(document.querySelectorAll('[data-topic-fil
 const typeFilterButtons = Array.from(document.querySelectorAll('[data-type-filter]'));
 const categoryFilterButtons = [...topicFilterButtons, ...typeFilterButtons];
 
-if (resourceSearchInput) {
+function parseLiteratureMarkdown(markdown) {
+    return markdown
+        .replace(/\r\n?/g, '\n')
+        .split(/\n(?=## )/)
+        .filter(block => block.startsWith('## '))
+        .map(block => {
+            const lines = block.split('\n');
+            const entry = {
+                title: lines.shift().slice(3).trim(),
+                year: '',
+                topic: '',
+                type: '',
+                origin: '',
+                referenceStyle: '',
+                description: '',
+                references: []
+            };
+            const fieldNames = new Map([
+                ['Year', 'year'],
+                ['Topic', 'topic'],
+                ['Type', 'type'],
+                ['Origin', 'origin'],
+                ['Reference style', 'referenceStyle']
+            ]);
+
+            while (lines.length && !lines[0].trim()) {
+                lines.shift();
+            }
+            while (lines.length) {
+                const field = lines[0].match(/^\*\*([^:]+):\*\*\s*(.*)$/);
+                if (!field || !fieldNames.has(field[1])) {
+                    break;
+                }
+                entry[fieldNames.get(field[1])] = field[2].trim();
+                lines.shift();
+            }
+            while (lines.length && !lines[0].trim()) {
+                lines.shift();
+            }
+
+            const referencesIndex = lines.findIndex(line => line.trim() === '**References:**');
+            if (referencesIndex === -1) {
+                throw new Error(`Missing references heading for "${entry.title}"`);
+            }
+            entry.description = lines.slice(0, referencesIndex).join('\n').trim();
+            entry.references = lines.slice(referencesIndex + 1)
+                .filter(line => line.trim())
+                .map(line => {
+                    const reference = line.match(/^- \[(.*)\]\(<(.+)>\)$/);
+                    if (!reference) {
+                        throw new Error(`Invalid reference for "${entry.title}": ${line}`);
+                    }
+                    return { label: reference[1], url: reference[2] };
+                });
+
+            if (!entry.title || !entry.year || !entry.description || !entry.references.length) {
+                throw new Error(`Incomplete literature entry: "${entry.title || 'untitled'}"`);
+            }
+            return entry;
+        });
+}
+
+function appendLiteratureTags(container, values, className) {
+    values.split('|').map(value => value.trim()).filter(Boolean).forEach(value => {
+        const tag = document.createElement('span');
+        tag.className = className;
+        tag.textContent = value;
+        container.appendChild(tag);
+    });
+}
+
+function literatureHtmlToText(html) {
+    const template = document.createElement('template');
+    template.innerHTML = html;
+    return template.content.textContent.trim();
+}
+
+function renderLiteratureEntries(entries, tableBody) {
+    const fragment = document.createDocumentFragment();
+
+    entries.forEach(entry => {
+        const row = document.createElement('tr');
+        row.dataset.searchRow = '';
+        row.dataset.topic = entry.topic;
+        row.dataset.type = entry.type;
+        row.dataset.year = entry.year;
+        row.dataset.searchText = [
+            entry.year,
+            entry.topic,
+            entry.type,
+            literatureHtmlToText(entry.title),
+            literatureHtmlToText(entry.description),
+            ...entry.references.map(reference => literatureHtmlToText(reference.label))
+        ].filter(Boolean).join(' ');
+        if (entry.origin) {
+            row.dataset.origin = entry.origin;
+        }
+
+        const classificationCell = document.createElement('td');
+        const tags = document.createElement('div');
+        tags.className = 'category-tags';
+        appendLiteratureTags(tags, entry.topic, 'topic-tag');
+        appendLiteratureTags(tags, entry.type, 'type-tag');
+        classificationCell.appendChild(tags);
+
+        const entryCell = document.createElement('td');
+        const logEntry = document.createElement('div');
+        logEntry.className = 'log-entry';
+        const title = document.createElement('strong');
+        title.innerHTML = entry.title;
+        const description = document.createElement('div');
+        description.className = 'log-description';
+        description.innerHTML = entry.description.replace(/\n{2,}/g, '<br><br>');
+        logEntry.append(title, description);
+        entryCell.appendChild(logEntry);
+
+        const referencesCell = document.createElement('td');
+        const referenceList = document.createElement('div');
+        referenceList.className = 'reference-list';
+        const referenceContainer = entry.referenceStyle === 'ordered'
+            ? document.createElement('ol')
+            : referenceList;
+
+        entry.references.forEach((reference, index) => {
+            const link = document.createElement('a');
+            link.href = reference.url;
+            link.target = '_blank';
+            link.rel = 'noopener';
+            link.innerHTML = reference.label;
+            if (entry.referenceStyle === 'ordered') {
+                const item = document.createElement('li');
+                item.appendChild(link);
+                referenceContainer.appendChild(item);
+            } else {
+                if (index) {
+                    referenceList.appendChild(document.createTextNode(', '));
+                }
+                referenceList.appendChild(link);
+            }
+        });
+        if (entry.referenceStyle === 'ordered') {
+            referenceList.appendChild(referenceContainer);
+        }
+        referencesCell.appendChild(referenceList);
+
+        row.append(classificationCell, entryCell, referencesCell);
+        fragment.appendChild(row);
+    });
+
+    tableBody.replaceChildren(fragment);
+}
+
+async function loadLiteratureEntries() {
+    const tableBody = document.querySelector('[data-literature-entries]');
+    if (!tableBody) {
+        return;
+    }
+
+    const source = tableBody.dataset.literatureSource;
+    const response = await fetch(new URL(source, window.location.href), { cache: 'no-cache' });
+    if (!response.ok) {
+        throw new Error(`Could not load ${source}: ${response.status}`);
+    }
+    const entries = parseLiteratureMarkdown(await response.text());
+    if (!entries.length) {
+        throw new Error(`No entries found in ${source}`);
+    }
+    renderLiteratureEntries(entries, tableBody);
+
+    if (document.body.classList.contains('dark-mode')) {
+        toggleDarkMode();
+    }
+}
+
+function initializeLiteratureControls() {
+    if (!resourceSearchInput) {
+        return;
+    }
     const literatureStateKey = 'pulsar-literature-state-v1';
     const resourceRows = Array.from(document.querySelectorAll('[data-search-row]'));
     const resourceSections = Array.from(document.querySelectorAll('.resource-section'));
@@ -555,3 +732,29 @@ if (resourceSearchInput) {
 
     updateResourceSearch();
 }
+
+async function initializeLiteraturePage() {
+    if (!resourceSearchInput) {
+        return;
+    }
+
+    try {
+        await loadLiteratureEntries();
+        initializeLiteratureControls();
+    } catch (error) {
+        console.error(error);
+        const tableBody = document.querySelector('[data-literature-entries]');
+        if (tableBody) {
+            tableBody.innerHTML = '<tr><td class="literature-load-message" colspan="3">The literature entries could not be loaded. Please refresh the page.</td></tr>';
+        }
+        resourceSearchInput.disabled = true;
+        categoryFilterButtons.forEach(filterButton => {
+            filterButton.disabled = true;
+        });
+        if (resourceSearchCount) {
+            resourceSearchCount.textContent = 'Entries unavailable';
+        }
+    }
+}
+
+initializeLiteraturePage();
