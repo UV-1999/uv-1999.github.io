@@ -174,7 +174,7 @@ Jocelyn Bell Burnell identified the first regularly pulsing celestial radio sour
 **Topic:** Interstellar Medium and Galaxy
 **Type:**
 
-Scheuer applied a thin phase-changing screen model to pulsar intensity variations, showing how small-scale electron-density irregularities can produce interstellar scintillation. Thin-screen geometry subsequently became a standard approximation for pulsar scattering, but it should not be presented as a universal physical configuration.
+Scheuer applied a thin phase-changing screen model to pulsar intensity variations, showing how small-scale electron-density irregularities can produce interstellar scintillation. Thin-screen geometry subsequently became a standard approximation for pulsar scattering, while later observations showed that distributed and multiple-screen configurations also occur.
 
 **References:**
 - [Scheuer (1968)](<https://ui.adsabs.harvard.edu/abs/1968Natur.218..920S/abstract>)
@@ -210,7 +210,7 @@ Gold connected the newly discovered pulsating radio sources to rotating neutron 
 **Topic:** Interstellar Medium and Galaxy
 **Type:**
 
-Frequency-dependent pulse arrival times established propagation through ionized plasma. The DM is the line-of-sight integral of free-electron density, <span class="math-symbol">DM = &#8747; n<sub>e</sub> dl</span>, and produces an arrival-time delay approximately proportional to <span class="math-symbol">&#957;<sup>-2</sup></span>. This made pulsars direct probes of Galactic free electrons.
+Frequency-dependent pulse arrival times revealed dispersive propagation through ionized plasma. The DM is the line-of-sight integral of free-electron density, <span class="math-symbol">DM = &#8747; n<sub>e</sub> dl</span>, and produces an arrival-time delay approximately proportional to <span class="math-symbol">&#957;<sup>-2</sup></span>. This made pulsars direct probes of Galactic free electrons.
 
 **References:**
 - [Hewish et al. (1968)](<https://doi.org/10.1038/217709a0>)
@@ -441,7 +441,7 @@ Joseph Taylor and Russell Hulse discovered PSR B1913+16, the first binary pulsar
 **Topic:** Interstellar Medium and Galaxy
 **Type:**
 
-Multipath propagation gives rays different geometric delays and broadens an impulse into a PBF (pulse-broadening function). Williamson derived distinct response functions for a localized thin screen and for scattering distributed along a substantial part of the path, establishing that an exponential tail is geometry-dependent rather than universal.
+Multipath propagation gives rays different geometric delays and broadens an impulse into a PBF (pulse-broadening function). Williamson derived distinct response functions for a localized thin screen and for scattering distributed along a substantial part of the path, showing that an exponential tail is geometry-dependent rather than universal.
 
 **References:**
 - [Williamson (1974)](<https://ui.adsabs.harvard.edu/abs/1974MNRAS.166..499W/abstract>)
@@ -612,7 +612,7 @@ Primary particles accelerated above a polar cap emit gamma rays that convert int
 **Topic:** Interstellar Medium and Galaxy
 **Type:**
 
-<b>Observation:</b> Diffractive scintillation characteristics were shown to correlate with independently measured pulsar proper motions. <b>Later significance:</b> The scintillation speed inferred from decorrelation bandwidth and timescale became a geometry-dependent effective velocity combining pulsar, observer and plasma motions, rather than a direct pulsar-velocity measurement.
+<b>Observation:</b> Diffractive scintillation characteristics were found to correlate with independently measured pulsar proper motions. <b>Later significance:</b> The scintillation speed inferred from decorrelation bandwidth and timescale became a geometry-dependent effective velocity combining pulsar, observer and plasma motions, rather than a direct pulsar-velocity measurement.
 
 **References:**
 - [Lyne &amp; Smith (1982)](<https://doi.org/10.1038/298825a0>)
@@ -784,7 +784,7 @@ Dispersion relations and polarization properties for ordinary, extraordinary and
 **Topic:** Interstellar Medium and Galaxy
 **Type:**
 
-Theory distinguished rapid diffractive scintillation from slower refractive modulation associated with different spatial scales of electron-density structure. Refractive fluctuations were predicted to modulate flux, image position and size, pulse broadening, scintillation bandwidth, and scintillation timescale. DISS and RISS are different propagation regimes of the same turbulent medium rather than evidence for two separate media.
+Theory distinguished rapid diffractive scintillation from slower refractive modulation associated with different spatial scales of electron-density structure. Refractive fluctuations were predicted to modulate flux, image position and size, pulse broadening, scintillation bandwidth, and scintillation timescale. DISS and RISS therefore describe propagation associated with different spatial scales of electron-density structure within the same broader scattering medium.
 
 **References:**
 - [Cordes, Pidwerbetsky &amp; Lovelace (1986)](<https://doi.org/10.1086/164728>)
@@ -1039,7 +1039,7 @@ Extends the Damour-Deruelle binary model with Kopeikin's annual-orbital-parallax
 **Topic:** Interstellar Medium and Galaxy
 **Type:**
 
-The compilation known as the "big power law in the sky" found an approximately Kolmogorov electron-density spectrum spanning many decades of scale. It established a statistical turbulent-cascade benchmark without implying that discrete lenses, anisotropic screens or all scattering sightlines are homogeneous and isotropic.
+The compilation known as the "big power law in the sky" found an approximately Kolmogorov electron-density spectrum spanning many decades of scale. It provided a statistical turbulent-cascade benchmark without implying that discrete lenses, anisotropic screens or all scattering sightlines are homogeneous and isotropic.
 
 **References:**
 - [Armstrong et al. (1995)](<https://doi.org/10.1086/175515>)
@@ -1794,7 +1794,7 @@ Archival Parkes data revealed a 30-jansky dispersed burst lasting less than 5 mi
 **Topic:** Interstellar Medium and Galaxy|Emission and magnetospheric physics
 **Type:**
 
-Some pulsars show spectra that peak near gigahertz frequencies rather than following a single steep power law. Their frequent association with dense environments motivated external free-free absorption models, and orbital spectral evolution in individual systems supports this interpretation in some sources. External absorption should not be presented as a unique explanation for every gigahertz-peaked pulsar.
+Some pulsars show spectra that peak near gigahertz frequencies rather than following a single steep power law. Their frequent association with dense environments motivated external free-free absorption models, and orbital spectral evolution in individual systems supports this interpretation in some sources. External absorption is therefore supported for some sources but need not explain every gigahertz-peaked pulsar.
 
 **References:**
 - [Kijak et al. (2007)](<https://ui.adsabs.harvard.edu/abs/2007A%26A...462..699K/abstract>)
@@ -2507,7 +2507,7 @@ Broadband coherent emission along active magnetic flux tubes forms radially exte
 **Topic:** Interstellar Medium and Galaxy
 **Type:**
 
-<b>Interpretation:</b> Weakly corrugated current sheets nearly aligned with the line of sight were proposed to generate fold caustics and strings of refracted images, reproducing highly anisotropic scintillation and reverse arclets. <b>Later significance:</b> This is a testable physical interpretation of discrete scattering structures, not an established universal ISM geometry.
+<b>Interpretation:</b> Weakly corrugated current sheets nearly aligned with the line of sight were proposed to generate fold caustics and strings of refracted images, reproducing highly anisotropic scintillation and reverse arclets. <b>Later significance:</b> The proposal is a testable physical interpretation of discrete scattering structures rather than a universal ISM geometry.
 
 **References:**
 - [Pen &amp; Levin (2014)](<https://doi.org/10.1093/mnras/stu1020>)
@@ -3071,7 +3071,7 @@ Luciano Rezzolla, Pierre Pizzochero, David Ian Jones, Nanda Rea and Isaac Vida&n
 **Topic:** Interstellar Medium and Galaxy
 **Type:**
 
-Combining VLBI visibilities with intensity correlations localized the members of interfering image pairs and allowed geometrically distinct scattering structures to be separated. The method demonstrated that secondary spectra can be reconstructed in configurations more complicated than a single dominant thin screen.
+Combining VLBI visibilities with intensity correlations localized the members of interfering image pairs and allowed geometrically distinct scattering structures to be separated. The method showed that secondary-spectrum structure can arise from, and be geometrically decomposed into, multiple distinct scattering regions rather than a single dominant screen.
 
 **References:**
 - [Simard et al. (2019)](<https://doi.org/10.1093/mnras/stz2046>)
@@ -3082,7 +3082,7 @@ Combining VLBI visibilities with intensity correlations localized the members of
 **Topic:** Interstellar Medium and Galaxy
 **Type:**
 
-Changes in Earth's transverse velocity and a binary pulsar's orbital velocity modulate scintillation timescales and arc curvature. Long-baseline modelling can separate these contributions to constrain screen distance, anisotropy orientation, screen velocity, orbital inclination and longitude of the ascending node.
+Changes in Earth's transverse velocity and a binary pulsar's orbital velocity modulate scintillation timescales and arc curvature. Long-baseline modelling can use these modulations to constrain screen distance, anisotropy orientation, screen velocity, orbital inclination and longitude of the ascending node.
 
 **References:**
 - [Reardon et al. (2019)](<https://doi.org/10.1093/mnras/stz643>)
@@ -3584,7 +3584,7 @@ A Julia-based Bayesian pulsar-timing engine for joint deterministic timing and s
 **Topic:** Interstellar Medium and Galaxy
 **Type:**
 
-Using an updated compilation of pulsar pulse-broadening measurements, He and Shi introduced a reduced scattering-strength statistic and identified distinct local and inner-Galaxy scattering populations. Stronger density fluctuations in the inner Galaxy explain the steepening of the observed scattering-time versus DM relation, with an inferred inner-disk scattering scale height of about 0.28 kpc.
+Using an updated compilation of pulsar pulse-broadening measurements, He and Shi introduced a reduced scattering-strength statistic and identified distinct local and inner-Galaxy scattering populations. Stronger density fluctuations in the inner Galaxy were interpreted as explaining the steepening of the observed scattering-time versus DM relation, with an inferred inner-disk scattering scale height of about 0.28 kpc.
 
 **References:**
 - [He &amp; Shi (2024)](<https://doi.org/10.1093/mnras/stad3561>)
@@ -3606,7 +3606,7 @@ A three-dimensional wave-optics treatment using the Helmholtz Green function mod
 **Topic:** Interstellar Medium and Galaxy
 **Type:**
 
-Cross-matching pulsars with H II-region catalogues showed that most pulsars with DM above 600 pc cm<sup>-3</sup> and scattering delays above 10 ms at 1 GHz lie behind known H II regions. Such intersections may affect roughly one third of the observed pulsar population and can contribute tens to hundreds of pc cm<sup>-3</sup> to DM. Accounting for these discrete ionized structures resolves several apparently anomalous DM-distance and scattering measurements.
+Cross-matching pulsars with H II-region catalogues showed that most pulsars with DM above 600 pc cm<sup>-3</sup> and scattering delays above 10 ms at 1 GHz lie behind known H II regions. Such intersections may affect roughly one third of the observed pulsar population and can contribute tens to hundreds of pc cm<sup>-3</sup> to DM. Accounting for these discrete ionized structures helps explain several apparently anomalous DM-distance and scattering measurements.
 
 **References:**
 - [Ocker et al. (2024)](<https://doi.org/10.3847/1538-4357/ad6a51>)
@@ -3650,7 +3650,7 @@ ENTERPRISE-based framework for new-physics searches using PTA (pulsar timing arr
 **Topic:** Interstellar Medium and Galaxy
 **Type:**
 
-<b>Observation:</b> Sensitive secondary spectra revealed multiple arc curvatures and a mixture of thin, diffuse, filled and truncated structures along individual sightlines. <b>Interpretation:</b> Candidate screens include the diffuse ISM, H II regions, supernova remnants, bubbles and pulsar bow shocks. <b>Later significance:</b> The survey demonstrated that one dominant thin screen, several thin screens and distributed material must all remain viable on different sightlines.
+<b>Observation:</b> Sensitive secondary spectra revealed multiple arc curvatures and a mixture of thin, diffuse, filled and truncated structures along individual sightlines. <b>Interpretation:</b> Candidate scattering structures include the diffuse ISM, H II regions, supernova remnants, bubbles and pulsar bow shocks. <b>Later significance:</b> The survey showed that different sightlines are consistent with single-screen, multiple-screen and more distributed scattering geometries.
 
 **References:**
 - [Ocker et al. (2024)](<https://doi.org/10.1093/mnras/stad3683>)
@@ -3661,7 +3661,7 @@ ENTERPRISE-based framework for new-physics searches using PTA (pulsar timing arr
 **Topic:** Interstellar Medium and Galaxy
 **Type:**
 
-<b>Interpretation:</b> A cusp profile described by an A<sub>3</sub> catastrophe was proposed for ESEs (extreme scattering events) and double-lensing features, extending the A<sub>2</sub> fold-caustic description of corrugated sheets. <b>Later significance:</b> It supplies a compact universal lens description to test, not evidence that every plasma lens is a cusp.
+<b>Interpretation:</b> A cusp profile described by an A<sub>3</sub> catastrophe was proposed for ESEs (extreme scattering events) and double-lensing features, extending the A<sub>2</sub> fold-caustic description of corrugated sheets. <b>Later significance:</b> The catastrophe framework supplies a generic local description of cusp caustics that can be tested against ESE and double-lensing phenomenology, rather than implying that every plasma lens has cusp geometry.
 
 **References:**
 - [Jow, Pen &amp; Baker (2024)](<https://doi.org/10.1093/mnras/stae300>)
