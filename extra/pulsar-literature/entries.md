@@ -1936,7 +1936,9 @@ After several years as a radio MSP (millisecond pulsar), PSR J1023+0038 lost its
 
 **References:**
 - [Patruno et al. (2014)](<https://doi.org/10.1088/2041-8205/781/1/L3>)
-- [Stappers et al. (2014)](<https://doi.org/10.1088/0004-637X/790/1/39>)## Fermi LAT (Large Area Telescope) Pulsar Catalogue
+- [Stappers et al. (2014)](<https://doi.org/10.1088/0004-637X/790/1/39>)
+
+## Fermi LAT (Large Area Telescope) Pulsar Catalogue
 
 **Year:** 2009, 2010, 2012, 2013, 2015, 2020, 2023
 **Topic:**
