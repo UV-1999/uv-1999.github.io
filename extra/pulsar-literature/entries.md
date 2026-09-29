@@ -124,8 +124,8 @@ A signal acquires an additional propagation delay while traversing a companion's
 ## Interplanetary scintillation of compact radio sources
 
 **Year:** 1964
-**Topic:**
-**Type:** Discovery
+**Topic:** Interstellar Medium and Galaxy
+**Type:** Discovery|Search
 
 Hewish, Scott and Wills established interplanetary scintillation as a probe of compact radio sources. The Cambridge scintillation survey and its chart records directly created the observational route to pulsar discovery.
 
@@ -174,7 +174,7 @@ Jocelyn Bell Burnell identified the first regularly pulsing celestial radio sour
 **Topic:** Interstellar Medium and Galaxy
 **Type:**
 
-Scheuer applied a thin phase-changing screen model to pulsar intensity variations, showing how small-scale electron-density irregularities can produce interstellar scintillation. Thin-screen geometry subsequently became a standard approximation for pulsar scattering, while later observations showed that distributed and multiple-screen configurations also occur.
+Scheuer applied a thin phase-changing screen model to pulsar intensity variations, showing how small-scale electron-density irregularities can produce interstellar scintillation. Thin-screen geometry subsequently became a standard approximation for pulsar scattering, although later observations show that distributed and multiple-screen configurations also occur.
 
 **References:**
 - [Scheuer (1968)](<https://ui.adsabs.harvard.edu/abs/1968Natur.218..920S/abstract>)
@@ -267,7 +267,7 @@ Goldreich and Julian showed that a rotating magnetized neutron star requires a c
 ## First observed pulsar glitch
 
 **Year:** 1969
-**Topic:** Timing and dynamics
+**Topic:** Timing and dynamics|Pulsar Glitch
 **Type:** Discovery
 
 The Vela pulsar underwent an abrupt fractional decrease in its rotation period of approximately two parts per million between 24 February and 3 March 1969, revealing the first observed pulsar glitch. An independent detection by Reichley and Downs was published in the same issue of <em>Nature</em>, making the observational priority effectively simultaneous.
@@ -293,10 +293,21 @@ Optical pulses at the Crab pulsar's radio period provided the first optical iden
 **Topic:** Timing and dynamics
 **Type:**
 
-A pulsar's transverse motion produces an apparent radial acceleration and therefore a positive contribution proportional to transverse speed squared divided by distance to the observed spin or orbital period derivative. Removing this kinematic term is essential when inferring intrinsic spin-down, characteristic age and binary orbital decay.
+A pulsar's transverse motion produces an apparent radial acceleration, adding a positive kinematic contribution to the observed spin-period derivative, <span class="math-symbol">P&#775;<sub>Shk</sub> = P &#956;<sup>2</sup>d/c</span>, with an analogous effect on an orbital-period derivative. It is corrected using astrometric information in the timing ephemeris, especially proper motion together with distance. The Shklovskii effect is achromatic: it changes inferred secular spin or orbital evolution equally at all observing frequencies, so it is relevant to kinematic and intrinsic timing analyses rather than chromatic propagation analyses such as DM or scattering.
 
 **References:**
 - [Shklovskii (1970)](<https://ui.adsabs.harvard.edu/abs/1970SvA....13..562S/abstract>)
+
+## Early P-Pdot diagram and pulsar-evolution framework
+
+**Year:** 1970
+**Topic:** Population and evolution
+**Type:**
+
+Gunn and Ostriker analyzed the observed pulsar period and spin-down-rate distribution in a magnetic-dipole framework, using location in the <span class="math-symbol">P-P&#775;</span> plane to discuss magnetic field, characteristic evolution, luminosity decay and radio turnoff. This helped establish the <span class="math-symbol">P-P&#775;</span> diagram as a central diagnostic of pulsar populations and evolution.
+
+**References:**
+- [Gunn &amp; Ostriker (1970)](<https://ntrs.nasa.gov/citations/19700058415>)
 
 ## Radius-to-frequency mapping
 
@@ -304,7 +315,7 @@ A pulsar's transverse motion produces an apparent radial acceleration and theref
 **Topic:** Beam geometry
 **Type:**
 
-Pulse width and the separation of profile components systematically increase at lower observing frequencies. Komesaroff proposed this as a consequence of higher-frequency emission being produced closer to the neutron-star surface than lower-frequency emission; this became known as radius-to-frequency mapping.
+Many pulsars show broader profiles or larger component separation at lower radio frequencies, motivating radius-to-frequency mapping in which lower-frequency radiation is associated with larger emission radii. Komesaroff connected the frequency dependence of component separation to emission at different radii. Cordes (1978) then used the absence of measurable differential aberration and retardation between radio frequencies to place upper limits on emission heights under this assumption. The trend is common but not universal: some pulsars show weak, saturating, non-monotonic or reversed profile evolution with frequency.
 
 **References:**
 - [Komesaroff (1970)](<https://ui.adsabs.harvard.edu/abs/1970Natur.225..612K/abstract>)
@@ -338,7 +349,7 @@ Uhuru observations revealed coherent 4.8-second X-ray pulsations from Cen X-3. I
 **Topic:** Emission and magnetospheric physics
 **Type:** Discovery
 
-<b>Observation:</b> Balloon-borne measurements reported pulsed emission above 50 megaelectronvolts from the Crab pulsar. <b>Later significance:</b> This was the first published high-energy gamma-ray detection claim; later satellite observations established the emission with much greater sensitivity and certainty.
+<b>Observation:</b> Balloon-borne measurements reported pulsed emission above 50 MeV from the Crab pulsar. <b>Later significance:</b> This was the first published high-energy gamma-ray detection claim; later satellite observations established the emission with much greater sensitivity and certainty.
 
 **References:**
 - [Browning, Ramsden and Wright (1971)](<https://doi.org/10.1038/physci232099a0>)
@@ -390,7 +401,7 @@ Broadband measurements showed that steep pulsar radio spectra can flatten or tur
 ## LAE (linear acceleration emission)
 
 **Year:** 1973, 1978
-**Topic:** Coherent radiation
+**Topic:** Coherent Radiation Models
 **Type:**
 
 Charges accelerated parallel to the magnetic field radiate without transverse gyration. Cocke proposed stimulated LAE as a pulsar radio mechanism, and Melrose developed the amplified maser theory and its spectral consequences.
@@ -449,7 +460,7 @@ Multipath propagation gives rays different geometric delays and broadens an impu
 ## Anderson-Itoh model of pulsar glitches
 
 **Year:** 1975
-**Topic:** Neutron star structure and fundamental physics
+**Topic:** Neutron star structure and fundamental physics|Pulsar Glitch
 **Type:**
 
 Anderson and Itoh proposed that pulsar glitches and rotational irregularities arise from the irregular motion of quantized vortices through the neutron superfluid in the stellar crust. Their work established superfluid vortex dynamics as the foundation of modern glitch theory, including models involving vortex pinning, collective unpinning, and angular-momentum transfer to the crust.
@@ -474,7 +485,7 @@ A deep Arecibo search discovered 40 pulsars and probed their spatial extent thro
 **Topic:** Inner acceleration
 **Type:**
 
-The Ruderman-Sutherland model introduced an inner polar gap above the neutron-star magnetic pole, where intense electric fields accelerate particles to ultra-relativistic speeds; it became a foundational framework for coherent radio emission and drifting subpulses.
+The Ruderman-Sutherland model introduced an inner polar gap above the neutron-star magnetic pole, where intense electric fields accelerate particles and curvature-radiation photons trigger electron-positron pair cascades. The same pair-production requirement implies a radio turnoff boundary: as a pulsar spins down, the available potential eventually becomes insufficient to sustain the discharge, motivating the pulsar death-line concept. The model also provided a natural framework for spark-associated drifting subpulses.
 
 **References:**
 - [Ruderman &amp; Sutherland (1975)](<https://ui.adsabs.harvard.edu/abs/1975ApJ...196...51R/abstract>)
@@ -548,7 +559,7 @@ The SCLF polar-cap model assumes charges freely escape the stellar surface; acce
 ## ADE (anomalous Doppler emission) and the cyclotron-Cherenkov maser
 
 **Year:** 1979, 1991, 1999
-**Topic:** Coherent radiation
+**Topic:** Coherent Radiation Models
 **Type:**
 
 Early cyclotron-instability work developed into a direct radio-emission model in which anomalous cyclotron-Cherenkov and Cherenkov-drift resonances amplify escaping electromagnetic modes in the outer magnetosphere.
@@ -698,7 +709,7 @@ Dewey and collaborators expressed pulsar-search sensitivity using the radiometer
 ## Quantitative vortex-creep theory of pulsar glitches
 
 **Year:** 1984
-**Topic:** Neutron star structure and fundamental physics
+**Topic:** Neutron star structure and fundamental physics|Pulsar Glitch
 **Type:**
 
 Alpar and collaborators developed a quantitative theory in which thermally activated motion of pinned superfluid vortices governs interglitch evolution and post-glitch relaxation. Its application reproduced the complex recovery of the Vela pulsar and established vortex creep as a principal framework for interpreting pulsar timing after glitches.
@@ -784,7 +795,7 @@ Dispersion relations and polarization properties for ordinary, extraordinary and
 **Topic:** Interstellar Medium and Galaxy
 **Type:**
 
-Theory distinguished rapid diffractive scintillation from slower refractive modulation associated with different spatial scales of electron-density structure. Refractive fluctuations were predicted to modulate flux, image position and size, pulse broadening, scintillation bandwidth, and scintillation timescale. DISS and RISS therefore describe propagation associated with different spatial scales of electron-density structure within the same broader scattering medium.
+Theory distinguished rapid diffractive scintillation from slower refractive modulation associated with different spatial scales of electron-density structure. Refractive fluctuations were predicted to modulate flux, image position and size, pulse broadening, scintillation bandwidth, and scintillation timescale. DISS and RISS represent propagation associated with different spatial scales of electron-density structure in the same broader scattering medium.
 
 **References:**
 - [Cordes, Pidwerbetsky &amp; Lovelace (1986)](<https://doi.org/10.1086/164728>)
@@ -869,6 +880,17 @@ A major synthesis of weak and strong scattering, DISS (diffractive interstellar 
 
 **References:**
 - [Rickett (1990)](<https://doi.org/10.1146/annurev.aa.28.090190.003021>)
+
+## BCW relativistic polarization model
+
+**Year:** 1991
+**Topic:** Polarisation and magnetic geometry
+**Type:**
+
+Blaskiewicz, Cordes and Wasserman extended the RVM (rotating vector model) to include first-order aberration and retardation from corotation. The model predicts that the centroid of the PA (position-angle) swing lags the intensity-profile centroid by approximately <span class="math-symbol">4r/c</span>, providing a widely used method for estimating radio-emission heights.
+
+**References:**
+- [Blaskiewicz, Cordes &amp; Wasserman (1991)](<https://doi.org/10.1086/169850>)
 
 ## Acceleration search
 
@@ -1243,7 +1265,7 @@ Cartographic reconstruction of drifting subpulses identified 20 subbeams circula
 ## RPE (relativistic plasma emission)
 
 **Year:** 1999, 2002
-**Topic:** Coherent radiation
+**Topic:** Coherent Radiation Models
 **Type:**
 
 Beam-driven instabilities in a relativistically streaming electron-positron plasma excite longitudinal or ordinary-mode waves that may convert into escaping radio emission. Detailed dispersion calculations also exposed stringent constraints on wave growth and escape.
@@ -1279,7 +1301,7 @@ Intermediate-mass X-ray binary evolution produces recycled pulsars with carbon-o
 ## The spark-associated soliton model for pulsar radio emission
 
 **Year:** 2000
-**Topic:** Coherent radiation
+**Topic:** Coherent Radiation Models
 **Type:**
 
 Nonlinear evolution of two-stream instabilities in an electron-positron plasma forms charged solitons associated with polar-cap sparks. Their coherent curvature radiation offers a mechanism capable of producing pulsar radio brightness temperatures while relating individual emitting structures to drifting subpulses.
@@ -1327,6 +1349,17 @@ Surveys expanded the known pulsar samples in the Small and Large Magellanic Clou
 - [Crawford et al. (2001)](<https://ui.adsabs.harvard.edu/abs/2001ApJ...553..367C/abstract>)
 - [Manchester et al. (2006)](<https://ui.adsabs.harvard.edu/abs/2006ApJ...649..235M/abstract>)
 
+## Hibschman-Arons polarization-sweep corrections
+
+**Year:** 2001
+**Topic:** Polarisation and magnetic geometry
+**Type:**
+
+Hibschman and Arons extended relativistic polarization-sweep calculations to include both aberration and magnetospheric current flow. In addition to the phase displacement of the PA sweep, they derived PA offsets produced by corotation and polar-cap currents, showing that polarization profiles can in principle constrain magnetospheric current density as well as emission altitude.
+
+**References:**
+- [Hibschman &amp; Arons (2001)](<https://doi.org/10.1086/318224>)
+
 ## Smooth thin- and thick-disk electron-density model
 
 **Year:** 2001
@@ -1340,26 +1373,16 @@ G&oacute;mez, Benjamin and Cox re-examined the Galactic free-electron distributi
 
 ## Parabolic scintillation arcs in pulsar secondary spectra
 
-**Year:** 2001
+**Year:** 2001, 2003, 2005
 **Topic:** Interstellar Medium and Galaxy
 **Type:** Discovery
 
-<b>Observation:</b> High-dynamic-range secondary spectra revealed faint parabolic arcs and arclets. <b>Interpretation:</b> Interference among paths with differential geometric delay and Doppler frequency naturally generates the parabolic delay-Doppler relation. <b>Later significance:</b> Arcs became precision probes of screen geometry and astronomical-unit-scale structure, but do not uniquely require one infinitesimally thin screen.
+<b>Observation:</b> High-dynamic-range secondary spectra revealed faint parabolic arcs, asymmetric arc power and inverted arclet substructure. Follow-up observations of PSR B0834+06 resolved persistent reverse arclets whose vertices moved along the primary arc. <b>Interpretation:</b> The features arise from interference between discrete scattered subimages with different geometric delays and Doppler shifts, showing that scattering power can be concentrated in localized structures rather than a smooth halo. <b>Later significance:</b> Arcs and arclets became precision probes of screen geometry and astronomical-unit-scale plasma structure.
 
 **References:**
 - [Stinebring et al. (2001)](<https://doi.org/10.1086/319133>)
-
-## PRESTO
-
-**Year:** 2001
-**Topic:**
-**Type:** Software
-
-Pulsar searching package; described in Scott Ransom's PhD thesis.
-
-**References:**
-- [Ransom (2001)](<https://ui.adsabs.harvard.edu/abs/2001PhDT.......123R/abstract>)
-- [PRESTO project page](<https://www.cv.nrao.edu/~sransom/presto>)
+- [Hill et al. (2003)](<https://ui.adsabs.harvard.edu/abs/2003ApJ...599..457H/abstract>)
+- [Hill et al. (2005)](<https://arxiv.org/abs/astro-ph/0411752>)
 
 ## SIGPROC
 
@@ -1502,7 +1525,7 @@ To explain the unusually steep increase of pulse broadening with dispersion meas
 ## FEM (free-electron maser) and laser models
 
 **Year:** 2003, 2004
-**Topic:** Coherent radiation
+**Topic:** Coherent Radiation Models
 **Type:**
 
 Relativistic particles interacting with self-generated longitudinal turbulence or a transverse electromagnetic wiggler bunch coherently and radiate intense short radio bursts. These models adapt the free-electron-laser mechanism to pulsar plasma conditions.
@@ -1522,6 +1545,17 @@ Thermionic ion flow partially screens the polar-cap accelerating field, reducing
 **References:**
 - [Gil, Melikidze &amp; Geppert (2003)](<https://doi.org/10.1051/0004-6361:20030854>)
 
+## CLEAN-based deconvolution of interstellar pulse broadening
+
+**Year:** 2003
+**Topic:** Interstellar Medium and Galaxy
+**Type:**
+
+Bhat, Cordes and Chatterjee adapted CLEAN-style deconvolution to scattered pulsar profiles, recovering both the intrinsic pulse shape and the PBF (pulse-broadening function). The method does not require a fixed intrinsic profile shape and allows competing scattering-response functions to be tested directly against the data.
+
+**References:**
+- [Bhat, Cordes &amp; Chatterjee (2003)](<https://arxiv.org/abs/astro-ph/0207451>)
+
 ## MEM (measurement equation modeling)
 
 **Year:** 2004
@@ -1532,6 +1566,17 @@ MEM solves a full instrumental polarization model from repeated observations of 
 
 **References:**
 - [van Straten (2004)](<https://ui.adsabs.harvard.edu/abs/2004ApJS..152..129V/abstract>)
+
+## Rotational sweepback and open-volume geometry
+
+**Year:** 2004
+**Topic:** Beam geometry|Polarisation and magnetic geometry
+**Type:**
+
+Dyks and Harding quantified rotational sweepback of a vacuum-dipole field and showed that the largest geometrical effect at low altitude can come from the backward displacement of the open-field-line region rather than from the local field-direction distortion itself. This modifies the phase relation between pulse-profile and PA-swing centers and therefore the usual aberration-retardation emission-height estimate.
+
+**References:**
+- [Dyks &amp; Harding (2004)](<https://arxiv.org/abs/astro-ph/0402507>)
 
 ## Pulse broadening and its frequency dependence
 
@@ -1569,7 +1614,7 @@ The PSPC model applies to older or lower-energy pulsars where particles can be a
 ## Curvature radiation in pulsar magnetospheric plasma
 
 **Year:** 2004
-**Topic:** Coherent radiation
+**Topic:** Coherent Radiation Models
 **Type:**
 
 The analysis examined how charged bunches can emit coherent curvature radiation while embedded in a relativistic electron-positron plasma. It addresses the central difficulty of obtaining escaping, polarized radio waves rather than treating vacuum curvature radiation as sufficient.
@@ -1617,13 +1662,14 @@ A library and command-line suite for calibrating, cleaning, integrating, visuali
 
 **Year:** 2005
 **Topic:**
-**Type:** Archive
+**Type:** Archive|Software
 
 Positions, spin parameters, binary parameters, distances and bibliographic references for published pulsars.
 
 **References:**
 - [Manchester et al. (2005)](<https://ui.adsabs.harvard.edu/abs/2005AJ....129.1993M/abstract>)
 - [ATNF Pulsar Catalogue / PSRCAT](<https://www.atnf.csiro.au/research/pulsar/psrcat/>)
+- [psrqpy: Python interface to the ATNF Pulsar Catalogue](<https://pypi.org/project/psrqpy/0.4.11/>)
 
 ## Handbook of Pulsar Astronomy
 
@@ -1732,7 +1778,7 @@ PSR J1748-2446ad spins at 716 hertz, corresponding to a period of approximately 
 ## Jodrell Bank Pulsar Glitch Catalogue
 
 **Year:** 2006, 2011, 2022
-**Topic:** Timing and dynamics
+**Topic:** Timing and dynamics|Pulsar Glitch
 **Type:** Archive
 
 A long-term catalogue of published pulsar glitches and events detected through Jodrell Bank monitoring. It records glitch epochs, fractional spin-frequency changes, and associated changes in spin-down rate, providing a major observational resource for population studies and tests of neutron-star interior models.
@@ -1878,7 +1924,19 @@ PSR J1023+0038 showed that an accretion disk had disappeared before a radio MSP 
 **References:**
 - [Archibald et al. (2009)](<https://doi.org/10.1126/science.1172740>)
 
-## Fermi LAT (Large Area Telescope) Pulsar Catalogue
+
+
+## PSR J1023+0038 switches back to an accretion-disk state
+
+**Year:** 2013, 2014
+**Topic:** Population and evolution|Timing and dynamics
+**Type:** Discovery
+
+After several years as a radio MSP (millisecond pulsar), PSR J1023+0038 lost its detectable radio pulsations in mid-2013 while a new accretion disk formed. X-ray, optical, UV and gamma-ray emission brightened, including an approximately fivefold increase in gamma-ray flux, providing direct evidence that a recycled pulsar can switch between rotation-powered and accretion-disk states.
+
+**References:**
+- [Patruno et al. (2014)](<https://doi.org/10.1088/2041-8205/781/1/L3>)
+- [Stappers et al. (2014)](<https://doi.org/10.1088/0004-637X/790/1/39>)## Fermi LAT (Large Area Telescope) Pulsar Catalogue
 
 **Year:** 2009, 2010, 2012, 2013, 2015, 2020, 2023
 **Topic:**
@@ -1998,6 +2056,18 @@ Numerical transfer through a relativistic pair plasma connected cyclotron absorp
 **References:**
 - [Brisken et al. (2010)](<https://doi.org/10.1088/0004-637X/708/1/232>)
 
+## Cyclic spectral analysis of pulsars
+
+**Year:** 2011
+**Topic:** Interstellar Medium and Galaxy
+**Type:**
+
+Demorest applied cyclic spectroscopy to pulsar radio signals, preserving phase information that conventional detected filterbank spectra discard. The cyclic spectrum can recover the ISM impulse response and the intrinsic unscattered pulse profile from a single observation, providing a direct method for measuring and potentially correcting multipath scattering.
+
+**References:**
+- [Demorest (2011)](<https://doi.org/10.1111/j.1365-2966.2011.19230.x>)
+- [arXiv preprint](<https://arxiv.org/abs/1106.3345>)
+
 ## Perytons: terrestrial FRB (fast radio burst) mimics
 
 **Year:** 2011
@@ -2068,7 +2138,7 @@ A blind search of Fermi photons discovered the 2.5-millisecond pulsations of the
 ## The pulsar glitch crisis: the crust is not enough
 
 **Year:** 2012, 2013
-**Topic:** Neutron star structure and fundamental physics
+**Topic:** Neutron star structure and fundamental physics|Pulsar Glitch
 **Type:**
 
 Andersson and collaborators showed that crustal entrainment reduces the mobility, and hence the effective angular-momentum reservoir, of the inner-crust superfluid. Chamel subsequently demonstrated that this reservoir cannot readily account for Vela-sized glitches, implying the involvement of additional superfluid, plausibly extending into the neutron-star core.
@@ -2274,7 +2344,7 @@ Einstein@Home volunteers discovered PSR J2007+2722 by donating otherwise idle co
 ## First observed anti-glitch
 
 **Year:** 2013
-**Topic:** Timing and dynamics
+**Topic:** Timing and dynamics|Pulsar Glitch
 **Type:** Discovery
 
 The magnetar 1E 2259+586 exhibited the first clearly identified anti-glitch: an abrupt decrease in spin frequency accompanied by X-ray radiative changes and a substantial change in its spin-down rate. The event demonstrated that neutron-star rotational irregularities are not restricted to conventional spin-up glitches and challenged standard models of glitch dynamics.
@@ -2285,7 +2355,7 @@ The magnetar 1E 2259+586 exhibited the first clearly identified anti-glitch: an 
 ## PPTA DR1 (Parkes Pulsar Timing Array Data Release 1)
 
 **Year:** 2013
-**Topic:**
+**Topic:** Timing and dynamics
 **Type:** Archive
 
 The release provides calibrated observations and timing products for 20 MSPs (millisecond pulsars) monitored in three radio bands. Its long, multifrequency baselines support dispersion correction, clock and ephemeris studies and nanohertz GW (gravitational-wave) searches.
@@ -2296,7 +2366,7 @@ The release provides calibrated observations and timing products for 20 MSPs (mi
 ## NANOGrav (North American Nanohertz Observatory for Gravitational Waves) 5-year Data Set
 
 **Year:** 2013
-**Topic:**
+**Topic:** Timing and dynamics
 **Type:** Archive
 
 Public TOAs (times of arrival) and timing models in TEMPO and TEMPO2 formats.
@@ -2537,7 +2607,7 @@ Calibrated low-frequency profiles, DMs (dispersion measures), flux densities and
 ## NANOGrav (North American Nanohertz Observatory for Gravitational Waves) Nine-year Data Set
 
 **Year:** 2015
-**Topic:**
+**Topic:** Timing and dynamics
 **Type:** Archive
 
 Observations, TOA (time-of-arrival) measurements and analysis of 37 MSPs (millisecond pulsars).
@@ -2555,6 +2625,19 @@ Azimuthally narrow plasma streams generate fan-shaped beams whose sightline cuts
 
 **References:**
 - [Dyks &amp; Rudak (2015)](<https://doi.org/10.1093/mnras/stu2262>)
+
+## Global particle-in-cell pulsar magnetospheres
+
+**Year:** 2014, 2015
+**Topic:** Emission and magnetospheric physics|Inner acceleration
+**Type:**
+
+Global relativistic PIC (particle-in-cell) simulations model the pulsar magnetosphere kinetically rather than prescribing an ideal force-free plasma. Early axisymmetric and oblique calculations showed how plasma supply and pair creation control the transition toward a force-free-like magnetosphere, while identifying the return-current layer and equatorial current sheet as major sites of particle acceleration and dissipation.
+
+**References:**
+- [Philippov &amp; Spitkovsky (2014)](<https://doi.org/10.1088/0004-637X/785/2/94>)
+- [Cerutti et al. (2015)](<https://doi.org/10.1093/mnras/stv042>)
+- [Philippov, Spitkovsky &amp; Cerutti (2015)](<https://doi.org/10.1088/2041-8205/801/1/L19>)
 
 ## Refractive propagation corrections for precision pulsar timing
 
@@ -2648,7 +2731,7 @@ The high-magnetic-field rotation-powered pulsar emitted short magnetar-like X-ra
 ## EPTA DR1 (European Pulsar Timing Array Data Release 1)
 
 **Year:** 2016
-**Topic:**
+**Topic:** Timing and dynamics
 **Type:** Archive
 
 High-precision timing for 42 MSPs (millisecond pulsars) combines European observations extending to mid-2014, with individual baselines of 7-18 years. The release supplies timing solutions, noise characterizations and measurements for pulsar astrophysics and GW (gravitational-wave) analyses.
@@ -2659,7 +2742,7 @@ High-precision timing for 42 MSPs (millisecond pulsars) combines European observ
 ## IPTA DR1 (International Pulsar Timing Array Data Release 1)
 
 **Year:** 2016
-**Topic:**
+**Topic:** Timing and dynamics
 **Type:** Archive
 
 The release combines European, North American and Parkes data for 49 MSPs (millisecond pulsars), with some baselines approaching three decades. Its broader sky coverage and complementary observing systems establish the value and challenges of globally combined timing data.
@@ -2875,7 +2958,7 @@ FRB 121102 exhibited nearly 100 percent linear polarization and an exceptionally
 ## Relativistic charge solitons from nonlinear Landau damping
 
 **Year:** 2018
-**Topic:** Coherent radiation
+**Topic:** Coherent Radiation Models
 **Type:**
 
 Kinetic calculations showed that nonlinear Landau damping can produce stable, charged solitons in a relativistic pair plasma. Such localized charge structures provide candidate coherent emitters, linking plasma-wave evolution to observable pulsar radio radiation.
@@ -2886,7 +2969,7 @@ Kinetic calculations showed that nonlinear Landau damping can produce stable, ch
 ## First pulse-to-pulse observation of a pulsar glitch
 
 **Year:** 2018, 2019
-**Topic:** Timing and dynamics
+**Topic:** Timing and dynamics|Pulsar Glitch
 **Type:** Discovery
 
 Continuous single-pulse observations captured the 2016 Vela glitch as it occurred, revealing transient changes in pulse shape, polarisation and TOA (time of arrival). Subsequent analysis constrained the spin-up time to less than 12.6 seconds, detected a rapid rotational-frequency overshoot and relaxation, and found evidence of a brief pre-glitch slowdown, providing the first direct view of angular-momentum exchange on seconds-long timescales inside a neutron star.
@@ -2898,7 +2981,7 @@ Continuous single-pulse observations captured the 2016 Vela glitch as it occurre
 ## NANOGrav (North American Nanohertz Observatory for Gravitational Waves) 11-year Data Set
 
 **Year:** 2018
-**Topic:**
+**Topic:** Timing and dynamics
 **Type:** Archive
 
 Eleven years of high-precision timing for 45 MSPs (millisecond pulsars), with arrival times and timing models suitable for reproducible analysis. The release enabled gravitational-wave-background limits and detailed studies of pulsar and propagation noise.
@@ -3035,7 +3118,7 @@ An all-sky low-frequency survey for pulsars and radio transients.
 ## IPTA DR2 (International Pulsar Timing Array Data Release 2)
 
 **Year:** 2019
-**Topic:**
+**Topic:** Timing and dynamics
 **Type:** Archive
 
 Timing data and noise models for 65 MSPs (millisecond pulsars).
@@ -3071,7 +3154,7 @@ Luciano Rezzolla, Pierre Pizzochero, David Ian Jones, Nanda Rea and Isaac Vida&n
 **Topic:** Interstellar Medium and Galaxy
 **Type:**
 
-Combining VLBI visibilities with intensity correlations localized the members of interfering image pairs and allowed geometrically distinct scattering structures to be separated. The method showed that secondary-spectrum structure can arise from, and be geometrically decomposed into, multiple distinct scattering regions rather than a single dominant screen.
+Combining VLBI visibilities with intensity correlations localized the members of interfering image pairs and allowed geometrically distinct scattering structures to be separated. The method demonstrated that secondary-spectrum structure can arise from, and be geometrically decomposed into, multiple distinct scattering regions rather than a single dominant screen.
 
 **References:**
 - [Simard et al. (2019)](<https://doi.org/10.1093/mnras/stz2046>)
@@ -3125,7 +3208,7 @@ Localized FRBs established the expected extragalactic DM (dispersion measure)-re
 ## Pulsar radio emission mechanisms: a critique
 
 **Year:** 2020
-**Topic:** Coherent radiation
+**Topic:** Coherent Radiation Models
 **Type:**
 
 The review compares coherent curvature radiation, relativistic plasma emission and anomalous-Doppler maser models against plasma conditions and observable constraints. It clarifies which ingredients are established, which rely on uncertain bunching or mode conversion, and why no single mechanism is yet decisive.
@@ -3147,7 +3230,7 @@ Follow-up detections showed that a Galactic magnetar can emit radio bursts rangi
 ## HMM (hidden Markov model) glitch detector
 
 **Year:** 2020
-**Topic:** Timing and dynamics
+**Topic:** Timing and dynamics|Pulsar Glitch
 **Type:** Search
 
 An HMM tracks pulse frequency and its derivative while accounting explicitly for stochastic timing noise. Bayesian comparison of glitch and no-glitch models enables automated detection, objective false-alarm calibration and systematic searches without relying on manual inspection of timing residuals.
@@ -3261,7 +3344,7 @@ The <span class="math-symbol">&#952;-&#952;</span> transformation maps a delay-D
 ## Radio emission by soliton formation in hot streaming pair pulsar plasmas
 
 **Year:** 2021
-**Topic:** Coherent radiation
+**Topic:** Coherent Radiation Models
 **Type:**
 
 Particle-in-cell simulations tested whether streaming instabilities in a hot electron-positron plasma can form long-lived solitons and radiate coherently. The work places quantitative kinetic constraints on a prominent class of pulsar radio-emission models.
@@ -3283,7 +3366,7 @@ Shi proposed using the position of the main scintillation-arc apex to distinguis
 ## AGDP (automated glitch-detection pipeline)
 
 **Year:** 2021
-**Topic:** Timing and dynamics
+**Topic:** Timing and dynamics|Pulsar Glitch
 **Type:** Software
 
 The real-time Ooty Radio Telescope pipeline processes incoming pulsar observations using data-quality checks, timing analysis and statistical detection algorithms to issue glitch alerts. Its deployment demonstrated how rapid detection can trigger higher-cadence observations of the otherwise poorly sampled early post-glitch recovery.
@@ -3307,7 +3390,7 @@ Planetary and lunar ephemerides used for barycentric corrections in precision pu
 ## NANOGrav (North American Nanohertz Observatory for Gravitational Waves) 12.5-year Data Set: Narrowband Timing
 
 **Year:** 2021
-**Topic:**
+**Topic:** Timing and dynamics
 **Type:** Archive
 
 Narrowband timing data for 47 MSPs (millisecond pulsars).
@@ -3318,7 +3401,7 @@ Narrowband timing data for 47 MSPs (millisecond pulsars).
 ## NANOGrav (North American Nanohertz Observatory for Gravitational Waves) 12.5-year Data Set: Wideband Timing
 
 **Year:** 2021
-**Topic:**
+**Topic:** Timing and dynamics
 **Type:** Archive
 
 Wideband timing data for 47 MSPs (millisecond pulsars).
@@ -3329,7 +3412,7 @@ Wideband timing data for 47 MSPs (millisecond pulsars).
 ## PPTA DR2 (Parkes Pulsar Timing Array Data Release 2): timing analysis
 
 **Year:** 2021
-**Topic:**
+**Topic:** Timing and dynamics
 **Type:** Archive
 
 Timing analysis for the second PPTA data release.
@@ -3421,7 +3504,7 @@ PSR J0901-4046 has a spin period of 75.88 seconds, establishing that coherent ra
 ## InPTA DR1 (Indian Pulsar Timing Array Data Release 1)
 
 **Year:** 2022
-**Topic:**
+**Topic:** Timing and dynamics
 **Type:** Archive
 
 Upgraded Giant Metrewave Radio Telescope timing data, TOAs (times of arrival) and timing models for MSPs (millisecond pulsars).
@@ -3477,6 +3560,29 @@ H.E.S.S. detected a new pulsed gamma-ray component extending to at least 20 TeV,
 **References:**
 - [H.E.S.S. Collaboration (2023)](<https://doi.org/10.1038/s41550-023-02052-3>)
 
+## Pulsar polarization arrays
+
+**Year:** 2021, 2023
+**Topic:** Polarisation and magnetic geometry
+**Type:**
+
+Liu, Lou and Ren proposed pulsar polarization arrays, which search for correlated polarization-angle variations across an ensemble of pulsars in analogy with the spatial-correlation strategy of PTAs (pulsar timing arrays). They demonstrated the framework using cosmic birefringence from ultralight axion-like dark matter as a target signal.
+
+**References:**
+- [Liu, Lou &amp; Ren (2023)](<https://doi.org/10.1103/PhysRevLett.130.121401>)
+- [arXiv preprint (2021)](<https://arxiv.org/abs/2111.10615>)
+
+## Partial-coherence model of pulsar polarization
+
+**Year:** 2023
+**Topic:** Polarisation and magnetic geometry
+**Type:**
+
+Oswald, Karastergiou and Johnston modelled pulsar polarization as two orthogonally polarized modes that combine partly coherently and partly incoherently. The three-parameter model uses the mode-strength ratio, relative phase and coherence fraction to reproduce circular polarization, frequency-dependent polarization and departures of the PA swing from a simple RVM.
+
+**References:**
+- [Oswald, Karastergiou &amp; Johnston (2023)](<https://doi.org/10.1093/mnras/stad2271>)
+
 ## Global kinetic simulation of pulsar electric gaps and radio-wave excitation
 
 **Year:** 2023
@@ -3491,7 +3597,7 @@ First-principles plasma simulations produced self-consistent electric gaps, elec
 ## EPTA DR2 (European Pulsar Timing Array Data Release 2)
 
 **Year:** 2023
-**Topic:**
+**Topic:** Timing and dynamics
 **Type:** Archive
 
 Up to 24.7 years of European pulsar-timing-array data, including combinations with Indian Pulsar Timing Array Data Release 1.
@@ -3502,7 +3608,7 @@ Up to 24.7 years of European pulsar-timing-array data, including combinations wi
 ## MeerKAT PTA DR1 (Pulsar Timing Array Data Release 1)
 
 **Year:** 2023
-**Topic:**
+**Topic:** Timing and dynamics
 **Type:** Archive
 
 The first 2.5 years of timing data for the MeerKAT Pulsar Timing Array.
@@ -3513,7 +3619,7 @@ The first 2.5 years of timing data for the MeerKAT Pulsar Timing Array.
 ## NANOGrav (North American Nanohertz Observatory for Gravitational Waves) 15-year Data Set
 
 **Year:** 2023
-**Topic:**
+**Topic:** Timing and dynamics
 **Type:** Archive
 
 Narrowband and wideband TOAs (times of arrival), timing models, noise files and reproducibility software for 68 MSPs (millisecond pulsars).
@@ -3535,7 +3641,7 @@ A public collection of meter-wavelength integrated profiles, single-pulse produc
 ## PPTA DR3 (Parkes Pulsar Timing Array Data Release 3)
 
 **Year:** 2023
-**Topic:**
+**Topic:** Timing and dynamics
 **Type:** Archive
 
 Timing data and noise models for the third PPTA data release.
@@ -3650,7 +3756,7 @@ ENTERPRISE-based framework for new-physics searches using PTA (pulsar timing arr
 **Topic:** Interstellar Medium and Galaxy
 **Type:**
 
-<b>Observation:</b> Sensitive secondary spectra revealed multiple arc curvatures and a mixture of thin, diffuse, filled and truncated structures along individual sightlines. <b>Interpretation:</b> Candidate scattering structures include the diffuse ISM, H II regions, supernova remnants, bubbles and pulsar bow shocks. <b>Later significance:</b> The survey showed that different sightlines are consistent with single-screen, multiple-screen and more distributed scattering geometries.
+<b>Observation:</b> Sensitive secondary spectra revealed multiple arc curvatures and a mixture of thin, diffuse, filled and truncated structures along individual sightlines. <b>Interpretation:</b> Candidate screens include the diffuse ISM, H II regions, supernova remnants, bubbles and pulsar bow shocks. <b>Later significance:</b> The survey showed that different sightlines are consistent with single-screen, multiple-screen and more distributed scattering geometries.
 
 **References:**
 - [Ocker et al. (2024)](<https://doi.org/10.1093/mnras/stad3683>)
@@ -3661,7 +3767,7 @@ ENTERPRISE-based framework for new-physics searches using PTA (pulsar timing arr
 **Topic:** Interstellar Medium and Galaxy
 **Type:**
 
-<b>Interpretation:</b> A cusp profile described by an A<sub>3</sub> catastrophe was proposed for ESEs (extreme scattering events) and double-lensing features, extending the A<sub>2</sub> fold-caustic description of corrugated sheets. <b>Later significance:</b> The catastrophe framework supplies a generic local description of cusp caustics that can be tested against ESE and double-lensing phenomenology, rather than implying that every plasma lens has cusp geometry.
+<b>Interpretation:</b> A cusp profile described by an A<sub>3</sub> catastrophe was proposed for ESEs (extreme scattering events) and double-lensing features, extending the A<sub>2</sub> fold-caustic description of corrugated sheets. <b>Later significance:</b> The catastrophe framework supplies a generic local description of cusp caustics that can be tested against ESE and double-lensing phenomenology.
 
 **References:**
 - [Jow, Pen &amp; Baker (2024)](<https://doi.org/10.1093/mnras/stae300>)
@@ -3669,7 +3775,7 @@ ENTERPRISE-based framework for new-physics searches using PTA (pulsar timing arr
 ## InPTA DR2 (Indian Pulsar Timing Array Data Release 2)
 
 **Year:** 2025
-**Topic:**
+**Topic:** Timing and dynamics
 **Type:** Archive
 
 Upgraded Giant Metrewave Radio Telescope timing data, TOAs (times of arrival) and timing models for MSPs (millisecond pulsars).
@@ -3680,7 +3786,7 @@ Upgraded Giant Metrewave Radio Telescope timing data, TOAs (times of arrival) an
 ## CPTA DR1 (Chinese Pulsar Timing Array Data Release 1)
 
 **Year:** 2025
-**Topic:**
+**Topic:** Timing and dynamics
 **Type:** Archive
 
 Timing data from FAST (Five-hundred-meter Aperture Spherical Telescope).
