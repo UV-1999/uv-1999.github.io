@@ -693,7 +693,7 @@ I - Morphological taxonomy<br>II - On the Spectral Behavior of Component Width<b
 Stuart L. Shapiro and Saul A. Teukolsky.
 
 **References:**
-- [Wiley Online Library](<https://onlinelibrary.wiley.com/doi/book/10.1002/9783527617661>)
+- [Wiley Online Library (1983)](<https://onlinelibrary.wiley.com/doi/book/10.1002/9783527617661>)
 
 ## Modified radiometer equation for pulsar searches
 
@@ -753,7 +753,7 @@ Lyne, Manchester and Taylor introduced an early large-scale Galactic free-electr
 George B. Rybicki and Alan P. Lightman.
 
 **References:**
-- [Wiley Online Library](<https://onlinelibrary.wiley.com/doi/book/10.1002/9783527618170>)
+- [Wiley Online Library (1985)](<https://onlinelibrary.wiley.com/doi/book/10.1002/9783527618170>)
 
 ## Binary model DD
 
@@ -1177,7 +1177,7 @@ Arrival-time comparisons from 1.4 to 32 gigahertz constrained normal-pulsar radi
 Norman K. Glendenning.
 
 **References:**
-- [Springer](<https://link.springer.com/book/10.1007/978-1-4684-0491-3>)
+- [Springer (1997)](<https://link.springer.com/book/10.1007/978-1-4684-0491-3>)
 
 ## First AMXP (accreting millisecond pulsar)
 
@@ -1680,8 +1680,8 @@ Positions, spin parameters, binary parameters, distances and bibliographic refer
 Duncan R. Lorimer and Michael Kramer.
 
 **References:**
-- [Cambridge University Press](<https://www.cambridge.org/pl/universitypress/subjects/physics/astrophysics/handbook-pulsar-astronomy?format=HB&isbn=9780521828239>)
-- [Handbook webpage](<https://www.jb.man.ac.uk/research/pulsar/handbook/>)
+- [Cambridge University Press (2005)](<https://www.cambridge.org/pl/universitypress/subjects/physics/astrophysics/handbook-pulsar-astronomy?format=HB&isbn=9780521828239>)
+- [Handbook webpage (2005)](<https://www.jb.man.ac.uk/research/pulsar/handbook/>)
 
 ## MTM (matrix template matching)
 
@@ -1867,7 +1867,7 @@ Stinebring reviewed evidence that parabolic scintillation arcs are common in pul
 Pawe&#322; Haensel, Alexander Y. Potekhin and Dmitry G. Yakovlev.
 
 **References:**
-- [Springer](<http://link.springer.com/book/10.1007/978-0-387-47301-7>)
+- [Springer (2007)](<http://link.springer.com/book/10.1007/978-0-387-47301-7>)
 
 ## Multi-altitude pulsar radio-beam model
 
@@ -1965,7 +1965,7 @@ Instrument and source catalogues, gamma-ray pulsars, timing solutions and spectr
 Geoff McNamara.
 
 **References:**
-- [Springer](<https://link.springer.com/book/10.1007/978-0-387-76562-4>)
+- [Springer (2009; original edition 2008)](<https://link.springer.com/book/10.1007/978-0-387-76562-4>)
 
 ## Tools of Radio Astronomy
 
@@ -1976,7 +1976,7 @@ Geoff McNamara.
 Thomas L. Wilson, Kristen Rohlfs and Susanne H&uuml;ttemeister.
 
 **References:**
-- [Springer](<https://link.springer.com/book/10.1007/978-3-540-85122-6>)
+- [Springer (2009; original edition 1986)](<https://link.springer.com/book/10.1007/978-3-540-85122-6>)
 
 ## Physics of the Pulsar Magnetosphere
 
@@ -1987,7 +1987,7 @@ Thomas L. Wilson, Kristen Rohlfs and Susanne H&uuml;ttemeister.
 Vasily S. Beskin, Alexander V. Gurevich and Yakov N. Istomin.
 
 **References:**
-- [Cambridge University Press](<https://www.cambridge.org/core/books/physics-of-the-pulsar-magnetosphere/A30B9A96B0D14F5D37E2427623DE60B3>)
+- [Cambridge University Press (2009; original edition 1993)](<https://www.cambridge.org/core/books/physics-of-the-pulsar-magnetosphere/A30B9A96B0D14F5D37E2427623DE60B3>)
 
 ## IAU/IEEE (International Astronomical Union/Institute of Electrical and Electronics Engineers) polarization-convention comparison
 
@@ -2170,7 +2170,7 @@ GPU (graphics processing unit)-accelerated dedispersion and single-pulse/transie
 Andrew G. Lyne and Francis Graham-Smith.
 
 **References:**
-- [Cambridge University Press](<https://www.cambridge.org/core/books/pulsar-astronomy/768C0EE45FB7A2452A6D62B1C933247A>)
+- [Cambridge University Press (2012; original edition 1990)](<https://www.cambridge.org/core/books/pulsar-astronomy/768C0EE45FB7A2452A6D62B1C933247A>)
 
 ## Convergent plasma-sheet lens model
 
@@ -2490,7 +2490,7 @@ More than 100 maser parallaxes and proper motions mapped spiral-arm segments and
 X-ray and gamma-ray pulsar catalogues, survey tables and mission products.
 
 **References:**
-- [NASA HEASARC](<https://heasarc.gsfc.nasa.gov/>)
+- [NASA HEASARC (2014)](<https://heasarc.gsfc.nasa.gov/>)
 
 ## TEMPONEST
 
@@ -2513,7 +2513,7 @@ Bayesian pulsar timing and stochastic-noise analysis using TEMPO2 and MultiNest.
 Bayesian PTA (pulsar timing array) analysis and GW (gravitational-wave) inference.
 
 **References:**
-- [PAL2 repository](<https://github.com/jellis18/PAL2>)
+- [PAL2 repository (2014)](<https://github.com/jellis18/PAL2>)
 
 ## PICCARD
 
@@ -2795,7 +2795,7 @@ Suite of algorithms for statistical analysis, polarimetry, single pulses, and fl
 Python bindings for the SLALIB positional-astronomy library, used by pulsar tools.
 
 **References:**
-- [PYSLALIB repository](<https://github.com/scottransom/pyslalib>)
+- [PYSLALIB repository (2016)](<https://github.com/scottransom/pyslalib>)
 
 ## TOASTER
 
@@ -2806,7 +2806,7 @@ Python bindings for the SLALIB positional-astronomy library, used by pulsar tool
 Pulsar-search candidate management, inspection, and pipeline database system.
 
 **References:**
-- [TOASTER repository](<https://github.com/plazar/TOASTER>)
+- [TOASTER repository (2016)](<https://github.com/plazar/TOASTER>)
 
 ## CANDIDATE_FILTERS
 
@@ -2828,7 +2828,7 @@ Candidate post-processing and machine-learning utilities used in modern surveys.
 James J. Condon and Scott M. Ransom.
 
 **References:**
-- [Princeton University Press](<https://press.princeton.edu/books/hardcover/9780691137797/essential-radio-astronomy>)
+- [Princeton University Press (2016)](<https://press.princeton.edu/books/hardcover/9780691137797/essential-radio-astronomy>)
 
 ## Frequency-dependent effective DM (dispersion measure)
 
@@ -3034,7 +3034,7 @@ Bayesian pulsar timing, noise analysis and nanohertz GW (gravitational-wave) inf
 Higher-level PTA (pulsar timing array) models, frequentist statistics and wrappers around ENTERPRISE.
 
 **References:**
-- [ENTERPRISE_EXTENSIONS repository](<https://github.com/nanograv/enterprise_extensions>)
+- [ENTERPRISE_EXTENSIONS repository (2018)](<https://github.com/nanograv/enterprise_extensions>)
 
 ## ffaGo
 
@@ -3070,7 +3070,7 @@ Python interface for downloading, querying and manipulating the ATNF (Australia 
 MPI (Message Passing Interface)-enabled parallel-tempering Markov-chain Monte Carlo sampler widely used by ENTERPRISE.
 
 **References:**
-- [PTMCMCSampler repository](<https://github.com/nanograv/PTMCMCSampler>)
+- [PTMCMCSampler repository (2018)](<https://github.com/nanograv/PTMCMCSampler>)
 
 ## CLFD
 
@@ -3148,7 +3148,7 @@ PTA (pulsar timing array) sensitivity-curve calculation and forecasting.
 Luciano Rezzolla, Pierre Pizzochero, David Ian Jones, Nanda Rea and Isaac Vida&ntilde;a (editors).
 
 **References:**
-- [Springer](<https://link.springer.com/book/10.1007/978-3-319-97616-7>)
+- [Springer (2019)](<https://link.springer.com/book/10.1007/978-3-319-97616-7>)
 
 ## Reconstructing multiple interstellar scattering screens
 
@@ -3329,7 +3329,7 @@ An FFA (fast folding algorithm) search pipeline with time-series preparation, pe
 Converts uGMRT raw data files to SIGPROC filterbank format.
 
 **References:**
-- [ugmrt2fil source code](<https://github.com/inpta/ugmrt2fil>)
+- [ugmrt2fil source code (2020)](<https://github.com/inpta/ugmrt2fil>)
 
 ## <span class="math-symbol">&#952;-&#952;</span> transform for anisotropic scintillation screens
 
@@ -3638,7 +3638,7 @@ Narrowband and wideband TOAs (times of arrival), timing models, noise files and 
 A public collection of meter-wavelength integrated profiles, single-pulse products and polarization measurements from MSPES. It supports comparative studies of emission geometry, modulation and propagation across a uniform pulsar sample.
 
 **References:**
-- [MSPES database](<https://mspes.ia.uz.zgora.pl/>)
+- [MSPES database (2023)](<https://mspes.ia.uz.zgora.pl/>)
 
 ## PPTA DR3 (Parkes Pulsar Timing Array Data Release 3)
 
@@ -3660,8 +3660,8 @@ Timing data and noise models for the third PPTA data release.
 Rapid refitting and combination of PTA (pulsar timing array) free-spectrum likelihoods.
 
 **References:**
-- [CEFFYL package](<https://pypi.org/project/ceffyl/>)
-- [CEFFYL repository](<https://github.com/astrolamb/ceffyl>)
+- [CEFFYL package (2023)](<https://pypi.org/project/ceffyl/>)
+- [CEFFYL repository (2023)](<https://github.com/astrolamb/ceffyl>)
 
 ## PULSARX
 
@@ -3683,8 +3683,8 @@ High-performance GPU (graphics processing unit) pulsar searching, acceleration s
 A Julia-based Bayesian pulsar-timing engine for joint deterministic timing and stochastic-noise inference, with support for narrowband and wideband data. It provides a modern, extensible alternative for constructing and sampling precision timing models.
 
 **References:**
-- [VELA.jl documentation](<https://abhisrkckl.github.io/Vela.jl/>)
-- [VELA.jl source code](<https://github.com/abhisrkckl/Vela.jl>)
+- [VELA.jl documentation (2023)](<https://abhisrkckl.github.io/Vela.jl/>)
+- [VELA.jl source code (2023)](<https://github.com/abhisrkckl/Vela.jl>)
 
 ## Galactic pulsar scattering and the pulse-broadening-DM relation
 
@@ -3750,7 +3750,7 @@ LST-1 characterized the pulse peaks, bridge emission and phase-resolved spectrum
 ENTERPRISE-based framework for new-physics searches using PTA (pulsar timing array) likelihoods.
 
 **References:**
-- [PTArcade GitHub repository](<https://github.com/andrea-mitridate/PTArcade>)
+- [PTArcade GitHub repository (2024)](<https://github.com/andrea-mitridate/PTArcade>)
 
 ## Pulsar scintillation through thick and thin
 
@@ -3866,7 +3866,7 @@ Search-mode single-pulse observations of 1,192 pulsars, typically containing rou
 
 ## BINARY_GAZER
 
-**Year:** ?
+**Year:** 2018
 **Topic:**
 **Type:** Software
 **Origin:** software-catalog
@@ -3874,11 +3874,11 @@ Search-mode single-pulse observations of 1,192 pulsars, typically containing rou
 A program for planning observations of specific orbital phases of binary pulsars
 
 **References:**
-- [BINARY_GAZER GitHub repository](<https://github.com/alex88ridolfi/binary_gazer>)
+- [BINARY_GAZER GitHub repository (created 2018)](<https://github.com/alex88ridolfi/binary_gazer>)
 
 ## COAST_GUARD
 
-**Year:** ?
+**Year:** 2015
 **Topic:**
 **Type:** Software
 **Origin:** software-catalog
@@ -3886,11 +3886,11 @@ A program for planning observations of specific orbital phases of binary pulsars
 A pulsar archive reduction framework that automates data-quality checks and RFI (radio-frequency interference) cleaning. It prepares consistent folded observations for timing while recording the processing decisions applied to each archive.
 
 **References:**
-- [COAST_GUARD source code](<https://github.com/plazar/coast_guard>)
+- [COAST_GUARD source code (repository created 2015)](<https://github.com/plazar/coast_guard>)
 
 ## DRACULA
 
-**Year:** ?
+**Year:** 2016
 **Topic:**
 **Type:** Software
 **Origin:** software-catalog
@@ -3898,11 +3898,11 @@ A pulsar archive reduction framework that automates data-quality checks and RFI 
 An automated timing-solution finder that searches integer pulse-count ambiguities between separated observing epochs. It helps phase-connect sparse pulsar detections that would otherwise require manually testing many rotation-count combinations.
 
 **References:**
-- [DRACULA source code](<https://github.com/pfreire163/Dracula>)
+- [DRACULA source code (repository created 2016)](<https://github.com/pfreire163/Dracula>)
 
 ## PEASOUP
 
-**Year:** ?
+**Year:** 2013
 **Topic:**
 **Type:** Software
 **Origin:** software-catalog
@@ -3910,11 +3910,11 @@ An automated timing-solution finder that searches integer pulse-count ambiguitie
 C++/CUDA pulsar-searching library accelerated by GPUs (graphics processing units).
 
 **References:**
-- [PEASOUP source code](<https://github.com/ewanbarr/peasoup>)
+- [PEASOUP source code (repository created 2013)](<https://github.com/ewanbarr/peasoup>)
 
 ## PRESTO_ON_GPU
 
-**Year:** ?
+**Year:** 2013
 **Topic:**
 **Type:** Software
 **Origin:** software-catalog
@@ -3922,11 +3922,11 @@ C++/CUDA pulsar-searching library accelerated by GPUs (graphics processing units
 Pulsar-searching package accelerated by GPUs (graphics processing units).
 
 **References:**
-- [PRESTO_ON_GPU source code](<https://github.com/jintaoluo/presto_on_gpu>)
+- [PRESTO_ON_GPU source code (repository created 2013)](<https://github.com/jintaoluo/presto_on_gpu>)
 
 ## PSRALEX
 
-**Year:** ?
+**Year:** 2016
 **Topic:**
 **Type:** Software
 **Origin:** software-catalog
@@ -3934,11 +3934,11 @@ Pulsar-searching package accelerated by GPUs (graphics processing units).
 A pulsar archive processing package for routine reduction and analysis of folded observations. It packages common preparation steps so that data sets can be treated consistently before timing or profile studies.
 
 **References:**
-- [PSRALEX project page](<https://alex88ridolfi.altervista.org/pagine/pulsar_software_PSRALEX.html>)
+- [PSRALEX project page (repository created 2016)](<https://alex88ridolfi.altervista.org/pagine/pulsar_software_PSRALEX.html>)
 
 ## PSRFITS_UTILS
 
-**Year:** ?
+**Year:** 2010
 **Topic:**
 **Type:** Software
 **Origin:** software-catalog
@@ -3946,11 +3946,11 @@ A pulsar archive processing package for routine reduction and analysis of folded
 Folding, dedispersion, subbanding and merging of PSRFITS (Flexible Image Transport System for pulsar data) files.
 
 **References:**
-- [PSRFITS_UTILS source code](<https://github.com/demorest/psrfits_utils>)
+- [PSRFITS_UTILS source code (repository created 2010)](<https://github.com/demorest/psrfits_utils>)
 
 ## PSRPOP
 
-**Year:** ?
+**Year:** 2006
 **Topic:**
 **Type:** Software
 **Origin:** software-catalog
@@ -3958,11 +3958,11 @@ Folding, dedispersion, subbanding and merging of PSRFITS (Flexible Image Transpo
 A pulsar population-synthesis package for generating model Galactic populations and passing them through survey selection effects. Comparing simulated detections with real samples constrains luminosity, spatial and evolutionary distributions.
 
 **References:**
-- [PSRPOP project page](<http://psrpop.sourceforge.net>)
+- [PSRPOP project page (2006)](<http://psrpop.sourceforge.net>)
 
 ## PYRISESET
 
-**Year:** ?
+**Year:** 2015
 **Topic:**
 **Type:** Software
 **Origin:** software-catalog
@@ -3970,11 +3970,11 @@ A pulsar population-synthesis package for generating model Galactic populations 
 A program for computing rise/set times of pulsars
 
 **References:**
-- [PYRISESET source code](<https://github.com/plazar/pyriseset>)
+- [PYRISESET source code (repository created 2015)](<https://github.com/plazar/pyriseset>)
 
 ## PYSOLATOR
 
-**Year:** ?
+**Year:** 2018
 **Topic:**
 **Type:** Software
 **Origin:** software-catalog
@@ -3982,11 +3982,11 @@ A program for computing rise/set times of pulsars
 A search utility that removes trial binary orbital motion from pulsar time series before periodicity analysis. Correcting the Doppler modulation concentrates dispersed Fourier power and improves sensitivity to compact binaries.
 
 **References:**
-- [PYSOLATOR GitHub repository](<https://github.com/alex88ridolfi/pysolator>)
+- [PYSOLATOR GitHub repository (created 2018)](<https://github.com/alex88ridolfi/pysolator>)
 
 ## SIGPYPROC
 
-**Year:** ?
+**Year:** 2012
 **Topic:**
 **Type:** Software
 **Origin:** software-catalog
@@ -3994,11 +3994,11 @@ A search utility that removes trial binary orbital motion from pulsar time serie
 A Python toolkit for reading, writing and transforming pulsar-search filterbank data, including dedispersion and time-frequency operations. It provides reusable building blocks for survey and transient-search pipelines.
 
 **References:**
-- [SIGPYPROC source code](<https://github.com/ewanbarr/sigpyproc>)
+- [SIGPYPROC source code (repository created 2012)](<https://github.com/ewanbarr/sigpyproc>)
 
 ## SPIDER_TWISTER
 
-**Year:** ?
+**Year:** 2019
 **Topic:**
 **Type:** Software
 **Origin:** software-catalog
@@ -4006,27 +4006,27 @@ A Python toolkit for reading, writing and transforming pulsar-search filterbank 
 A tool for searching observations of compact spider-pulsar binaries over trial orbital phases. It supports recovery or refinement when an uncertain orbital ephemeris would otherwise smear or misplace the pulsar signal.
 
 **References:**
-- [SPIDER_TWISTER GitHub repository](<https://github.com/alex88ridolfi/SPIDER_TWISTER>)
+- [SPIDER_TWISTER GitHub repository (created 2019)](<https://github.com/alex88ridolfi/SPIDER_TWISTER>)
 
 ## CSIRO (Commonwealth Scientific and Industrial Research Organisation) Australia Telescope Online Archive
 
-**Year:** Ongoing
+**Year:** 2004
 **Topic:**
 **Type:** Archive
 
 Raw and processed Parkes, ASKAP (Australian Square Kilometre Array Pathfinder) and ATCA (Australia Telescope Compact Array) observations after applicable proprietary periods.
 
 **References:**
-- [CSIRO Data Access Portal pulsar collection](<https://data.csiro.au/categories/kw/Pulsar>)
+- [CSIRO Data Access Portal pulsar collection (archive released 2004)](<https://data.csiro.au/categories/kw/Pulsar>)
 
 ## MeerTime Public Data Portal
 
-**Year:** Ongoing
+**Year:** 2024
 **Topic:**
 **Type:** Archive
 
 Folded profiles for 1,271 pulsars, MSP (millisecond pulsar) census products and public MeerTime releases.
 
 **References:**
-- [MeerTime data information](<https://www.meertime.org/data.html>)
-- [MeerTime pulsar portal](<https://pulsars.org.au/?search=>)
+- [MeerTime data information (public access 2024)](<https://www.meertime.org/data.html>)
+- [MeerTime pulsar portal (public access 2024)](<https://pulsars.org.au/?search=>)
